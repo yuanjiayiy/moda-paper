@@ -1,0 +1,34 @@
+\begin{table}[H]
+\small
+\setlength{\tabcolsep}{2.5pt}
+\centering
+\begin{tabular}{l*{7}{>{\centering\arraybackslash}p{0.95cm}}|>{\centering\arraybackslash}p{0.95cm}}
+\toprule
+Model & GSM8K & MMLU & GPQA & BoolQ & HS & TQA & IFEval & Avg. \\
+\midrule
+\multicolumn{9}{l}{\textsc{\underline{Qwen3-8B base, thinking disabled}}} \\
+Qwen3-8B & \underline{84.5} & \textbf{82.0} & \underline{41.4} & 83.1 & 48.4 & 22.2 & \textbf{78.4} & 62.9 \\
+DARLING (Mixture) & 63.5 & 63.0 & 34.3 & 76.7 & 62.2 & \underline{52.4} & 53.0 & 57.9 \\
+DARLING (WildChat) & 77.9 & 55.0 & 34.3 & \textbf{86.4} & \underline{68.8} & 43.2 & 73.0 & 62.7 \\
+DivPO & 80.5 & \underline{81.0} & 40.4 & 83.5 & 62.8 & 37.7 & \underline{77.3} & \underline{66.2} \\
+\method & \textbf{86.7} & \underline{81.0} & \textbf{52.0} & \underline{84.8} & \textbf{73.4} & \textbf{57.9} & 76.9 & \textbf{73.2} \\
+\midrule
+\multicolumn{9}{l}{\textsc{\underline{Qwen3-8B base, thinking enabled}}} \\
+Qwen3-8B & \textbf{90.3} & \textbf{94.0} & 43.4 & \textbf{87.2} & 70.9 & 64.9 & \textbf{79.7} & 75.8 \\
+SSoT & 84.3 & \underline{93.0} & \textbf{55.1} & \textbf{87.2} & \textbf{80.1} & \textbf{72.8} & 61.9 & \underline{76.3} \\
+DivPO & \underline{84.9} & 91.0 & 44.4 & \underline{83.2} & 65.0 & 55.3 & 77.6 & 71.7 \\
+\method & 83.9 & \underline{93.0} & \underline{50.5} & \textbf{87.2} & \underline{76.2} & \underline{67.2} & \underline{79.5} & \textbf{76.8} \\
+\midrule
+\multicolumn{9}{l}{\textsc{\underline{Llama-3.1-8B base, thinking disabled}}} \\
+Llama-3.1-8B & 71.3 & 16.0 & 6.1 & \textbf{81.6} & 30.2 & 53.4 & 68.8 & 46.7 \\
+\method(Llama-3.1-8B) & \textbf{74.9} & \textbf{30.0} & \textbf{18.7} & 75.6 & \textbf{38.5} & \textbf{54.7} & \textbf{70.8} & \textbf{51.9}\\
+\midrule
+\multicolumn{9}{l}{\textsc{\underline{GLM-4-9B base, thinking disabled}}} \\
+GLM-4-9B & 21.8 & 35.0 & 19.7 & 74.5 & \textbf{68.0} & \textbf{44.8} & 50.3 & 44.9  \\
+\method(GLM-4-9B) & \textbf{84.9} & \textbf{83.0} & \textbf{33.3} & \textbf{81.2} & 52.3 & 34.5 & \textbf{55.5} & \textbf{60.7} \\
+\bottomrule
+\end{tabular}
+\vspace{4pt}
+\caption{General capability retention (Pass@1 accuracy \%), averaged over $n=3$ random seeds. Bold marks the best value within each model group; underline marks the second-best value within the Qwen3-8B groups. Table with error bar can be found in Appendix \ref{appx:general capability retention} Table \ref{tab:general-capability-pass1-error-bar}.}
+\label{tab:general-capability-pass1}
+\end{table}

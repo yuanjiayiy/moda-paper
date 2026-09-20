@@ -1,0 +1,31 @@
+\begin{table}[H]
+\centering
+\setlength{\tabcolsep}{3pt}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lccccc}
+\toprule
+& \multicolumn{2}{c}{General capability (Avg., \%)} & \multicolumn{3}{c}{Infinite-Chat Diversity} \\
+\cmidrule(lr){2-3} \cmidrule(lr){4-6}
+Ablation & Standard mode & Diverse mode & Disc. & SBERT & E-Vendi \\
+\midrule
+Role-conditioned prompting & 62.9  & 56.6  & 0.403  & 0.145  & 1.90  \\
+Quality only & 63.2  & 61.8  & 0.401  & 0.131  & 1.82  \\
+Diversity only & 61.1  & 10.7  & \textbf{0.656}  & \textbf{0.993}  & \textbf{9.77}  \\
+Additive $w{=}1$ & 67.4  & 68.0  & 0.422  & 0.204  & 2.33  \\
+Additive $w{=}10$ & 64.5  & 5.7  & 0.632  & 0.976  & 9.64  \\
+Additive $w{=}100$ & 61.6  & 5.4  & 0.621  & 0.970  & 8.75  \\
+Token-based roles & 69.7  & 67.9 & 0.419 & 0.197 & 2.04 \\
+Crafted personas & 70.1  & 66.1  & 0.421  & 0.194  & 2.24  \\
+Single role & 69.0  & 69.9  & 0.428  & 0.239  & 2.57  \\
+\midrule
+Qwen3-8B & 62.9 & - & 0.400 & 0.132 & 1.83 \\
+\midrule
+\textbf{\method{}} & \textbf{73.2}  & \textbf{71.6}  & 0.444  & 0.257  & 2.69  \\
+\bottomrule
+\end{tabular}
+}
+\vspace{4pt}
+\caption{\textbf{Ablation results} for general capability (Pass@1) under standard and diverse decoding (accuracy \%) and Infinite-Chat diversity ($n{=}3$ random seeds). Bold marks the best value per column.}
+\label{tab:ablation}
+\vspace{-0.6cm}
+\end{table}

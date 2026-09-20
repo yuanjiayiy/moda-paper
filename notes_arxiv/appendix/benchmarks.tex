@@ -1,0 +1,144 @@
+\section{Benchmark Descriptions}
+\label{appx:benchmark}
+
+\subsection{Diversity Metrics}
+\label{app:diversity-metrics}
+
+For each prompt \(x\), we generate a response set
+\(Y_x=\{y_1,\ldots,y_K\}\) using the decoding configuration in
+Appendix~\ref{appx:implementation}. Unless otherwise stated, all diversity
+metrics are computed at the prompt level and then averaged over prompts.
+For thinking-enabled models, metrics are computed only on the final-answer
+span after removing the reasoning trace.
+
+We report both surface-form and semantic diversity metrics. 
+
+% Let
+% \(K=|Y_x|\). \textbf{Self-BLEU}\citep{zhu2018texygen} measures lexical overlap among samples:
+% \[
+% \mathrm{SelfBLEU}(Y_x)
+% =
+% \frac{1}{K}
+% \sum_{i=1}^{K}
+% \mathrm{BLEU}(y_i, Y_x\setminus\{y_i\}).
+% \]
+% Lower Self-BLEU indicates less repeated wording. When constructing our table, 
+% we use \(1-\mathrm{SelfBLEU}\), so a higher number indicates more diversity, consistent with the rest of our metrics.
+
+% \textbf{Syntactic diversity} measures structural variation using
+% part-of-speech trigrams. Let \(\mathrm{POS3}(y_i)\) denote the multiset of
+% POS trigrams in response \(y_i\). We compute
+% \[
+% \mathrm{SynDiv}(Y_x)
+% =
+% \frac{
+% \left|\bigcup_i \mathrm{POS3}(y_i)\right|
+% }{
+% \sum_i |\mathrm{POS3}(y_i)|
+% }.
+% \]
+% Higher values indicate a larger fraction of unique syntactic patterns.
+% The POS tagger, tokenizer, and treatment of sentence boundaries are given
+% in Appendix~\ref{app:implementation}.
+
+% \textbf{MTLD} measures lexical richness using the standard
+% measure-of-textual-lexical-diversity procedure. We compute MTLD over the
+% concatenated response set for each prompt, excluding response delimiters
+% from the token count. Higher MTLD indicates that the response set maintains
+% a high type-token ratio over a longer span.
+
+% \textbf{Zlib ratio}\citep{shaib2024standardizing} measures non-compressibility of the response set. We
+% concatenate the \(K\) responses using a fixed delimiter, encode the result
+% as UTF-8, and compute
+% \[
+% \mathrm{ZlibRatio}(Y_x)
+% =
+% \frac{
+% |\mathrm{zlib}(Y_x)|
+% }{
+% |Y_x|
+% }.
+% \]
+% Higher values indicate that the response set is less compressible and
+% therefore less redundant. If a table instead reports compressibility
+% \(1-\mathrm{ZlibRatio}\), we mark that column as lower-is-better.
+
+For application-domain experiments, we additionally report semantic and
+learned pairwise diversity, including SBERT diversity, E-Vendi score and learned discriminator diversity score. \textbf{SBERT diversity}\citep{reimers2019sentencebertsentenceembeddingsusing} is the mean pairwise
+cosine distance between sentence embeddings:
+\[
+D_{\mathrm{SBERT}}(Y_x)
+=
+\frac{2}{K(K-1)}
+\sum_{i<j}
+\left(1-\cos(e_i,e_j)\right),
+\]
+where \(e_i\) is the normalized sentence embedding of \(y_i\). We report
+the exact embedding model in Appendix~\ref{appx:implementation}.
+
+\textbf{E-Vendi score} stands for embedding Vendi score. The Vendi score is a diversity metric inspired by ecology and quantum statistical mechanics. Given a response set \(Y_x=\{y_1,\ldots,y_K\}\), we
+first compute normalized sentence embeddings \(e_i\) using SBERT for each response and form
+the pairwise similarity matrix and then normalize the matrix by its trace,
+\[
+\tilde{S} = \frac{S}{\mathrm{tr}(S)},
+\]
+and let \(\lambda_1,\ldots,\lambda_K\) denote the eigenvalues of \(\tilde{S}\).
+The E-Vendi score is then defined as
+\[
+D_{\mathrm{E\text{-}Vendi}}(Y_x)
+=
+\exp\left(
+-\sum_{i=1}^{K} \lambda_i \log \lambda_i
+\right).
+\]
+Intuitively, the score measures the effective number of distinct semantic
+responses in the set: it is close to \(1\) when all responses are nearly
+identical, and increases as the responses become more semantically diverse. In
+practice, we add a small \(\epsilon\) inside the logarithm for numerical
+stability.
+
+\textbf{Discriminator diversity} uses a trained discriminator
+\(f_\psi(x,y_i,y_j)\) that scores whether two responses are meaningfully
+distinct for the same prompt. We compute
+\[
+D_{\mathrm{disc}}(Y_x)
+=
+\frac{2}{K(K-1)}
+\sum_{i<j}
+f_\psi(x,y_i,y_j).
+\]
+The discriminator architecture, training data, held-out split, and scoring
+calibration are described in Appendix~\ref{appx:discriminator}. Notably, the
+discriminator is not trained on the evaluation outputs.
+
+
+\subsection{General Capability Retention}
+\label{appx:general capability}
+
+We evaluate general capability retention to test whether diversity-oriented training preserves standard reasoning, knowledge, truthfulness, and instruction-following behavior. Capability retention is evaluated in standard mode (no role injection). Max token length is 2048 when thinking is disabled, 8192 when thinking is enabled. We sample 10 responses for each prompt.
+
+The evaluation covers seven benchmarks: \textbf{GSM8K} \citep{cobbe2021gsm8k} for grade-school mathematical reasoning, \textbf{MMLU} \citep{hendryckstest2021} for broad multitask knowledge, \textbf{GPQA} \citep{rein2024gpqa} for graduate-level scientific reasoning, \textbf{BoolQ} \citep{clark2019boolq} for yes/no reading comprehension, \textbf{HellaSwag} \citep{zellers2019hellaswag} for commonsense sentence completion, \textbf{TruthfulQA-MC1} \citep{lin2022truthfulqameasuringmodelsmimic} for robustness to imitative
+falsehoods, and \textbf{IFEval} \citep{zhou2023instructionfollowingevaluationlargelanguage} for instruction-following under explicit formatting constraints.
+
+We use each benchmark's native scoring rule: extracted-answer accuracy for GSM8K, multiple-choice accuracy for BoolQ, MMLU, GPQA, HellaSwag, and TruthfulQA-MC1, and strict prompt-level accuracy for IFEval.
+
+\subsection{Domain Application Tasks}
+\label{app:domain application}
+
+The domain application suite evaluates whether diversity gains transfer to open-ended generation settings (scientific ideation and creative writing) where multiple distinct high-quality outputs are critical. The suite consists of four tasks. We sample 10 responses per model. For models with role conditioning, we rotate through the available roles to generate these samples.
+
+\textbf{HypoBench} \citep{liu2026hypobenchsystematicprincipledbenchmarking} evaluates scientific hypothesis generation. Given a set of labeled data-science observations, the model is asked to generate hypotheses that explain possible underlying patterns. We evaluate on both real-world datasets, including \texttt{deceptive\_reviews}, \texttt{dreaddit}, and \texttt{headline\_binary}, and synthetic datasets, including \texttt{admission\//level\_1\//base}, \texttt{election\//level1}, and \texttt{shoe}. Every parsed hypothesis is scored individually by an LLM judge (gpt-4o-mini by default) on 3 dimensions, 1–5 each:
+\begin{itemize}
+    \item Clarity — how precisely/testably it's stated
+    \item  Novelty — how non-obvious it is, compared against any known/published hypotheses
+       supplied for that dataset
+     \item Plausibility — how scientifically well-reasoned it is given the task. We report the average of the 3 scores across every hypothesis scored as the quality metric. Max token number is set to 4096 when thinking is disabled, 16384 when thinking is enabled.
+\end{itemize}
+
+\textbf{PreScience} \citep{Ajith2026} evaluates scientific follow-up prediction using the Contribution Generation task. Given prior research context, the model generates a plausible future title and abstract. We use the benchmark's native LACER (Lattice of Automatically Constructed Exemplars for Reference)-style scoring pipeline. Each generated (title, abstract) is paired with the actual/ground-truth follow-up paper as the reference. Both are fed into the judge model (gpt-4o-2024-11-20 by default) with a fixed few-shot prompt template, and the judge model is asked to score the reference-generation pair on the scale of 1–10 based on how similar is the generated paper to the real one. We evaluate each model on 10 research contexts, and report the average LACER score on all the generations as the quality metric. Max token number is set to 1500 when thinking is disabled, 6000 when thinking is enabled.
+
+\textbf{NoveltyBench} \citep{zhang2025noveltybenchevaluatinglanguagemodels} evaluates creative and novelty-seeking generation prompts. It presents each model with a single open-ended creative/generative prompt (e.g. "Tell me a story in five sentences about a girl and her dog") and samples multiple generations. Every generation is scored 1–10 by \texttt{Skywork/Skywork-Reward-Gemma-2-27B-v0.2}. For each prompt, utility is the sum of generation scores, weighted by the original sampling order. This rewards a model for surfacing several distinct good ideas early, and discounts the marginal value of yet another (possibly redundant) generation later in the batch. We use the benchmark's official quality or utility scoring pipeline where available and report diversity over the generated response sets. We report the average utility across all prompts as the quality metric. The Max token number is set to 1024 when thinking is disabled, 4096 when thinking is enabled.
+
+\textbf{Infinite-Chat} \citep{jiang2025artificialhivemindopenendedhomogeneity} comprises 100 open-ended prompts randomly sampled from the held-out set of Infinite-Chat dataset. Since there's no native quality metric for Infinite-Chat, we use the average pass@1 accuracy of the general capability suite as the quality metric. Max token number is set to 1024 when thinking is disabled, 4096 when thinking is enabled.
+
+For each domain, we report native task quality when available and diversity metrics over the generated response sets. Raw diversity tables first average each metric over prompts within a domain and then average the four domain means.

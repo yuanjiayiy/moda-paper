@@ -1,0 +1,134 @@
+
+
+\section*{Infinite-Chat}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{lccccc}
+\toprule
+Model & Disc. & S & EV & Qual. \\
+\midrule
+\multicolumn{5}{l}{\textsc{\underline{Qwen3-8B base, thinking disabled}}} \\
+Qwen3-8B & 0.400 $\pm$ 0.001 & 0.132 $\pm$ 0.001 & 1.83 $\pm$ 0.01 & 62.9\% $\pm$ 0.8\% \\
+DARLING (Mix) & 0.430 $\pm$ 0.001 & 0.203 $\pm$ 0.001 & 2.33 $\pm$ 0.00 & 57.9\% $\pm$ 1.0\% \\
+DARLING (WildChat) & 0.416 $\pm$ 0.001 & 0.185 $\pm$ 0.002 & 2.15 $\pm$ 0.01 & 62.7\% $\pm$ 1.0\% \\
+DivPO & 0.410 $\pm$ 0.001 & 0.274 $\pm$ 0.004 & 2.86 $\pm$ 0.03 & 66.2\% $\pm$ 0.9\% \\
+\method & \textbf{0.472} $\pm$ 0.001 & \textbf{0.482} $\pm$ 0.003 & \textbf{4.40} $\pm$ 0.01 & \textbf{73.2\%} $\pm$ 0.9\% \\
+\midrule
+\multicolumn{5}{l}{\textsc{\underline{Qwen3-8B base, thinking enabled}}} \\
+Qwen3-8B & 0.400 $\pm$ 0.001 & 0.136 $\pm$ 0.001 & 1.85 $\pm$ 0.01 & 75.8\% $\pm$ 0.7\% \\
+SSoT & 0.397 $\pm$ 0.000 & 0.178 $\pm$ 0.002 & 2.09 $\pm$ 0.01 & 76.3\% $\pm$ 0.7\% \\
+DivPO & 0.414 $\pm$ 0.002 & 0.200 $\pm$ 0.006 & 2.20 $\pm$ 0.03 & 71.7\% $\pm$ 0.8\% \\
+\method & \textbf{0.600} $\pm$ 0.001 & \textbf{0.909} $\pm$ 0.001 & \textbf{9.04} $\pm$ 0.01 & \textbf{76.8\%} $\pm$ 0.7\% \\
+\midrule
+\multicolumn{5}{l}{\textsc{\underline{Llama-3.1-8B base, thinking disabled}}} \\
+Llama-3.1-8B & 0.414 $\pm$ 0.001 & 0.217 $\pm$ 0.002 & 2.40 $\pm$ 0.01 & 46.7\% $\pm$ 0.7\% \\
+\method{} (Llama-3.1-8B) & \textbf{0.441} $\pm$ 0.002 & \textbf{0.373} $\pm$ 0.003 & \textbf{3.77} $\pm$ 0.02 & \textbf{51.9\%} $\pm$ 0.9\% \\
+\midrule
+\multicolumn{5}{l}{\textsc{\underline{GLM-4-9B base, thinking disabled}}} \\
+GLM-4-9B & 0.421 $\pm$ 0.001 & 0.234 $\pm$ 0.002 & 2.60 $\pm$ 0.01 & 44.9\% $\pm$ 0.9\% \\
+\method{}(GLM-4-9b) & \textbf{0.481} $\pm$ 0.001 & \textbf{0.528} $\pm$ 0.001 & \textbf{5.14} $\pm$ 0.01 & \textbf{60.7\%} $\pm$ 0.8\% \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+
+
+\section*{NoveltyBench}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{lccccc}
+\toprule
+Model & Disc. & S & EV & Qual. \\
+\midrule
+\multicolumn{5}{l}{\textsc{\underline{Qwen3-8B base, thinking disabled}}} \\
+Qwen3-8B & 0.493 $\pm$ 0.002 & 0.224 $\pm$ 0.003 & 2.36 $\pm$ 0.02 & 4.58 $\pm$ 0.04 \\
+DARLING (Mix) & 0.513 $\pm$ 0.001 & 0.281 $\pm$ 0.001 & 2.96 $\pm$ 0.01 & 5.24 $\pm$ 0.07 \\
+DARLING (WildChat) & 0.480 $\pm$ 0.001 & 0.335 $\pm$ 0.004 & 3.11 $\pm$ 0.02 & 4.00 $\pm$ 0.06 \\
+DivPO & 0.519 $\pm$ 0.001 & 0.380 $\pm$ 0.003 & 3.58 $\pm$ 0.02 & 4.87 $\pm$ 0.02 \\
+\method & \textbf{0.537} $\pm$ 0.001 & \textbf{0.470} $\pm$ 0.003 & \textbf{4.19} $\pm$ 0.01 & \textbf{5.47} $\pm$ 0.03 \\
+\midrule
+\multicolumn{5}{l}{\textsc{\underline{Qwen3-8B base, thinking enabled}}} \\
+Qwen3-8B & 0.510 $\pm$ 0.001 & 0.258 $\pm$ 0.003 & 2.67 $\pm$ 0.03 & 4.90 $\pm$ 0.04 \\
+SSoT & 0.438 $\pm$ 0.001 & 0.239 $\pm$ 0.002 & 2.57 $\pm$ 0.01 & 0.46 $\pm$ 0.01 \\
+DivPO & 0.521 $\pm$ 0.001 & 0.327 $\pm$ 0.003 & 3.12 $\pm$ 0.02 & \textbf{5.06} $\pm$ 0.04 \\
+\method & \textbf{0.589} $\pm$ 0.002 & \textbf{0.800} $\pm$ 0.004 & \textbf{7.63} $\pm$ 0.07 & 3.39 $\pm$ 0.05 \\
+\midrule
+\multicolumn{5}{l}{\textsc{\underline{Llama-3.1-8B base, thinking disabled}}} \\
+Llama-3.1-8B & 0.512 $\pm$ 0.001 & 0.312 $\pm$ 0.001 & 3.04 $\pm$ 0.01 & 4.80 $\pm$ 0.08 \\
+\method{} (Llama-3.1-8B) & \textbf{0.532} $\pm$ 0.001 & \textbf{0.392} $\pm$ 0.001 & \textbf{3.75} $\pm$ 0.01 & \textbf{6.17} $\pm$ 0.04 \\
+\midrule
+\multicolumn{5}{l}{\textsc{\underline{GLM-4-9B base, thinking disabled}}} \\
+GLM-4-9B & \textbf{0.544} $\pm$ 0.002 & 0.408 $\pm$ 0.004 & 4.08 $\pm$ 0.04 & \textbf{4.14} $\pm$ 0.01 \\
+\method{}(GLM-4-9b) & 0.502 $\pm$ 0.002 & \textbf{0.521} $\pm$ 0.005 & \textbf{5.01} $\pm$ 0.04 & 2.70 $\pm$ 0.03 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+
+
+\section*{HypoBench}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{lccccc}
+\toprule
+Model & Disc. & S & EV & Qual. \\
+\midrule
+\multicolumn{5}{l}{\textsc{\underline{Qwen3-8B base, thinking disabled}}} \\
+Qwen3-8B & 0.384 $\pm$ 0.005 & 0.144 $\pm$ 0.005 & 1.91 $\pm$ 0.03 & \textbf{4.03} $\pm$ 0.01 \\
+DARLING (Mix) & 0.406 $\pm$ 0.005 & 0.222 $\pm$ 0.004 & 2.48 $\pm$ 0.02 & 3.44 $\pm$ 0.03 \\
+DARLING (WildChat) & 0.415 $\pm$ 0.004 & 0.205 $\pm$ 0.006 & 2.34 $\pm$ 0.04 & 3.73 $\pm$ 0.02 \\
+DivPO & 0.427 $\pm$ 0.006 & 0.198 $\pm$ 0.005 & 2.30 $\pm$ 0.03 & 3.89 $\pm$ 0.01 \\
+\method & \textbf{0.480} $\pm$ 0.003 & \textbf{0.547} $\pm$ 0.010 & \textbf{4.91} $\pm$ 0.05 & 3.80 $\pm$ 0.02 \\
+\midrule
+\multicolumn{5}{l}{\textsc{\underline{Qwen3-8B base, thinking enabled}}} \\
+Qwen3-8B & 0.399 $\pm$ 0.006 & 0.164 $\pm$ 0.005 & 2.05 $\pm$ 0.03 & \textbf{3.93} $\pm$ 0.01 \\
+SSoT & 0.419 $\pm$ 0.002 & 0.220 $\pm$ 0.010 & 2.33 $\pm$ 0.04 & 3.75 $\pm$ 0.02 \\
+DivPO & 0.409 $\pm$ 0.002 & 0.162 $\pm$ 0.005 & 2.04 $\pm$ 0.03 & 3.89 $\pm$ 0.01 \\
+\method & \textbf{0.579} $\pm$ 0.013 & \textbf{0.875} $\pm$ 0.018 & \textbf{8.06} $\pm$ 0.25 & 3.71 $\pm$ 0.04 \\
+\midrule
+\multicolumn{5}{l}{\textsc{\underline{Llama-3.1-8B base, thinking disabled}}} \\
+Llama-3.1-8B & \textbf{0.469} $\pm$ 0.005 & 0.207 $\pm$ 0.006 & 2.38 $\pm$ 0.04 & 3.60 $\pm$ 0.02 \\
+\method{} (Llama-3.1-8B) & 0.410 $\pm$ 0.001 & \textbf{0.324} $\pm$ 0.014 & \textbf{3.27} $\pm$ 0.10 & \textbf{3.65} $\pm$ 0.01 \\
+\midrule
+\multicolumn{5}{l}{\textsc{\underline{GLM-4-9B base, thinking disabled}}} \\
+GLM-4-9B & 0.402 $\pm$ 0.003 & 0.225 $\pm$ 0.005 & 2.52 $\pm$ 0.03 & \textbf{3.75} $\pm$ 0.01 \\
+\method{}(GLM-4-9b) & \textbf{0.452} $\pm$ 0.003 & \textbf{0.485} $\pm$ 0.012 & \textbf{4.64} $\pm$ 0.09 & 3.68 $\pm$ 0.01 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+
+\section*{PreScience}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{lccccc}
+\toprule
+Model & Disc. & S & EV & Qual. \\
+\midrule
+\multicolumn{5}{l}{\textsc{\underline{Qwen3-8B base, thinking disabled}}} \\
+Qwen3-8B & 0.431 $\pm$ 0.002 & 0.155 $\pm$ 0.004 & 1.94 $\pm$ 0.02 & \textbf{4.25} $\pm$ 0.03 \\
+DARLING (Mix) & \textbf{0.559} $\pm$ 0.005 & \textbf{0.541} $\pm$ 0.018 & \textbf{4.73} $\pm$ 0.15 & 2.33 $\pm$ 0.07 \\
+DARLING (WildChat) & 0.446 $\pm$ 0.002 & 0.192 $\pm$ 0.003 & 2.21 $\pm$ 0.03 & 4.03 $\pm$ 0.06 \\
+DivPO & 0.455 $\pm$ 0.002 & 0.233 $\pm$ 0.001 & 2.41 $\pm$ 0.01 & 3.96 $\pm$ 0.05 \\
+\method & 0.440 $\pm$ 0.002 & 0.176 $\pm$ 0.002 & 2.10 $\pm$ 0.01 & 3.96 $\pm$ 0.01 \\
+\midrule
+\multicolumn{5}{l}{\textsc{\underline{Qwen3-8B base, thinking enabled}}} \\
+Qwen3-8B & 0.441 $\pm$ 0.003 & 0.136 $\pm$ 0.001 & 1.83 $\pm$ 0.01 & 3.79 $\pm$ 0.04 \\
+SSoT & \textbf{0.461} $\pm$ 0.002 & \textbf{0.281} $\pm$ 0.017 & \textbf{2.39} $\pm$ 0.05 & 3.30 $\pm$ 0.05 \\
+DivPO & 0.448 $\pm$ 0.003 & 0.185 $\pm$ 0.015 & 2.04 $\pm$ 0.07 & \textbf{3.87} $\pm$ 0.06 \\
+\method & 0.439 $\pm$ 0.001 & 0.194 $\pm$ 0.005 & 2.10 $\pm$ 0.01 & 3.68 $\pm$ 0.00 \\
+\midrule
+\multicolumn{5}{l}{\textsc{\underline{Llama-3.1-8B base, thinking disabled}}} \\
+Llama-3.1-8B & 0.461 $\pm$ 0.005 & \textbf{0.514} $\pm$ 0.020 & 3.67 $\pm$ 0.07 & \textbf{2.62} $\pm$ 0.05 \\
+\method{} (Llama-3.1-8B) & \textbf{0.472} $\pm$ 0.003 & 0.470 $\pm$ 0.009 & \textbf{3.89} $\pm$ 0.07 & 2.54 $\pm$ 0.04 \\
+\midrule
+\multicolumn{5}{l}{\textsc{\underline{GLM-4-9B base, thinking disabled}}} \\
+GLM-4-9B & 0.461 $\pm$ 0.004 & 0.438 $\pm$ 0.010 & 4.15 $\pm$ 0.08 & 2.57 $\pm$ 0.05 \\
+\method{}(GLM-4-9b) & \textbf{0.464} $\pm$ 0.002 & \textbf{0.448} $\pm$ 0.010 & \textbf{4.28} $\pm$ 0.09 & \textbf{2.58} $\pm$ 0.10 \\
+\bottomrule
+\end{tabular}
+\end{table}

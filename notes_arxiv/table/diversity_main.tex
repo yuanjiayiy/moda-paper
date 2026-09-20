@@ -1,0 +1,39 @@
+\begin{table*}[t]
+\centering
+\setlength{\tabcolsep}{3pt}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lccccccccccccccccccc}
+\toprule
+Model & \multicolumn{4}{c}{\textit{Infinite-Chat}} & \multicolumn{4}{c}{\textit{NoveltyBench}} & \multicolumn{4}{c}{\textit{HypoBench}} & \multicolumn{4}{c}{\textit{PreScience}} & \multicolumn{3}{c}{Avg.} \\
+\cmidrule(lr){2-5} \cmidrule(lr){6-9} \cmidrule(lr){10-13} \cmidrule(lr){14-17} \cmidrule(lr){18-20}
+ & Disc. & SBERT & E-V & Qual.(\%) & Disc. & SBERT & E-V & Qual & Disc. & SBERT & E-V & Qual. & Disc. & SBERT & E-V & Qual. & Disc. & SBERT & E-V \\
+
+\midrule
+\multicolumn{9}{l}{\textsc{\underline{Qwen3-8B base, thinking disabled}}} \\
+Qwen3-8B & 0.400 & 0.132 & 1.83 & 62.9  & 0.493 & 0.224 & 2.36 & 4.58 & 0.384 & 0.144 & 1.91 & \textbf{4.03} & 0.431 & 0.155 & 1.94 & \textbf{4.25} & 0.427 & 0.164 & 2.01 \\
+DARLING (Mix) & \underline{0.430} & 0.203 & 2.33 & 57.9  & 0.513 & 0.281 & 2.96 & \underline{5.24} & 0.406 & \underline{0.222} & \underline{2.48} & 3.44 & \textbf{0.559} & \textbf{0.541} & \textbf{4.73} & 2.33 & \underline{0.477} & \underline{0.312} & \underline{3.12} \\
+DARLING (WildChat) & 0.416 & 0.185 & 2.15 & 62.7  & 0.480 & 0.335 & 3.11 & 4.00 & 0.415 & 0.205 & 2.34 & 3.73 & 0.446 & 0.192 & 2.21 & \underline{4.03} & 0.439 & 0.229 & 2.45 \\
+DivPO & 0.410 & \underline{0.274} & \underline{2.86} & \underline{66.2}  & \underline{0.519} & \underline{0.380} & \underline{3.58} & 4.87 & \underline{0.427} & 0.198 & 2.30 & \underline{3.89} & \underline{0.455} & \underline{0.233} & \underline{2.41} & 3.96 & 0.453 & 0.271 & 2.79 \\
+\method & \textbf{0.472} & \textbf{0.482} & \textbf{4.40} & \textbf{73.2}  & \textbf{0.537} & \textbf{0.470} & \textbf{4.19} & \textbf{5.47} & \textbf{0.480} & \textbf{0.547} & \textbf{4.91} & 3.80 & 0.440 & 0.176 & 2.10 & 3.96 & \textbf{0.482} & \textbf{0.419} & \textbf{3.90} \\
+\midrule
+\multicolumn{9}{l}{\textsc{\underline{Qwen3-8B base, thinking enabled}}} \\
+Qwen3-8B & 0.400 & 0.136 & 1.85 & 75.8  & 0.510 & 0.258 & 2.67 & \underline{4.90} & 0.399 & 0.164 & 2.05 & \textbf{3.93} & 0.441 & 0.136 & 1.83 & \underline{3.79} & 0.438 & 0.174 & 2.10 \\
+SSoT & 0.397 & 0.178 & 2.09 & \underline{76.3}  & 0.438 & 0.239 & 2.57 & 0.46 & \underline{0.419} & \underline{0.220} & \underline{2.33} & 3.75 & \textbf{0.461} & \textbf{0.281} & \textbf{2.39} & 3.30 & 0.429 & \underline{0.230} & 2.34 \\
+DivPO & \underline{0.414} & \underline{0.200} & \underline{2.20} & 71.7  & \underline{0.521} & \underline{0.327} & \underline{3.12} & \textbf{5.06} & 0.409 & 0.162 & 2.04 & \underline{3.89} & \underline{0.448} & 0.185 & 2.04 & \textbf{3.87} & \underline{0.448} & 0.218 & \underline{2.35} \\
+\method & \textbf{0.600} & \textbf{0.909} & \textbf{9.04} & \textbf{76.8}  & \textbf{0.589} & \textbf{0.800} & \textbf{7.63} & 3.39 & \textbf{0.579} & \textbf{0.875} & \textbf{8.06} & 3.71 & 0.439 & \underline{0.194} & \underline{2.10} & 3.68 & \textbf{0.552} & \textbf{0.695} & \textbf{6.71} \\
+
+\multicolumn{20}{l}{\textsc{\underline{{Llama-3.1-8B base, thinking disabled}}}} \\
+Llama-3.1-8B & 0.414 & 0.217 & 2.40 & 46.7  & 0.512 & 0.312 & 3.04 & 4.80 & \textbf{0.469} & 0.207 & 2.38 & 3.60 & 0.461 & \textbf{0.514} & 3.67 & \textbf{2.62} & \textbf{0.464} & 0.312 & 2.87 \\
+\method{} (Llama-3.1-8B) & \textbf{0.441} & \textbf{0.373} & \textbf{3.77} & \textbf{51.9}  & \textbf{0.532} & \textbf{0.392} & \textbf{3.75} & \textbf{6.17} & 0.410 & \textbf{0.324} & \textbf{3.27} & \textbf{3.65} & \textbf{0.472} & 0.470 & \textbf{3.89} & 2.54 & \textbf{0.464} & \textbf{0.390} & \textbf{3.67} \\
+\midrule
+\multicolumn{20}{l}{\textsc{\underline{GLM-4-9B base, thinking disabled}}} \\
+GLM-4-9B & 0.421 & 0.234 & 2.60 & 44.9  & \textbf{0.544} & 0.408 & 4.08 & \textbf{4.14} & 0.402 & 0.225 & 2.52 & \textbf{3.75} & 0.461 & 0.438 & 4.15 & 2.57 & 0.457 & 0.326 & 3.34 \\
+\method{}(GLM-4-9b) & \textbf{0.481} & \textbf{0.528} & \textbf{5.14} & \textbf{60.7}  & 0.502 & \textbf{0.521} & \textbf{5.01} & 2.70 & \textbf{0.452} & \textbf{0.485} & \textbf{4.64} & 3.68 & \textbf{0.464} & \textbf{0.448} & \textbf{4.28} & \textbf{2.58} & \textbf{0.475} & \textbf{0.495} & \textbf{4.77} \\
+\bottomrule
+\end{tabular}
+}
+\caption{Per-domain diversity (Disc. = discriminator diversity, SBERT = SBERT embedding pairwise distance, E-V = E-Vendi score) and quality (Qual.), averaged over $n{=}3$ random seeds. Infinite-Chat quality is general capability accuracy (\%); all other domains use the native quality score. Bold marks the best value within each model group. Table with error bar can be found in Appx \ref{appx:generative diversity evaluation}.}
+\label{tab:domain-app-diversity-main}
+\end{table*}
+
+

@@ -1,0 +1,132 @@
+\begin{breakablealgorithm}
+\caption{\textsc{\method}: Mode-conditioned Diversity Alignment}
+\label{alg:moda}
+\begin{algorithmic}[1]
+\Require Prompt dataset $\mathcal{D}=\{x_n\}_{n=1}^N$; initial policy $\pi_{\theta}$; reference/base policy $\pi_{\mathrm{ref}}$; quality reward model $S_{\phi}$; set of mode instructions $\mathcal{M}=\{m_1,\ldots,m_K\}$; diversity metric $\delta(\cdot,\cdot)$; quality and diversity weights $\lambda_q,\lambda_d$; KL weight $\beta$
+\Require Number of reference samples $M$; number of training responses per prompt $K$; small constants $\epsilon,\eta>0$
+\Statex
+
+\State \textbf{Stage 1: Precompute prompt-adaptive reference quality statistics}
+\ForAll{$x \in \mathcal{D}$}
+    \State Initialize reference score set $\mathcal{S}_{\mathrm{ref}}(x) \gets \emptyset$
+    \For{$j=1,\ldots,M$}
+        \State Sample reference response $\tilde{y}_j \sim \pi_{\mathrm{ref}}(\cdot \mid x)$
+        \State Compute quality score $\tilde{s}_j \gets S_{\phi}(x,\tilde{y}_j)$
+        \State Add $\tilde{s}_j$ to $\mathcal{S}_{\mathrm{ref}}(x)$
+    \EndFor
+    \State Compute
+    \[s_{\min}(x) \gets \min \mathcal{S}_{\mathrm{ref}}(x),
+    s_{\max}(x) \gets \max \mathcal{S}_{\mathrm{ref}}(x),
+    \mu_{\mathrm{ref}}(x) \gets \frac{1}{M}\sum_{\tilde{s}\in \mathcal{S}_{\mathrm{ref}}(x)} \tilde{s}\].
+    \State Store $\bigl(s_{\min}(x),s_{\max}(x),\mu_{\mathrm{ref}}(x)\bigr)$ with prompt $x$ in $\mathcal{D}$
+\EndFor
+\Statex
+
+%VI debugging compile error
+\State \textbf{Stage 2: Mode-conditioned reinforcement learning}
+\For{training iteration $t=1,\ldots,T$}
+    \State Sample a minibatch $\mathcal{B}\subset \mathcal{D}$
+    \ForAll{$x \in \mathcal{B}$}
+        \State Retrieve stored statistics $\bigl(s_{\min}(x),s_{\max}(x),\mu_{\mathrm{ref}}(x)\bigr)$
+        \State Compute prompt-adaptive quality threshold and reward magnitude factor:
+        \[
+        q_{\mathrm{tar}}(x)
+        \gets
+        s_{\min}(x)+\alpha\bigl(s_{\max}(x)-\mu_{\mathrm{ref}}(x)\bigr),
+        \]
+        \[
+        \tau_q(x)
+        \gets
+        \gamma\bigl(\mu_{\mathrm{ref}}(x)-s_{\min}(x)+\epsilon\bigr).
+        \]
+        \State Initialize response set $\mathcal{Y}(x)\gets \emptyset$
+        \For{$i=1,\ldots,K$}
+            \State Select mode instruction $m_i \in \mathcal{M}$
+            \State Sample response
+            $y_i \sim \pi_{\theta}(\cdot \mid x,m_i)$
+            \State Add $y_i$ to $\mathcal{Y}(x)$
+        \EndFor
+        \Statex
+
+        \For{$i=1,\ldots,K$}
+            \State Compute quality score
+            \[
+            q_i \gets S_{\phi}(x,y_i)
+            \]
+            \State Compute normalized quality margin
+            \[
+            z_i \gets \frac{q_i-q_{\mathrm{tar}}(x)}{\tau_q(x)}
+            \]
+            \State Compute bounded quality reward
+            \[
+            R_{\mathrm{qual}}(x,y_i)
+            \gets
+            \mu\tanh(z_i)
+            \]
+            \State Compute quality gate
+            \[
+            G_{\mathrm{qual}}(x,y_i)
+            \gets
+            \mathbbm{1}\{q_i \ge q_{\mathrm{tar}}(x)\}
+            \]
+            \State Compute diversity reward
+        \[
+            R_{\mathrm{div}}(x,y_i)
+            \gets
+            \min_{j\neq i}\delta(y_i,y_j)
+            \]
+            \State Compute reward-hacking penalty
+            \[
+            R_{\mathrm{pen}}(x,y_i)
+            \gets
+            R_{\mathrm{len}}(y_i)+R_{\mathrm{lang}}(y_i)
+            \]
+            \State Compute \textbf{Quality Gated Diversity Reward}
+            \[
+            R_i
+            \gets
+            \lambda_q R_{\mathrm{qual}}(x,y_i)
+            +
+            \lambda_d G_{\mathrm{qual}}(x,y_i)R_{\mathrm{div}}(x,y_i)
+            +
+            R_{\mathrm{pen}}(x,y_i).
+            \]
+        \EndFor
+        \Statex
+
+        \State Compute group-relative advantages:
+        \[
+        A_i
+        \gets
+        \frac{R_i-\mathrm{mean}(R_{1:K})}
+        {\mathrm{std}(R_{1:K})+\eta},
+        \qquad i=1,\ldots,K.
+        \]
+    \EndFor
+    \State Update $\pi_{\theta}$ using GRPO with advantages $\{A_i\}$ and KL regularization to $\pi_{\mathrm{ref}}$:
+    \[
+    \theta
+    \gets
+    \arg\max_{\theta}
+    \mathbb{E}
+    \left[
+    \frac{1}{K}\sum_{i=1}^{K}
+    \min\left(
+    \rho_i A_i,
+    \mathrm{clip}(\rho_i,1-\epsilon_{\mathrm{clip}},1+\epsilon_{\mathrm{clip}})A_i
+    \right)
+    -
+    \beta D_{\mathrm{KL}}\bigl(\pi_{\theta}(\cdot\mid x,m_i)\,\|\,\pi_{\mathrm{ref}}(\cdot\mid x,m_i)\bigr)
+    \right],
+    \]
+    where
+    \[
+    \rho_i
+    =
+    \frac{\pi_{\theta}(y_i\mid x,m_i)}
+    {\pi_{\mathrm{old}}(y_i\mid x,m_i)}.
+    \]
+\EndFor
+\State \Return trained policy $\pi_{\theta}$
+\end{algorithmic}
+\end{breakablealgorithm}

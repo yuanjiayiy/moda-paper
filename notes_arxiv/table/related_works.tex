@@ -1,0 +1,37 @@
+\begin{wrapfigure}[18]{r}{0.45\textwidth}
+\vspace{-1.2em}
+\centering
+\scriptsize
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{0.85}
+\begin{tabular}{llc}
+\toprule
+\textbf{Method} & \textbf{Mechanism} & \textbf{Code} \\
+\midrule
+\multicolumn{3}{l}{\textsc{\underline{Inference-time}}} \\
+Verbalized Sampling~\citep{Zhang2025} & Prompting & \cmark \\
+String Seed of Thought~\citep{Misaki2026} & Prompting & \cmark \\
+DIPPER~\citep{lau2025dipperdiversitypromptsproducing} & Prompting & \xmark \\
+Multi-Novelty~\citep{lagzian2025multinoveltyimprovediversitynovelty} & Prompting & \xmark \\
+Multilingual Prompting~\citep{wang2025multilingualpromptingimprovingllm} & Prompting & \cmark \\
+Nucleus Sampling~\citep{holtzman2020curiouscaseneuraltext} & Decoding & \cmark \\
+min-$p$ Sampling~\citep{nguyen2024turningheatminpsampling} & Decoding & \cmark \\
+G2~\citep{ruan-etal-2025-g2} & Decoding & \xmark \\
+Adaptive Decoding (LPO)~\citep{wang2024lpoadaptivedecodinglatent} & Decoding & \cmark \\
+\midrule
+\multicolumn{3}{l}{\textsc{\underline{Training-time}}} \\
+DARLING~\citep{li2025jointlyreinforcingdiversityquality} & RL & \cmark \\
+DivPO~\citep{lanchantin2025diverse} & DPO & \xmark \\
+DQO~\citep{Chen2025PosttrainingLL} & RL & \cmark \\
+Multi-answer RL~\citep{Puri2026} & RL with multiple answers& \cmark \\
+Soft Preference Learning~\citep{slocum2025diversepreferencelearningcapabilities} & Entropy Decoupling & \xmark \\
+\midrule
+\textbf{\method (ours)} &
+\textbf{\shortstack[l]{Mode-Conditioned\\MARL}} &
+\cmark \\
+\bottomrule
+\end{tabular}
+\caption{\textbf{Diversity-oriented methods.} \method{} conditions diversity on explicit mode tokens, inspired by MARL.}
+\label{tab:related-work}
+\vspace{-1.2em}
+\end{wrapfigure}

@@ -1,0 +1,34 @@
+\begin{table}[H]
+\setlength{\tabcolsep}{2.5pt}
+\centering
+\small
+\begin{tabular}{lcccccccc}
+\toprule
+Model & GSM8K & MMLU & GPQA & BoolQ & HellaSwag & TruthfulQA & IFEval & Avg. \\
+\midrule
+\multicolumn{9}{l}{\textsc{\underline{Qwen3-8B base, thinking disabled}}} \\
+Qwen3-8B & 84.5 $\pm$ 1.0 & \textbf{82.0} $\pm$ 3.9 & 41.4 $\pm$ 3.5 & 83.1 $\pm$ 0.7 & 48.4 $\pm$ 0.5 & 22.2 $\pm$ 1.5 & \textbf{78.4} $\pm$ 1.8 & 62.9 $\pm$ 0.8 \\
+DARLING (Mixture) & 63.5 $\pm$ 1.3 & 63.0 $\pm$ 4.9 & 34.3 $\pm$ 3.4 & 76.7 $\pm$ 0.7 & 62.2 $\pm$ 0.5 & 52.4 $\pm$ 1.7 & 53.0 $\pm$ 2.1 & 57.9 $\pm$ 1.0 \\
+DARLING (WildChat) & 77.9 $\pm$ 1.1 & 55.0 $\pm$ 5.0 & 34.3 $\pm$ 3.4 & \textbf{86.4} $\pm$ 0.6 & 68.8 $\pm$ 0.5 & 43.2 $\pm$ 1.7 & 73.0 $\pm$ 1.9 & 62.7 $\pm$ 1.0 \\
+DivPO & 80.5 $\pm$ 1.1 & 81.0 $\pm$ 3.9 & 40.4 $\pm$ 3.5 & 83.5 $\pm$ 0.6 & 62.8 $\pm$ 0.5 & 37.7 $\pm$ 1.7 & 77.3 $\pm$ 1.8 & 66.2 $\pm$ 0.9 \\
+\method & \textbf{86.7} $\pm$ 0.9 & 81.0 $\pm$ 3.9 & \textbf{52.0} $\pm$ 3.6 & 84.8 $\pm$ 0.6 & \textbf{73.4} $\pm$ 0.4 & \textbf{57.9} $\pm$ 1.7 & 76.9 $\pm$ 1.8 & \textbf{73.2} $\pm$ 0.9 \\
+\midrule
+\multicolumn{9}{l}{\textsc{\underline{Qwen3-8B base, thinking enabled}}} \\
+Qwen3-8B & \textbf{90.3} $\pm$ 0.8 & \textbf{94.0} $\pm$ 2.4 & 43.4 $\pm$ 3.5 & \textbf{87.2} $\pm$ 0.6 & 70.9 $\pm$ 0.5 & 64.9 $\pm$ 1.7 & \textbf{79.7} $\pm$ 1.7 & 75.8 $\pm$ 0.7 \\
+SSoT & 84.3 $\pm$ 1.0 & 93.0 $\pm$ 2.6 & \textbf{55.1} $\pm$ 3.5 & \textbf{87.2} $\pm$ 0.6 & \textbf{80.1} $\pm$ 0.4 & \textbf{72.8} $\pm$ 1.6 & 61.9 $\pm$ 2.1 & 76.3 $\pm$ 0.7 \\
+DivPO & 84.9 $\pm$ 1.0 & 91.0 $\pm$ 2.9 & 44.4 $\pm$ 3.5 & 83.2 $\pm$ 0.7 & 65.0 $\pm$ 0.5 & 55.3 $\pm$ 1.7 & 77.6 $\pm$ 1.8 & 71.7 $\pm$ 0.8 \\
+\method & 83.9 $\pm$ 1.0 & 93.0 $\pm$ 2.6 & 50.5 $\pm$ 3.6 & \textbf{87.2} $\pm$ 0.6 & 76.2 $\pm$ 0.4 & 67.2 $\pm$ 1.6 & 79.5 $\pm$ 1.7 & \textbf{76.8} $\pm$ 0.7 \\
+\midrule
+\multicolumn{9}{l}{\textsc{\underline{Llama-3.1-8B base, thinking disabled}}} \\
+Llama-3.1-8B & 71.3 $\pm$ 1.2 & 16.0 $\pm$ 3.7 & 6.1 $\pm$ 1.7 & \textbf{81.6} $\pm$ 0.7 & 30.2 $\pm$ 0.5 & 53.4 $\pm$ 1.7 & 68.8 $\pm$ 2.0 & 46.7 $\pm$ 0.7 \\
+\method(Llama-3.1-8B) & \textbf{74.9} $\pm$ 1.2 & \textbf{30.0} $\pm$ 4.6 & \textbf{18.7} $\pm$ 2.8 & 75.6 $\pm$ 0.8 & \textbf{38.5} $\pm$ 0.5 & \textbf{54.7} $\pm$ 1.7 & \textbf{70.8} $\pm$ 2.0 & \textbf{51.9} $\pm$ 0.9 \\
+\midrule
+\multicolumn{9}{l}{\textsc{\underline{GLM-4-9B base, thinking disabled}}} \\
+GLM-4-9B & 21.8 $\pm$ 1.1 & 35.0 $\pm$ 4.8 & 19.7 $\pm$ 2.8 & 74.5 $\pm$ 0.8 & \textbf{68.0} $\pm$ 0.5 & \textbf{44.8} $\pm$ 1.7 & 50.3 $\pm$ 2.2 & 44.9 $\pm$ 0.9 \\
+\method(GLM-4-9B) & \textbf{84.9} $\pm$ 1.0 & \textbf{83.0} $\pm$ 3.8 & \textbf{33.3} $\pm$ 3.4 & \textbf{81.2} $\pm$ 0.7 & 52.3 $\pm$ 0.5 & 34.5 $\pm$ 1.7 & \textbf{55.5} $\pm$ 2.1 & \textbf{60.7} $\pm$ 0.8 \\
+\bottomrule
+\end{tabular}
+\vspace{4pt}
+\caption{General capability retention (accuracy \%, mean ± std error; bold = best per block)}
+\label{tab:general-capability-pass1-error-bar}
+\end{table}

@@ -1,0 +1,179 @@
+\documentclass{article}
+
+% if you need to pass options to natbib, use, e.g.:
+%     \PassOptionsToPackage{numbers, compress}{natbib}
+% before loading neurips_2026
+
+% The authors should use one of these tracks.
+% Before accepting by the NeurIPS conference, select one of the options below.
+% 0. "default" for submission
+\usepackage[preprint]{neurips_2026}
+% \usepackage[accepted]{icml2026_GenAICreativity}
+% the "default" option is equal to the "main" option, which is used for the Main Track with double-blind reviewing.
+% 1. "main" option is used for the Main Track
+%  \usepackage[main]{neurips_2026}
+% 2. "position" option is used for the Position Paper Track
+%  \usepackage[position]{neurips_2026}
+% 3. "eandd" option is used for the Evaluations & Datasets Track
+ % \usepackage[eandd]{neurips_2026}
+ % if you want to opt-in for a de-anomymized submission (not recommended, but OK):
+ %\usepackage[eandd, nonanonymous]{neurips_2026}
+% 4. "creativeai" option is used for the Creative AI Track
+%  \usepackage[creativeai]{neurips_2026}
+% 5. "sglblindworkshop" option is used for the Workshop with single-blind reviewing
+ % \usepackage[sglblindworkshop]{neurips_2026}
+% 6. "dblblindworkshop" option is used for the Workshop with double-blind reviewing
+%  \usepackage[dblblindworkshop]{neurips_2026}
+
+% After being accepted, the authors should add "final" behind the track to compile a camera-ready version.
+% 1. Main Track
+ % \usepackage[main, final]{neurips_2026}
+% 2. Position Paper Track
+%  \usepackage[position, final]{neurips_2026}
+% 3. Evaluations & Datasets Track
+ % \usepackage[eandd, final]{neurips_2026}
+% 4. Creative AI Track
+%  \usepackage[creativeai, final]{neurips_2026}
+% 5. Workshop with single-blind reviewing
+%  \usepackage[sglblindworkshop, final]{neurips_2026}
+% 6. Workshop with double-blind reviewing
+%  \usepackage[dblblindworkshop, final]{neurips_2026}
+% Note. For the workshop paper template, both \title{} and \workshoptitle{} are required, with the former indicating the paper title shown in the title and the latter indicating the workshop title displayed in the footnote.
+% For workshops (5., 6.), the authors should add the name of the workshop, "\workshoptitle" command is used to set the workshop title.
+% \workshoptitle{WORKSHOP TITLE}
+
+% "preprint" option is used for arXiv or other preprint submissions
+ % \usepackage[preprint]{neurips_2026}
+
+% to avoid loading the natbib package, add option nonatbib:
+%    \usepackage[nonatbib]{neurips_2026}
+
+\usepackage[utf8]{inputenc} % allow utf-8 input
+\usepackage[T1]{fontenc}    % use 8-bit T1 fonts
+\usepackage{hyperref}       % hyperlinks
+\usepackage{url}            % simple URL typesetting
+\usepackage{booktabs}       % professional-quality tables
+\usepackage{amsfonts}       % blackboard math symbols
+\usepackage{nicefrac}       % compact symbols for 1/2, etc.
+\usepackage{microtype}      % microtypography
+\usepackage{xcolor}     % colors
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage{algorithmicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{bbm}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{xspace}
+
+% algorithm
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usepackage{caption}
+\usepackage{wrapfig}
+\usepackage{float}
+\usepackage{tcolorbox}
+\tcbuselibrary{skins, breakable}
+
+\makeatletter
+\newenvironment{breakablealgorithm}
+  {% \begin{breakablealgorithm}
+   \begin{center}
+   \refstepcounter{algorithm}
+   \hrule height.8pt depth0pt \kern2pt
+   \renewcommand{\caption}[2][\relax]{%
+     {\raggedright\textbf{\ALG@name~\thealgorithm} ##2\par}%
+     \ifx\relax##1\relax
+       \addcontentsline{loa}{algorithm}{\protect\numberline{\thealgorithm}##2}%
+     \else
+       \addcontentsline{loa}{algorithm}{\protect\numberline{\thealgorithm}##1}%
+     \fi
+     \kern2pt\hrule\kern2pt
+   }}
+  {% \end{breakablealgorithm}
+   \kern2pt\hrule\relax
+   \end{center}
+  }
+\makeatother
+
+\usepackage{fontawesome5}
+\usepackage{array}
+
+
+\newtcolorbox{exampleblock}{
+    colback=lightgrayblue,
+    colframe=black!20,
+    boxrule=0.4pt,
+    arc=2pt,
+    left=4pt,
+    right=4pt,
+    top=3pt,
+    bottom=3pt,
+    boxsep=2pt,
+    before skip=0.4em,
+    after skip=0.4em
+}
+
+%% package for the appendix
+\usepackage[toc,page]{appendix}
+\usepackage{titletoc}
+\newcommand{\method}{\textsc{MoDA}\xspace}
+\newcommand{\methodcolor}{\textcolor{themeblue}{\textsc{M}}\textcolor{themeblue2}{\textsc{o}}\textcolor{themeblue3}{\textsc{D}}\textcolor{themeblue4}{\textsc{A}}\xspace}
+\newcommand{\qgdr}{\textsc{QGDR}}
+\newcommand{\bench}{\textsc{ModaBench}}
+\newcommand{\ssot}{\text{SSoT}}
+\usepackage{pifont}
+\newcommand{\cmark}{\ding{51}}
+\newcommand{\xmark}{\ding{55}}
+
+\definecolor{lightgrayblue}{rgb}{0.961,0.973,0.988}
+\definecolor{darkyellow}{rgb}{0.980, 0.65, 0}
+\definecolor{themeblue}{rgb}{0.400, 0.600, 1.000}
+\definecolor{themeblue2}{rgb}{0.102,0.459,1.000}
+\definecolor{themeblue3}{rgb}{0.000,0.200,0.800}
+\definecolor{themeblue4}{rgb}{0.000, 0.200, 0.600}
+\definecolor{darkred}{rgb}{0.800, 0.000, 0.000}
+
+\newcommand\liwei[1]{{\color{blue}[{#1}]$_{-Liwei}$}}
+\newcommand\liweiaddressed[1]{}
+\newcommand\carrie[2]{{\color{orange}[{#1}]$_{-Carrie}$}}
+\newcommand\vikram[3]{{\color{red}[{#1}]$_{-Vikram}$}}
+
+\newcommand{\iconstar}{{\raisebox{0.2ex}{\scalebox{0.7}{\faStar}}}}
+\newcommand{\iconfire}{{\raisebox{0.2ex}{\scalebox{0.7}{\faHotjar}}}}
+
+\newcommand{\github}{\raisebox{-1.5pt}{\includegraphics[height=1.05em]{figures/github.png}}\xspace}
+
+
+% Note. For the workshop paper template, both \title{} and \workshoptitle{} are required, with the former indicating the paper title shown in the title and the latter indicating the workshop title displayed in the footnote. 
+
+\title{Forty Shades of \textcolor{themeblue}{B}\textcolor{themeblue2}{l}\textcolor{themeblue3}{u}\textcolor{themeblue4}{e}: Quality-Diversity Alignment \\ via Mode-Conditioned Reinforcement Learning}
+
+
+
+\author{ \begin{tabular}{c} \textcolor{themeblue}{\iconstar} Jiayi Yuan$^{1}$ \quad \textcolor{themeblue2}{\iconstar} Hangoo Kang$^{2}$ \quad \textcolor{themeblue3}{\iconstar} James Jihao Liu$^{2}$ \\ [0.2em] Yejin Choi$^{2}$ \quad Vikram Iyer$^{1}$ \quad \textcolor{darkred}{\iconfire} Liwei Jiang$^{1}$ \quad \textcolor{darkred}{\iconfire} Natasha Jaques$^{1}$  \end{tabular} \\ [1.4em] $^{1}$University of Washington \quad $^{2}$Stanford University \\ [0.4em]\texttt{yuancarrieyjy@cs.washington.edu} \quad  \texttt{\{hangook,jihaoliu\}@stanford.edu} \\ [0.4em] \textcolor{themeblue4}{\iconstar} Equal first author \quad \textcolor{darkred}{\iconfire} Equal senior author \\ [0.4em] \github Code: \url{github.com/yuanjiayiy/mode-conditioned-diversity-alignment}}
+% ,vsiyer,lwjiang,nj 
+
+
+\begin{document}
+
+
+\maketitle
+
+\input{notes_arxiv/0_abstract}
+\input{notes_arxiv/1_introduction}
+\input{notes_arxiv/6_related_work}
+% \input{notes_arxiv/2_preliminary}
+\input{notes_arxiv/3_method}
+\input{notes_arxiv/4_experiments}
+\input{notes_arxiv/5_discussions}
+\input{notes_arxiv/z_acknowledgement}
+
+\newpage
+% \input{checklist}
+\bibliography{reference}
+\bibliographystyle{plain}
+\input{notes_arxiv/appendix}
+
+\end{document}

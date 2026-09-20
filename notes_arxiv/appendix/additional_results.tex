@@ -1,0 +1,259 @@
+\section{Additional Experiment Results}
+\label{appx:additional results}
+
+\subsection{Generative Diversity Evaluation.}
+\label{appx:generative diversity evaluation}
+We show the results with error bar for generative diversity across all domain application tasks.
+\input{notes_arxiv/appendix/diversity_main_error_bar}
+
+\subsection{General Capability Retention}
+\label{appx:general capability retention}
+
+\subsubsection{Pass@1}
+We show general capability retention with error bar for pass@1 across baselines and our model.
+\input{notes_arxiv/appendix/general_capability_error_bar}
+
+\subsubsection{Pass@5}
+We show general capability retention for pass@5 across baselines and our model.
+\begin{table}[H]
+\centering
+\small
+\setlength{\tabcolsep}{4pt}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lcccccccc}
+\toprule
+Model & GSM8K & MMLU & GPQA & BoolQ & HellaSwag & TruthfulQA & IFEval & Avg. \\
+\midrule
+\multicolumn{9}{l}{\textsc{\underline{Qwen3-8B base, thinking disabled}}} \\
+Qwen3-8B & 92.6 & 92.0 & 73.7 & 89.7 & 86.0 & 55.1 & 83.4 & 81.8 \\
+DARLING (Mixture) & 92.8 & \textbf{95.0} & \textbf{75.3} & 93.1 & 91.2 & 86.4 & 57.3 & 84.4 \\
+DARLING (WildChat) & 91.8 & 86.0 & 69.2 & 91.3 & 91.3 & 74.4 & 80.8 & 83.5 \\
+DivPO & 92.3 & 92.0 & 74.7 & 93.2 & 90.5 & 76.3 & \textbf{85.6} & 86.4 \\
+\method & \textbf{94.5} & 93.0 & 74.7 & \textbf{93.9} & \textbf{91.3} & \textbf{86.5} & 83.9 & \textbf{88.3} \\
+\midrule
+\multicolumn{9}{l}{\textsc{\underline{Qwen3-8B base, thinking enabled}}} \\
+Qwen3-8B & 96.1 & 96.0 & 66.2 & 92.2 & 89.1 & 82.5 & 85.4 & 86.8 \\
+SSoT & 90.6 & 96.0 & \textbf{74.7} & 92.0 & 88.9 & \textbf{83.8} & 73.6 & 85.7 \\
+DivPO & 94.0 & \textbf{97.0} & 72.2 & \textbf{93.0} & \textbf{89.8} & \textbf{83.8} & 85.6 & \textbf{87.9} \\
+\method & \textbf{96.3} & 96.0 & 68.7 & 92.0 & 89.6 & 82.5 & \textbf{85.8} & 87.3 \\
+\midrule
+\multicolumn{9}{l}{\textsc{\underline{Llama-3.1-8B base, thinking disabled}}} \\
+Llama-3.1-8B & 90.1 & 57.0 & 28.3 & \textbf{93.2} & 70.2 & 72.9 & \textbf{82.3} & 70.6 \\
+\method(Llama-3.1-8B) & \textbf{93.5} & \textbf{76.0} & \textbf{56.6} & 92.3 & \textbf{79.6} & \textbf{80.4} & 80.2 & \textbf{79.8} \\
+\midrule
+\multicolumn{9}{l}{\textsc{\underline{GLM-4-9b base, thinking disabled}}} \\
+GLM-4-9B & 60.0 & 69.0 & 59.6 & \textbf{97.1} & \textbf{91.3} & \textbf{82.6} & 57.5 & 73.9 \\
+\method(GLM-4-9B) & \textbf{95.2} & \textbf{94.0} & \textbf{73.2} & 95.3 & 89.1 & 77.5 & \textbf{74.7} & \textbf{85.6} \\
+\bottomrule
+\end{tabular}
+}
+\vspace{4pt}
+\caption{General capability retention pass@5. For IFEval, strict instruction-following accuracy is reported. Avg.\ is the row mean across benchmarks. Bold marks the best average within each thinking setting.}
+\label{tab:general-capability-pass5}
+\end{table}
+
+
+We show pass@k figures for the rest of the general capability suite tasks below.
+\begin{figure}[H]
+\centering
+\begin{minipage}{0.24\textwidth}
+  \centering
+  \includegraphics[width=\linewidth]{figures/main_pass_k/pass_at_k_figures/pass_at_k_boolq_thinking_false_base_model_qwen3-8b.png}
+\end{minipage}\hfill
+\centering
+\begin{minipage}{0.24\textwidth}
+  \centering
+  \includegraphics[width=\linewidth]{figures/main_pass_k/pass_at_k_figures/pass_at_k_mmlu_thinking_false_base_model_qwen3-8b.png}
+\end{minipage}\hfill
+\begin{minipage}{0.24\textwidth}
+  \centering
+  \includegraphics[width=\linewidth]{figures/main_pass_k/pass_at_k_figures/pass_at_k_gpqa_thinking_false_base_model_qwen3-8b.png}
+\end{minipage}\hfill
+\begin{minipage}{0.24\textwidth}
+  \centering
+  \includegraphics[width=\linewidth]{figures/main_pass_k/pass_at_k_figures/pass_at_k_ifeval_thinking_false_base_model_qwen3-8b.png}
+\end{minipage}
+\caption{\textbf{General capability retention: pass@k accuracy.} Qwen3-8B base and thinking disabled models on the general capability suite tasks: BoolQ, MMLU, GPQA, and IFEval.}
+\label{fig:general capability pass@k thinking disabled}
+\end{figure}
+
+
+\begin{figure}[H]
+\begin{minipage}{0.24\textwidth}
+  \centering
+  \includegraphics[width=\linewidth]{figures/main_pass_k/pass_at_k_figures/pass_at_k_avg_thinking_true.png}
+\end{minipage}\hfill
+\centering
+\begin{minipage}{0.24\textwidth}
+  \centering
+  \includegraphics[width=\linewidth]{figures/main_pass_k/pass_at_k_figures/pass_at_k_gsm8k_thinking_true.png}
+\end{minipage}\hfill
+\begin{minipage}{0.24\textwidth}
+  \centering
+  \includegraphics[width=\linewidth]{figures/main_pass_k/pass_at_k_figures/pass_at_k_truthfulqa_thinking_true.png}
+\end{minipage}\hfill
+\begin{minipage}{0.24\textwidth}
+  \centering
+  \includegraphics[width=\linewidth]{figures/main_pass_k/pass_at_k_figures/pass_at_k_hellaswag_thinking_true.png}
+\end{minipage}
+\centering
+\begin{minipage}{0.24\textwidth}
+  \centering
+  \includegraphics[width=\linewidth]{figures/main_pass_k/pass_at_k_figures/pass_at_k_boolq_thinking_true.png}
+\end{minipage}\hfill
+\centering
+\begin{minipage}{0.24\textwidth}
+  \centering
+  \includegraphics[width=\linewidth]{figures/main_pass_k/pass_at_k_figures/pass_at_k_mmlu_thinking_true.png}
+\end{minipage}\hfill
+\begin{minipage}{0.24\textwidth}
+  \centering
+  \includegraphics[width=\linewidth]{figures/main_pass_k/pass_at_k_figures/pass_at_k_gpqa_thinking_true.png}
+\end{minipage}\hfill
+\begin{minipage}{0.24\textwidth}
+  \centering
+  \includegraphics[width=\linewidth]{figures/main_pass_k/pass_at_k_figures/pass_at_k_ifeval_thinking_true.png}
+\end{minipage}
+\caption{\textbf{General capability retention: pass@k accuracy.} Qwen3-8B base and thinking enabled models.}
+\label{fig:general capability pass@k thinking enabled}
+\end{figure}
+
+
+\begin{figure}[H]
+\begin{minipage}{0.24\textwidth}
+  \centering
+  \includegraphics[width=\linewidth]{figures/main_pass_k/pass_at_k_figures/pass_at_k_avg_thinking_false_base_model_llama3_1-8b.png}
+\end{minipage}\hfill
+\centering
+\begin{minipage}{0.24\textwidth}
+  \centering
+  \includegraphics[width=\linewidth]{figures/main_pass_k/pass_at_k_figures/pass_at_k_gsm8k_thinking_false_base_model_llama3_1-8b.png}
+\end{minipage}\hfill
+\begin{minipage}{0.24\textwidth}
+  \centering
+  \includegraphics[width=\linewidth]{figures/main_pass_k/pass_at_k_figures/pass_at_k_truthfulqa_thinking_false_base_model_llama3_1-8b.png}
+\end{minipage}\hfill
+\begin{minipage}{0.24\textwidth}
+  \centering
+  \includegraphics[width=\linewidth]{figures/main_pass_k/pass_at_k_figures/pass_at_k_hellaswag_thinking_false_base_model_llama3_1-8b.png}
+\end{minipage}
+\centering
+\begin{minipage}{0.24\textwidth}
+  \centering
+  \includegraphics[width=\linewidth]{figures/main_pass_k/pass_at_k_figures/pass_at_k_boolq_thinking_false_base_model_llama3_1-8b.png}
+\end{minipage}\hfill
+\centering
+\begin{minipage}{0.24\textwidth}
+  \centering
+  \includegraphics[width=\linewidth]{figures/main_pass_k/pass_at_k_figures/pass_at_k_mmlu_thinking_false_base_model_llama3_1-8b.png}
+\end{minipage}\hfill
+\begin{minipage}{0.24\textwidth}
+  \centering
+  \includegraphics[width=\linewidth]{figures/main_pass_k/pass_at_k_figures/pass_at_k_gpqa_thinking_false_base_model_llama3_1-8b.png}
+\end{minipage}\hfill
+\begin{minipage}{0.24\textwidth}
+  \centering
+  \includegraphics[width=\linewidth]{figures/main_pass_k/pass_at_k_figures/pass_at_k_ifeval_thinking_false_base_model_llama3_1-8b.png}
+\end{minipage}
+\caption{\textbf{General capability retention: pass@k accuracy.} Llama-3.1-8B base and thinking disabled models.}
+\label{fig:general capability pass@k llama}
+\end{figure}
+
+
+
+\begin{figure}[H]
+\begin{minipage}{0.24\textwidth}
+  \centering
+  \includegraphics[width=\linewidth]{figures/main_pass_k/pass_at_k_figures/pass_at_k_avg_thinking_false_base_model_glm-4-9b.png}
+\end{minipage}\hfill
+\centering
+\begin{minipage}{0.24\textwidth}
+  \centering
+  \includegraphics[width=\linewidth]{figures/main_pass_k/pass_at_k_figures/pass_at_k_gsm8k_thinking_false_base_model_glm-4-9b.png}
+\end{minipage}\hfill
+\begin{minipage}{0.24\textwidth}
+  \centering
+  \includegraphics[width=\linewidth]{figures/main_pass_k/pass_at_k_figures/pass_at_k_truthfulqa_thinking_false_base_model_glm-4-9b.png}
+\end{minipage}\hfill
+\begin{minipage}{0.24\textwidth}
+  \centering
+  \includegraphics[width=\linewidth]{figures/main_pass_k/pass_at_k_figures/pass_at_k_hellaswag_thinking_false_base_model_glm-4-9b.png}
+\end{minipage}
+\centering
+\begin{minipage}{0.24\textwidth}
+  \centering
+  \includegraphics[width=\linewidth]{figures/main_pass_k/pass_at_k_figures/pass_at_k_boolq_thinking_false_base_model_glm-4-9b.png}
+\end{minipage}\hfill
+\centering
+\begin{minipage}{0.24\textwidth}
+  \centering
+  \includegraphics[width=\linewidth]{figures/main_pass_k/pass_at_k_figures/pass_at_k_mmlu_thinking_false_base_model_glm-4-9b.png}
+\end{minipage}\hfill
+\begin{minipage}{0.24\textwidth}
+  \centering
+  \includegraphics[width=\linewidth]{figures/main_pass_k/pass_at_k_figures/pass_at_k_gpqa_thinking_false_base_model_glm-4-9b.png}
+\end{minipage}\hfill
+\begin{minipage}{0.24\textwidth}
+  \centering
+  \includegraphics[width=\linewidth]{figures/main_pass_k/pass_at_k_figures/pass_at_k_ifeval_thinking_false_base_model_glm-4-9b.png}
+\end{minipage}
+\caption{\textbf{General capability retention: pass@k accuracy.} GLM-4-9B base and thinking disabled models.}
+\label{fig:general capability pass@k glm}
+\end{figure}
+
+\subsection{Ablation Results}
+\label{appx: ablation results}
+We show the mean benchmark accuracy, under both standard and diverse decoding mode, on the general capability suite, and Infinite-Chat response diversity on the held out test set for the ablation study models.
+\input{notes_arxiv/table/ablation_table}
+
+\begin{figure}
+\begin{minipage}{0.32\textwidth}
+  \centering
+  \includegraphics[width=\linewidth]{figures/ablation_pass_k/pass_at_k_gsm8k_ablations.png}
+  \small Pass@k, GSM8K
+  \label{fig: ablation pass@k GSM8K}
+\end{minipage}\hfill
+\centering
+\begin{minipage}{0.32\textwidth}
+  \centering
+  \includegraphics[width=\linewidth]{figures/ablation_pass_k/pass_at_k_mmlu_ablations.png}
+  \small Pass@k, MMLU
+  \label{fig: ablation pass@k MMLU}
+\end{minipage}\hfill
+\centering
+\begin{minipage}{0.32\textwidth}
+  \centering
+  \includegraphics[width=\linewidth]{figures/ablation_pass_k/pass_at_k_gpqa_ablations.png}
+  \small Pass@k, GPQA
+  \label{fig: ablation pass@k GPQA}
+\end{minipage}\hfill
+\centering
+\begin{minipage}{0.32\textwidth}
+  \centering
+  \includegraphics[width=\linewidth]{figures/ablation_pass_k/pass_at_k_truthfulqa_ablations.png}
+  \small Pass@k, TruthfulQA
+  \label{fig: ablation pass@k TruthfulQA}
+\end{minipage}\hfill
+\centering
+\begin{minipage}{0.32\textwidth}
+  \centering
+  \includegraphics[width=\linewidth]{figures/ablation_pass_k/pass_at_k_boolq_ablations.png}
+  \small Pass@k, BoolQ
+  \label{fig: ablation pass@k BoolQ}
+\end{minipage}\hfill
+\centering\begin{minipage}{0.32\textwidth}
+  \centering
+  \includegraphics[width=\linewidth]{figures/ablation_pass_k/pass_at_k_hellaswag_ablations.png}
+  \small Pass@k, HellaSwag
+  \label{fig: ablation pass@k HellaSwag}
+\end{minipage}\hfill
+\centering
+\begin{minipage}{0.32\textwidth}
+  \centering
+  \includegraphics[width=\linewidth]{figures/ablation_pass_k/pass_at_k_ifeval_ablations.png}
+  \small Pass@k, IF-Eval
+  \label{fig: ablation pass@k IF-Eval}
+\end{minipage}\hfill
+\caption{\textbf{General capability retention for ablated models}: pass@k accuracy by benchmarks, standard vs diverse decoding mode.}
+\label{fig:general capability pass@k ablation by benchmark}
+\end{figure}

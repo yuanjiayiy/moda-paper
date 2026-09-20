@@ -1,0 +1,143 @@
+\label{expr:generation-example-book-list}
+% Prompt box
+\newtcolorbox{promptbox}{
+  colback=gray!8,
+  colframe=gray!50!black,
+  boxrule=0.5pt,
+  arc=2pt,
+  left=6pt,
+  right=6pt,
+  top=4pt,
+  bottom=4pt,
+  fonttitle=\bfseries,
+  title=Prompt
+}
+
+% Response box, parameterized by mode/role label
+\newtcolorbox{respbox}[1]{
+  colback=blue!1,
+  colframe=blue!80!white,
+  boxrule=0.5pt,
+  arc=2pt,
+  left=5pt,
+  right=5pt,
+  top=3pt,
+  bottom=3pt,
+  fonttitle=\bfseries\tiny,
+  fontupper=\tiny,
+  title=#1,
+  breakable
+}
+
+\newtcolorbox{modarespbox}[1]{
+  colback=blue!4,
+  colframe=blue!60!black,
+  boxrule=0.5pt,
+  arc=2pt,
+  left=5pt,
+  right=5pt,
+  top=3pt,
+  bottom=3pt,
+  fonttitle=\bfseries\tiny,
+  fontupper=\tiny,
+  title=#1,
+  breakable
+}
+
+\begin{figure}[t]
+\centering
+
+\begin{promptbox}
+\textit{Name one well received book that often appears in top book lists.}
+\end{promptbox}
+\begin{minipage}[t]{0.32\linewidth}
+\begin{respbox}{Sample 1}
+One well-received book that often appears in top book lists is \textbf{To Kill a Mockingbird} by Harper Lee. It is a classic of American literature and has consistently ranked high in various lists, including the Modern Library's list of the 100 Best Novels and the New York Times' Best Seller list.
+\end{respbox}
+\end{minipage}\hfill%
+\begin{minipage}[t]{0.32\linewidth}
+\begin{respbox}{Sample 2}
+One well-received book that often appears in top book lists is \textbf{To Kill a Mockingbird} by Harper Lee. It is widely celebrated for its powerful themes of racial injustice, morality, and empathy, and has been a staple in literature curricula and bestseller lists for decades.
+\end{respbox}
+\end{minipage}\hfill%
+\begin{minipage}[t]{0.32\linewidth}
+\begin{respbox}{Sample 3}
+One well-received book that often appears in top book lists is \textbf{To Kill a Mockingbird} by Harper Lee. It is widely praised for its powerful themes of racial injustice, moral growth, and empathy. The novel has been a staple in literature curricula and frequently appears on lists such as the Modern Library's Top 100 Novels and the BBC's ``The Big Read.''
+\end{respbox}
+\end{minipage}
+
+\vspace{6pt}
+
+\begin{minipage}[t]{0.32\linewidth}
+\begin{respbox}{Sample 4}
+\textbf{To Kill a Mockingbird} by Harper Lee is a well-received book that frequently appears in top book lists. It has been widely praised for its powerful themes of racial injustice, moral growth, and empathy, and it has been a staple of literature curricula and bestseller lists for decades.
+\end{respbox}
+\end{minipage}\hfill%
+\begin{minipage}[t]{0.32\linewidth}
+\begin{respbox}{Sample 5}
+One well-received book that often appears in top book lists is \textbf{To Kill a Mockingbird} by Harper Lee. It is widely celebrated for its powerful themes of racial injustice, moral growth, and empathy. The novel has been frequently included in lists such as the Modern Library's 100 Best Novels, the BBC's The Big Read, and other notable literary rankings.
+\end{respbox}
+\end{minipage}\hfill%
+\begin{minipage}[t]{0.32\linewidth}
+\begin{respbox}{Sample 6}
+One well-received book that often appears in top book lists is \textbf{To Kill a Mockingbird} by Harper Lee. It is a classic of American literature and has consistently been featured in lists such as the Modern Library's 100 Best Novels and the Pulitzer Prize winners list.
+\end{respbox}
+\end{minipage}
+
+\vspace{6pt}
+
+
+\begin{minipage}[t]{0.32\linewidth}
+\begin{modarespbox}{Role 1}
+\textbf{``The Night Fire''} by Michael Connelly
+
+\textbf{Reasons for its popularity and recognition:}
+
+\textbf{Award-winning author}: Michael Connelly is a best-selling and critically acclaimed author, known for his intelligent, fast-paced crime fiction.
+\end{modarespbox}
+\end{minipage}\hfill%
+\begin{minipage}[t]{0.32\linewidth}
+\begin{modarespbox}{Role 2}
+\textbf{``The Night Circus''} by Erin Morgenstern
+
+\textbf{Why it's well-received}: Known for its richly imaginative world-building, intricate plot, and lyrical prose, the novel blends fantasy, magic, and romance in a unique and immersive way.
+\end{modarespbox}
+\end{minipage}\hfill%
+\begin{minipage}[t]{0.32\linewidth}
+\begin{modarespbox}{Role 3}
+\textbf{``To Kill a Mockingbird''} by Harper Lee is a frequently cited example. It is often found on top book lists for various reasons, including: \textbf{Literary Significance}: A cornerstone of American literature, it addresses themes of racial injustice, moral growth, and empathy. 
+\end{modarespbox}
+\end{minipage}
+
+\vspace{6pt}
+
+\begin{minipage}[t]{0.32\linewidth}
+\begin{modarespbox}{Role 4}
+Certainly! One well-received book that frequently appears in top book lists is \textbf{``The Night Tiger''} by Yangsze Choo. This historical fiction novel is set in colonial Malaysia during the 1930s and weaves a compelling narrative around a young boy, a mysterious tiger, and a forbidden love story.
+\end{modarespbox}
+\end{minipage}\hfill%
+\begin{minipage}[t]{0.32\linewidth}
+\begin{modarespbox}{Role 5}
+\textbf{``The Midnight Library''} by Matt Haig
+
+\textbf{Why it's well received:}
+
+\textbf{Themes:} Explores existential questions, regret, and the idea of parallel lives, resonating with readers on a personal and philosophical level. Frequently appears on bestseller lists and in literary award discussions.
+\end{modarespbox}
+\end{minipage}\hfill%
+\begin{minipage}[t]{0.32\linewidth}
+\begin{modarespbox}{Role 6}
+\textbf{``The Great Gatsby''} by F. Scott Fitzgerald
+
+\textbf{Why It's Well Received and Often Appeared on Top Lists:}
+
+\textbf{Cultural Impact:} A cornerstone of American literature, it explores themes of idealism, resistance to change, and the American Dream.
+\end{modarespbox}
+\end{minipage}
+
+\vspace{6pt}
+\caption{\textbf{Qualitative example of diverse generation.} Upper: Responses sampled from Qwen3-8B. Bottom: Responses sampled from \method{} under distinct numbered roles for the same prompt, illustrating conceptual diversity across generations.}
+
+\label{fig:qualitative-example-books}
+\vspace{-0.4cm}
+\end{figure}
