@@ -75,27 +75,27 @@ To assess whether our method preserves the model's reasoning capability, we eval
 \end{figure}
 \input{notes_arxiv/table/diversity_main}
 
-\textbf{General Capability Retention.} As shown in Table \ref{tab:general-capability-pass1} and Figure \ref{fig:general capability pass@k}, our model achieves the best overall average pass@1, pass@5 and pass@10 score for general capability retention across thinking settings and base models among all baselines. With Qwen3-8B base and thinking disabled, it matches or exceeds the base model on 5 out of 7 benchmarks and achieves the best score among all baselines on 4 of them on pass@1 accuracy. Notably, with the GLM-4-9B base, \method improves average pass@1 by 15.8 percentage points, including a 3.89x relative improvement on GSM8K and a 2.37x relative improvement on MMLU. These results suggest that our method is an effective alignment approach that preserves, and in several cases significantly improves, the model's capabilities. We note that the language mixing penalty is important to maintain quality in some cases; without it, quality drops due to reward hacking from language mixing.
+\textbf{General Capability Retention.} As shown in Figure \ref{fig:general capability retention}, our model achieves the best overall average pass@1, pass@5 and pass@10 score for general capability retention across thinking settings and base models among all baselines. With Qwen3-8B base and thinking disabled, it matches or exceeds the base model on 5 out of 7 benchmarks and achieves the best score among all baselines on 4 of them on pass@1 accuracy. Notably, with the GLM-4-9B base, \method improves average pass@1 by 15.8 percentage points, including a 3.89x relative improvement on GSM8K and a 2.37x relative improvement on MMLU. These results suggest that our method is an effective alignment approach that preserves, and in several cases significantly improves, the model's capabilities. We note that the language mixing penalty is important to maintain quality in some cases; without it, quality drops due to reward hacking from language mixing.
 
 
 %We attribute this to the language-mixing penalty applied during training, which addresses the base model's native language-mixing issue. These results suggest that our method is an effective alignment approach that preserves, and in several cases significantly improves, the model's general capabilities.
 
 \begin{figure}[t]
 \centering
-\begin{minipage}[t]{0.68\linewidth}
+\begin{minipage}[ht]{0.6\linewidth}
   \centering
   \resizebox{\linewidth}{!}{%
-    \input{notes_arxiv/table/general_capability}%
+  \input{notes_arxiv/table/general_capability}%
   }
-  \captionof{table}{General capability retention (Pass@1 accuracy \%), averaged over $n=3$ random seeds. Bold marks the best value within each model group; underline marks the second-best value within the Qwen3-8B groups. Table with error bar can be found in Appendix \ref{appx:general capability retention} Table \ref{tab:general-capability-pass1-error-bar}.}
   \label{tab:general-capability-pass1}
 \end{minipage}\hfill
-\begin{minipage}[t]{0.28\linewidth}
+\begin{minipage}[ht]{0.38\linewidth}
   \centering
   \includegraphics[width=\linewidth]{figures/main_pass_k/pass_at_k_figures/pass_at_k_avg_thinking_false_base_model_qwen3-8b.png}
-  \captionof{figure}{\textbf{General capability retention: pass@k accuracy.} Qwen3-8B base, thinking disabled models on the general capability suite average. Per-benchmark results are shown in Appendix \ref{appx:general capability retention} Figure \ref{fig:general capability pass@k thinking disabled}.}
   \label{fig:general capability pass@k}
 \end{minipage}
+\caption{\textbf{Left: General capability retention (Pass@1 accuracy \%)}, averaged over $n=3$ random seeds. Bold marks the best value within each model group; underline marks the second-best value within the Qwen3-8B groups. Table with error bar can be found in Appendix \ref{appx:general capability retention} Table \ref{tab:general-capability-pass1-error-bar}. \textbf{Right: General capability retention: pass@k accuracy.} Qwen3-8B base, thinking disabled models on the general capability suite average. Per-benchmark results are shown in Appendix \ref{appx:general capability retention} Figure \ref{fig:general capability pass@k thinking disabled}.}
+\label{fig:general capability retention}
 \end{figure}
 
 
