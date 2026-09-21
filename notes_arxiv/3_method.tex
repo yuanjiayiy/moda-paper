@@ -149,7 +149,7 @@ The reward is computed over the set of role-conditioned generations, but the tra
 \begin{algorithm}
 \caption{\textsc{MoDA}: \textbf{Mo}de-Conditioned \textbf{D}iversity \textbf{A}lignment }
 \label{alg: moda-stage2}
-\small
+\scriptsize
 \begin{algorithmic}[1]
 \Require Dataset $\mathcal{D}$ with precomputed $(s_{\min},s_{\max},\mu_{\rm ref})$; policy $\pi_\theta$; reference policy $\pi_{\rm ref}$; reward model $S_\phi$; abstract roles $\mathcal{M}=\{m_i\}_{i=1}^N$; diversity metric $\delta$; weights $\lambda_q,\lambda_d$; constants $\alpha,\gamma,\epsilon,\eta$
 \For{training iteration $t=1,\ldots,T$}
