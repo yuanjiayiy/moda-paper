@@ -1,0 +1,1629 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.3.22)  21 SEP 2026 11:56
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**main.tex
+(./main.tex
+LaTeX2e <2025-11-01>
+L3 programming layer <2026-01-19>
+(/usr/local/texlive/2026/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2025/01/22 v1.4n Standard LaTeX document class
+(/usr/local/texlive/2026/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2025/01/22 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count275
+\c@section=\count276
+\c@subsection=\count277
+\c@subsubsection=\count278
+\c@paragraph=\count279
+\c@subparagraph=\count280
+\c@figure=\count281
+\c@table=\count282
+\abovecaptionskip=\skip49
+\belowcaptionskip=\skip50
+\bibindent=\dimen148
+)
+(./iclr2027_conference.sty
+(/usr/local/texlive/2026/texmf-dist/tex/latex/eso-pic/eso-pic.sty
+Package: eso-pic 2025/12/10 v3.0d eso-pic (RN)
+\ESO@tempdima=\dimen149
+\ESO@tempdimb=\dimen150
+
+(/usr/local/texlive/2026/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks17
+)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2024/09/29 v3.02 LaTeX color extensions (UK)
+
+(/usr/local/texlive/2026/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 274.
+
+(/usr/local/texlive/2026/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2025/09/29 v1.2d Graphics/color driver for pdftex
+)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/graphics/mathcolor.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1349.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1353.
+Package xcolor Info: Model `RGB' extended on input line 1365.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1367.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1370.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1371.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1372.
+))
+(./fancyhdr.sty
+\fancy@headwidth=\skip51
+\f@ncyO@elh=\skip52
+\f@ncyO@erh=\skip53
+\f@ncyO@olh=\skip54
+\f@ncyO@orh=\skip55
+\f@ncyO@elf=\skip56
+\f@ncyO@erf=\skip57
+\f@ncyO@olf=\skip58
+\f@ncyO@orf=\skip59
+) (./natbib.sty
+Package: natbib 2009/07/16 8.31 (PWD, AO)
+\bibhang=\skip60
+\bibsep=\skip61
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count283
+)
+\iclrrulerbox=\box53
+\iclrrulercount=\count284
+\iclrruleroffset=\dimen151
+\cv@lineheight=\dimen152
+\cv@boxheight=\dimen153
+\cv@tmpbox=\box54
+\cv@refno=\count285
+\cv@tot=\count286
+\cv@tmpc@=\count287
+\cv@tmpc=\count288
+)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/psnfss/times.sty
+Package: times 2020/03/25 PSNFSS-v9.3 (SPQR) 
+)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2024/02/08 v1.3d Input encoding file
+\inpenc@prehook=\toks18
+\inpenc@posthook=\toks19
+)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2025/07/18 v2.1d Standard LaTeX package
+LaTeX Font Info:    Trying to load font information for T1+ptm on input line 11
+6.
+
+(/usr/local/texlive/2026/texmf-dist/tex/latex/psnfss/t1ptm.fd
+File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
+))
+(/usr/local/texlive/2026/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2026-01-29 v7.01p Hypertext links for LaTeX
+
+(/usr/local/texlive/2026/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2024/12/12 v1.0g TeX engine tests
+)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
+Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
+)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+
+(/usr/local/texlive/2026/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
+)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(/usr/local/texlive/2026/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+))
+(/usr/local/texlive/2026/texmf-dist/tex/latex/hycolor/hycolor.sty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2026-01-29 v2.58 Cross-referencing by name of section
+
+(/usr/local/texlive/2026/texmf-dist/tex/latex/refcount/refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/gettitlestring/gettitlestring.s
+ty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+ (/usr/local/texlive/2026/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
+))
+\c@section@level=\count289
+)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2025/10/02 v2.5m e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count290
+)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/stringenc/stringenc.sty
+Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO
+)
+)
+\@linkdim=\dimen154
+\Hy@linkcounter=\count291
+\Hy@pagecounter=\count292
+
+(/usr/local/texlive/2026/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2026-01-29 v7.01p Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/intcalc/intcalc.sty
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+)
+\Hy@SavedSpaceFactor=\count293
+
+(/usr/local/texlive/2026/texmf-dist/tex/latex/hyperref/puenc.def
+File: puenc.def 2026-01-29 v7.01p Hyperref: PDF Unicode definition (HO)
+Now handling font encoding PU ...
+... no UTF-8 mapping file for font encoding PU
+)
+Package hyperref Info: Hyper figures OFF on input line 4201.
+Package hyperref Info: Link nesting OFF on input line 4206.
+Package hyperref Info: Hyper index ON on input line 4209.
+Package hyperref Info: Plain pages OFF on input line 4216.
+Package hyperref Info: Backreferencing OFF on input line 4221.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4468.
+\c@Hy@tempcnt=\count294
+
+(/usr/local/texlive/2026/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip17
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 4807.
+\XeTeXLinkMargin=\dimen155
+
+(/usr/local/texlive/2026/texmf-dist/tex/generic/bitset/bitset.sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+
+(/usr/local/texlive/2026/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
+)
+))
+\Fld@menulength=\count295
+\Field@Width=\dimen156
+\Fld@charsize=\dimen157
+Package hyperref Info: Hyper figures OFF on input line 6084.
+Package hyperref Info: Link nesting OFF on input line 6089.
+Package hyperref Info: Hyper index ON on input line 6092.
+Package hyperref Info: backreferencing OFF on input line 6099.
+Package hyperref Info: Link coloring OFF on input line 6104.
+Package hyperref Info: Link coloring with OCG OFF on input line 6109.
+Package hyperref Info: PDF/A mode OFF on input line 6114.
+\Hy@abspage=\count296
+\c@Item=\count297
+\c@Hfootnote=\count298
+)
+Package hyperref Info: Driver (autodetected): hpdftex.
+
+(/usr/local/texlive/2026/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2026-01-29 v7.01p Hyperref driver for pdfTeX
+\Fld@listcount=\count299
+\c@bookmark@seq@number=\count300
+
+(/usr/local/texlive/2026/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+Package: rerunfilecheck 2025-06-21 v1.11 Rerun checks for auxiliary files (HO)
+
+(/usr/local/texlive/2026/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+84.
+)
+\Hy@SectionHShift=\skip62
+) (/usr/local/texlive/2026/texmf-dist/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen158
+\lightrulewidth=\dimen159
+\cmidrulewidth=\dimen160
+\belowrulesep=\dimen161
+\belowbottomsep=\dimen162
+\aboverulesep=\dimen163
+\abovetopsep=\dimen164
+\cmidrulesep=\dimen165
+\cmidrulekern=\dimen166
+\defaultaddspace=\dimen167
+\@cmidla=\count301
+\@cmidlb=\count302
+\@aboverulesep=\dimen168
+\@belowrulesep=\dimen169
+\@thisruleclass=\count303
+\@lastruleclass=\count304
+\@thisrulewidth=\dimen170
+)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\@emptytoks=\toks20
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/units/nicefrac.sty
+Package: nicefrac 1998/08/04 v0.9b Nice fractions
+\L@UnitsRaiseDisplaystyle=\skip63
+\L@UnitsRaiseTextstyle=\skip64
+\L@UnitsRaiseScriptstyle=\skip65
+
+(/usr/local/texlive/2026/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
+))
+(/usr/local/texlive/2026/texmf-dist/tex/latex/microtype/microtype.sty
+Package: microtype 2026/03/01 v3.2d Micro-typographical refinements (RS)
+\MT@toks=\toks21
+\MT@tempbox=\box55
+\MT@count=\count305
+LaTeX Info: Redefining \noprotrusionifhmode on input line 1084.
+LaTeX Info: Redefining \leftprotrusion on input line 1085.
+\MT@prot@toks=\toks22
+LaTeX Info: Redefining \rightprotrusion on input line 1104.
+LaTeX Info: Redefining \textls on input line 1449.
+\MT@outer@kern=\dimen171
+LaTeX Info: Redefining \microtypecontext on input line 2053.
+LaTeX Info: Redefining \textmicrotypecontext on input line 2070.
+\MT@listname@count=\count306
+
+(/usr/local/texlive/2026/texmf-dist/tex/latex/microtype/microtype-pdftex.def
+File: microtype-pdftex.def 2026/03/01 v3.2d Definitions specific to pdftex (RS)
+
+LaTeX Info: Redefining \lsstyle on input line 944.
+LaTeX Info: Redefining \lslig on input line 944.
+\MT@outer@space=\skip66
+)
+Package microtype Info: Loading configuration file microtype.cfg.
+
+(/usr/local/texlive/2026/texmf-dist/tex/latex/microtype/microtype.cfg
+File: microtype.cfg 2026/03/01 v3.2d microtype main configuration file (RS)
+)
+LaTeX Info: Redefining \microtypesetup on input line 3065.
+)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2024/12/31 v1.2e Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2026/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2026/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
+)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 106.
+)
+\Gin@req@height=\dimen172
+\Gin@req@width=\dimen173
+)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2023/07/28 v1.6b Sub-captions (AR)
+
+(/usr/local/texlive/2026/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2023/08/05 v3.6o Customizing captions (AR)
+
+(/usr/local/texlive/2026/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
+\caption@tempdima=\dimen174
+\captionmargin=\dimen175
+\caption@leftmargin=\dimen176
+\caption@rightmargin=\dimen177
+\caption@width=\dimen178
+\caption@indent=\dimen179
+\caption@parindent=\dimen180
+\caption@hangindent=\dimen181
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count307
+\c@continuedfloat=\count308
+Package caption Info: hyperref package is loaded.
+)
+Package caption Info: New subtype `subfigure' on input line 238.
+\c@subfigure=\count309
+Package caption Info: New subtype `subtable' on input line 238.
+\c@subtable=\count310
+)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/algorithmicx/algorithmicx.sty
+Package: algorithmicx 2005/04/27 v1.2 Algorithmicx
+
+Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
+\c@ALG@line=\count311
+\c@ALG@rem=\count312
+\c@ALG@nested=\count313
+\ALG@tlm=\skip67
+\ALG@thistlm=\skip68
+\c@ALG@Lnr=\count314
+\c@ALG@blocknr=\count315
+\c@ALG@storecount=\count316
+\c@ALG@tmpcounter=\count317
+\ALG@tmplength=\skip69
+) (/usr/local/texlive/2026/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2025/07/09 v2.17z AMS math features
+\@mathmargin=\skip70
+
+For additional information on amsmath, use the `?' option.
+(/usr/local/texlive/2026/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2024/11/17 v2.01 AMS text
+
+(/usr/local/texlive/2026/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks23
+\ex@=\dimen182
+))
+(/usr/local/texlive/2026/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen183
+)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2022/04/08 v2.04 operator names
+)
+\inf@bad=\count318
+LaTeX Info: Redefining \frac on input line 233.
+\uproot@=\count319
+\leftroot@=\count320
+LaTeX Info: Redefining \overline on input line 398.
+LaTeX Info: Redefining \colon on input line 409.
+\classnum@=\count321
+\DOTSCASE@=\count322
+LaTeX Info: Redefining \ldots on input line 495.
+LaTeX Info: Redefining \dots on input line 498.
+LaTeX Info: Redefining \cdots on input line 619.
+\Mathstrutbox@=\box56
+\strutbox@=\box57
+LaTeX Info: Redefining \big on input line 721.
+LaTeX Info: Redefining \Big on input line 722.
+LaTeX Info: Redefining \bigg on input line 723.
+LaTeX Info: Redefining \Bigg on input line 724.
+\big@size=\dimen184
+LaTeX Font Info:    Redeclaring font encoding OML on input line 742.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 743.
+\macc@depth=\count323
+LaTeX Info: Redefining \bmod on input line 904.
+LaTeX Info: Redefining \pmod on input line 909.
+LaTeX Info: Redefining \smash on input line 939.
+LaTeX Info: Redefining \relbar on input line 969.
+LaTeX Info: Redefining \Relbar on input line 970.
+\c@MaxMatrixCols=\count324
+\dotsspace@=\muskip18
+\c@parentequation=\count325
+\dspbrk@lvl=\count326
+\tag@help=\toks24
+\row@=\count327
+\column@=\count328
+\maxfields@=\count329
+\andhelp@=\toks25
+\eqnshift@=\dimen185
+\alignsep@=\dimen186
+\tagshift@=\dimen187
+\tagwidth@=\dimen188
+\totwidth@=\dimen189
+\lineht@=\dimen190
+\@envbody=\toks26
+\multlinegap=\skip71
+\multlinetaggap=\skip72
+\mathdisplay@stack=\toks27
+LaTeX Info: Redefining \[ on input line 2950.
+LaTeX Info: Redefining \] on input line 2951.
+)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/bbm-macros/bbm.sty
+Package: bbm 1999/03/15 V 1.2 provides fonts for set symbols - TH
+LaTeX Font Info:    Overwriting math alphabet `\mathbbm' in version `bold'
+(Font)                  U/bbm/m/n --> U/bbm/bx/n on input line 33.
+LaTeX Font Info:    Overwriting math alphabet `\mathbbmss' in version `bold'
+(Font)                  U/bbmss/m/n --> U/bbmss/bx/n on input line 35.
+)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/multirow/multirow.sty
+Package: multirow 2024/11/12 v2.9 Span multiple rows of a table
+\multirow@colwidth=\skip73
+\multirow@cntb=\count330
+\multirow@dima=\skip74
+\bigstrutjot=\dimen191
+)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/tools/xspace.sty
+Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
+)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/algorithms/algorithm.sty
+Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating enviro
+nment
+
+(/usr/local/texlive/2026/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count331
+\float@exts=\toks28
+\float@box=\box58
+\@float@everytoks=\toks29
+\@floatcapt=\box59
+)
+\@float@every@algorithm=\toks30
+\c@algorithm=\count332
+)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/algorithmicx/algpseudocode.sty
+Package: algpseudocode 
+
+Document Style - pseudocode environments for use with the `algorithmicx' style
+) (/usr/local/texlive/2026/texmf-dist/tex/latex/wrapfig/wrapfig.sty
+\wrapoverhang=\dimen192
+\WF@size=\dimen193
+\c@WF@wrappedlines=\count333
+\WF@box=\box60
+\WF@everypar=\toks31
+Package: wrapfig 2003/01/31  v 3.6
+)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/tcolorbox/tcolorbox.sty
+Package: tcolorbox 2025/11/28 version 6.9.0 text color boxes
+
+(/usr/local/texlive/2026/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
+(/usr/local/texlive/2026/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
+(/usr/local/texlive/2026/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.te
+x
+\pgfutil@everybye=\toks32
+\pgfutil@tempdima=\dimen194
+\pgfutil@tempdimb=\dimen195
+)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+\pgfutil@abb=\box61
+) (/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/pgf.revision.tex)
+Package: pgfrcs 2025-08-29 v3.1.11a (3.1.11a)
+))
+Package: pgf 2025-08-29 v3.1.11a (3.1.11a)
+
+(/usr/local/texlive/2026/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty
+(/usr/local/texlive/2026/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+Package: pgfsys 2025-08-29 v3.1.11a (3.1.11a)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks33
+\pgfkeys@temptoks=\toks34
+
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/utilities/pgfkeyslibraryfil
+tered.code.tex
+\pgfkeys@tmptoks=\toks35
+))
+\pgf@x=\dimen196
+\pgf@y=\dimen197
+\pgf@xa=\dimen198
+\pgf@ya=\dimen199
+\pgf@xb=\dimen256
+\pgf@yb=\dimen257
+\pgf@xc=\dimen258
+\pgf@yc=\dimen259
+\pgf@xd=\dimen260
+\pgf@yd=\dimen261
+\w@pgf@writea=\write3
+\r@pgf@reada=\read2
+\c@pgf@counta=\count334
+\c@pgf@countb=\count335
+\c@pgf@countc=\count336
+\c@pgf@countd=\count337
+\t@pgf@toka=\toks36
+\t@pgf@tokb=\toks37
+\t@pgf@tokc=\toks38
+\pgf@sys@id@count=\count338
+
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
+File: pgf.cfg 2025-08-29 v3.1.11a (3.1.11a)
+)
+Driver file for pgf: pgfsys-pdftex.def
+
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.d
+ef
+File: pgfsys-pdftex.def 2025-08-29 v3.1.11a (3.1.11a)
+
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-p
+df.def
+File: pgfsys-common-pdf.def 2025-08-29 v3.1.11a (3.1.11a)
+)))
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.
+code.tex
+File: pgfsyssoftpath.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfsyssoftpath@smallbuffer@items=\count339
+\pgfsyssoftpath@bigbuffer@items=\count340
+)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.
+code.tex
+File: pgfsysprotocol.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+))
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+Package: pgfcore 2025-08-29 v3.1.11a (3.1.11a)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
+\pgfmath@dimen=\dimen262
+\pgfmath@count=\count341
+\pgfmath@box=\box62
+\pgfmath@toks=\toks39
+\pgfmath@stack@operand=\toks40
+\pgfmath@stack@operation=\toks41
+)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.
+tex)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic
+.code.tex)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigo
+nometric.code.tex)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.rando
+m.code.tex)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.compa
+rison.code.tex)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.
+code.tex)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round
+.code.tex)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.
+code.tex)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integ
+erarithmetics.code.tex)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count342
+)) (/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/math/pgfint.code.tex)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.co
+de.tex
+File: pgfcorepoints.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@picminx=\dimen263
+\pgf@picmaxx=\dimen264
+\pgf@picminy=\dimen265
+\pgf@picmaxy=\dimen266
+\pgf@pathminx=\dimen267
+\pgf@pathmaxx=\dimen268
+\pgf@pathminy=\dimen269
+\pgf@pathmaxy=\dimen270
+\pgf@xx=\dimen271
+\pgf@xy=\dimen272
+\pgf@yx=\dimen273
+\pgf@yy=\dimen274
+\pgf@zx=\dimen275
+\pgf@zy=\dimen276
+)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconst
+ruct.code.tex
+File: pgfcorepathconstruct.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@path@lastx=\dimen277
+\pgf@path@lasty=\dimen278
+)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage
+.code.tex
+File: pgfcorepathusage.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@shorten@end@additional=\dimen279
+\pgf@shorten@start@additional=\dimen280
+)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.co
+de.tex
+File: pgfcorescopes.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfpic=\box63
+\pgf@hbox=\box64
+\pgf@layerbox@main=\box65
+\pgf@picture@serial@count=\count343
+)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicst
+ate.code.tex
+File: pgfcoregraphicstate.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgflinewidth=\dimen281
+)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransform
+ations.code.tex
+File: pgfcoretransformations.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@pt@x=\dimen282
+\pgf@pt@y=\dimen283
+\pgf@pt@temp=\dimen284
+)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.cod
+e.tex
+File: pgfcorequick.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.c
+ode.tex
+File: pgfcoreobjects.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathproce
+ssing.code.tex
+File: pgfcorepathprocessing.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.co
+de.tex
+File: pgfcorearrows.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfarrowsep=\dimen285
+)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.cod
+e.tex
+File: pgfcoreshade.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@max=\dimen286
+\pgf@sys@shading@range@num=\count344
+\pgf@shadingcount=\count345
+)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.cod
+e.tex
+File: pgfcoreimage.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.
+code.tex
+File: pgfcoreexternal.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfexternal@startupbox=\box66
+)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.co
+de.tex
+File: pgfcorelayers.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretranspare
+ncy.code.tex
+File: pgfcoretransparency.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.
+code.tex
+File: pgfcorepatterns.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/basiclayer/pgfcorerdf.code.
+tex
+File: pgfcorerdf.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)))
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.cod
+e.tex
+File: pgfmoduleshapes.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfnodeparttextbox=\box67
+)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.
+tex
+File: pgfmoduleplot.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version
+-0-65.sty
+Package: pgfcomp-version-0-65 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@nodesepstart=\dimen287
+\pgf@nodesepend=\dimen288
+)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version
+-1-18.sty
+Package: pgfcomp-version-1-18 2025-08-29 v3.1.11a (3.1.11a)
+))
+(/usr/local/texlive/2026/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
+(/usr/local/texlive/2026/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex)
+) (/usr/local/texlive/2026/texmf-dist/tex/latex/pgf/math/pgfmath.sty
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex))
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+Package: pgffor 2025-08-29 v3.1.11a (3.1.11a)
+\pgffor@iter=\dimen289
+\pgffor@skip=\dimen290
+\pgffor@stack=\toks42
+\pgffor@toks=\toks43
+))
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.cod
+e.tex
+Package: tikz 2025-08-29 v3.1.11a (3.1.11a)
+
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothan
+dlers.code.tex
+File: pgflibraryplothandlers.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@plot@mark@count=\count346
+\pgfplotmarksize=\dimen291
+)
+\tikz@lastx=\dimen292
+\tikz@lasty=\dimen293
+\tikz@lastxsaved=\dimen294
+\tikz@lastysaved=\dimen295
+\tikz@lastmovetox=\dimen296
+\tikz@lastmovetoy=\dimen297
+\tikzleveldistance=\dimen298
+\tikzsiblingdistance=\dimen299
+\tikz@figbox=\box68
+\tikz@figbox@bg=\box69
+\tikz@tempbox=\box70
+\tikz@tempbox@bg=\box71
+\tikztreelevel=\count347
+\tikznumberofchildren=\count348
+\tikznumberofcurrentchild=\count349
+\tikz@fig@count=\count350
+
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.cod
+e.tex
+File: pgfmodulematrix.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfmatrixcurrentrow=\count351
+\pgfmatrixcurrentcolumn=\count352
+\pgf@matrix@numberofcolumns=\count353
+)
+\tikz@expandcount=\count354
+
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)))
+(/usr/local/texlive/2026/texmf-dist/tex/latex/tools/verbatim.sty
+Package: verbatim 2024-01-22 v1.5x LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks44
+\verbatim@line=\toks45
+\verbatim@in@stream=\read3
+)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/environ/environ.sty
+Package: environ 2014/05/04 v0.3 A new way to define environments
+
+(/usr/local/texlive/2026/texmf-dist/tex/latex/trimspaces/trimspaces.sty
+Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
+))
+\tcb@titlebox=\box72
+\tcb@upperbox=\box73
+\tcb@lowerbox=\box74
+\tcb@phantombox=\box75
+\c@tcbbreakpart=\count355
+\c@tcblayer=\count356
+\c@tcolorbox@number=\count357
+\l__tcobox_tmpa_box=\box76
+\l__tcobox_tmpa_dim=\dimen300
+\tcb@temp=\box77
+\tcb@temp=\box78
+\tcb@temp=\box79
+\tcb@temp=\box80
+)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/tcolorbox/tcbskins.code.tex
+Library (tcolorbox): 'tcbskins.code.tex' version '6.9.0'
+(/usr/local/texlive/2026/texmf-dist/tex/latex/tikzfill/tikzfill.image.sty
+Package: tikzfill.image 2023/08/08 v1.0.1 Image filling library for TikZ
+
+(/usr/local/texlive/2026/texmf-dist/tex/latex/tikzfill/tikzfill-common.sty
+Package: tikzfill-common 2023/08/08 v1.0.1 Auxiliary code for tikzfill
+)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/tikzfill/tikzlibraryfill.image.co
+de.tex
+File: tikzlibraryfill.image.code.tex 2023/08/08 v1.0.1 Image filling library
+\l__tikzfill_img_box=\box81
+))
+(/usr/local/texlive/2026/texmf-dist/tex/latex/tcolorbox/tcbskinsjigsaw.code.tex
+Library (tcolorbox): 'tcbskinsjigsaw.code.tex' version '6.9.0'
+))
+(/usr/local/texlive/2026/texmf-dist/tex/latex/tcolorbox/tcbbreakable.code.tex
+Library (tcolorbox): 'tcbbreakable.code.tex' version '6.9.0'
+(/usr/local/texlive/2026/texmf-dist/tex/latex/pdfcol/pdfcol.sty
+Package: pdfcol 2022-09-21 v1.7 Handle new color stacks for pdfTeX (HO)
+)
+Package pdfcol Info: New color stack `tcb@breakable' = 1 on input line 23.
+\tcb@testbox=\box82
+\tcb@totalupperbox=\box83
+\tcb@totallowerbox=\box84
+)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/fontawesome5/fontawesome5.sty
+(/usr/local/texlive/2026/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2026-01-19 L3 programming layer (loader) 
+
+(/usr/local/texlive/2026/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2025-10-09 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count358
+))
+Package: fontawesome5 2022/05/02 v5.15.4 Font Awesome 5
+
+(/usr/local/texlive/2026/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
+Package: l3keys2e 2025-10-09 LaTeX2e option processing using LaTeX3 keys
+) (/usr/local/texlive/2026/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+Package: xparse 2025-10-09 L3 Experimental document command parser
+)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/fontawesome5/fontawesome5-generic
+-helper.sty
+Package: fontawesome5-generic-helper 2022/05/02 v5.15.4 non-uTeX helper for fon
+tawesome5
+
+(/usr/local/texlive/2026/texmf-dist/tex/latex/fontawesome5/fontawesome5-mapping
+.def))) (/usr/local/texlive/2026/texmf-dist/tex/latex/tools/array.sty
+Package: array 2025/09/25 v2.6n Tabular extension package (FMi)
+\col@sep=\dimen301
+\ar@mcellbox=\box85
+\extrarowheight=\dimen302
+\NC@list=\toks46
+\extratabsurround=\skip75
+\backup@length=\skip76
+\ar@cellbox=\box86
+)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/placeins/placeins.sty
+Package: placeins 2005/04/18  v 2.2
+)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/appendix/appendix.sty
+Package: appendix 2020/02/08 v1.2c extra appendix facilities
+\c@@pps=\count359
+\c@@ppsavesec=\count360
+\c@@ppsaveapp=\count361
+)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/titlesec/titletoc.sty
+Package: titletoc 2025/01/04 v2.17 TOC entries
+\ttl@leftsep=\dimen303
+)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/psnfss/pifont.sty
+Package: pifont 2020/03/25 PSNFSS-v9.3 Pi font support (SPQR) 
+LaTeX Font Info:    Trying to load font information for U+pzd on input line 63.
+
+
+(/usr/local/texlive/2026/texmf-dist/tex/latex/psnfss/upzd.fd
+File: upzd.fd 2001/06/04 font definitions for U/pzd.
+)
+LaTeX Font Info:    Trying to load font information for U+psy on input line 64.
+
+
+(/usr/local/texlive/2026/texmf-dist/tex/latex/psnfss/upsy.fd
+File: upsy.fd 2001/06/04 font definitions for U/psy.
+))
+Package hyperref Info: Option `colorlinks' set `true' on input line 134.
+ (./main.aux)
+\openout1 = `main.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 136.
+LaTeX Font Info:    ... okay on input line 136.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 136.
+LaTeX Font Info:    ... okay on input line 136.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 136.
+LaTeX Font Info:    ... okay on input line 136.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 136.
+LaTeX Font Info:    ... okay on input line 136.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 136.
+LaTeX Font Info:    ... okay on input line 136.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 136.
+LaTeX Font Info:    ... okay on input line 136.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 136.
+LaTeX Font Info:    ... okay on input line 136.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 136.
+LaTeX Font Info:    ... okay on input line 136.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 136.
+LaTeX Font Info:    ... okay on input line 136.
+
+(/usr/local/texlive/2026/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count362
+\scratchdimen=\dimen304
+\scratchbox=\box87
+\nofMPsegments=\count363
+\nofMParguments=\count364
+\everyMPshowfont=\toks47
+\MPscratchCnt=\count365
+\MPscratchDim=\dimen305
+\MPnumerator=\count366
+\makeMPintoPDFobject=\count367
+\everyMPtoPDFconversion=\toks48
+) (/usr/local/texlive/2026/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+
+(/usr/local/texlive/2026/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+Package hyperref Info: Link coloring ON on input line 136.
+
+(./main.out) (./main.out)
+\@outlinefile=\write4
+\openout4 = `main.out'.
+
+LaTeX Info: Redefining \microtypecontext on input line 136.
+Package microtype Info: Applying patch `item' on input line 136.
+Package microtype Info: Applying patch `toc' on input line 136.
+Package microtype Info: Applying patch `eqnum' on input line 136.
+Package microtype Info: Applying patch `footnote' on input line 136.
+Package microtype Info: Applying patch `verbatim' on input line 136.
+LaTeX Info: Redefining \microtypesetup on input line 136.
+Package microtype Info: Generating PDF output.
+Package microtype Info: Character protrusion enabled (level 2).
+Package microtype Info: Using default protrusion set `alltext'.
+Package microtype Info: Automatic font expansion enabled (level 2),
+(microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
+Package microtype Info: Using default expansion set `alltext-nott'.
+Package microtype Info: Patching command `\showhyphens'.
+Package microtype Info: No adjustment of tracking.
+Package microtype Info: No adjustment of interword spacing.
+Package microtype Info: No adjustment of character kerning.
+
+(/usr/local/texlive/2026/texmf-dist/tex/latex/microtype/mt-ptm.cfg
+File: mt-ptm.cfg 2006/04/20 v1.7 microtype config. file: Times (RS)
+)
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: float package is loaded.
+Package caption Info: wrapfig package is loaded.
+Package caption Info: End \AtBeginDocument code.
+
+Underfull \hbox (badness 2452) in paragraph at lines 140--140
+[]\T1/ptm/m/sc/17.28 (+20) Forty Shades of []B[][]l[][]u[][]e[]: Quality-Divers
+ity
+ []
+
+(/usr/local/texlive/2026/texmf-dist/tex/latex/microtype/mt-cmr.cfg
+File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
+(RS)
+)
+LaTeX Font Info:    Trying to load font information for U+msa on input line 140
+.
+
+(/usr/local/texlive/2026/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/microtype/mt-msa.cfg
+File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 140
+.
+
+(/usr/local/texlive/2026/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/microtype/mt-msb.cfg
+File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
+)
+(./notes_arxiv/0_abstract.tex) (./notes_arxiv/1_introduction.tex
+<figures/method_v3.png, id=139, 1644.1425pt x 919.435pt>
+File: figures/method_v3.png Graphic file (type png)
+<use figures/method_v3.png>
+Package pdftex.def Info: figures/method_v3.png  used on input line 5.
+(pdftex.def)             Requested size: 310.0378pt x 173.37569pt.
+<figures/blue.png, id=140, 204.765pt x 464.73625pt>
+File: figures/blue.png Graphic file (type png)
+<use figures/blue.png>
+Package pdftex.def Info: figures/blue.png  used on input line 10.
+(pdftex.def)             Requested size: 79.49577pt x 180.42381pt.
+LaTeX Font Info:    Trying to load font information for T1+pcr on input line 15
+.
+
+(/usr/local/texlive/2026/texmf-dist/tex/latex/psnfss/t1pcr.fd
+File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
+)
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `pcr' (encoding: T1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+ [1{/usr/local/texlive/2026/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/
+local/texlive/2026/texmf-dist/fonts/enc/dvips/base/8r.enc}
+
+]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [2 <./figures/method_v3.png> <./figures/blue.png>]) (./notes_arxiv/6_related_w
+ork.tex
+[3]) (./notes_arxiv/3_method.tex
+<figures/time.pdf, id=414, 2054.33868pt x 921.76947pt>
+File: figures/time.pdf Graphic file (type pdf)
+<use figures/time.pdf>
+Package pdftex.def Info: figures/time.pdf  used on input line 6.
+(pdftex.def)             Requested size: 397.48499pt x 178.34485pt.
+ [4 <./figures/time.pdf>] [5]
+Underfull \hbox (badness 5260) in paragraph at lines 101--111
+ []\T1/ptm/b/n/10 (+20) Diversity Scor-ing.[] \T1/ptm/m/n/10 (+20) For each pro
+mpt, the re-sponse group $\OMS/cmsy/m/n/10 Y \OT1/cmr/m/n/10 = \OMS/cmsy/m/n/10
+ f\OML/cmm/m/it/10 y[]; [] ; y[]\OMS/cmsy/m/n/10 g$ \T1/ptm/m/n/10 (+20) con-
+ []
+
+
+Underfull \hbox (badness 2359) in paragraph at lines 101--111
+\T1/ptm/m/n/10 (+20) tains one can-di-date from each of the six modes and best 
+fits on 4 GPUs: one for
+ []
+
+
+Underfull \hbox (badness 3503) in paragraph at lines 101--111
+\T1/ptm/m/n/10 (+20) the re-ward model and three for in-fer-ence. We em-bed the
+ fi-nal an-swer text us-ing
+ []
+
+Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
+put line 150.
+[6]) (./notes_arxiv/4_experiments.tex [7]
+<figures/pareto_infinite-chat_quality_thinking_false_base_model_qwen3-8b_compos
+ite.png, id=595, 534.798pt x 404.712pt>
+File: figures/pareto_infinite-chat_quality_thinking_false_base_model_qwen3-8b_c
+omposite.png Graphic file (type png)
+<use figures/pareto_infinite-chat_quality_thinking_false_base_model_qwen3-8b_co
+mposite.png>
+Package pdftex.def Info: figures/pareto_infinite-chat_quality_thinking_false_ba
+se_model_qwen3-8b_composite.png  used on input line 74.
+(pdftex.def)             Requested size: 127.1981pt x 96.25595pt.
+<figures/pareto_infinite-chat_quality_thinking_true_base_model_qwen3-8b_composi
+te.png, id=596, 534.798pt x 404.712pt>
+File: figures/pareto_infinite-chat_quality_thinking_true_base_model_qwen3-8b_co
+mposite.png Graphic file (type png)
+<use figures/pareto_infinite-chat_quality_thinking_true_base_model_qwen3-8b_com
+posite.png>
+Package pdftex.def Info: figures/pareto_infinite-chat_quality_thinking_true_bas
+e_model_qwen3-8b_composite.png  used on input line 78.
+(pdftex.def)             Requested size: 131.17076pt x 99.26337pt.
+<figures/pareto_infinite-chat_quality_thinking_false_base_model_llama_glm_compo
+site.png, id=597, 534.798pt x 404.712pt>
+File: figures/pareto_infinite-chat_quality_thinking_false_base_model_llama_glm_
+composite.png Graphic file (type png)
+<use figures/pareto_infinite-chat_quality_thinking_false_base_model_llama_glm_c
+omposite.png>
+Package pdftex.def Info: figures/pareto_infinite-chat_quality_thinking_false_ba
+se_model_llama_glm_composite.png  used on input line 82.
+(pdftex.def)             Requested size: 131.17076pt x 99.26337pt.
+
+(./notes_arxiv/table/diversity_main.tex)
+(./notes_arxiv/table/general_capability.tex
+Overfull \hbox (2.86073pt too wide) in paragraph at lines 7--7
+ []|\T1/ptm/m/n/9 (-20) GSM8K| 
+ []
+
+)
+<figures/main_pass_k/pass_at_k_figures/pass_at_k_avg_thinking_false_base_model_
+qwen3-8b.png, id=606, 631.6398pt x 596.2275pt>
+File: figures/main_pass_k/pass_at_k_figures/pass_at_k_avg_thinking_false_base_m
+odel_qwen3-8b.png Graphic file (type png)
+<use figures/main_pass_k/pass_at_k_figures/pass_at_k_avg_thinking_false_base_mo
+del_qwen3-8b.png>
+Package pdftex.def Info: figures/main_pass_k/pass_at_k_figures/pass_at_k_avg_th
+inking_false_base_model_qwen3-8b.png  used on input line 99.
+(pdftex.def)             Requested size: 127.1981pt x 120.06218pt.
+<figures/main_pass_k/pass_at_k_figures/pass_at_k_gsm8k_thinking_false_base_mode
+l_qwen3-8b.png, id=607, 631.6398pt x 596.2275pt>
+File: figures/main_pass_k/pass_at_k_figures/pass_at_k_gsm8k_thinking_false_base
+_model_qwen3-8b.png Graphic file (type png)
+<use figures/main_pass_k/pass_at_k_figures/pass_at_k_gsm8k_thinking_false_base_
+model_qwen3-8b.png>
+Package pdftex.def Info: figures/main_pass_k/pass_at_k_figures/pass_at_k_gsm8k_
+thinking_false_base_model_qwen3-8b.png  used on input line 104.
+(pdftex.def)             Requested size: 127.1981pt x 120.06218pt.
+<figures/main_pass_k/pass_at_k_figures/pass_at_k_truthfulqa_thinking_false_base
+_model_qwen3-8b.png, id=608, 631.6398pt x 596.2275pt>
+File: figures/main_pass_k/pass_at_k_figures/pass_at_k_truthfulqa_thinking_false
+_base_model_qwen3-8b.png Graphic file (type png)
+<use figures/main_pass_k/pass_at_k_figures/pass_at_k_truthfulqa_thinking_false_
+base_model_qwen3-8b.png>
+Package pdftex.def Info: figures/main_pass_k/pass_at_k_figures/pass_at_k_truthf
+ulqa_thinking_false_base_model_qwen3-8b.png  used on input line 108.
+(pdftex.def)             Requested size: 127.1981pt x 120.06218pt.
+
+Underfull \vbox (badness 2073) has occurred while \output is active []
+
+ [8]
+[9 <./figures/pareto_infinite-chat_quality_thinking_false_base_model_qwen3-8b_c
+omposite.png> <./figures/pareto_infinite-chat_quality_thinking_true_base_model_
+qwen3-8b_composite.png> <./figures/pareto_infinite-chat_quality_thinking_false_
+base_model_llama_glm_composite.png>]
+<figures/pareto_ablation_standard_vs_diverse.png, id=644, 641.7576pt x 505.89pt
+>
+File: figures/pareto_ablation_standard_vs_diverse.png Graphic file (type png)
+<use figures/pareto_ablation_standard_vs_diverse.png>
+Package pdftex.def Info: figures/pareto_ablation_standard_vs_diverse.png  used 
+on input line 159.
+(pdftex.def)             Requested size: 139.12216pt x 109.66737pt.
+<figures/pareto_infinite-chat_quality_ablations_composite.png, id=645, 641.7576
+pt x 505.89pt>
+File: figures/pareto_infinite-chat_quality_ablations_composite.png Graphic file
+ (type png)
+<use figures/pareto_infinite-chat_quality_ablations_composite.png>
+Package pdftex.def Info: figures/pareto_infinite-chat_quality_ablations_composi
+te.png  used on input line 165.
+(pdftex.def)             Requested size: 139.12216pt x 109.66737pt.
+<figures/ablation_pass_k/pass_at_k_avg_ablations.png, id=646, 631.6398pt x 596.
+2275pt>
+File: figures/ablation_pass_k/pass_at_k_avg_ablations.png Graphic file (type pn
+g)
+<use figures/ablation_pass_k/pass_at_k_avg_ablations.png>
+Package pdftex.def Info: figures/ablation_pass_k/pass_at_k_avg_ablations.png  u
+sed on input line 171.
+(pdftex.def)             Requested size: 115.26797pt x 108.79924pt.
+ [10 <./figures/main_pass_k/pass_at_k_figures/pass_at_k_avg_thinking_false_base
+_model_qwen3-8b.png> <./figures/main_pass_k/pass_at_k_figures/pass_at_k_gsm8k_t
+hinking_false_base_model_qwen3-8b.png> <./figures/main_pass_k/pass_at_k_figures
+/pass_at_k_truthfulqa_thinking_false_base_model_qwen3-8b.png>]) (./notes_arxiv/
+5_discussions.tex) [11 <./figures/pareto_ablation_standard_vs_diverse.png> <./f
+igures/pareto_infinite-chat_quality_ablations_composite.png> <./figures/ablatio
+n_pass_k/pass_at_k_avg_ablations.png>]
+[12] (./main.bbl [13] [14] [15] [16] [17]) (./notes_arxiv/appendix.tex [18]
+\c@ttl@toc@sections=\count368
+
+(./main.ptc) [19
+
+] (./notes_arxiv/appendix/algorithm.tex
+LaTeX Font Info:    Trying to load font information for U+bbm on input line 70.
+
+
+(/usr/local/texlive/2026/texmf-dist/tex/latex/bbm-macros/ubbm.fd
+File: ubbm.fd 1999/03/15 V 1.2 Font definition for bbm font - TH
+) [20
+
+]
+Overfull \hbox (64.07817pt too wide) detected at line 121
+\OML/cmm/m/it/10 ^^R \OMS/cmsy/m/n/10   [] [] \U/msb/m/n/10 E [] \OML/cmm/m/it/
+10 ;
+ []
+
+) [21] (./notes_arxiv/appendix/implementation.tex [22
+
+] [23]
+<figures/no_role_wo.png, id=848, 1006.7211pt x 151.0443pt>
+File: figures/no_role_wo.png Graphic file (type png)
+<use figures/no_role_wo.png>
+Package pdftex.def Info: figures/no_role_wo.png  used on input line 149.
+(pdftex.def)             Requested size: 325.9406pt x 48.90211pt.
+<figures/no_role_w.png, id=849, 1006.4802pt x 151.2852pt>
+File: figures/no_role_w.png Graphic file (type png)
+<use figures/no_role_w.png>
+Package pdftex.def Info: figures/no_role_w.png  used on input line 155.
+(pdftex.def)             Requested size: 325.9406pt x 48.99165pt.
+<figures/quality_only_wo.png, id=850, 1006.4802pt x 151.0443pt>
+File: figures/quality_only_wo.png Graphic file (type png)
+<use figures/quality_only_wo.png>
+Package pdftex.def Info: figures/quality_only_wo.png  used on input line 163.
+(pdftex.def)             Requested size: 325.9406pt x 48.91365pt.
+<figures/quality_only_w.png, id=851, 1012.7436pt x 151.2852pt>
+File: figures/quality_only_w.png Graphic file (type png)
+<use figures/quality_only_w.png>
+Package pdftex.def Info: figures/quality_only_w.png  used on input line 172.
+(pdftex.def)             Requested size: 325.9406pt x 48.68925pt.
+<figures/diversity_only_wo.png, id=852, 1006.4802pt x 151.2852pt>
+File: figures/diversity_only_wo.png Graphic file (type png)
+<use figures/diversity_only_wo.png>
+Package pdftex.def Info: figures/diversity_only_wo.png  used on input line 180.
+
+(pdftex.def)             Requested size: 325.9406pt x 48.99165pt.
+<figures/diversity_only_w.png, id=853, 1012.7436pt x 151.2852pt>
+File: figures/diversity_only_w.png Graphic file (type png)
+<use figures/diversity_only_w.png>
+Package pdftex.def Info: figures/diversity_only_w.png  used on input line 189.
+(pdftex.def)             Requested size: 325.9406pt x 48.68925pt.
+<figures/crafted_wo.png, id=854, 1006.7211pt x 151.0443pt>
+File: figures/crafted_wo.png Graphic file (type png)
+<use figures/crafted_wo.png>
+Package pdftex.def Info: figures/crafted_wo.png  used on input line 197.
+(pdftex.def)             Requested size: 325.9406pt x 48.90211pt.
+<figures/crafted_w.png, id=855, 1006.4802pt x 151.0443pt>
+File: figures/crafted_w.png Graphic file (type png)
+<use figures/crafted_w.png>
+Package pdftex.def Info: figures/crafted_w.png  used on input line 206.
+(pdftex.def)             Requested size: 325.9406pt x 48.91365pt.
+) [24] [25 <./figures/no_role_wo.png> <./figures/no_role_w.png> <./figures/qual
+ity_only_wo.png> <./figures/quality_only_w.png> <./figures/diversity_only_wo.pn
+g> <./figures/diversity_only_w.png> <./figures/crafted_wo.png> <./figures/craft
+ed_w.png>]
+(./notes_arxiv/appendix/additional_results.tex
+(./notes_arxiv/appendix/diversity_main_error_bar.tex
+Underfull \vbox (badness 3471) has occurred while \output is active []
+
+ [26
+
+])
+(./notes_arxiv/appendix/general_capability_error_bar.tex
+Overfull \hbox (48.37599pt too wide) in paragraph at lines 5--32
+ [][] 
+ []
+
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 3
+2.
+(/usr/local/texlive/2026/texmf-dist/tex/latex/psnfss/ts1ptm.fd
+File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
+))
+Underfull \vbox (badness 5504) has occurred while \output is active []
+
+ [27]
+<figures/main_pass_k/pass_at_k_figures/pass_at_k_boolq_thinking_false_base_mode
+l_qwen3-8b.png, id=892, 631.6398pt x 596.2275pt>
+File: figures/main_pass_k/pass_at_k_figures/pass_at_k_boolq_thinking_false_base
+_model_qwen3-8b.png Graphic file (type png)
+<use figures/main_pass_k/pass_at_k_figures/pass_at_k_boolq_thinking_false_base_
+model_qwen3-8b.png>
+Package pdftex.def Info: figures/main_pass_k/pass_at_k_figures/pass_at_k_boolq_
+thinking_false_base_model_qwen3-8b.png  used on input line 61.
+(pdftex.def)             Requested size: 95.39857pt x 90.0489pt.
+<figures/main_pass_k/pass_at_k_figures/pass_at_k_mmlu_thinking_false_base_model
+_qwen3-8b.png, id=893, 631.6398pt x 596.2275pt>
+File: figures/main_pass_k/pass_at_k_figures/pass_at_k_mmlu_thinking_false_base_
+model_qwen3-8b.png Graphic file (type png)
+<use figures/main_pass_k/pass_at_k_figures/pass_at_k_mmlu_thinking_false_base_m
+odel_qwen3-8b.png>
+Package pdftex.def Info: figures/main_pass_k/pass_at_k_figures/pass_at_k_mmlu_t
+hinking_false_base_model_qwen3-8b.png  used on input line 66.
+(pdftex.def)             Requested size: 95.39857pt x 90.0489pt.
+<figures/main_pass_k/pass_at_k_figures/pass_at_k_gpqa_thinking_false_base_model
+_qwen3-8b.png, id=894, 631.6398pt x 596.2275pt>
+File: figures/main_pass_k/pass_at_k_figures/pass_at_k_gpqa_thinking_false_base_
+model_qwen3-8b.png Graphic file (type png)
+<use figures/main_pass_k/pass_at_k_figures/pass_at_k_gpqa_thinking_false_base_m
+odel_qwen3-8b.png>
+Package pdftex.def Info: figures/main_pass_k/pass_at_k_figures/pass_at_k_gpqa_t
+hinking_false_base_model_qwen3-8b.png  used on input line 70.
+(pdftex.def)             Requested size: 95.39857pt x 90.0489pt.
+<figures/main_pass_k/pass_at_k_figures/pass_at_k_ifeval_thinking_false_base_mod
+el_qwen3-8b.png, id=895, 631.6398pt x 596.2275pt>
+File: figures/main_pass_k/pass_at_k_figures/pass_at_k_ifeval_thinking_false_bas
+e_model_qwen3-8b.png Graphic file (type png)
+<use figures/main_pass_k/pass_at_k_figures/pass_at_k_ifeval_thinking_false_base
+_model_qwen3-8b.png>
+Package pdftex.def Info: figures/main_pass_k/pass_at_k_figures/pass_at_k_ifeval
+_thinking_false_base_model_qwen3-8b.png  used on input line 74.
+(pdftex.def)             Requested size: 95.39857pt x 90.0489pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [28]
+<figures/main_pass_k/pass_at_k_figures/pass_at_k_avg_thinking_true.png, id=902,
+ 631.6398pt x 596.2275pt>
+File: figures/main_pass_k/pass_at_k_figures/pass_at_k_avg_thinking_true.png Gra
+phic file (type png)
+<use figures/main_pass_k/pass_at_k_figures/pass_at_k_avg_thinking_true.png>
+Package pdftex.def Info: figures/main_pass_k/pass_at_k_figures/pass_at_k_avg_th
+inking_true.png  used on input line 84.
+(pdftex.def)             Requested size: 95.39857pt x 90.0489pt.
+<figures/main_pass_k/pass_at_k_figures/pass_at_k_gsm8k_thinking_true.png, id=90
+3, 631.6398pt x 596.2275pt>
+File: figures/main_pass_k/pass_at_k_figures/pass_at_k_gsm8k_thinking_true.png G
+raphic file (type png)
+<use figures/main_pass_k/pass_at_k_figures/pass_at_k_gsm8k_thinking_true.png>
+Package pdftex.def Info: figures/main_pass_k/pass_at_k_figures/pass_at_k_gsm8k_
+thinking_true.png  used on input line 89.
+(pdftex.def)             Requested size: 95.39857pt x 90.0489pt.
+<figures/main_pass_k/pass_at_k_figures/pass_at_k_truthfulqa_thinking_true.png, 
+id=904, 631.6398pt x 596.2275pt>
+File: figures/main_pass_k/pass_at_k_figures/pass_at_k_truthfulqa_thinking_true.
+png Graphic file (type png)
+<use figures/main_pass_k/pass_at_k_figures/pass_at_k_truthfulqa_thinking_true.p
+ng>
+Package pdftex.def Info: figures/main_pass_k/pass_at_k_figures/pass_at_k_truthf
+ulqa_thinking_true.png  used on input line 93.
+(pdftex.def)             Requested size: 95.39857pt x 90.0489pt.
+<figures/main_pass_k/pass_at_k_figures/pass_at_k_hellaswag_thinking_true.png, i
+d=905, 631.6398pt x 596.2275pt>
+File: figures/main_pass_k/pass_at_k_figures/pass_at_k_hellaswag_thinking_true.p
+ng Graphic file (type png)
+<use figures/main_pass_k/pass_at_k_figures/pass_at_k_hellaswag_thinking_true.pn
+g>
+Package pdftex.def Info: figures/main_pass_k/pass_at_k_figures/pass_at_k_hellas
+wag_thinking_true.png  used on input line 97.
+(pdftex.def)             Requested size: 95.39857pt x 90.0489pt.
+<figures/main_pass_k/pass_at_k_figures/pass_at_k_boolq_thinking_true.png, id=90
+6, 631.6398pt x 596.2275pt>
+File: figures/main_pass_k/pass_at_k_figures/pass_at_k_boolq_thinking_true.png G
+raphic file (type png)
+<use figures/main_pass_k/pass_at_k_figures/pass_at_k_boolq_thinking_true.png>
+Package pdftex.def Info: figures/main_pass_k/pass_at_k_figures/pass_at_k_boolq_
+thinking_true.png  used on input line 102.
+(pdftex.def)             Requested size: 95.39857pt x 90.0489pt.
+<figures/main_pass_k/pass_at_k_figures/pass_at_k_mmlu_thinking_true.png, id=907
+, 631.6398pt x 596.2275pt>
+File: figures/main_pass_k/pass_at_k_figures/pass_at_k_mmlu_thinking_true.png Gr
+aphic file (type png)
+<use figures/main_pass_k/pass_at_k_figures/pass_at_k_mmlu_thinking_true.png>
+Package pdftex.def Info: figures/main_pass_k/pass_at_k_figures/pass_at_k_mmlu_t
+hinking_true.png  used on input line 107.
+(pdftex.def)             Requested size: 95.39857pt x 90.0489pt.
+<figures/main_pass_k/pass_at_k_figures/pass_at_k_gpqa_thinking_true.png, id=908
+, 631.6398pt x 596.2275pt>
+File: figures/main_pass_k/pass_at_k_figures/pass_at_k_gpqa_thinking_true.png Gr
+aphic file (type png)
+<use figures/main_pass_k/pass_at_k_figures/pass_at_k_gpqa_thinking_true.png>
+Package pdftex.def Info: figures/main_pass_k/pass_at_k_figures/pass_at_k_gpqa_t
+hinking_true.png  used on input line 111.
+(pdftex.def)             Requested size: 95.39857pt x 90.0489pt.
+<figures/main_pass_k/pass_at_k_figures/pass_at_k_ifeval_thinking_true.png, id=9
+09, 631.6398pt x 596.2275pt>
+File: figures/main_pass_k/pass_at_k_figures/pass_at_k_ifeval_thinking_true.png 
+Graphic file (type png)
+<use figures/main_pass_k/pass_at_k_figures/pass_at_k_ifeval_thinking_true.png>
+Package pdftex.def Info: figures/main_pass_k/pass_at_k_figures/pass_at_k_ifeval
+_thinking_true.png  used on input line 115.
+(pdftex.def)             Requested size: 95.39857pt x 90.0489pt.
+<figures/main_pass_k/pass_at_k_figures/pass_at_k_avg_thinking_false_base_model_
+llama3_1-8b.png, id=910, 631.6398pt x 596.2275pt>
+File: figures/main_pass_k/pass_at_k_figures/pass_at_k_avg_thinking_false_base_m
+odel_llama3_1-8b.png Graphic file (type png)
+<use figures/main_pass_k/pass_at_k_figures/pass_at_k_avg_thinking_false_base_mo
+del_llama3_1-8b.png>
+Package pdftex.def Info: figures/main_pass_k/pass_at_k_figures/pass_at_k_avg_th
+inking_false_base_model_llama3_1-8b.png  used on input line 125.
+(pdftex.def)             Requested size: 95.39857pt x 90.0489pt.
+<figures/main_pass_k/pass_at_k_figures/pass_at_k_gsm8k_thinking_false_base_mode
+l_llama3_1-8b.png, id=911, 631.6398pt x 596.2275pt>
+File: figures/main_pass_k/pass_at_k_figures/pass_at_k_gsm8k_thinking_false_base
+_model_llama3_1-8b.png Graphic file (type png)
+<use figures/main_pass_k/pass_at_k_figures/pass_at_k_gsm8k_thinking_false_base_
+model_llama3_1-8b.png>
+Package pdftex.def Info: figures/main_pass_k/pass_at_k_figures/pass_at_k_gsm8k_
+thinking_false_base_model_llama3_1-8b.png  used on input line 130.
+(pdftex.def)             Requested size: 95.39857pt x 90.0489pt.
+<figures/main_pass_k/pass_at_k_figures/pass_at_k_truthfulqa_thinking_false_base
+_model_llama3_1-8b.png, id=912, 631.6398pt x 596.2275pt>
+File: figures/main_pass_k/pass_at_k_figures/pass_at_k_truthfulqa_thinking_false
+_base_model_llama3_1-8b.png Graphic file (type png)
+<use figures/main_pass_k/pass_at_k_figures/pass_at_k_truthfulqa_thinking_false_
+base_model_llama3_1-8b.png>
+Package pdftex.def Info: figures/main_pass_k/pass_at_k_figures/pass_at_k_truthf
+ulqa_thinking_false_base_model_llama3_1-8b.png  used on input line 134.
+(pdftex.def)             Requested size: 95.39857pt x 90.0489pt.
+<figures/main_pass_k/pass_at_k_figures/pass_at_k_hellaswag_thinking_false_base_
+model_llama3_1-8b.png, id=913, 631.6398pt x 596.2275pt>
+File: figures/main_pass_k/pass_at_k_figures/pass_at_k_hellaswag_thinking_false_
+base_model_llama3_1-8b.png Graphic file (type png)
+<use figures/main_pass_k/pass_at_k_figures/pass_at_k_hellaswag_thinking_false_b
+ase_model_llama3_1-8b.png>
+Package pdftex.def Info: figures/main_pass_k/pass_at_k_figures/pass_at_k_hellas
+wag_thinking_false_base_model_llama3_1-8b.png  used on input line 138.
+(pdftex.def)             Requested size: 95.39857pt x 90.0489pt.
+<figures/main_pass_k/pass_at_k_figures/pass_at_k_boolq_thinking_false_base_mode
+l_llama3_1-8b.png, id=914, 631.6398pt x 596.2275pt>
+File: figures/main_pass_k/pass_at_k_figures/pass_at_k_boolq_thinking_false_base
+_model_llama3_1-8b.png Graphic file (type png)
+<use figures/main_pass_k/pass_at_k_figures/pass_at_k_boolq_thinking_false_base_
+model_llama3_1-8b.png>
+Package pdftex.def Info: figures/main_pass_k/pass_at_k_figures/pass_at_k_boolq_
+thinking_false_base_model_llama3_1-8b.png  used on input line 143.
+(pdftex.def)             Requested size: 95.39857pt x 90.0489pt.
+<figures/main_pass_k/pass_at_k_figures/pass_at_k_mmlu_thinking_false_base_model
+_llama3_1-8b.png, id=915, 631.6398pt x 596.2275pt>
+File: figures/main_pass_k/pass_at_k_figures/pass_at_k_mmlu_thinking_false_base_
+model_llama3_1-8b.png Graphic file (type png)
+<use figures/main_pass_k/pass_at_k_figures/pass_at_k_mmlu_thinking_false_base_m
+odel_llama3_1-8b.png>
+Package pdftex.def Info: figures/main_pass_k/pass_at_k_figures/pass_at_k_mmlu_t
+hinking_false_base_model_llama3_1-8b.png  used on input line 148.
+(pdftex.def)             Requested size: 95.39857pt x 90.0489pt.
+<figures/main_pass_k/pass_at_k_figures/pass_at_k_gpqa_thinking_false_base_model
+_llama3_1-8b.png, id=916, 631.6398pt x 596.2275pt>
+File: figures/main_pass_k/pass_at_k_figures/pass_at_k_gpqa_thinking_false_base_
+model_llama3_1-8b.png Graphic file (type png)
+<use figures/main_pass_k/pass_at_k_figures/pass_at_k_gpqa_thinking_false_base_m
+odel_llama3_1-8b.png>
+Package pdftex.def Info: figures/main_pass_k/pass_at_k_figures/pass_at_k_gpqa_t
+hinking_false_base_model_llama3_1-8b.png  used on input line 152.
+(pdftex.def)             Requested size: 95.39857pt x 90.0489pt.
+<figures/main_pass_k/pass_at_k_figures/pass_at_k_ifeval_thinking_false_base_mod
+el_llama3_1-8b.png, id=917, 631.6398pt x 596.2275pt>
+File: figures/main_pass_k/pass_at_k_figures/pass_at_k_ifeval_thinking_false_bas
+e_model_llama3_1-8b.png Graphic file (type png)
+<use figures/main_pass_k/pass_at_k_figures/pass_at_k_ifeval_thinking_false_base
+_model_llama3_1-8b.png>
+Package pdftex.def Info: figures/main_pass_k/pass_at_k_figures/pass_at_k_ifeval
+_thinking_false_base_model_llama3_1-8b.png  used on input line 156.
+(pdftex.def)             Requested size: 95.39857pt x 90.0489pt.
+<figures/main_pass_k/pass_at_k_figures/pass_at_k_avg_thinking_false_base_model_
+glm-4-9b.png, id=918, 631.6398pt x 596.2275pt>
+File: figures/main_pass_k/pass_at_k_figures/pass_at_k_avg_thinking_false_base_m
+odel_glm-4-9b.png Graphic file (type png)
+<use figures/main_pass_k/pass_at_k_figures/pass_at_k_avg_thinking_false_base_mo
+del_glm-4-9b.png>
+Package pdftex.def Info: figures/main_pass_k/pass_at_k_figures/pass_at_k_avg_th
+inking_false_base_model_glm-4-9b.png  used on input line 167.
+(pdftex.def)             Requested size: 95.39857pt x 90.0489pt.
+<figures/main_pass_k/pass_at_k_figures/pass_at_k_gsm8k_thinking_false_base_mode
+l_glm-4-9b.png, id=919, 631.6398pt x 596.2275pt>
+File: figures/main_pass_k/pass_at_k_figures/pass_at_k_gsm8k_thinking_false_base
+_model_glm-4-9b.png Graphic file (type png)
+<use figures/main_pass_k/pass_at_k_figures/pass_at_k_gsm8k_thinking_false_base_
+model_glm-4-9b.png>
+Package pdftex.def Info: figures/main_pass_k/pass_at_k_figures/pass_at_k_gsm8k_
+thinking_false_base_model_glm-4-9b.png  used on input line 172.
+(pdftex.def)             Requested size: 95.39857pt x 90.0489pt.
+<figures/main_pass_k/pass_at_k_figures/pass_at_k_truthfulqa_thinking_false_base
+_model_glm-4-9b.png, id=920, 631.6398pt x 596.2275pt>
+File: figures/main_pass_k/pass_at_k_figures/pass_at_k_truthfulqa_thinking_false
+_base_model_glm-4-9b.png Graphic file (type png)
+<use figures/main_pass_k/pass_at_k_figures/pass_at_k_truthfulqa_thinking_false_
+base_model_glm-4-9b.png>
+Package pdftex.def Info: figures/main_pass_k/pass_at_k_figures/pass_at_k_truthf
+ulqa_thinking_false_base_model_glm-4-9b.png  used on input line 176.
+(pdftex.def)             Requested size: 95.39857pt x 90.0489pt.
+<figures/main_pass_k/pass_at_k_figures/pass_at_k_hellaswag_thinking_false_base_
+model_glm-4-9b.png, id=921, 631.6398pt x 596.2275pt>
+File: figures/main_pass_k/pass_at_k_figures/pass_at_k_hellaswag_thinking_false_
+base_model_glm-4-9b.png Graphic file (type png)
+<use figures/main_pass_k/pass_at_k_figures/pass_at_k_hellaswag_thinking_false_b
+ase_model_glm-4-9b.png>
+Package pdftex.def Info: figures/main_pass_k/pass_at_k_figures/pass_at_k_hellas
+wag_thinking_false_base_model_glm-4-9b.png  used on input line 180.
+(pdftex.def)             Requested size: 95.39857pt x 90.0489pt.
+<figures/main_pass_k/pass_at_k_figures/pass_at_k_boolq_thinking_false_base_mode
+l_glm-4-9b.png, id=922, 631.6398pt x 596.2275pt>
+File: figures/main_pass_k/pass_at_k_figures/pass_at_k_boolq_thinking_false_base
+_model_glm-4-9b.png Graphic file (type png)
+<use figures/main_pass_k/pass_at_k_figures/pass_at_k_boolq_thinking_false_base_
+model_glm-4-9b.png>
+Package pdftex.def Info: figures/main_pass_k/pass_at_k_figures/pass_at_k_boolq_
+thinking_false_base_model_glm-4-9b.png  used on input line 185.
+(pdftex.def)             Requested size: 95.39857pt x 90.0489pt.
+<figures/main_pass_k/pass_at_k_figures/pass_at_k_mmlu_thinking_false_base_model
+_glm-4-9b.png, id=923, 631.6398pt x 596.2275pt>
+File: figures/main_pass_k/pass_at_k_figures/pass_at_k_mmlu_thinking_false_base_
+model_glm-4-9b.png Graphic file (type png)
+<use figures/main_pass_k/pass_at_k_figures/pass_at_k_mmlu_thinking_false_base_m
+odel_glm-4-9b.png>
+Package pdftex.def Info: figures/main_pass_k/pass_at_k_figures/pass_at_k_mmlu_t
+hinking_false_base_model_glm-4-9b.png  used on input line 190.
+(pdftex.def)             Requested size: 95.39857pt x 90.0489pt.
+<figures/main_pass_k/pass_at_k_figures/pass_at_k_gpqa_thinking_false_base_model
+_glm-4-9b.png, id=924, 631.6398pt x 596.2275pt>
+File: figures/main_pass_k/pass_at_k_figures/pass_at_k_gpqa_thinking_false_base_
+model_glm-4-9b.png Graphic file (type png)
+<use figures/main_pass_k/pass_at_k_figures/pass_at_k_gpqa_thinking_false_base_m
+odel_glm-4-9b.png>
+Package pdftex.def Info: figures/main_pass_k/pass_at_k_figures/pass_at_k_gpqa_t
+hinking_false_base_model_glm-4-9b.png  used on input line 194.
+(pdftex.def)             Requested size: 95.39857pt x 90.0489pt.
+<figures/main_pass_k/pass_at_k_figures/pass_at_k_ifeval_thinking_false_base_mod
+el_glm-4-9b.png, id=925, 631.6398pt x 596.2275pt>
+File: figures/main_pass_k/pass_at_k_figures/pass_at_k_ifeval_thinking_false_bas
+e_model_glm-4-9b.png Graphic file (type png)
+<use figures/main_pass_k/pass_at_k_figures/pass_at_k_ifeval_thinking_false_base
+_model_glm-4-9b.png>
+Package pdftex.def Info: figures/main_pass_k/pass_at_k_figures/pass_at_k_ifeval
+_thinking_false_base_model_glm-4-9b.png  used on input line 198.
+(pdftex.def)             Requested size: 95.39857pt x 90.0489pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [29 <./figures/main_pass_k/pass_at_k_figures/pass_at_k_boolq_thinking_false_ba
+se_model_qwen3-8b.png> <./figures/main_pass_k/pass_at_k_figures/pass_at_k_mmlu_
+thinking_false_base_model_qwen3-8b.png> <./figures/main_pass_k/pass_at_k_figure
+s/pass_at_k_gpqa_thinking_false_base_model_qwen3-8b.png> <./figures/main_pass_k
+/pass_at_k_figures/pass_at_k_ifeval_thinking_false_base_model_qwen3-8b.png> <./
+figures/main_pass_k/pass_at_k_figures/pass_at_k_avg_thinking_true.png> <./figur
+es/main_pass_k/pass_at_k_figures/pass_at_k_gsm8k_thinking_true.png> <./figures/
+main_pass_k/pass_at_k_figures/pass_at_k_truthfulqa_thinking_true.png> <./figure
+s/main_pass_k/pass_at_k_figures/pass_at_k_hellaswag_thinking_true.png> <./figur
+es/main_pass_k/pass_at_k_figures/pass_at_k_boolq_thinking_true.png> <./figures/
+main_pass_k/pass_at_k_figures/pass_at_k_mmlu_thinking_true.png> <./figures/main
+_pass_k/pass_at_k_figures/pass_at_k_gpqa_thinking_true.png> <./figures/main_pas
+s_k/pass_at_k_figures/pass_at_k_ifeval_thinking_true.png> <./figures/main_pass_
+k/pass_at_k_figures/pass_at_k_avg_thinking_false_base_model_llama3_1-8b.png> <.
+/figures/main_pass_k/pass_at_k_figures/pass_at_k_gsm8k_thinking_false_base_mode
+l_llama3_1-8b.png> <./figures/main_pass_k/pass_at_k_figures/pass_at_k_truthfulq
+a_thinking_false_base_model_llama3_1-8b.png> <./figures/main_pass_k/pass_at_k_f
+igures/pass_at_k_hellaswag_thinking_false_base_model_llama3_1-8b.png> <./figure
+s/main_pass_k/pass_at_k_figures/pass_at_k_boolq_thinking_false_base_model_llama
+3_1-8b.png> <./figures/main_pass_k/pass_at_k_figures/pass_at_k_mmlu_thinking_fa
+lse_base_model_llama3_1-8b.png> <./figures/main_pass_k/pass_at_k_figures/pass_a
+t_k_gpqa_thinking_false_base_model_llama3_1-8b.png> <./figures/main_pass_k/pass
+_at_k_figures/pass_at_k_ifeval_thinking_false_base_model_llama3_1-8b.png>]
+(./notes_arxiv/table/ablation_table.tex)
+<figures/ablation_pass_k/pass_at_k_gsm8k_ablations.png, id=953, 631.6398pt x 59
+6.2275pt>
+File: figures/ablation_pass_k/pass_at_k_gsm8k_ablations.png Graphic file (type 
+png)
+<use figures/ablation_pass_k/pass_at_k_gsm8k_ablations.png>
+Package pdftex.def Info: figures/ablation_pass_k/pass_at_k_gsm8k_ablations.png 
+ used on input line 212.
+(pdftex.def)             Requested size: 127.1981pt x 120.06218pt.
+<figures/ablation_pass_k/pass_at_k_mmlu_ablations.png, id=954, 631.6398pt x 596
+.2275pt>
+File: figures/ablation_pass_k/pass_at_k_mmlu_ablations.png Graphic file (type p
+ng)
+<use figures/ablation_pass_k/pass_at_k_mmlu_ablations.png>
+Package pdftex.def Info: figures/ablation_pass_k/pass_at_k_mmlu_ablations.png  
+used on input line 219.
+(pdftex.def)             Requested size: 127.1981pt x 120.06218pt.
+<figures/ablation_pass_k/pass_at_k_gpqa_ablations.png, id=955, 631.6398pt x 596
+.2275pt>
+File: figures/ablation_pass_k/pass_at_k_gpqa_ablations.png Graphic file (type p
+ng)
+<use figures/ablation_pass_k/pass_at_k_gpqa_ablations.png>
+Package pdftex.def Info: figures/ablation_pass_k/pass_at_k_gpqa_ablations.png  
+used on input line 226.
+(pdftex.def)             Requested size: 127.1981pt x 120.06218pt.
+<figures/ablation_pass_k/pass_at_k_truthfulqa_ablations.png, id=956, 631.6398pt
+ x 596.2275pt>
+File: figures/ablation_pass_k/pass_at_k_truthfulqa_ablations.png Graphic file (
+type png)
+<use figures/ablation_pass_k/pass_at_k_truthfulqa_ablations.png>
+Package pdftex.def Info: figures/ablation_pass_k/pass_at_k_truthfulqa_ablations
+.png  used on input line 233.
+(pdftex.def)             Requested size: 127.1981pt x 120.06218pt.
+<figures/ablation_pass_k/pass_at_k_boolq_ablations.png, id=957, 631.6398pt x 59
+6.2275pt>
+File: figures/ablation_pass_k/pass_at_k_boolq_ablations.png Graphic file (type 
+png)
+<use figures/ablation_pass_k/pass_at_k_boolq_ablations.png>
+Package pdftex.def Info: figures/ablation_pass_k/pass_at_k_boolq_ablations.png 
+ used on input line 240.
+(pdftex.def)             Requested size: 127.1981pt x 120.06218pt.
+<figures/ablation_pass_k/pass_at_k_hellaswag_ablations.png, id=958, 631.6398pt 
+x 596.2275pt>
+File: figures/ablation_pass_k/pass_at_k_hellaswag_ablations.png Graphic file (t
+ype png)
+<use figures/ablation_pass_k/pass_at_k_hellaswag_ablations.png>
+Package pdftex.def Info: figures/ablation_pass_k/pass_at_k_hellaswag_ablations.
+png  used on input line 246.
+(pdftex.def)             Requested size: 127.1981pt x 120.06218pt.
+<figures/ablation_pass_k/pass_at_k_ifeval_ablations.png, id=959, 631.6398pt x 5
+96.2275pt>
+File: figures/ablation_pass_k/pass_at_k_ifeval_ablations.png Graphic file (type
+ png)
+<use figures/ablation_pass_k/pass_at_k_ifeval_ablations.png>
+Package pdftex.def Info: figures/ablation_pass_k/pass_at_k_ifeval_ablations.png
+  used on input line 253.
+(pdftex.def)             Requested size: 127.1981pt x 120.06218pt.
+) [30 <./figures/main_pass_k/pass_at_k_figures/pass_at_k_avg_thinking_false_bas
+e_model_glm-4-9b.png> <./figures/main_pass_k/pass_at_k_figures/pass_at_k_gsm8k_
+thinking_false_base_model_glm-4-9b.png> <./figures/main_pass_k/pass_at_k_figure
+s/pass_at_k_truthfulqa_thinking_false_base_model_glm-4-9b.png> <./figures/main_
+pass_k/pass_at_k_figures/pass_at_k_hellaswag_thinking_false_base_model_glm-4-9b
+.png> <./figures/main_pass_k/pass_at_k_figures/pass_at_k_boolq_thinking_false_b
+ase_model_glm-4-9b.png> <./figures/main_pass_k/pass_at_k_figures/pass_at_k_mmlu
+_thinking_false_base_model_glm-4-9b.png> <./figures/main_pass_k/pass_at_k_figur
+es/pass_at_k_gpqa_thinking_false_base_model_glm-4-9b.png> <./figures/main_pass_
+k/pass_at_k_figures/pass_at_k_ifeval_thinking_false_base_model_glm-4-9b.png>] [
+31 <./figures/ablation_pass_k/pass_at_k_gsm8k_ablations.png> <./figures/ablatio
+n_pass_k/pass_at_k_mmlu_ablations.png> <./figures/ablation_pass_k/pass_at_k_gpq
+a_ablations.png> <./figures/ablation_pass_k/pass_at_k_truthfulqa_ablations.png>
+ <./figures/ablation_pass_k/pass_at_k_boolq_ablations.png> <./figures/ablation_
+pass_k/pass_at_k_hellaswag_ablations.png> <./figures/ablation_pass_k/pass_at_k_
+ifeval_ablations.png>]
+(./notes_arxiv/appendix/benchmarks.tex [32
+
+]) [33]
+(./notes_arxiv/appendix/generation_examples.tex
+(./notes_arxiv/appendix/generation_book_list.tex)
+(./notes_arxiv/appendix/generation_chess.tex)
+(./notes_arxiv/appendix/generation_5_word.tex
+Underfull \hbox (badness 1194) in paragraph at lines 40--41
+[]\T1/ptm/m/n/6 (+20) Moonlight - Whis-per - Jour-ney - Echo -
+ []
+
+) (./notes_arxiv/appendix/generation_cocktail.tex
+Underfull \hbox (badness 10000) in paragraph at lines 143--144
+[]\T1/ptm/m/n/6 (+20) Why not try the \T1/ptm/b/n/6 (+20) ``Phan-tom of the
+ []
+
+)) [34
+
+] [35] [36] [37] [38] [39] (./notes_arxiv/appendix/related_work_table.tex))
+\tf@ptc=\write5
+\openout5 = `main.ptc'.
+
+ [40
+
+] (./main.aux)
+ ***********
+LaTeX2e <2025-11-01>
+L3 programming layer <2026-01-19>
+ ***********
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: 0FBEA468950232C107D06E38C325E573;5727.
+ ) 
+Here is how much of TeX's memory you used:
+ 34543 strings out of 467525
+ 700848 string characters out of 5418982
+ 1196916 words of memory out of 5000000
+ 61977 multiletter control sequences out of 15000+600000
+ 742801 words of font info for 539 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 98i,15n,108p,2062b,1018s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ </Users/carrieyuan/Library/texlive/2026/texmf-var/fonts/pk/ljfour/public/bbm
+/bbm10.600pk></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmbx10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmbx9.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+ex10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cmextr
+a/cmex9.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmmi10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mmi5.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmm
+i6.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7
+.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.p
+fb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb
+></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></
+usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr
+/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/lo
+cal/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local
+/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/
+texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/te
+xlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texl
+ive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texliv
+e/2026/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/te
+xlive/2026/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/20
+26/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2026/texm
+f-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2026/texmf-dist/fon
+ts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/
+urw/times/utmr8a.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/urw/times/
+utmri8a.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/urw/zapfding/uzdr.p
+fb>
+Output written on main.pdf (40 pages, 15892549 bytes).
+PDF statistics:
+ 1254 PDF objects out of 1440 (max. 8388607)
+ 1015 compressed objects within 11 object streams
+ 220 named destinations out of 1000 (max. 500000)
+ 94760 words of extra memory for PDF output out of 106986 (max. 10000000)
+

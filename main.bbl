@@ -1,0 +1,662 @@
+\begin{thebibliography}{77}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Abdulhai et~al.(2026)Abdulhai, White, Wan, Qureshi, Leibo,
+  Kleiman-Weiner, and Jaques]{abdulhai2026llmsdistortwrittenlanguage}
+Marwa Abdulhai, Isadora White, Yanming Wan, Ibrahim Qureshi, Joel Leibo, Max
+  Kleiman-Weiner, and Natasha Jaques.
+\newblock How llms distort our written language, 2026.
+\newblock URL \url{https://arxiv.org/abs/2603.18161}.
+
+\bibitem[Ajith et~al.(2026)Ajith, Singh, DeYoung, Kunievsky, Kozlowski,
+  Tafjord, Evans, Weld, Hope, and Downey]{Ajith2026}
+Anirudh Ajith, Amanpreet Singh, Jay DeYoung, Nadav Kunievsky, Austin~C.
+  Kozlowski, Oyvind Tafjord, James Evans, Daniel~S. Weld, Tom Hope, and Doug
+  Downey.
+\newblock Prescience: A benchmark for forecasting scientific contributions.
+\newblock 2 2026.
+\newblock URL \url{http://arxiv.org/abs/2602.20459}.
+
+\bibitem[Anderson et~al.(2024)Anderson, Shah, and
+  Kreminski]{Anderson2024HomogenizationEO}
+Barrett~R Anderson, Jash~Hemant Shah, and Max Kreminski.
+\newblock Homogenization effects of large language models on human creative
+  ideation.
+\newblock \emph{Proceedings of the 16th Conference on Creativity \& Cognition},
+  2024.
+\newblock URL \url{https://api.semanticscholar.org/CorpusID:267406608}.
+
+\bibitem[Anschel et~al.(2025)Anschel, Shoshan, Botach, Hakimi, Gendler, Baruch,
+  Bhonker, Kviatkovsky, Aggarwal, and Medioni]{anschel2025group}
+Oron Anschel, Alon Shoshan, Adam Botach, Shunit~Haviv Hakimi, Asaf Gendler,
+  Emanuel~Ben Baruch, Nadav Bhonker, Igor Kviatkovsky, Manoj Aggarwal, and
+  Gerard Medioni.
+\newblock Group-aware reinforcement learning for output diversity in large
+  language models.
+\newblock In \emph{Proceedings of the 2025 Conference on Empirical Methods in
+  Natural Language Processing}, pp.\  32382--32403, 2025.
+
+\bibitem[Argyle et~al.(2023)Argyle, Busby, Fulda, Gubler, Rytting, and
+  Wingate]{argyle2023out}
+Lisa~P Argyle, Ethan~C Busby, Nancy Fulda, Joshua~R Gubler, Christopher
+  Rytting, and David Wingate.
+\newblock Out of one, many: Using language models to simulate human samples.
+\newblock \emph{Political Analysis}, 31\penalty0 (3):\penalty0 337--351, 2023.
+
+\bibitem[Cao et~al.(2025)Cao, Li, Dai, Yang, Zhao, Zhang, Shi, Liu, Han, and
+  Guo]{Cao2025TowardsAM}
+Chuxue Cao, Mengze Li, Juntao Dai, Jinluan Yang, Zijian Zhao, Shengyu Zhang,
+  Weijie Shi, Chengzhong Liu, Sirui Han, and Yike Guo.
+\newblock Towards advanced mathematical reasoning for llms via first-order
+  logic theorem proving.
+\newblock \emph{ArXiv}, abs/2506.17104, 2025.
+\newblock URL \url{https://api.semanticscholar.org/CorpusID:279464376}.
+
+\bibitem[Chen et~al.(2025)Chen, Chakraborty, Wolf, Paschalidis, and
+  Pacchiano]{Chen2025PosttrainingLL}
+Yilei Chen, Souradip Chakraborty, Lorenz Wolf, Yannis Paschalidis, and Aldo
+  Pacchiano.
+\newblock Post-training large language models for diverse high-quality
+  responses.
+\newblock 2025.
+\newblock URL \url{https://api.semanticscholar.org/CorpusID:281194935}.
+
+\bibitem[Chung et~al.(2025)Chung, Padmakumar, Roemmele, Sun, and
+  Kreminski]{chung2025modifyinglargelanguagemodel}
+John Joon~Young Chung, Vishakh Padmakumar, Melissa Roemmele, Yuqian Sun, and
+  Max Kreminski.
+\newblock Modifying large language model post-training for diverse creative
+  writing, 2025.
+\newblock URL \url{https://arxiv.org/abs/2503.17126}.
+
+\bibitem[Clark et~al.(2019)Clark, Lee, Chang, Kwiatkowski, Collins, and
+  Toutanova]{clark2019boolq}
+Christopher Clark, Kenton Lee, Ming-Wei Chang, Tom Kwiatkowski, Michael
+  Collins, and Kristina Toutanova.
+\newblock {B}ool{Q}: Exploring the surprising difficulty of natural yes/no
+  questions.
+\newblock In Jill Burstein, Christy Doran, and Thamar Solorio (eds.),
+  \emph{Proceedings of the 2019 Conference of the North {A}merican Chapter of
+  the Association for Computational Linguistics: Human Language Technologies,
+  Volume 1 (Long and Short Papers)}, pp.\  2924--2936, Minneapolis, Minnesota,
+  June 2019. Association for Computational Linguistics.
+\newblock \doi{10.18653/v1/N19-1300}.
+\newblock URL \url{https://aclanthology.org/N19-1300/}.
+
+\bibitem[Cobbe et~al.(2021)Cobbe, Kosaraju, Bavarian, Chen, Jun, Kaiser,
+  Plappert, Tworek, Hilton, Nakano, Hesse, and Schulman]{cobbe2021gsm8k}
+Karl Cobbe, Vineet Kosaraju, Mohammad Bavarian, Mark Chen, Heewoo Jun, Lukasz
+  Kaiser, Matthias Plappert, Jerry Tworek, Jacob Hilton, Reiichiro Nakano,
+  Christopher Hesse, and John Schulman.
+\newblock Training verifiers to solve math word problems.
+\newblock \emph{arXiv preprint arXiv:2110.14168}, 2021.
+
+\bibitem[Dang et~al.(2025)Dang, Baek, Kolter, and
+  Raghunathan]{dang2025assessing}
+Xingyu Dang, Christina Baek, J~Zico Kolter, and Aditi Raghunathan.
+\newblock Assessing diversity collapse in reasoning.
+\newblock In \emph{Scaling Self-Improving Foundation Models without Human
+  Supervision}, 2025.
+\newblock URL \url{https://openreview.net/forum?id=AMiKsHLjQh}.
+
+\bibitem[Dhuliawala et~al.(2024)Dhuliawala, Kulikov, Yu, Celikyilmaz, Weston,
+  Sukhbaatar, and Lanchantin]{wang2024lpoadaptivedecodinglatent}
+Shehzaad Dhuliawala, Ilia Kulikov, Ping Yu, Asli Celikyilmaz, Jason Weston,
+  Sainbayar Sukhbaatar, and Jack Lanchantin.
+\newblock Adaptive decoding via latent preference optimization, 2024.
+\newblock URL \url{https://arxiv.org/abs/2411.09661}.
+
+\bibitem[Eysenbach et~al.(2018)Eysenbach, Gupta, Ibarz, and
+  Levine]{eysenbach2018diversityneedlearningskills}
+Benjamin Eysenbach, Abhishek Gupta, Julian Ibarz, and Sergey Levine.
+\newblock Diversity is all you need: Learning skills without a reward function,
+  2018.
+\newblock URL \url{https://arxiv.org/abs/1802.06070}.
+
+\bibitem[Friedman \& Dieng(2023)Friedman and
+  Dieng]{friedman2023vendiscorediversityevaluation}
+Dan Friedman and Adji~Bousso Dieng.
+\newblock The vendi score: A diversity evaluation metric for machine learning,
+  2023.
+\newblock URL \url{https://arxiv.org/abs/2210.02410}.
+
+\bibitem[Gruver et~al.(2023)Gruver, Stanton, Frey, Rudner, Hotzel,
+  Lafrance-Vanasse, Rajpal, Cho, and
+  Wilson]{gruver2023proteindesignguideddiscrete}
+Nate Gruver, Samuel Stanton, Nathan~C. Frey, Tim G.~J. Rudner, Isidro Hotzel,
+  Julien Lafrance-Vanasse, Arvind Rajpal, Kyunghyun Cho, and Andrew~Gordon
+  Wilson.
+\newblock Protein design with guided discrete diffusion, 2023.
+\newblock URL \url{https://arxiv.org/abs/2305.20009}.
+
+\bibitem[Guo et~al.(2025{\natexlab{a}})Guo, Yang, Zhang, Song, Wang, Zhu, Xu,
+  Zhang, Ma, Bi, Zhang, Yu, Wu, Wu, Gou, Shao, Li, Gao, Liu, Xue, Wang, Wu,
+  Feng, Lu, Zhao, Deng, Ruan, Dai, Chen, Ji, Li, Lin, Dai, Luo, Hao, Chen, Li,
+  Zhang, Xu, Ding, Gao, Qu, Li, Guo, Li, Chen, Yuan, Tu, Qiu, Li, Cai, Ni,
+  Liang, Chen, Dong, Hu, You, Gao, Guan, Huang, Yu, Wang, Zhang, Zhao, Wang,
+  Zhang, Xu, Xia, Zhang, Zhang, Tang, Zhou, Li, Wang, Li, Tian, Huang, Zhang,
+  Wang, Chen, Du, Ge, Zhang, Pan, Wang, Chen, Jin, Chen, Lu, Zhou, Chen, Ye,
+  Wang, Yu, Zhou, Pan, Li, Zhou, Wu, Yun, Pei, Sun, Wang, Zeng, Liu, Liang,
+  Gao, Yu, Zhang, Xiao, An, Liu, Wang, Chen, Nie, Cheng, Liu, Xie, Liu, Yang,
+  Li, Su, Lin, Li, Jin, Shen, Chen, Sun, Wang, Song, Zhou, Wang, Shan, Li,
+  Wang, Wei, Zhang, Xu, Li, Zhao, Sun, Wang, Yu, Zhang, Shi, Xiong, He, Piao,
+  Wang, Tan, Ma, Liu, Guo, Ou, Wang, Gong, Zou, He, Xiong, Luo, You, Liu, Zhou,
+  Zhu, Huang, Li, Zheng, Zhu, Ma, Tang, Zha, Yan, Ren, Ren, Sha, Fu, Xu, Xie,
+  Zhang, Hao, Ma, Yan, Wu, Gu, Zhu, Liu, Li, Xie, Song, Pan, Huang, Xu, Zhang,
+  and Zhang]{Guo_2025}
+Daya Guo, Dejian Yang, Haowei Zhang, Junxiao Song, Peiyi Wang, Qihao Zhu,
+  Runxin Xu, Ruoyu Zhang, Shirong Ma, Xiao Bi, Xiaokang Zhang, Xingkai Yu,
+  Yu~Wu, Z.~F. Wu, Zhibin Gou, Zhihong Shao, Zhuoshu Li, Ziyi Gao, Aixin Liu,
+  Bing Xue, Bingxuan Wang, Bochao Wu, Bei Feng, Chengda Lu, Chenggang Zhao,
+  Chengqi Deng, Chong Ruan, Damai Dai, Deli Chen, Dongjie Ji, Erhang Li,
+  Fangyun Lin, Fucong Dai, Fuli Luo, Guangbo Hao, Guanting Chen, Guowei Li,
+  H.~Zhang, Hanwei Xu, Honghui Ding, Huazuo Gao, Hui Qu, Hui Li, Jianzhong Guo,
+  Jiashi Li, Jingchang Chen, Jingyang Yuan, Jinhao Tu, Junjie Qiu, Junlong Li,
+  J.~L. Cai, Jiaqi Ni, Jian Liang, Jin Chen, Kai Dong, Kai Hu, Kaichao You,
+  Kaige Gao, Kang Guan, Kexin Huang, Kuai Yu, Lean Wang, Lecong Zhang, Liang
+  Zhao, Litong Wang, Liyue Zhang, Lei Xu, Leyi Xia, Mingchuan Zhang, Minghua
+  Zhang, Minghui Tang, Mingxu Zhou, Meng Li, Miaojun Wang, Mingming Li, Ning
+  Tian, Panpan Huang, Peng Zhang, Qiancheng Wang, Qinyu Chen, Qiushi Du, Ruiqi
+  Ge, Ruisong Zhang, Ruizhe Pan, Runji Wang, R.~J. Chen, R.~L. Jin, Ruyi Chen,
+  Shanghao Lu, Shangyan Zhou, Shanhuang Chen, Shengfeng Ye, Shiyu Wang,
+  Shuiping Yu, Shunfeng Zhou, Shuting Pan, S.~S. Li, Shuang Zhou, Shaoqing Wu,
+  Tao Yun, Tian Pei, Tianyu Sun, T.~Wang, Wangding Zeng, Wen Liu, Wenfeng
+  Liang, Wenjun Gao, Wenqin Yu, Wentao Zhang, W.~L. Xiao, Wei An, Xiaodong Liu,
+  Xiaohan Wang, Xiaokang Chen, Xiaotao Nie, Xin Cheng, Xin Liu, Xin Xie,
+  Xingchao Liu, Xinyu Yang, Xinyuan Li, Xuecheng Su, Xuheng Lin, X.~Q. Li,
+  Xiangyue Jin, Xiaojin Shen, Xiaosha Chen, Xiaowen Sun, Xiaoxiang Wang, Xinnan
+  Song, Xinyi Zhou, Xianzu Wang, Xinxia Shan, Y.~K. Li, Y.~Q. Wang, Y.~X. Wei,
+  Yang Zhang, Yanhong Xu, Yao Li, Yao Zhao, Yaofeng Sun, Yaohui Wang, Yi~Yu,
+  Yichao Zhang, Yifan Shi, Yiliang Xiong, Ying He, Yishi Piao, Yisong Wang,
+  Yixuan Tan, Yiyang Ma, Yiyuan Liu, Yongqiang Guo, Yuan Ou, Yuduan Wang, Yue
+  Gong, Yuheng Zou, Yujia He, Yunfan Xiong, Yuxiang Luo, Yuxiang You, Yuxuan
+  Liu, Yuyang Zhou, Y.~X. Zhu, Yanping Huang, Yaohui Li, Yi~Zheng, Yuchen Zhu,
+  Yunxian Ma, Ying Tang, Yukun Zha, Yuting Yan, Z.~Z. Ren, Zehui Ren, Zhangli
+  Sha, Zhe Fu, Zhean Xu, Zhenda Xie, Zhengyan Zhang, Zhewen Hao, Zhicheng Ma,
+  Zhigang Yan, Zhiyu Wu, Zihui Gu, Zijia Zhu, Zijun Liu, Zilin Li, Ziwei Xie,
+  Ziyang Song, Zizheng Pan, Zhen Huang, Zhipeng Xu, Zhongyu Zhang, and Zhen
+  Zhang.
+\newblock Deepseek-r1 incentivizes reasoning in llms through reinforcement
+  learning.
+\newblock \emph{Nature}, 645\penalty0 (8081):\penalty0 633–638,
+  2025{\natexlab{a}}.
+\newblock ISSN 1476-4687.
+\newblock \doi{10.1038/s41586-025-09422-z}.
+\newblock URL \url{http://dx.doi.org/10.1038/s41586-025-09422-z}.
+
+\bibitem[Guo et~al.(2025{\natexlab{b}})Guo, Shang, and
+  Clavel]{guo2025benchmarking}
+Yanzhu Guo, Guokan Shang, and Chlo{\'e} Clavel.
+\newblock Benchmarking linguistic diversity of large language models.
+\newblock \emph{Transactions of the Association for Computational Linguistics},
+  13:\penalty0 1507--1526, 2025{\natexlab{b}}.
+
+\bibitem[He et~al.(2025)He, Fried, and
+  Welleck]{he2025rewardingunlikelyliftinggrpo}
+Andre He, Daniel Fried, and Sean Welleck.
+\newblock Rewarding the unlikely: Lifting grpo beyond distribution sharpening,
+  2025.
+\newblock URL \url{https://arxiv.org/abs/2506.02355}.
+
+\bibitem[Hendrycks et~al.(2021)Hendrycks, Burns, Basart, Zou, Mazeika, Song,
+  and Steinhardt]{hendryckstest2021}
+Dan Hendrycks, Collin Burns, Steven Basart, Andy Zou, Mantas Mazeika, Dawn
+  Song, and Jacob Steinhardt.
+\newblock Measuring massive multitask language understanding.
+\newblock \emph{Proceedings of the International Conference on Learning
+  Representations (ICLR)}, 2021.
+
+\bibitem[Holtzman et~al.(2020)Holtzman, Buys, Du, Forbes, and
+  Choi]{holtzman2020curiouscaseneuraltext}
+Ari Holtzman, Jan Buys, Li~Du, Maxwell Forbes, and Yejin Choi.
+\newblock The curious case of neural text degeneration, 2020.
+\newblock URL \url{https://arxiv.org/abs/1904.09751}.
+
+\bibitem[Huang et~al.(2024)Huang, Block, Foster, Rohatgi, Zhang, Simchowitz,
+  Ash, and Krishnamurthy]{huang2024self}
+Audrey Huang, Adam Block, Dylan~J Foster, Dhruv Rohatgi, Cyril Zhang, Max
+  Simchowitz, Jordan~T Ash, and Akshay Krishnamurthy.
+\newblock Self-improvement in language models: The sharpening mechanism.
+\newblock \emph{arXiv preprint arXiv:2412.01951}, 2024.
+
+\bibitem[Ippolito et~al.(2019)Ippolito, Kriz, Sedoc, Kustikova, and
+  Callison-Burch]{ippolito2019comparison}
+Daphne Ippolito, Reno Kriz, Joao Sedoc, Maria Kustikova, and Chris
+  Callison-Burch.
+\newblock Comparison of diverse decoding methods from conditional language
+  models.
+\newblock In \emph{Proceedings of the 57th Annual Meeting of the Association
+  for Computational Linguistics}, pp.\  3752--3762, 2019.
+
+\bibitem[Jalali et~al.(2024)Jalali, Ospanov, Gohari, and
+  Farnia]{jalali2024conditionalvendiscoreinformationtheoretic}
+Mohammad Jalali, Azim Ospanov, Amin Gohari, and Farzan Farnia.
+\newblock Conditional vendi score: An information-theoretic approach to
+  diversity evaluation of prompt-based generative models, 2024.
+\newblock URL \url{https://arxiv.org/abs/2411.02817}.
+
+\bibitem[Jaques et~al.(2017)Jaques, Gu, Bahdanau, Hernández-Lobato, Turner,
+  and Eck]{jaques2017sequencetutorconservativefinetuning}
+Natasha Jaques, Shixiang Gu, Dzmitry Bahdanau, José~Miguel Hernández-Lobato,
+  Richard~E. Turner, and Douglas Eck.
+\newblock Sequence tutor: Conservative fine-tuning of sequence generation
+  models with kl-control, 2017.
+\newblock URL \url{https://arxiv.org/abs/1611.02796}.
+
+\bibitem[Jiang et~al.(2025)Jiang, Chai, Li, Liu, Fok, Dziri, Tsvetkov, Sap,
+  Albalak, and Choi]{jiang2025artificialhivemindopenendedhomogeneity}
+Liwei Jiang, Yuanjun Chai, Margaret Li, Mickel Liu, Raymond Fok, Nouha Dziri,
+  Yulia Tsvetkov, Maarten Sap, Alon Albalak, and Yejin Choi.
+\newblock Artificial hivemind: The open-ended homogeneity of language models
+  (and beyond), 2025.
+\newblock URL \url{https://arxiv.org/abs/2510.22954}.
+
+\bibitem[Jung et~al.(2025)Jung, Han, Lu, Hallinan, Acuna, Prabhumoye, Patwary,
+  Shoeybi, Catanzaro, and Choi]{jung2025prismaticsynthesisgradientbaseddata}
+Jaehun Jung, Seungju Han, Ximing Lu, Skyler Hallinan, David Acuna, Shrimai
+  Prabhumoye, Mostafa Patwary, Mohammad Shoeybi, Bryan Catanzaro, and Yejin
+  Choi.
+\newblock Prismatic synthesis: Gradient-based data diversification boosts
+  generalization in llm reasoning, 2025.
+\newblock URL \url{https://arxiv.org/abs/2505.20161}.
+
+\bibitem[Kim et~al.(2026)Kim, Yang, and Jung]{Kim2026}
+Junseok Kim, Nakyeong Yang, and Kyomin Jung.
+\newblock Persona switch: Mixing distinct perspectives in decoding time.
+\newblock 1 2026.
+\newblock URL \url{http://arxiv.org/abs/2601.15708}.
+
+\bibitem[Kirk et~al.(2024)Kirk, Mediratta, Nalmpantis, Luketina, Hambro,
+  Grefenstette, and Raileanu]{kirk2024understandingeffectsrlhfllm}
+Robert Kirk, Ishita Mediratta, Christoforos Nalmpantis, Jelena Luketina, Eric
+  Hambro, Edward Grefenstette, and Roberta Raileanu.
+\newblock Understanding the effects of rlhf on llm generalisation and
+  diversity, 2024.
+\newblock URL \url{https://arxiv.org/abs/2310.06452}.
+
+\bibitem[Kloek \& Van~Dijk(1978)Kloek and Van~Dijk]{kloek1978bayesian}
+Teun Kloek and Herman~K Van~Dijk.
+\newblock Bayesian estimates of equation system parameters: an application of
+  integration by monte carlo.
+\newblock \emph{Econometrica: Journal of the Econometric Society}, pp.\  1--19,
+  1978.
+
+\bibitem[Kwon et~al.(2023)Kwon, Li, Zhuang, Sheng, Zheng, Yu, Gonzalez, Zhang,
+  and Stoica]{kwon2023efficient}
+Woosuk Kwon, Zhuohan Li, Siyuan Zhuang, Ying Sheng, Lianmin Zheng, Cody~Hao Yu,
+  Joseph~E. Gonzalez, Hao Zhang, and Ion Stoica.
+\newblock Efficient memory management for large language model serving with
+  {PagedAttention}.
+\newblock In \emph{Proceedings of the ACM SIGOPS 29th Symposium on Operating
+  Systems Principles}, 2023.
+
+\bibitem[Lagzian et~al.(2025)Lagzian, Anumasa, and
+  Liu]{lagzian2025multinoveltyimprovediversitynovelty}
+Arash Lagzian, Srinivas Anumasa, and Dianbo Liu.
+\newblock Multi-novelty: Improve the diversity and novelty of contents
+  generated by large language models via inference-time multi-views
+  brainstorming, 2025.
+\newblock URL \url{https://arxiv.org/abs/2502.12700}.
+
+\bibitem[Lambert et~al.(2024)Lambert, Morrison, Pyatkin, Huang, Ivison,
+  Brahman, Miranda, Liu, Dziri, Lyu, Gu, Malik, Graf, Hwang, Yang, Bras,
+  Tafjord, Wilhelm, Soldaini, Smith, Wang, Dasigi, and
+  Hajishirzi]{lambert2024tulu3}
+Nathan Lambert, Jacob Morrison, Valentina Pyatkin, Shengyi Huang, Hamish
+  Ivison, Faeze Brahman, Lester James~V. Miranda, Alisa Liu, Nouha Dziri, Shane
+  Lyu, Yuling Gu, Saumya Malik, Victoria Graf, Jena~D. Hwang, Jiangjiang Yang,
+  Ronan~Le Bras, Oyvind Tafjord, Chris Wilhelm, Luca Soldaini, Noah~A. Smith,
+  Yizhong Wang, Pradeep Dasigi, and Hannaneh Hajishirzi.
+\newblock Tülu 3: Pushing frontiers in open language model post-training.
+\newblock 2024.
+
+\bibitem[Lanchantin et~al.(2025)Lanchantin, Chen, Dhuliawala, Yu, Weston,
+  Sukhbaatar, and Kulikov]{lanchantin2025diverse}
+Jack Lanchantin, Angelica Chen, Shehzaad Dhuliawala, Ping Yu, Jason Weston,
+  Sainbayar Sukhbaatar, and Ilia Kulikov.
+\newblock Diverse preference optimization.
+\newblock \emph{arXiv preprint arXiv:2501.18101}, 2025.
+
+\bibitem[Lau et~al.(2025)Lau, Hu, Liu, Chen, Ng, and
+  Low]{lau2025dipperdiversitypromptsproducing}
+Gregory Kang~Ruey Lau, Wenyang Hu, Diwen Liu, Jizhuo Chen, See-Kiong Ng, and
+  Bryan Kian~Hsiang Low.
+\newblock Dipper: Diversity in prompts for producing large language model
+  ensembles in reasoning tasks, 2025.
+\newblock URL \url{https://arxiv.org/abs/2412.15238}.
+
+\bibitem[Li et~al.(2021)Li, Wang, Wu, Zhao, Yang, and
+  Zhang]{li2021celebratingdiversitysharedmultiagent}
+Chenghao Li, Tonghan Wang, Chengjie Wu, Qianchuan Zhao, Jun Yang, and Chongjie
+  Zhang.
+\newblock Celebrating diversity in shared multi-agent reinforcement learning,
+  2021.
+\newblock URL \url{https://arxiv.org/abs/2106.02195}.
+
+\bibitem[Li et~al.(2025)Li, Zhang, Yu, Saha, Khashabi, Weston, Lanchantin, and
+  Wang]{li2025jointlyreinforcingdiversityquality}
+Tianjian Li, Yiming Zhang, Ping Yu, Swarnadeep Saha, Daniel Khashabi, Jason
+  Weston, Jack Lanchantin, and Tianlu Wang.
+\newblock Jointly reinforcing diversity and quality in language model
+  generations, 2025.
+\newblock URL \url{https://arxiv.org/abs/2509.02534}.
+
+\bibitem[Liang et~al.(2024)Liang, Chen, Gupta, Du, and
+  Jaques]{liang2024learning}
+Yancheng Liang, Daphne Chen, Abhishek Gupta, Simon~S Du, and Natasha Jaques.
+\newblock Learning to cooperate with humans using generative agents.
+\newblock \emph{Advances in Neural Information Processing Systems},
+  37:\penalty0 60061--60087, 2024.
+
+\bibitem[Lin et~al.(2022)Lin, Hilton, and
+  Evans]{lin2022truthfulqameasuringmodelsmimic}
+Stephanie Lin, Jacob Hilton, and Owain Evans.
+\newblock Truthfulqa: Measuring how models mimic human falsehoods, 2022.
+\newblock URL \url{https://arxiv.org/abs/2109.07958}.
+
+\bibitem[Liu et~al.(2025)Liu, Zeng, Xiao, He, Liu, Wang, Yan, Shen, Zhang, Xu,
+  et~al.]{liu2025skywork}
+Chris~Yuhao Liu, Liang Zeng, Yuzhen Xiao, Jujie He, Jiacai Liu, Chaojie Wang,
+  Rui Yan, Wei Shen, Fuxiang Zhang, Jiacheng Xu, et~al.
+\newblock Skywork-reward-v2: Scaling preference data curation via human-ai
+  synergy.
+\newblock \emph{arXiv preprint arXiv:2507.01352}, 2025.
+
+\bibitem[Liu et~al.(2026)Liu, Huang, Hu, Zhou, and
+  Tan]{liu2026hypobenchsystematicprincipledbenchmarking}
+Haokun Liu, Sicong Huang, Jingyu Hu, Yangqiaoyu Zhou, and Chenhao Tan.
+\newblock Hypobench: Towards systematic and principled benchmarking for
+  hypothesis generation, 2026.
+\newblock URL \url{https://arxiv.org/abs/2504.11524}.
+
+\bibitem[Luo et~al.(2025)Luo, Yang, Meng, Li, Zhou, and
+  Zhang]{luo2025empiricalstudycatastrophicforgetting}
+Yun Luo, Zhen Yang, Fandong Meng, Yafu Li, Jie Zhou, and Yue Zhang.
+\newblock An empirical study of catastrophic forgetting in large language
+  models during continual fine-tuning, 2025.
+\newblock URL \url{https://arxiv.org/abs/2308.08747}.
+
+\bibitem[McCarthy \& Jarvis(2010)McCarthy and Jarvis]{McCarthy2010MTLDVA}
+Philip~M. McCarthy and Scott Jarvis.
+\newblock Mtld, vocd-d, and hd-d: A validation study of sophisticated
+  approaches to lexical diversity assessment.
+\newblock \emph{Behavior Research Methods}, 42:\penalty0 381--392, 2010.
+\newblock URL \url{https://api.semanticscholar.org/CorpusID:42852342}.
+
+\bibitem[Misaki \& Akiba(2026)Misaki and Akiba]{Misaki2026}
+Kou Misaki and Takuya Akiba.
+\newblock String seed of thought: Prompting llms for distribution-faithful and
+  diverse generation.
+\newblock 2 2026.
+\newblock URL \url{http://arxiv.org/abs/2510.21150}.
+
+\bibitem[Mouret \& Clune(2015)Mouret and
+  Clune]{mouret2015illuminatingsearchspacesmapping}
+Jean-Baptiste Mouret and Jeff Clune.
+\newblock Illuminating search spaces by mapping elites, 2015.
+\newblock URL \url{https://arxiv.org/abs/1504.04909}.
+
+\bibitem[Nguyen et~al.(2024)Nguyen, Baker, Neo, Roush, Kirsch, and
+  Shwartz-Ziv]{nguyen2024turningheatminpsampling}
+Minh~Nhat Nguyen, Andrew Baker, Clement Neo, Allen Roush, Andreas Kirsch, and
+  Ravid Shwartz-Ziv.
+\newblock Turning up the heat: Min-p sampling for creative and coherent llm
+  outputs, 2024.
+\newblock URL \url{https://arxiv.org/abs/2407.01082}.
+
+\bibitem[O'Mahony et~al.(2024)O'Mahony, Grinsztajn, Schoelkopf, and
+  Biderman]{omahony2024attributingmodecollapsefinetuning}
+Laura O'Mahony, Leo Grinsztajn, Hailey Schoelkopf, and Stella Biderman.
+\newblock Attributing mode collapse in the fine-tuning of large language
+  models, 2024.
+\newblock URL \url{https://openreview.net/forum?id=3pDMYjpOxk}.
+
+\bibitem[Padmakumar \& He(2023)Padmakumar and He]{padmakumar2023does}
+Vishakh Padmakumar and He~He.
+\newblock Does writing with language models reduce content diversity?
+\newblock \emph{arXiv preprint arXiv:2309.05196}, 2023.
+
+\bibitem[Park et~al.(2024)Park, Zou, Shaw, Hill, Cai, Morris, Willer, Liang,
+  and Bernstein]{park2024generative}
+Joon~Sung Park, Carolyn~Q Zou, Aaron Shaw, Benjamin~Mako Hill, Carrie Cai,
+  Meredith~Ringel Morris, Robb Willer, Percy Liang, and Michael~S Bernstein.
+\newblock Generative agent simulations of 1,000 people.
+\newblock \emph{arXiv preprint arXiv:2411.10109}, 52, 2024.
+
+\bibitem[Puri et~al.(2026)Puri, Damani, Shenfeld, Ghassemi, Andreas, and
+  Kim]{Puri2026}
+Isha Puri, Mehul Damani, Idan Shenfeld, Marzyeh Ghassemi, Jacob Andreas, and
+  Yoon Kim.
+\newblock Reaching beyond the mode: Rl for distributional reasoning in language
+  models.
+\newblock 3 2026.
+\newblock URL \url{http://arxiv.org/abs/2603.24844}.
+
+\bibitem[Reimers \& Gurevych(2019)Reimers and
+  Gurevych]{reimers2019sentencebertsentenceembeddingsusing}
+Nils Reimers and Iryna Gurevych.
+\newblock Sentence-bert: Sentence embeddings using siamese bert-networks, 2019.
+\newblock URL \url{https://arxiv.org/abs/1908.10084}.
+
+\bibitem[Rein et~al.(2024)Rein, Hou, Stickland, Petty, Pang, Dirani, Michael,
+  and Bowman]{rein2024gpqa}
+David Rein, Betty~Li Hou, Asa~Cooper Stickland, Jackson Petty, Richard~Yuanzhe
+  Pang, Julien Dirani, Julian Michael, and Samuel~R. Bowman.
+\newblock {GPQA}: A graduate-level google-proof q\&a benchmark.
+\newblock In \emph{First Conference on Language Modeling}, 2024.
+\newblock URL \url{https://openreview.net/forum?id=Ti67584b98}.
+
+\bibitem[Romera-Paredes et~al.(2024)Romera-Paredes, Barekatain, Novikov, Balog,
+  Kumar, Dupont, Ruiz, Ellenberg, Wang, Fawzi, et~al.]{romera2024mathematical}
+Bernardino Romera-Paredes, Mohammadamin Barekatain, Alexander Novikov, Matej
+  Balog, M~Pawan Kumar, Emilien Dupont, Francisco~JR Ruiz, Jordan~S Ellenberg,
+  Pengming Wang, Omar Fawzi, et~al.
+\newblock Mathematical discoveries from program search with large language
+  models.
+\newblock \emph{Nature}, 625\penalty0 (7995):\penalty0 468--475, 2024.
+
+\bibitem[Ruan et~al.(2025)Ruan, Li, Liu, Chen, Luo, Li, Liu, and
+  Chen]{ruan-etal-2025-g2}
+Zhiwen Ruan, Yixia Li, Yefeng Liu, Yun Chen, Weihua Luo, Peng Li, Yang Liu, and
+  Guanhua Chen.
+\newblock G2: Guided generation for enhanced output diversity in {LLM}s.
+\newblock In Christos Christodoulopoulos, Tanmoy Chakraborty, Carolyn Rose, and
+  Violet Peng (eds.), \emph{Proceedings of the 2025 Conference on Empirical
+  Methods in Natural Language Processing}, pp.\  14116--14134, Suzhou, China,
+  November 2025. Association for Computational Linguistics.
+\newblock ISBN 979-8-89176-332-6.
+\newblock \doi{10.18653/v1/2025.emnlp-main.713}.
+\newblock URL \url{https://aclanthology.org/2025.emnlp-main.713/}.
+
+\bibitem[Shahid et~al.(2025)Shahid, Radensky, Fok, Siangliulue, Weld, and
+  Hope]{Shahid2025}
+Simra Shahid, Marissa Radensky, Raymond Fok, Pao Siangliulue, Daniel~S Weld,
+  and Tom Hope.
+\newblock Literature-grounded novelty assessment of scientific ideas.
+\newblock Technical report, 2025.
+
+\bibitem[Shaib et~al.(2024)Shaib, Barrow, Sun, Siu, Wallace, and
+  Nenkova]{shaib2024standardizing}
+Chantal Shaib, Joe Barrow, Jiuding Sun, Alexa~F. Siu, Byron~C. Wallace, and Ani
+  Nenkova.
+\newblock Standardizing the measurement of text diversity: A tool and a
+  comparative analysis of scores, 2024.
+\newblock URL \url{https://arxiv.org/abs/2403.00553}.
+
+\bibitem[Shao et~al.(2024)Shao, Wang, Zhu, Xu, Song, Bi, Zhang, Zhang, Li, Wu,
+  and Guo]{shao2024deepseekmath}
+Zhihong Shao, Peiyi Wang, Qihao Zhu, Runxin Xu, Junxiao Song, Xiao Bi, Haowei
+  Zhang, Mingchuan Zhang, Y.~K. Li, Y.~Wu, and Daya Guo.
+\newblock Deepseekmath: Pushing the limits of mathematical reasoning in open
+  language models, 2024.
+\newblock URL \url{https://arxiv.org/abs/2402.03300}.
+
+\bibitem[Sheng et~al.(2024)Sheng, Zhang, Ye, Wu, Zhang, Zhang, Peng, Lin, and
+  Wu]{sheng2024hybridflow}
+Guangming Sheng, Chi Zhang, Zilingfeng Ye, Xibin Wu, Wang Zhang, Ru~Zhang,
+  Yanghua Peng, Haibin Lin, and Chuan Wu.
+\newblock Hybridflow: A flexible and efficient rlhf framework.
+\newblock \emph{arXiv preprint arXiv:2409.19256}, 2024.
+
+\bibitem[Shumailov et~al.(2024)Shumailov, Shumaylov, Zhao, Papernot, Anderson,
+  and Gal]{Shumailov2024AIMC}
+Ilia Shumailov, Zakhar Shumaylov, Yiren Zhao, Nicolas Papernot, Ross Anderson,
+  and Yarin Gal.
+\newblock Ai models collapse when trained on recursively generated data.
+\newblock \emph{Nature}, 631:\penalty0 755 -- 759, 2024.
+\newblock URL \url{https://api.semanticscholar.org/CorpusID:271448069}.
+
+\bibitem[Shypula et~al.(2025)Shypula, Li, Zhang, Padmakumar, Yin, and
+  Bastani]{shypula2025evaluatingdiversityqualityllm}
+Alexander Shypula, Shuo Li, Botong Zhang, Vishakh Padmakumar, Kayo Yin, and
+  Osbert Bastani.
+\newblock Evaluating the diversity and quality of llm generated content, 2025.
+\newblock URL \url{https://arxiv.org/abs/2504.12522}.
+
+\bibitem[Slocum et~al.(2025)Slocum, Parker-Sartori, and
+  Hadfield-Menell]{slocum2025diversepreferencelearningcapabilities}
+Stewart Slocum, Asher Parker-Sartori, and Dylan Hadfield-Menell.
+\newblock Diverse preference learning for capabilities and alignment, 2025.
+\newblock URL \url{https://arxiv.org/abs/2511.08594}.
+
+\bibitem[Sourati et~al.(2026)Sourati, Ziabari, and
+  Dehghani]{sourati2026homogenizingeffectlargelanguage}
+Zhivar Sourati, Alireza~S. Ziabari, and Morteza Dehghani.
+\newblock The homogenizing effect of large language models on human expression
+  and thought, 2026.
+\newblock URL \url{https://arxiv.org/abs/2508.01491}.
+
+\bibitem[Taori et~al.(2023)Taori, Gulrajani, Zhang, Dubois, Li, Guestrin,
+  Liang, and Hashimoto]{alpaca}
+Rohan Taori, Ishaan Gulrajani, Tianyi Zhang, Yann Dubois, Xuechen Li, Carlos
+  Guestrin, Percy Liang, and Tatsunori~B. Hashimoto.
+\newblock Stanford alpaca: An instruction-following llama model.
+\newblock \url{https://github.com/tatsu-lab/stanford_alpaca}, 2023.
+
+\bibitem[Wan et~al.(2025)Wan, Wu, Abdulhai, Shani, and
+  Jaques]{wan2025enhancingpersonalizedmultiturndialogue}
+Yanming Wan, Jiaxing Wu, Marwa Abdulhai, Lior Shani, and Natasha Jaques.
+\newblock Enhancing personalized multi-turn dialogue with curiosity reward,
+  2025.
+\newblock URL \url{https://arxiv.org/abs/2504.03206}.
+
+\bibitem[Wang et~al.(2025)Wang, Pan, Linzen, and
+  Black]{wang2025multilingualpromptingimprovingllm}
+Qihan Wang, Shidong Pan, Tal Linzen, and Emily Black.
+\newblock Multilingual prompting for improving llm generation diversity, 2025.
+\newblock URL \url{https://arxiv.org/abs/2505.15229}.
+
+\bibitem[Wang et~al.(2020)Wang, Wei, Dong, Bao, Yang, and
+  Zhou]{wang2020minilmdeepselfattentiondistillation}
+Wenhui Wang, Furu Wei, Li~Dong, Hangbo Bao, Nan Yang, and Ming Zhou.
+\newblock Minilm: Deep self-attention distillation for task-agnostic
+  compression of pre-trained transformers, 2020.
+\newblock URL \url{https://arxiv.org/abs/2002.10957}.
+
+\bibitem[West \& Potts(2025)West and Potts]{west2025base}
+Peter West and Christopher Potts.
+\newblock Base models beat aligned models at randomness and creativity.
+\newblock \emph{arXiv preprint arXiv:2505.00047}, 2025.
+
+\bibitem[Wieting \& Gimpel(2018)Wieting and Gimpel]{wieting2018paranmt}
+John Wieting and Kevin Gimpel.
+\newblock Paranmt-50m: Pushing the limits of paraphrastic sentence embeddings
+  with millions of machine translations.
+\newblock In \emph{Proceedings of the 56th Annual Meeting of the Association
+  for Computational Linguistics (Volume 1: Long Papers)}, pp.\  451--462, 2018.
+
+\bibitem[Wu et~al.(2025)Wu, Goyal, and Raghunathan]{Wu2025}
+Chen~Henry Wu, Sachin Goyal, and Aditi Raghunathan.
+\newblock Mode-conditioning unlocks superior test-time scaling.
+\newblock 11 2025.
+\newblock URL \url{http://arxiv.org/abs/2512.01127}.
+
+\bibitem[Yang et~al.(2025)Yang, Li, Yang, Zhang, Hui, Zheng, Yu, Gao, Huang,
+  Lv, Zheng, Liu, Zhou, Huang, Hu, Ge, Wei, Lin, Tang, Yang, Tu, Zhang, Yang,
+  Yang, Zhou, Zhou, Lin, Dang, Bao, Yang, Yu, Deng, Li, Xue, Li, Zhang, Wang,
+  Zhu, Men, Gao, Liu, Luo, Li, Tang, Yin, Ren, Wang, Zhang, Ren, Fan, Su,
+  Zhang, Zhang, Wan, Liu, Wang, Cui, Zhang, Zhou, and
+  Qiu]{yang2025qwen3technicalreport}
+An~Yang, Anfeng Li, Baosong Yang, Beichen Zhang, Binyuan Hui, Bo~Zheng, Bowen
+  Yu, Chang Gao, Chengen Huang, Chenxu Lv, Chujie Zheng, Dayiheng Liu, Fan
+  Zhou, Fei Huang, Feng Hu, Hao Ge, Haoran Wei, Huan Lin, Jialong Tang, Jian
+  Yang, Jianhong Tu, Jianwei Zhang, Jianxin Yang, Jiaxi Yang, Jing Zhou,
+  Jingren Zhou, Junyang Lin, Kai Dang, Keqin Bao, Kexin Yang, Le~Yu, Lianghao
+  Deng, Mei Li, Mingfeng Xue, Mingze Li, Pei Zhang, Peng Wang, Qin Zhu, Rui
+  Men, Ruize Gao, Shixuan Liu, Shuang Luo, Tianhao Li, Tianyi Tang, Wenbiao
+  Yin, Xingzhang Ren, Xinyu Wang, Xinyu Zhang, Xuancheng Ren, Yang Fan, Yang
+  Su, Yichang Zhang, Yinger Zhang, Yu~Wan, Yuqiong Liu, Zekun Wang, Zeyu Cui,
+  Zhenru Zhang, Zhipeng Zhou, and Zihan Qiu.
+\newblock Qwen3 technical report, 2025.
+\newblock URL \url{https://arxiv.org/abs/2505.09388}.
+
+\bibitem[Yuan et~al.(2026)Yuan, Nöther, Jaques, and
+  Radanović]{yuan2026agenticredevolvingagenticsystems}
+Jiayi Yuan, Jonathan Nöther, Natasha Jaques, and Goran Radanović.
+\newblock Agenticred: Evolving agentic systems for red-teaming, 2026.
+\newblock URL \url{https://arxiv.org/abs/2601.13518}.
+
+\bibitem[Zellers et~al.(2019)Zellers, Holtzman, Bisk, Farhadi, and
+  Choi]{zellers2019hellaswag}
+Rowan Zellers, Ari Holtzman, Yonatan Bisk, Ali Farhadi, and Yejin Choi.
+\newblock Hellaswag: Can a machine really finish your sentence?
+\newblock In \emph{Proceedings of the 57th Annual Meeting of the Association
+  for Computational Linguistics}, 2019.
+
+\bibitem[Zhang et~al.(2025{\natexlab{a}})Zhang, Yu, Chong, Sicilia, Tomz,
+  Manning, and Shi]{Zhang2025}
+Jiayi Zhang, Simon Yu, Derek Chong, Anthony Sicilia, Michael~R. Tomz,
+  Christopher~D. Manning, and Weiyan Shi.
+\newblock Verbalized sampling: How to mitigate mode collapse and unlock llm
+  diversity.
+\newblock 10 2025{\natexlab{a}}.
+\newblock URL \url{http://arxiv.org/abs/2510.01171}.
+
+\bibitem[Zhang et~al.(2025{\natexlab{b}})Zhang, Diddee, Holm, Liu, Liu, Samuel,
+  Wang, and Ippolito]{zhang2025noveltybenchevaluatinglanguagemodels}
+Yiming Zhang, Harshita Diddee, Susan Holm, Hanchen Liu, Xinyue Liu, Vinay
+  Samuel, Barry Wang, and Daphne Ippolito.
+\newblock Noveltybench: Evaluating language models for humanlike diversity,
+  2025{\natexlab{b}}.
+\newblock URL \url{https://arxiv.org/abs/2504.05228}.
+
+\bibitem[Zhao et~al.(2023)Zhao, Gu, Varma, Luo, Huang, Xu, Wright, Shojanazeri,
+  Ott, Shleifer, Desmaison, Balioglu, Damania, Nguyen, Chauhan, Hao, Mathews,
+  and Li]{zhao2023pytorch}
+Yanli Zhao, Andrew Gu, Rohan Varma, Liang Luo, Chien-Chin Huang, Min Xu, Less
+  Wright, Hamid Shojanazeri, Myle Ott, Sam Shleifer, Alban Desmaison, Can
+  Balioglu, Pritam Damania, Bernard Nguyen, Geeta Chauhan, Yuchen Hao, Ajit
+  Mathews, and Shen Li.
+\newblock {PyTorch} {FSDP}: Experiences on scaling fully sharded data parallel.
+\newblock \emph{Proceedings of the VLDB Endowment}, 16\penalty0 (12):\penalty0
+  3848--3860, 2023.
+\newblock \doi{10.14778/3611540.3611569}.
+
+\bibitem[Zhou et~al.(2023)Zhou, Lu, Mishra, Brahma, Basu, Luan, Zhou, and
+  Hou]{zhou2023instructionfollowingevaluationlargelanguage}
+Jeffrey Zhou, Tianjian Lu, Swaroop Mishra, Siddhartha Brahma, Sujoy Basu,
+  Yi~Luan, Denny Zhou, and Le~Hou.
+\newblock Instruction-following evaluation for large language models, 2023.
+\newblock URL \url{https://arxiv.org/abs/2311.07911}.
+
+\bibitem[Zhu et~al.(2018)Zhu, Lu, Zheng, Guo, Zhang, Wang, and
+  Yu]{zhu2018texygen}
+Yaoming Zhu, Sidi Lu, Lei Zheng, Jiaxian Guo, Weinan Zhang, Jun Wang, and Yong
+  Yu.
+\newblock Texygen: A benchmarking platform for text generation models.
+\newblock In \emph{The 41st international ACM SIGIR conference on research \&
+  development in information retrieval}, pp.\  1097--1100, 2018.
+
+\bibitem[Zou et~al.(2026)Zou, Lam, Zhao, Tang, Chen, Yu, Zhang, Liu, Ji, and
+  Liu]{zou2026fmlbenchbenchmarkingmachinelearning}
+Qiran Zou, Hou~Hei Lam, Wenhao Zhao, Yiming Tang, Tingting Chen, Samson Yu,
+  Tianyi Zhang, Chang Liu, Xiangyang Ji, and Dianbo Liu.
+\newblock Fml-bench: Benchmarking machine learning agents for scientific
+  research, 2026.
+\newblock URL \url{https://arxiv.org/abs/2510.10472}.
+
+\end{thebibliography}

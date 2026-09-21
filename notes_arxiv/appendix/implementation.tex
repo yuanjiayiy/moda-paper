@@ -117,7 +117,7 @@ Our training dataset comprises a mixture of general-purpose SFT prompts, which a
 
 \subsection{Discriminator}
 \label{appx:discriminator}
-We train a lightweight pairwise binary discriminator to predict whether two responses to the same prompt are conceptually distinct. The training data is constructed from \(2{,}000\) Alpaca prompts. For each
+We train a lightweight pairwise binary discriminator to predict whether two responses to the same prompt are conceptually distinct. The training data is constructed from \(2{,}000\) Alpaca~\citep{alpaca} prompts. For each
 prompt, we employ Qwen3-30B to generate responses under \(5\) modes and \(2\) random seeds,
 yielding \(20{,}000\) response pairs. Pseudo-labels are assigned using bidirectional \texttt{microsoft/deberta-v3-large} on the first \(200\) tokens of each response pair. A pair is labeled non-diverse if both directions predict entailment, and diverse otherwise. We discard low-confidence pairs
 whose maximum softmax probability is below \(0.7\), balance the two classes, and split the resulting \(5{,}816\) pairs by prompt into train/validation/test sets of \(4{,}064/890/862\) pairs.
@@ -146,13 +146,13 @@ We share the training curve for ablation studies in Figure \ref{fig:ablation-tra
     % Row 1: No role, thinking disabled
     \begin{subfigure}{\textwidth}
         \centering
-        \includegraphics[width=0.9\linewidth]{figures/no_role_wo.png}
+        \includegraphics[width=0.82\linewidth]{figures/no_role_wo.png}
     \end{subfigure}
     \caption*{\textbf{No role injection, thinking disabled.}}
 
     \begin{subfigure}{\textwidth}
         \centering
-        \includegraphics[width=0.9\linewidth]{figures/no_role_w.png}
+        \includegraphics[width=0.82\linewidth]{figures/no_role_w.png}
     \end{subfigure}
     \caption*{\textbf{No role injection, thinking enabled.}}
 
@@ -160,7 +160,7 @@ We share the training curve for ablation studies in Figure \ref{fig:ablation-tra
     % Row 3: Quality-only, thinking disabled
     \begin{subfigure}{\textwidth}
         \centering
-        \includegraphics[width=0.9\linewidth]{figures/quality_only_wo.png}
+        \includegraphics[width=0.82\linewidth]{figures/quality_only_wo.png}
     \end{subfigure}
     \caption*{\textbf{Quality-only reward, thinking disabled.}}
 
@@ -169,7 +169,7 @@ We share the training curve for ablation studies in Figure \ref{fig:ablation-tra
     % Row 4: Quality-only, thinking enabled
     \begin{subfigure}{\textwidth}
         \centering
-        \includegraphics[width=0.9\linewidth]{figures/quality_only_wo.png}
+        \includegraphics[width=0.82\linewidth]{figures/quality_only_w.png}
     \end{subfigure}
     \caption*{\textbf{Quality-only reward, thinking enabled.}}
 
@@ -177,7 +177,7 @@ We share the training curve for ablation studies in Figure \ref{fig:ablation-tra
     % Row 3: Diversity-only, thinking disabled
     \begin{subfigure}{\textwidth}
         \centering
-        \includegraphics[width=0.9\linewidth]{figures/diversity_only_wo.png}
+        \includegraphics[width=0.82\linewidth]{figures/diversity_only_wo.png}
     \end{subfigure}
     \caption*{\textbf{Diversity-only reward, thinking disabled.}}
 
@@ -186,7 +186,7 @@ We share the training curve for ablation studies in Figure \ref{fig:ablation-tra
     % Row 4: Diversity-only, thinking enabled
     \begin{subfigure}{\textwidth}
         \centering
-        \includegraphics[width=0.9\linewidth]{figures/diversity_only_wo.png}
+        \includegraphics[width=0.82\linewidth]{figures/diversity_only_w.png}
     \end{subfigure}
 
     \caption*{\textbf{Diversity-only reward, thinking enabled.}}
@@ -194,7 +194,7 @@ We share the training curve for ablation studies in Figure \ref{fig:ablation-tra
     % Row 3: Crafted role, thinking disabled
     \begin{subfigure}{\textwidth}
         \centering
-        \includegraphics[width=0.9\linewidth]{figures/crafted_wo.png}
+        \includegraphics[width=0.82\linewidth]{figures/crafted_wo.png}
     \end{subfigure}
     \caption*{\textbf{Crafted personas, thinking disabled.}}
 
@@ -203,7 +203,7 @@ We share the training curve for ablation studies in Figure \ref{fig:ablation-tra
     % Row 4: Crafted role, thinking enabled
     \begin{subfigure}{\textwidth}
         \centering
-        \includegraphics[width=0.9\linewidth]{figures/crafted_w.png}
+        \includegraphics[width=0.82\linewidth]{figures/crafted_w.png}
     \end{subfigure}
     \caption*{\textbf{Crafted personas, thinking enabled.}}
 

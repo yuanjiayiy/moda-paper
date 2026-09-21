@@ -1,52 +1,12 @@
-\documentclass{article}
+\documentclass{article} % For LaTeX2e
 
-% if you need to pass options to natbib, use, e.g.:
-%     \PassOptionsToPackage{numbers, compress}{natbib}
-% before loading neurips_2026
-
-% The authors should use one of these tracks.
-% Before accepting by the NeurIPS conference, select one of the options below.
-% 0. "default" for submission
-\usepackage[preprint]{neurips_2026}
-% \usepackage[accepted]{icml2026_GenAICreativity}
-% the "default" option is equal to the "main" option, which is used for the Main Track with double-blind reviewing.
-% 1. "main" option is used for the Main Track
-%  \usepackage[main]{neurips_2026}
-% 2. "position" option is used for the Position Paper Track
-%  \usepackage[position]{neurips_2026}
-% 3. "eandd" option is used for the Evaluations & Datasets Track
- % \usepackage[eandd]{neurips_2026}
- % if you want to opt-in for a de-anomymized submission (not recommended, but OK):
- %\usepackage[eandd, nonanonymous]{neurips_2026}
-% 4. "creativeai" option is used for the Creative AI Track
-%  \usepackage[creativeai]{neurips_2026}
-% 5. "sglblindworkshop" option is used for the Workshop with single-blind reviewing
- % \usepackage[sglblindworkshop]{neurips_2026}
-% 6. "dblblindworkshop" option is used for the Workshop with double-blind reviewing
-%  \usepackage[dblblindworkshop]{neurips_2026}
-
-% After being accepted, the authors should add "final" behind the track to compile a camera-ready version.
-% 1. Main Track
- % \usepackage[main, final]{neurips_2026}
-% 2. Position Paper Track
-%  \usepackage[position, final]{neurips_2026}
-% 3. Evaluations & Datasets Track
- % \usepackage[eandd, final]{neurips_2026}
-% 4. Creative AI Track
-%  \usepackage[creativeai, final]{neurips_2026}
-% 5. Workshop with single-blind reviewing
-%  \usepackage[sglblindworkshop, final]{neurips_2026}
-% 6. Workshop with double-blind reviewing
-%  \usepackage[dblblindworkshop, final]{neurips_2026}
-% Note. For the workshop paper template, both \title{} and \workshoptitle{} are required, with the former indicating the paper title shown in the title and the latter indicating the workshop title displayed in the footnote.
-% For workshops (5., 6.), the authors should add the name of the workshop, "\workshoptitle" command is used to set the workshop title.
-% \workshoptitle{WORKSHOP TITLE}
-
-% "preprint" option is used for arXiv or other preprint submissions
- % \usepackage[preprint]{neurips_2026}
-
-% to avoid loading the natbib package, add option nonatbib:
-%    \usepackage[nonatbib]{neurips_2026}
+% ICLR 2027 style. This is an anonymized double-blind submission copy:
+% \iclrfinalcopy is left undefined, so the style file automatically
+% (a) prints "Anonymous authors / Paper under double-blind review" in place
+%     of \author, and (b) headers the paper "Under review as a conference
+%     paper at ICLR 2027". For the camera-ready version, restore the real
+%     \author{} block below and add \iclrfinalcopy before \begin{document}.
+\usepackage{iclr2027_conference,times}
 
 \usepackage[utf8]{inputenc} % allow utf-8 input
 \usepackage[T1]{fontenc}    % use 8-bit T1 fonts
@@ -99,6 +59,7 @@
 
 \usepackage{fontawesome5}
 \usepackage{array}
+\usepackage{placeins}
 
 
 \newtcolorbox{exampleblock}{
@@ -135,10 +96,13 @@
 \definecolor{themeblue4}{rgb}{0.000, 0.200, 0.600}
 \definecolor{darkred}{rgb}{0.800, 0.000, 0.000}
 
-\newcommand\liwei[1]{{\color{blue}[{#1}]$_{-Liwei}$}}
+% Inline reviewer/author comment macros are silenced (no-op) for the
+% anonymized, camera-facing draft, since they both reveal author identity
+% and are not meant to appear in a submitted PDF.
+\newcommand\liwei[1]{}
 \newcommand\liweiaddressed[1]{}
-\newcommand\carrie[2]{{\color{orange}[{#1}]$_{-Carrie}$}}
-\newcommand\vikram[3]{{\color{red}[{#1}]$_{-Vikram}$}}
+\newcommand\carrie[2]{}
+\newcommand\vikram[3]{}
 
 \newcommand{\iconstar}{{\raisebox{0.2ex}{\scalebox{0.7}{\faStar}}}}
 \newcommand{\iconfire}{{\raisebox{0.2ex}{\scalebox{0.7}{\faHotjar}}}}
@@ -152,9 +116,22 @@
 
 
 
-\author{ \begin{tabular}{c} \textcolor{themeblue}{\iconstar} Jiayi Yuan$^{1}$ \quad \textcolor{themeblue2}{\iconstar} Hangoo Kang$^{2}$ \quad \textcolor{themeblue3}{\iconstar} James Jihao Liu$^{2}$ \\ [0.2em] Yejin Choi$^{2}$ \quad Vikram Iyer$^{1}$ \quad \textcolor{darkred}{\iconfire} Liwei Jiang$^{1}$ \quad \textcolor{darkred}{\iconfire} Natasha Jaques$^{1}$  \end{tabular} \\ [1.4em] $^{1}$University of Washington \quad $^{2}$Stanford University \\ [0.4em]\texttt{yuancarrieyjy@cs.washington.edu} \quad  \texttt{\{hangook,jihaoliu\}@stanford.edu} \\ [0.4em] \textcolor{themeblue4}{\iconstar} Equal first author \quad \textcolor{darkred}{\iconfire} Equal senior author \\ [0.4em] \github Code: \url{github.com/yuanjiayiy/mode-conditioned-diversity-alignment}}
-% ,vsiyer,lwjiang,nj 
+% Anonymized double-blind submission: \author is ignored by iclr2027_conference.sty
+% whenever \iclrfinalcopy is undefined (it substitutes "Anonymous authors / Paper
+% under double-blind review" automatically), so no author content is set here.
+% Restore the block below verbatim for the camera-ready version:
+% \author{ \begin{tabular}{c} \textcolor{themeblue}{\iconstar} Jiayi Yuan$^{1}$ \quad \textcolor{themeblue2}{\iconstar} Hangoo Kang$^{2}$ \quad \textcolor{themeblue3}{\iconstar} James Jihao Liu$^{2}$ \\ [0.2em] Yejin Choi$^{2}$ \quad Vikram Iyer$^{1}$ \quad \textcolor{darkred}{\iconfire} Liwei Jiang$^{1}$ \quad \textcolor{darkred}{\iconfire} Natasha Jaques$^{1}$  \end{tabular} \\ [1.4em] $^{1}$University of Washington \quad $^{2}$Stanford University \\ [0.4em]\texttt{yuancarrieyjy@cs.washington.edu} \quad  \texttt{\{hangook,jihaoliu\}@stanford.edu} \\ [0.4em] \textcolor{themeblue4}{\iconstar} Equal first author \quad \textcolor{darkred}{\iconfire} Equal senior author \\ [0.4em] \github Code: \url{github.com/yuanjiayiy/mode-conditioned-diversity-alignment}}
 
+% Prevent hyperref from picking up any real names for the PDF's /Author metadata,
+% and use colored (unboxed) links instead of hyperref's default red/green boxes.
+\hypersetup{
+  pdfauthor={},
+  pdftitle={Forty Shades of Blue: Quality-Diversity Alignment via Mode-Conditioned Reinforcement Learning},
+  colorlinks=true,
+  linkcolor=themeblue3,
+  citecolor=themeblue3,
+  urlcolor=themeblue3,
+}
 
 \begin{document}
 
@@ -168,12 +145,14 @@
 \input{notes_arxiv/3_method}
 \input{notes_arxiv/4_experiments}
 \input{notes_arxiv/5_discussions}
-\input{notes_arxiv/z_acknowledgement}
+% Acknowledgments are omitted from the anonymized submission (they name the
+% lab, PI, and funding sources) and should be restored before camera-ready.
+% \input{notes_arxiv/z_acknowledgement}
 
 \newpage
 % \input{checklist}
 \bibliography{reference}
-\bibliographystyle{plain}
+\bibliographystyle{iclr2027_conference}
 \input{notes_arxiv/appendix}
 
 \end{document}

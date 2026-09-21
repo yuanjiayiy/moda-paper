@@ -20,18 +20,6 @@
 \section{Introduction}
 \label{sec:introduction}
 
-
-
-\begin{quote}
-\itshape
-``In the course of evolution nature has gone to endless trouble to see that every individual is unlike every other individual.''
-
-
-\hfill --- Aldous Huxley, \textit{Brave New World Revisited}
-\end{quote}
-
-
-
 Post-training alignment is essential for improving the capability and safety of large language models (LLMs), but it also introduces a concerning side effect: \textit{mode collapse}. Aligned models increasingly favor a narrow set of responses (the ``mode'') over the broader space of plausible outputs, resulting in a substantial loss of generation diversity~\citep{jiang2025artificialhivemindopenendedhomogeneity, west2025base, huang2024self, sourati2026homogenizingeffectlargelanguage}. Yet in many domains, diversity is not merely desirable but essential. In AI-assisted scientific discovery, progress relies on exploring a broad and plausible hypothesis space rather than prematurely converging on a single line of inquiry~\citep{gruver2023proteindesignguideddiscrete, romera2024mathematical}. Likewise, generative diversity is critical for applications requiring creativity and open-ended exploration~\citep{Shumailov2024AIMC, abdulhai2026llmsdistortwrittenlanguage}. While inference-time interventions~\citep{Misaki2026, Zhang2025} can partially mitigate this loss of diversity, a more fundamental solution is to redesign post-training algorithms so that expressivity is preserved throughout the alignment process by construction.
 
 We introduce \method~(\textbf{Mo}de-conditioned \textbf{D}iversity \textbf{A}lignment), an online post-training RL algorithm that jointly optimizes the quality and diversity of generated responses by formulating alignment through the lens of multi-agent reinforcement learning (MARL), where agents develop diverse behaviors through competition and coordination~\citep{eysenbach2018diversityneedlearningskills,liang2024learning,li2021celebratingdiversitysharedmultiagent}. \method{} introduces \textit{role conditioning} to instantiate multiple lightweight agents within a single shared policy. Specifically, we prepend abstract role tokens to the system prompt, enabling each role to generate a response to the same user query while independently optimizing a group-relative diversity reward. This creates competitive reward dynamics among roles, encouraging them to specialize in distinct regions of the high-quality response space and collectively produce a diverse set of outputs.
