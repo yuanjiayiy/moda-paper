@@ -65,23 +65,12 @@ To assess whether our method preserves the model's reasoning capability, we eval
 % \label{fig:intro}
 % \end{figure}
 
-\textbf{Generative Diversity Evaluation.} As shown in Figure~\ref{fig: domain application pareto}, \method{} Pareto-dominates all baselines on the held-out Infinite-Chat set across every setting (thinking enabled/disabled, different base models), achieving both higher diversity and higher quality simultaneously. We provide a breakdown by individual benchmarks in Table~\ref{tab:domain-app-diversity-main}. Across four domains and three model families, \method{} achieves the best average diversity across all evaluated baselines, while matching or improving quality on most domains except PreScience. Notably, \method{} outperforms all baselines on HypoBench, a scientific ideation task that is out of domain relative to our training set, which primarily consists of standard SFT data and open-ended questions. These results suggest that \method{} enhances general exploration capability across thinking settings and base models, even on out-of-domain topics.
+\textbf{Generative Diversity Evaluation.} As shown in Figure~\ref{fig: domain application pareto}, \method{} Pareto-dominates all baselines on the held-out Infinite-Chat set across every setting (thinking enabled/disabled, different base models), achieving both higher diversity and higher quality simultaneously; the remaining settings are shown in Appendix~\ref{appx:generative diversity evaluation}. We provide a breakdown by individual benchmarks in Table~\ref{tab:domain-app-diversity-main}. Across four domains and three model families, \method{} achieves the best average diversity across all evaluated baselines, while matching or improving quality on most domains except PreScience. Notably, \method{} outperforms all baselines on HypoBench, a scientific ideation task that is out of domain relative to our training set, which primarily consists of standard SFT data and open-ended questions. These results suggest that \method{} enhances general exploration capability across thinking settings and base models, even on out-of-domain topics.
 
 \begin{figure}[t]
 \centering
-\begin{minipage}{0.32\textwidth}
-  \centering
-  \includegraphics[width=\linewidth]{figures/pareto_infinite-chat_quality_thinking_false_base_model_qwen3-8b_composite.png}
-\end{minipage}\hfill
-\begin{minipage}{0.33\textwidth}
-  \centering
-  \includegraphics[width=\linewidth]{figures/pareto_infinite-chat_quality_thinking_true_base_model_qwen3-8b_composite.png}
-\end{minipage}\hfill
-\begin{minipage}{0.33\textwidth}
-  \centering
-  \includegraphics[width=\linewidth]{figures/pareto_infinite-chat_quality_thinking_false_base_model_llama_glm_composite.png}
-\end{minipage}
-\caption{\textbf{Diversity vs. Quality pareto figures  across base models and thinking modes.} The x-axis is Infinite-Chat response diversity (mean z-score of Disc./SBERT/EmbVendi) and the y-axis is general capability (mean benchmark accuracy). (a) Qwen3-8B base, thinking enabled. (b) Qwen3-8B base, thinking disabled. (c) Llama-3.1-8B / GLM-4-9B base, thinking disabled. Across all three settings, \method{} Pareto-dominates all the baselines, achieving better diversity and quality simultaneously.}
+\includegraphics[width=0.4\linewidth]{figures/pareto_infinite-chat_quality_thinking_false_base_model_qwen3-8b_composite.png}
+\caption{\textbf{Diversity vs. quality pareto front (Qwen3-8B base, thinking disabled).} The x-axis is Infinite-Chat response diversity (mean z-score of Disc./SBERT/EmbVendi) and the y-axis is general capability (mean benchmark accuracy). \method{} Pareto-dominates all the baselines, achieving better diversity and quality simultaneously. Results for Qwen3-8B (thinking enabled) and Llama-3.1-8B / GLM-4-9B (thinking disabled) are shown in Appendix~\ref{appx:generative diversity evaluation}.}
 \label{fig: domain application pareto}
 \end{figure}
 \input{notes_arxiv/table/diversity_main}
@@ -94,24 +83,8 @@ To assess whether our method preserves the model's reasoning capability, we eval
 \input{notes_arxiv/table/general_capability}
 \begin{figure}[t]
 \centering
-\begin{minipage}{0.32\textwidth}
-  \centering
-  \includegraphics[width=\linewidth]{figures/main_pass_k/pass_at_k_figures/pass_at_k_avg_thinking_false_base_model_qwen3-8b.png}
-\end{minipage}\hfill
-\centering
-\begin{minipage}{0.32\textwidth}
-  \centering
-  \includegraphics[width=\linewidth]{figures/main_pass_k/pass_at_k_figures/pass_at_k_gsm8k_thinking_false_base_model_qwen3-8b.png}
-\end{minipage}\hfill
-\begin{minipage}{0.32\textwidth}
-  \centering
-  \includegraphics[width=\linewidth]{figures/main_pass_k/pass_at_k_figures/pass_at_k_truthfulqa_thinking_false_base_model_qwen3-8b.png}
-\end{minipage}\hfill
-% \begin{minipage}{0.45\textwidth}
-%   \centering
-%   \includegraphics[width=\linewidth]{figures/main_pass_k/pass_at_k_figures/pass_at_k_hellaswag_thinking_false_base_model_qwen3-8b.png}
-% \end{minipage}
-\caption{\textbf{General capability retention: pass@k accuracy.} Qwen3-8B base, thinking disabled models on the general capability suite average, GSM8K and TruthfulQA. More results can be found in Appendix \ref{appx:general capability retention} Figure \ref{fig:general capability pass@k}.}
+\includegraphics[width=0.32\linewidth]{figures/main_pass_k/pass_at_k_figures/pass_at_k_avg_thinking_false_base_model_qwen3-8b.png}
+\caption{\textbf{General capability retention: pass@k accuracy.} Qwen3-8B base, thinking disabled models on the general capability suite average. Per-benchmark results (GSM8K, MMLU, GPQA, BoolQ, TruthfulQA, IFEval) are shown in Appendix \ref{appx:general capability retention} Figure \ref{fig:general capability pass@k thinking disabled}.}
 \label{fig:general capability pass@k}
 \end{figure}
 

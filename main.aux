@@ -129,24 +129,24 @@
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.3}Generative Diversity Evaluation}{8}{subsection.4.3}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.4}General Capability Retention Evaluation}{8}{subsection.4.4}\protected@file@percent }
 \@writefile{toc}{\contentsline {section}{\numberline {5}Results}{8}{section.5}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces \textbf  {Diversity vs. Quality pareto figures across base models and thinking modes.} The x-axis is Infinite-Chat response diversity (mean z-score of Disc./SBERT/EmbVendi) and the y-axis is general capability (mean benchmark accuracy). (a) Qwen3-8B base, thinking enabled. (b) Qwen3-8B base, thinking disabled. (c) Llama-3.1-8B / GLM-4-9B base, thinking disabled. Across all three settings, \textsc  {MoDA}\xspace  {} Pareto-dominates all the baselines, achieving better diversity and quality simultaneously.}}{9}{figure.caption.12}\protected@file@percent }
-\newlabel{fig: domain application pareto}{{3}{9}{\textbf {Diversity vs. Quality pareto figures across base models and thinking modes.} The x-axis is Infinite-Chat response diversity (mean z-score of Disc./SBERT/EmbVendi) and the y-axis is general capability (mean benchmark accuracy). (a) Qwen3-8B base, thinking enabled. (b) Qwen3-8B base, thinking disabled. (c) Llama-3.1-8B / GLM-4-9B base, thinking disabled. Across all three settings, \method {} Pareto-dominates all the baselines, achieving better diversity and quality simultaneously}{figure.caption.12}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces \textbf  {Diversity vs. quality pareto front (Qwen3-8B base, thinking disabled).} The x-axis is Infinite-Chat response diversity (mean z-score of Disc./SBERT/EmbVendi) and the y-axis is general capability (mean benchmark accuracy). \textsc  {MoDA}\xspace  {} Pareto-dominates all the baselines, achieving better diversity and quality simultaneously. Results for Qwen3-8B (thinking enabled) and Llama-3.1-8B / GLM-4-9B (thinking disabled) are shown in Appendix~\ref {appx:generative diversity evaluation}.}}{9}{figure.caption.12}\protected@file@percent }
+\newlabel{fig: domain application pareto}{{3}{9}{\textbf {Diversity vs. quality pareto front (Qwen3-8B base, thinking disabled).} The x-axis is Infinite-Chat response diversity (mean z-score of Disc./SBERT/EmbVendi) and the y-axis is general capability (mean benchmark accuracy). \method {} Pareto-dominates all the baselines, achieving better diversity and quality simultaneously. Results for Qwen3-8B (thinking enabled) and Llama-3.1-8B / GLM-4-9B (thinking disabled) are shown in Appendix~\ref {appx:generative diversity evaluation}}{figure.caption.12}{}}
 \@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Per-domain diversity (Disc. = discriminator diversity, SBERT = SBERT embedding pairwise distance, E-V = E-Vendi score) and quality (Qual.), averaged over $n{=}3$ random seeds. Infinite-Chat quality is general capability accuracy (\%); all other domains use the native quality score. Bold marks the best value within each model group. Table with error bar can be found in Appx \ref {appx:generative diversity evaluation}.}}{9}{table.caption.13}\protected@file@percent }
 \newlabel{tab:domain-app-diversity-main}{{1}{9}{Per-domain diversity (Disc. = discriminator diversity, SBERT = SBERT embedding pairwise distance, E-V = E-Vendi score) and quality (Qual.), averaged over $n{=}3$ random seeds. Infinite-Chat quality is general capability accuracy (\%); all other domains use the native quality score. Bold marks the best value within each model group. Table with error bar can be found in Appx \ref {appx:generative diversity evaluation}}{table.caption.13}{}}
 \@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces General capability retention (Pass@1 accuracy \%), averaged over $n=3$ random seeds. Bold marks the best value within each model group; underline marks the second-best value within the Qwen3-8B groups. Table with error bar can be found in Appendix \ref {appx:general capability retention} Table \ref {tab:general-capability-pass1-error-bar}.}}{9}{table.caption.14}\protected@file@percent }
 \newlabel{tab:general-capability-pass1}{{2}{9}{General capability retention (Pass@1 accuracy \%), averaged over $n=3$ random seeds. Bold marks the best value within each model group; underline marks the second-best value within the Qwen3-8B groups. Table with error bar can be found in Appendix \ref {appx:general capability retention} Table \ref {tab:general-capability-pass1-error-bar}}{table.caption.14}{}}
 \citation{mouret2015illuminatingsearchspacesmapping,Chen2025PosttrainingLL}
-\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces \textbf  {General capability retention: pass@k accuracy.} Qwen3-8B base, thinking disabled models on the general capability suite average, GSM8K and TruthfulQA. More results can be found in Appendix \ref {appx:general capability retention} Figure \ref {fig:general capability pass@k}.}}{10}{figure.caption.15}\protected@file@percent }
-\newlabel{fig:general capability pass@k}{{4}{10}{\textbf {General capability retention: pass@k accuracy.} Qwen3-8B base, thinking disabled models on the general capability suite average, GSM8K and TruthfulQA. More results can be found in Appendix \ref {appx:general capability retention} Figure \ref {fig:general capability pass@k}}{figure.caption.15}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces \textbf  {General capability retention: pass@k accuracy.} Qwen3-8B base, thinking disabled models on the general capability suite average. Per-benchmark results (GSM8K, MMLU, GPQA, BoolQ, TruthfulQA, IFEval) are shown in Appendix \ref {appx:general capability retention} Figure \ref {fig:general capability pass@k thinking disabled}.}}{10}{figure.caption.15}\protected@file@percent }
+\newlabel{fig:general capability pass@k}{{4}{10}{\textbf {General capability retention: pass@k accuracy.} Qwen3-8B base, thinking disabled models on the general capability suite average. Per-benchmark results (GSM8K, MMLU, GPQA, BoolQ, TruthfulQA, IFEval) are shown in Appendix \ref {appx:general capability retention} Figure \ref {fig:general capability pass@k thinking disabled}}{figure.caption.15}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {5.1}Qualitative Results}{10}{subsection.5.1}\protected@file@percent }
 \newlabel{sec:qualitative results}{{5.1}{10}{Qualitative Results}{subsection.5.1}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {5.2}Ablation Studies.}{10}{subsection.5.2}\protected@file@percent }
 \@writefile{toc}{\contentsline {paragraph}{Ablation Setups.}{10}{section*.16}\protected@file@percent }
 \newlabel{ablation: additive aggregation}{{5.2}{10}{Ablation Setups}{figure.caption.17}{}}
 \citation{park2024generative,argyle2023out}
-\newlabel{fig: ablation diverse standard}{{\caption@xref {??}{ on input line 161}}{11}{Ablation Setups}{figure.caption.17}{}}
-\newlabel{fig: ablation diversity quality pareto}{{\caption@xref {??}{ on input line 167}}{11}{Ablation Setups}{figure.caption.17}{}}
-\newlabel{fig: ablation pass@k avg}{{\caption@xref {??}{ on input line 173}}{11}{Ablation Setups}{figure.caption.17}{}}
+\newlabel{fig: ablation diverse standard}{{\caption@xref {??}{ on input line 134}}{11}{Ablation Setups}{figure.caption.17}{}}
+\newlabel{fig: ablation diversity quality pareto}{{\caption@xref {??}{ on input line 140}}{11}{Ablation Setups}{figure.caption.17}{}}
+\newlabel{fig: ablation pass@k avg}{{\caption@xref {??}{ on input line 146}}{11}{Ablation Setups}{figure.caption.17}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces \textbf  {Ablation study: diversity-quality trade-off under diverse and standard mode, and general capability retention pass@k accuracy.} \textbf  {(a)} Diverse vs standard mode avg. pass@1 accuracy. \textbf  {(b)} Infinite-Chat diversity vs.\ quality (general capability pass@1 accuracy) across ablation variants. \textbf  {(c)} Pass@k accuracy curves for the ablation variants on the general capability suite average, showing how capability under standard (solid) and diverse (dotted) decoding scales with $k$. We provide a breakdown by individual benchmarks in Appendix \ref {appx: ablation results} Figure \ref {fig:general capability pass@k ablation by benchmark}.}}{11}{figure.caption.17}\protected@file@percent }
 \newlabel{fig:ablation-pareto-pass-k}{{5}{11}{\textbf {Ablation study: diversity-quality trade-off under diverse and standard mode, and general capability retention pass@k accuracy.} \textbf {(a)} Diverse vs standard mode avg. pass@1 accuracy. \textbf {(b)} Infinite-Chat diversity vs.\ quality (general capability pass@1 accuracy) across ablation variants. \textbf {(c)} Pass@k accuracy curves for the ablation variants on the general capability suite average, showing how capability under standard (solid) and diverse (dotted) decoding scales with $k$. We provide a breakdown by individual benchmarks in Appendix \ref {appx: ablation results} Figure \ref {fig:general capability pass@k ablation by benchmark}}{figure.caption.17}{}}
 \newlabel{ablation: role injection}{{5.2}{11}{Ablation Setups}{figure.caption.17}{}}
@@ -260,35 +260,37 @@
 \newlabel{appx:additional results}{{B}{26}{Additional Experiment Results}{appendix.1.B}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {B.1}Generative Diversity Evaluation.}{26}{subsection.1.B.1}\protected@file@percent }
 \newlabel{appx:generative diversity evaluation}{{B.1}{26}{Generative Diversity Evaluation}{subsection.1.B.1}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {B.2}General Capability Retention}{27}{subsection.1.B.2}\protected@file@percent }
-\newlabel{appx:general capability retention}{{B.2}{27}{General Capability Retention}{subsection.1.B.2}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {B.2.1}Pass@1}{27}{subsubsection.1.B.2.1}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces General capability retention (accuracy \%, mean ± std error; bold = best per block)}}{28}{table.caption.34}\protected@file@percent }
-\newlabel{tab:general-capability-pass1-error-bar}{{4}{28}{General capability retention (accuracy \%, mean ± std error; bold = best per block)}{table.caption.34}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces \textbf  {Diversity vs. quality pareto fronts, remaining settings} (extends Figure~\ref {fig: domain application pareto} in the main text). The x-axis is Infinite-Chat response diversity (mean z-score of Disc./SBERT/EmbVendi) and the y-axis is general capability (mean benchmark accuracy). \textbf  {Left}: Qwen3-8B base, thinking enabled. \textbf  {Right}: Llama-3.1-8B / GLM-4-9B base, thinking disabled. \textsc  {MoDA}\xspace  {} Pareto-dominates all baselines in both settings.}}{26}{figure.caption.26}\protected@file@percent }
+\newlabel{fig:domain-application-pareto-appendix}{{7}{26}{\textbf {Diversity vs. quality pareto fronts, remaining settings} (extends Figure~\ref {fig: domain application pareto} in the main text). The x-axis is Infinite-Chat response diversity (mean z-score of Disc./SBERT/EmbVendi) and the y-axis is general capability (mean benchmark accuracy). \textbf {Left}: Qwen3-8B base, thinking enabled. \textbf {Right}: Llama-3.1-8B / GLM-4-9B base, thinking disabled. \method {} Pareto-dominates all baselines in both settings}{figure.caption.26}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {B.2}General Capability Retention}{28}{subsection.1.B.2}\protected@file@percent }
+\newlabel{appx:general capability retention}{{B.2}{28}{General Capability Retention}{subsection.1.B.2}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {B.2.1}Pass@1}{28}{subsubsection.1.B.2.1}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces General capability retention (accuracy \%, mean ± std error; bold = best per block)}}{28}{table.caption.35}\protected@file@percent }
+\newlabel{tab:general-capability-pass1-error-bar}{{4}{28}{General capability retention (accuracy \%, mean ± std error; bold = best per block)}{table.caption.35}{}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {B.2.2}Pass@5}{28}{subsubsection.1.B.2.2}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {5}{\ignorespaces General capability retention pass@5. For IFEval, strict instruction-following accuracy is reported. Avg.\ is the row mean across benchmarks. Bold marks the best average within each thinking setting.}}{28}{table.caption.35}\protected@file@percent }
-\newlabel{tab:general-capability-pass5}{{5}{28}{General capability retention pass@5. For IFEval, strict instruction-following accuracy is reported. Avg.\ is the row mean across benchmarks. Bold marks the best average within each thinking setting}{table.caption.35}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces \textbf  {General capability retention: pass@k accuracy.} Qwen3-8B base and thinking disabled models on the general capability suite tasks: BoolQ, MMLU, GPQA, and IFEval.}}{29}{figure.caption.36}\protected@file@percent }
-\newlabel{fig:general capability pass@k thinking disabled}{{7}{29}{\textbf {General capability retention: pass@k accuracy.} Qwen3-8B base and thinking disabled models on the general capability suite tasks: BoolQ, MMLU, GPQA, and IFEval}{figure.caption.36}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces \textbf  {General capability retention: pass@k accuracy.} Qwen3-8B base and thinking enabled models.}}{29}{figure.caption.37}\protected@file@percent }
-\newlabel{fig:general capability pass@k thinking enabled}{{8}{29}{\textbf {General capability retention: pass@k accuracy.} Qwen3-8B base and thinking enabled models}{figure.caption.37}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces \textbf  {General capability retention: pass@k accuracy.} Llama-3.1-8B base and thinking disabled models.}}{29}{figure.caption.38}\protected@file@percent }
-\newlabel{fig:general capability pass@k llama}{{9}{29}{\textbf {General capability retention: pass@k accuracy.} Llama-3.1-8B base and thinking disabled models}{figure.caption.38}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces \textbf  {General capability retention: pass@k accuracy.} GLM-4-9B base and thinking disabled models.}}{30}{figure.caption.39}\protected@file@percent }
-\newlabel{fig:general capability pass@k glm}{{10}{30}{\textbf {General capability retention: pass@k accuracy.} GLM-4-9B base and thinking disabled models}{figure.caption.39}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {B.3}Ablation Results}{30}{subsection.1.B.3}\protected@file@percent }
-\newlabel{appx: ablation results}{{B.3}{30}{Ablation Results}{subsection.1.B.3}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {6}{\ignorespaces \textbf  {Ablation results} for general capability (Pass@1) under standard and diverse decoding (accuracy \%) and Infinite-Chat diversity ($n{=}3$ random seeds). Bold marks the best value per column.}}{30}{table.caption.40}\protected@file@percent }
-\newlabel{tab:ablation}{{6}{30}{\textbf {Ablation results} for general capability (Pass@1) under standard and diverse decoding (accuracy \%) and Infinite-Chat diversity ($n{=}3$ random seeds). Bold marks the best value per column}{table.caption.40}{}}
-\newlabel{fig: ablation pass@k GSM8K}{{\caption@xref {??}{ on input line 214}}{31}{Ablation Results}{figure.caption.41}{}}
-\newlabel{fig: ablation pass@k MMLU}{{\caption@xref {??}{ on input line 221}}{31}{Ablation Results}{figure.caption.41}{}}
-\newlabel{fig: ablation pass@k GPQA}{{\caption@xref {??}{ on input line 228}}{31}{Ablation Results}{figure.caption.41}{}}
-\newlabel{fig: ablation pass@k TruthfulQA}{{\caption@xref {??}{ on input line 235}}{31}{Ablation Results}{figure.caption.41}{}}
-\newlabel{fig: ablation pass@k BoolQ}{{\caption@xref {??}{ on input line 242}}{31}{Ablation Results}{figure.caption.41}{}}
-\newlabel{fig: ablation pass@k HellaSwag}{{\caption@xref {??}{ on input line 248}}{31}{Ablation Results}{figure.caption.41}{}}
-\newlabel{fig: ablation pass@k IF-Eval}{{\caption@xref {??}{ on input line 255}}{31}{Ablation Results}{figure.caption.41}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {11}{\ignorespaces \textbf  {General capability retention for ablated models}: pass@k accuracy by benchmarks, standard vs diverse decoding mode.}}{31}{figure.caption.41}\protected@file@percent }
-\newlabel{fig:general capability pass@k ablation by benchmark}{{11}{31}{\textbf {General capability retention for ablated models}: pass@k accuracy by benchmarks, standard vs diverse decoding mode}{figure.caption.41}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {5}{\ignorespaces General capability retention pass@5. For IFEval, strict instruction-following accuracy is reported. Avg.\ is the row mean across benchmarks. Bold marks the best average within each thinking setting.}}{29}{table.caption.36}\protected@file@percent }
+\newlabel{tab:general-capability-pass5}{{5}{29}{General capability retention pass@5. For IFEval, strict instruction-following accuracy is reported. Avg.\ is the row mean across benchmarks. Bold marks the best average within each thinking setting}{table.caption.36}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces \textbf  {General capability retention: pass@k accuracy.} Qwen3-8B base and thinking disabled models on the general capability suite tasks: GSM8K, MMLU, GPQA, TruthfulQA, BoolQ, and IFEval. The suite average is shown in Figure~\ref {fig:general capability pass@k} in the main text.}}{29}{figure.caption.37}\protected@file@percent }
+\newlabel{fig:general capability pass@k thinking disabled}{{8}{29}{\textbf {General capability retention: pass@k accuracy.} Qwen3-8B base and thinking disabled models on the general capability suite tasks: GSM8K, MMLU, GPQA, TruthfulQA, BoolQ, and IFEval. The suite average is shown in Figure~\ref {fig:general capability pass@k} in the main text}{figure.caption.37}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces \textbf  {General capability retention: pass@k accuracy.} Qwen3-8B base and thinking enabled models.}}{30}{figure.caption.38}\protected@file@percent }
+\newlabel{fig:general capability pass@k thinking enabled}{{9}{30}{\textbf {General capability retention: pass@k accuracy.} Qwen3-8B base and thinking enabled models}{figure.caption.38}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces \textbf  {General capability retention: pass@k accuracy.} Llama-3.1-8B base and thinking disabled models.}}{30}{figure.caption.39}\protected@file@percent }
+\newlabel{fig:general capability pass@k llama}{{10}{30}{\textbf {General capability retention: pass@k accuracy.} Llama-3.1-8B base and thinking disabled models}{figure.caption.39}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {11}{\ignorespaces \textbf  {General capability retention: pass@k accuracy.} GLM-4-9B base and thinking disabled models.}}{31}{figure.caption.40}\protected@file@percent }
+\newlabel{fig:general capability pass@k glm}{{11}{31}{\textbf {General capability retention: pass@k accuracy.} GLM-4-9B base and thinking disabled models}{figure.caption.40}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {B.3}Ablation Results}{31}{subsection.1.B.3}\protected@file@percent }
+\newlabel{appx: ablation results}{{B.3}{31}{Ablation Results}{subsection.1.B.3}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {6}{\ignorespaces \textbf  {Ablation results} for general capability (Pass@1) under standard and diverse decoding (accuracy \%) and Infinite-Chat diversity ($n{=}3$ random seeds). Bold marks the best value per column.}}{31}{table.caption.41}\protected@file@percent }
+\newlabel{tab:ablation}{{6}{31}{\textbf {Ablation results} for general capability (Pass@1) under standard and diverse decoding (accuracy \%) and Infinite-Chat diversity ($n{=}3$ random seeds). Bold marks the best value per column}{table.caption.41}{}}
+\newlabel{fig: ablation pass@k GSM8K}{{\caption@xref {??}{ on input line 238}}{32}{Ablation Results}{figure.caption.42}{}}
+\newlabel{fig: ablation pass@k MMLU}{{\caption@xref {??}{ on input line 245}}{32}{Ablation Results}{figure.caption.42}{}}
+\newlabel{fig: ablation pass@k GPQA}{{\caption@xref {??}{ on input line 252}}{32}{Ablation Results}{figure.caption.42}{}}
+\newlabel{fig: ablation pass@k TruthfulQA}{{\caption@xref {??}{ on input line 259}}{32}{Ablation Results}{figure.caption.42}{}}
+\newlabel{fig: ablation pass@k BoolQ}{{\caption@xref {??}{ on input line 266}}{32}{Ablation Results}{figure.caption.42}{}}
+\newlabel{fig: ablation pass@k HellaSwag}{{\caption@xref {??}{ on input line 272}}{32}{Ablation Results}{figure.caption.42}{}}
+\newlabel{fig: ablation pass@k IF-Eval}{{\caption@xref {??}{ on input line 279}}{32}{Ablation Results}{figure.caption.42}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {12}{\ignorespaces \textbf  {General capability retention for ablated models}: pass@k accuracy by benchmarks, standard vs diverse decoding mode.}}{32}{figure.caption.42}\protected@file@percent }
+\newlabel{fig:general capability pass@k ablation by benchmark}{{12}{32}{\textbf {General capability retention for ablated models}: pass@k accuracy by benchmarks, standard vs diverse decoding mode}{figure.caption.42}{}}
 \citation{reimers2019sentencebertsentenceembeddingsusing}
 \citation{cobbe2021gsm8k}
 \citation{hendryckstest2021}
@@ -297,34 +299,34 @@
 \citation{zellers2019hellaswag}
 \citation{lin2022truthfulqameasuringmodelsmimic}
 \citation{zhou2023instructionfollowingevaluationlargelanguage}
-\@writefile{toc}{\contentsline {section}{\numberline {C}Benchmark Descriptions}{32}{appendix.1.C}\protected@file@percent }
-\newlabel{appx:benchmark}{{C}{32}{Benchmark Descriptions}{appendix.1.C}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {C.1}Diversity Metrics}{32}{subsection.1.C.1}\protected@file@percent }
-\newlabel{app:diversity-metrics}{{C.1}{32}{Diversity Metrics}{subsection.1.C.1}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {C.2}General Capability Retention}{32}{subsection.1.C.2}\protected@file@percent }
-\newlabel{appx:general capability}{{C.2}{32}{General Capability Retention}{subsection.1.C.2}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {C}Benchmark Descriptions}{33}{appendix.1.C}\protected@file@percent }
+\newlabel{appx:benchmark}{{C}{33}{Benchmark Descriptions}{appendix.1.C}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {C.1}Diversity Metrics}{33}{subsection.1.C.1}\protected@file@percent }
+\newlabel{app:diversity-metrics}{{C.1}{33}{Diversity Metrics}{subsection.1.C.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {C.2}General Capability Retention}{33}{subsection.1.C.2}\protected@file@percent }
+\newlabel{appx:general capability}{{C.2}{33}{General Capability Retention}{subsection.1.C.2}{}}
 \citation{liu2026hypobenchsystematicprincipledbenchmarking}
 \citation{Ajith2026}
 \citation{zhang2025noveltybenchevaluatinglanguagemodels}
 \citation{jiang2025artificialhivemindopenendedhomogeneity}
-\@writefile{toc}{\contentsline {subsection}{\numberline {C.3}Domain Application Tasks}{33}{subsection.1.C.3}\protected@file@percent }
-\newlabel{app:domain application}{{C.3}{33}{Domain Application Tasks}{subsection.1.C.3}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {D}Generation Examples}{34}{appendix.1.D}\protected@file@percent }
-\newlabel{appx: generation examples}{{D}{34}{Generation Examples}{appendix.1.D}{}}
-\newlabel{expr:generation-example-book-list}{{D}{34}{Generation Examples}{appendix.1.D}{}}
-\newlabel{appx:generation-example-chess}{{D}{34}{Generation Examples}{figure.caption.42}{}}
-\newlabel{appx:generation-example-passphrase}{{D}{34}{Generation Examples}{figure.caption.44}{}}
-\newlabel{appx:generation-example-cocktail}{{D}{34}{Generation Examples}{figure.caption.45}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {12}{\ignorespaces \textbf  {Qualitative example of diverse generation.} Upper: Responses sampled from Qwen3-8B. Bottom: Responses sampled from \textsc  {MoDA}\xspace  {} under distinct numbered roles for the same prompt, illustrating conceptual diversity across generations.}}{35}{figure.caption.42}\protected@file@percent }
-\newlabel{fig:qualitative-example-books}{{12}{35}{\textbf {Qualitative example of diverse generation.} Upper: Responses sampled from Qwen3-8B. Bottom: Responses sampled from \method {} under distinct numbered roles for the same prompt, illustrating conceptual diversity across generations}{figure.caption.42}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {13}{\ignorespaces \textbf  {Qualitative example of diverse generation (baseline): \textit  {Give a random chess move in response to 1. b3.}} Responses sampled from Qwen3-8B, illustrating limited diversity across generations.}}{36}{figure.caption.43}\protected@file@percent }
-\newlabel{fig:qualitative-example-chess-baseline}{{13}{36}{\textbf {Qualitative example of diverse generation (baseline): \textit {Give a random chess move in response to 1. b3.}} Responses sampled from Qwen3-8B, illustrating limited diversity across generations}{figure.caption.43}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {14}{\ignorespaces \textbf  {Qualitative example of diverse generation (\textsc  {MoDA}\xspace  {}): \textit  {Give a random chess move in response to 1. b3.}} Responses sampled from \textsc  {MoDA}\xspace  {} under distinct numbered roles for the same prompt (continuing Figure~\ref {fig:qualitative-example-chess-baseline}), illustrating conceptual diversity across generations.}}{37}{figure.caption.44}\protected@file@percent }
-\newlabel{fig:qualitative-example-chess}{{14}{37}{\textbf {Qualitative example of diverse generation (\method {}): \textit {Give a random chess move in response to 1. b3.}} Responses sampled from \method {} under distinct numbered roles for the same prompt (continuing Figure~\ref {fig:qualitative-example-chess-baseline}), illustrating conceptual diversity across generations}{figure.caption.44}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {15}{\ignorespaces \textbf  {Qualitative example of diverse generation: \textit  {Generate a 5 word passphrase separated by hyphens.}} Upper: Responses sampled from Qwen3-8B. Bottom: Responses sampled from \textsc  {MoDA}\xspace  {} under distinct numbered roles for the same prompt, illustrating conceptual diversity across generations.}}{38}{figure.caption.45}\protected@file@percent }
-\newlabel{fig:qualitative-example-passphrase}{{15}{38}{\textbf {Qualitative example of diverse generation: \textit {Generate a 5 word passphrase separated by hyphens.}} Upper: Responses sampled from Qwen3-8B. Bottom: Responses sampled from \method {} under distinct numbered roles for the same prompt, illustrating conceptual diversity across generations}{figure.caption.45}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {16}{\ignorespaces \textbf  {Qualitative example of diverse generation: \textit  {Name one cocktail I can make with rum.}} Upper: Responses sampled from Qwen3-8B. Bottom: Responses sampled from \textsc  {MoDA}\xspace  {} under distinct numbered roles for the same prompt, illustrating conceptual diversity across generations.}}{39}{figure.caption.46}\protected@file@percent }
-\newlabel{fig:qualitative-example-cocktail}{{16}{39}{\textbf {Qualitative example of diverse generation: \textit {Name one cocktail I can make with rum.}} Upper: Responses sampled from Qwen3-8B. Bottom: Responses sampled from \method {} under distinct numbered roles for the same prompt, illustrating conceptual diversity across generations}{figure.caption.46}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {C.3}Domain Application Tasks}{34}{subsection.1.C.3}\protected@file@percent }
+\newlabel{app:domain application}{{C.3}{34}{Domain Application Tasks}{subsection.1.C.3}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {D}Generation Examples}{35}{appendix.1.D}\protected@file@percent }
+\newlabel{appx: generation examples}{{D}{35}{Generation Examples}{appendix.1.D}{}}
+\newlabel{expr:generation-example-book-list}{{D}{35}{Generation Examples}{appendix.1.D}{}}
+\newlabel{appx:generation-example-chess}{{D}{35}{Generation Examples}{figure.caption.43}{}}
+\newlabel{appx:generation-example-passphrase}{{D}{35}{Generation Examples}{figure.caption.45}{}}
+\newlabel{appx:generation-example-cocktail}{{D}{35}{Generation Examples}{figure.caption.46}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {13}{\ignorespaces \textbf  {Qualitative example of diverse generation.} Upper: Responses sampled from Qwen3-8B. Bottom: Responses sampled from \textsc  {MoDA}\xspace  {} under distinct numbered roles for the same prompt, illustrating conceptual diversity across generations.}}{36}{figure.caption.43}\protected@file@percent }
+\newlabel{fig:qualitative-example-books}{{13}{36}{\textbf {Qualitative example of diverse generation.} Upper: Responses sampled from Qwen3-8B. Bottom: Responses sampled from \method {} under distinct numbered roles for the same prompt, illustrating conceptual diversity across generations}{figure.caption.43}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {14}{\ignorespaces \textbf  {Qualitative example of diverse generation (baseline): \textit  {Give a random chess move in response to 1. b3.}} Responses sampled from Qwen3-8B, illustrating limited diversity across generations.}}{37}{figure.caption.44}\protected@file@percent }
+\newlabel{fig:qualitative-example-chess-baseline}{{14}{37}{\textbf {Qualitative example of diverse generation (baseline): \textit {Give a random chess move in response to 1. b3.}} Responses sampled from Qwen3-8B, illustrating limited diversity across generations}{figure.caption.44}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {15}{\ignorespaces \textbf  {Qualitative example of diverse generation (\textsc  {MoDA}\xspace  {}): \textit  {Give a random chess move in response to 1. b3.}} Responses sampled from \textsc  {MoDA}\xspace  {} under distinct numbered roles for the same prompt (continuing Figure~\ref {fig:qualitative-example-chess-baseline}), illustrating conceptual diversity across generations.}}{38}{figure.caption.45}\protected@file@percent }
+\newlabel{fig:qualitative-example-chess}{{15}{38}{\textbf {Qualitative example of diverse generation (\method {}): \textit {Give a random chess move in response to 1. b3.}} Responses sampled from \method {} under distinct numbered roles for the same prompt (continuing Figure~\ref {fig:qualitative-example-chess-baseline}), illustrating conceptual diversity across generations}{figure.caption.45}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {16}{\ignorespaces \textbf  {Qualitative example of diverse generation: \textit  {Generate a 5 word passphrase separated by hyphens.}} Upper: Responses sampled from Qwen3-8B. Bottom: Responses sampled from \textsc  {MoDA}\xspace  {} under distinct numbered roles for the same prompt, illustrating conceptual diversity across generations.}}{39}{figure.caption.46}\protected@file@percent }
+\newlabel{fig:qualitative-example-passphrase}{{16}{39}{\textbf {Qualitative example of diverse generation: \textit {Generate a 5 word passphrase separated by hyphens.}} Upper: Responses sampled from Qwen3-8B. Bottom: Responses sampled from \method {} under distinct numbered roles for the same prompt, illustrating conceptual diversity across generations}{figure.caption.46}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {17}{\ignorespaces \textbf  {Qualitative example of diverse generation: \textit  {Name one cocktail I can make with rum.}} Upper: Responses sampled from Qwen3-8B. Bottom: Responses sampled from \textsc  {MoDA}\xspace  {} under distinct numbered roles for the same prompt, illustrating conceptual diversity across generations.}}{40}{figure.caption.47}\protected@file@percent }
+\newlabel{fig:qualitative-example-cocktail}{{17}{40}{\textbf {Qualitative example of diverse generation: \textit {Name one cocktail I can make with rum.}} Upper: Responses sampled from Qwen3-8B. Bottom: Responses sampled from \method {} under distinct numbered roles for the same prompt, illustrating conceptual diversity across generations}{figure.caption.47}{}}
 \citation{Zhang2025}
 \citation{Misaki2026}
 \citation{lau2025dipperdiversitypromptsproducing}
@@ -339,9 +341,9 @@
 \citation{Chen2025PosttrainingLL}
 \citation{Puri2026}
 \citation{slocum2025diversepreferencelearningcapabilities}
-\@writefile{toc}{\contentsline {section}{\numberline {E}Extended Related Work: Method Comparison}{40}{appendix.1.E}\protected@file@percent }
-\newlabel{appx:related-work-table}{{E}{40}{Extended Related Work: Method Comparison}{appendix.1.E}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {7}{\ignorespaces \textbf  {Diversity-oriented methods.} \textsc  {MoDA}\xspace  {} conditions diversity on explicit mode tokens, inspired by MARL.}}{40}{table.caption.47}\protected@file@percent }
-\newlabel{tab:related-work}{{7}{40}{\textbf {Diversity-oriented methods.} \method {} conditions diversity on explicit mode tokens, inspired by MARL}{table.caption.47}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {E}Extended Related Work: Method Comparison}{41}{appendix.1.E}\protected@file@percent }
+\newlabel{appx:related-work-table}{{E}{41}{Extended Related Work: Method Comparison}{appendix.1.E}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {7}{\ignorespaces \textbf  {Diversity-oriented methods.} \textsc  {MoDA}\xspace  {} conditions diversity on explicit mode tokens, inspired by MARL.}}{41}{table.caption.48}\protected@file@percent }
+\newlabel{tab:related-work}{{7}{41}{\textbf {Diversity-oriented methods.} \method {} conditions diversity on explicit mode tokens, inspired by MARL}{table.caption.48}{}}
 \ttl@finishall
-\gdef \@abspage@last{40}
+\gdef \@abspage@last{41}
