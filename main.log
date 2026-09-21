@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.3.22)  21 SEP 2026 13:56
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.3.22)  21 SEP 2026 15:05
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -664,8 +664,7 @@ LaTeX Font Info:    Trying to load font information for U+psy on input line 64.
 File: upsy.fd 2001/06/04 font definitions for U/psy.
 ))
 Package hyperref Info: Option `colorlinks' set `true' on input line 134.
-
-No file main.aux.
+ (./main.aux)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 136.
@@ -686,7 +685,7 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 136.
 LaTeX Font Info:    ... okay on input line 136.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 136.
 LaTeX Font Info:    ... okay on input line 136.
-(/usr/local/texlive/2026/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+ (/usr/local/texlive/2026/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count362
 \scratchdimen=\dimen304
@@ -706,6 +705,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
 Package hyperref Info: Link coloring ON on input line 136.
+ (./main.out) (./main.out)
 \@outlinefile=\write4
 \openout4 = `main.out'.
 
@@ -753,12 +753,12 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) (/usr/local/texlive/2026/texmf-dist/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 ) (./notes_arxiv/0_abstract.tex) (./notes_arxiv/1_introduction.tex
-<figures/method_v3.png, id=7, 1644.1425pt x 919.435pt>
+<figures/method_v3.png, id=147, 1644.1425pt x 919.435pt>
 File: figures/method_v3.png Graphic file (type png)
 <use figures/method_v3.png>
 Package pdftex.def Info: figures/method_v3.png  used on input line 5.
 (pdftex.def)             Requested size: 310.0378pt x 173.37569pt.
-<figures/blue.png, id=8, 204.765pt x 464.73625pt>
+<figures/blue.png, id=148, 204.765pt x 464.73625pt>
 File: figures/blue.png Graphic file (type png)
 <use figures/blue.png>
 Package pdftex.def Info: figures/blue.png  used on input line 10.
@@ -771,662 +771,152 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `pcr' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-
-
-Package natbib Warning: Citation `Misaki2026' on page 1 undefined on input line 15.
-
-
-Package natbib Warning: Citation `Misaki2026' on page 1 undefined on input line 15.
-
-
-Package natbib Warning: Citation `jiang2025artificialhivemindopenendedhomogeneity' on page 1 undefined on input line 23.
-
-
-Package natbib Warning: Citation `west2025base' on page 1 undefined on input line 23.
-
-
-Package natbib Warning: Citation `huang2024self' on page 1 undefined on input line 23.
-
-
-Package natbib Warning: Citation `sourati2026homogenizingeffectlargelanguage' on page 1 undefined on input line 23.
-
-
-Package natbib Warning: Citation `gruver2023proteindesignguideddiscrete' on page 1 undefined on input line 23.
-
-
-Package natbib Warning: Citation `romera2024mathematical' on page 1 undefined on input line 23.
-
-
-Package natbib Warning: Citation `Shumailov2024AIMC' on page 1 undefined on input line 23.
-
-
-Package natbib Warning: Citation `abdulhai2026llmsdistortwrittenlanguage' on page 1 undefined on input line 23.
-
-
-Package natbib Warning: Citation `Misaki2026' on page 1 undefined on input line 23.
-
-
-Package natbib Warning: Citation `Zhang2025' on page 1 undefined on input line 23.
-
-
-Package natbib Warning: Citation `eysenbach2018diversityneedlearningskills' on page 1 undefined on input line 25.
-
-
-Package natbib Warning: Citation `liang2024learning' on page 1 undefined on input line 25.
-
-
-Package natbib Warning: Citation `li2021celebratingdiversitysharedmultiagent' on page 1 undefined on input line 25.
-
-[1{/usr/local/texlive/2026/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2026/texmf-dist/fonts/enc/dvips/base/8r.enc}
+ [1{/usr/local/texlive/2026/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2026/texmf-dist/fonts/enc/dvips/base/8r.enc}
 
 ]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-Package natbib Warning: Citation `li2025jointlyreinforcingdiversityquality' on page 2 undefined on input line 27.
-
-
-Package natbib Warning: Citation `wan2025enhancingpersonalizedmultiturndialogue' on page 2 undefined on input line 27.
-
-
-Package natbib Warning: Citation `liu2026hypobenchsystematicprincipledbenchmarking' on page 2 undefined on input line 29.
-
-
-Package natbib Warning: Citation `Ajith2026' on page 2 undefined on input line 29.
-
-
-Package natbib Warning: Citation `zhang2025noveltybenchevaluatinglanguagemodels' on page 2 undefined on input line 29.
-
-
-Package natbib Warning: Citation `jiang2025artificialhivemindopenendedhomogeneity' on page 2 undefined on input line 29.
-
-
-Package natbib Warning: Citation `li2025jointlyreinforcingdiversityquality' on page 2 undefined on input line 31.
-
-
-Package natbib Warning: Citation `lanchantin2025diverse' on page 2 undefined on input line 31.
-
-
-Package natbib Warning: Citation `chung2025modifyinglargelanguagemodel' on page 2 undefined on input line 31.
-
-
-Package natbib Warning: Citation `Chen2025PosttrainingLL' on page 2 undefined on input line 31.
-
-
-Package natbib Warning: Citation `slocum2025diversepreferencelearningcapabilities' on page 2 undefined on input line 31.
-
-
-Package natbib Warning: Citation `Puri2026' on page 2 undefined on input line 31.
-
-
-Underfull \vbox (badness 2443) has occurred while \output is active []
-
- [2 <./figures/method_v3.png> <./figures/blue.png>]) (./notes_arxiv/6_related_work.tex
-
-Package natbib Warning: Citation `jiang2025artificialhivemindopenendedhomogeneity' on page 3 undefined on input line 7.
-
-
-Package natbib Warning: Citation `Zhang2025' on page 3 undefined on input line 7.
-
-
-Package natbib Warning: Citation `zou2026fmlbenchbenchmarkingmachinelearning' on page 3 undefined on input line 8.
-
-
-Package natbib Warning: Citation `yuan2026agenticredevolvingagenticsystems' on page 3 undefined on input line 8.
-
-
-Package natbib Warning: Citation `abdulhai2026llmsdistortwrittenlanguage' on page 3 undefined on input line 8.
-
-
-Package natbib Warning: Citation `Anderson2024HomogenizationEO' on page 3 undefined on input line 8.
-
-
-Package natbib Warning: Citation `padmakumar2023does' on page 3 undefined on input line 8.
-
-
-Package natbib Warning: Citation `Wu2025' on page 3 undefined on input line 8.
-
-
-Package natbib Warning: Citation `Cao2025TowardsAM' on page 3 undefined on input line 8.
-
-
-Package natbib Warning: Citation `ippolito2019comparison' on page 3 undefined on input line 13.
-
-
-Package natbib Warning: Citation `zhu2018texygen' on page 3 undefined on input line 13.
-
-
-Package natbib Warning: Citation `McCarthy2010MTLDVA' on page 3 undefined on input line 13.
-
-
-Package natbib Warning: Citation `shaib2024standardizing' on page 3 undefined on input line 13.
-
-
-Package natbib Warning: Citation `reimers2019sentencebertsentenceembeddingsusing' on page 3 undefined on input line 13.
-
-
-Package natbib Warning: Citation `wieting2018paranmt' on page 3 undefined on input line 13.
-
-
-Package natbib Warning: Citation `friedman2023vendiscorediversityevaluation' on page 3 undefined on input line 13.
-
-
-Package natbib Warning: Citation `jalali2024conditionalvendiscoreinformationtheoretic' on page 3 undefined on input line 13.
-
-
-Package natbib Warning: Citation `jung2025prismaticsynthesisgradientbaseddata' on page 3 undefined on input line 13.
-
-
-Package natbib Warning: Citation `kirk2024understandingeffectsrlhfllm' on page 3 undefined on input line 13.
-
-
-Package natbib Warning: Citation `omahony2024attributingmodecollapsefinetuning' on page 3 undefined on input line 13.
-
-
-Package natbib Warning: Citation `padmakumar2023does' on page 3 undefined on input line 13.
-
-
-Package natbib Warning: Citation `west2025base' on page 3 undefined on input line 13.
-
-
-Package natbib Warning: Citation `dang2025assessing' on page 3 undefined on input line 13.
-
-
-Package natbib Warning: Citation `zhang2025noveltybenchevaluatinglanguagemodels' on page 3 undefined on input line 13.
-
-
-Package natbib Warning: Citation `shypula2025evaluatingdiversityqualityllm' on page 3 undefined on input line 13.
-
-
-Package natbib Warning: Citation `guo2025benchmarking' on page 3 undefined on input line 13.
-
-
-Package natbib Warning: Citation `Shahid2025' on page 3 undefined on input line 13.
-
-
-Package natbib Warning: Citation `Misaki2026' on page 3 undefined on input line 13.
-
-
-Package natbib Warning: Citation `Puri2026' on page 3 undefined on input line 13.
-
-
-Package natbib Warning: Citation `luo2025empiricalstudycatastrophicforgetting' on page 3 undefined on input line 13.
-
-
-Package natbib Warning: Citation `Zhang2025' on page 3 undefined on input line 19.
-
-
-Package natbib Warning: Citation `lau2025dipperdiversitypromptsproducing' on page 3 undefined on input line 19.
-
-
-Package natbib Warning: Citation `lagzian2025multinoveltyimprovediversitynovelty' on page 3 undefined on input line 19.
-
-
-Package natbib Warning: Citation `wang2025multilingualpromptingimprovingllm' on page 3 undefined on input line 19.
-
-
-Package natbib Warning: Citation `Kim2026' on page 3 undefined on input line 19.
-
-
-Package natbib Warning: Citation `Wu2025' on page 3 undefined on input line 19.
-
-
-Package natbib Warning: Citation `holtzman2020curiouscaseneuraltext' on page 3 undefined on input line 19.
-
-
-Package natbib Warning: Citation `nguyen2024turningheatminpsampling' on page 3 undefined on input line 19.
-
-
-Package natbib Warning: Citation `ruan-etal-2025-g2' on page 3 undefined on input line 19.
-
-
-Package natbib Warning: Citation `wang2024lpoadaptivedecodinglatent' on page 3 undefined on input line 19.
-
-
-Package natbib Warning: Citation `li2025jointlyreinforcingdiversityquality' on page 3 undefined on input line 19.
-
-
-Package natbib Warning: Citation `lanchantin2025diverse' on page 3 undefined on input line 19.
-
-
-Package natbib Warning: Citation `chung2025modifyinglargelanguagemodel' on page 3 undefined on input line 19.
-
-
-Package natbib Warning: Citation `Chen2025PosttrainingLL' on page 3 undefined on input line 19.
-
-
-Package natbib Warning: Citation `slocum2025diversepreferencelearningcapabilities' on page 3 undefined on input line 19.
-
-
-Package natbib Warning: Citation `Puri2026' on page 3 undefined on input line 19.
-
-
-LaTeX Warning: Reference `appx:related-work-table' on page 3 undefined on input line 19.
-
-
-Package natbib Warning: Citation `Zhang2025' on page 3 undefined on input line 19.
-
-
-Package natbib Warning: Citation `Misaki2026' on page 3 undefined on input line 19.
-
-
-Package natbib Warning: Citation `lau2025dipperdiversitypromptsproducing' on page 3 undefined on input line 19.
-
-
-Package natbib Warning: Citation `lagzian2025multinoveltyimprovediversitynovelty' on page 3 undefined on input line 19.
-
-
-Package natbib Warning: Citation `wang2025multilingualpromptingimprovingllm' on page 3 undefined on input line 19.
-
-
-Package natbib Warning: Citation `Wu2025' on page 3 undefined on input line 19.
-
-
-Package natbib Warning: Citation `nguyen2024turningheatminpsampling' on page 3 undefined on input line 19.
-
-
-Package natbib Warning: Citation `ruan-etal-2025-g2' on page 3 undefined on input line 19.
-
-
-Package natbib Warning: Citation `wang2024lpoadaptivedecodinglatent' on page 3 undefined on input line 19.
-
-
-Package natbib Warning: Citation `Puri2026' on page 3 undefined on input line 19.
-
-
-Package natbib Warning: Citation `slocum2025diversepreferencelearningcapabilities' on page 3 undefined on input line 19.
-
-
-Package natbib Warning: Citation `lanchantin2025diverse' on page 3 undefined on input line 19.
-
-
-Package natbib Warning: Citation `li2025jointlyreinforcingdiversityquality' on page 3 undefined on input line 21.
-
-
-Package natbib Warning: Citation `Chen2025PosttrainingLL' on page 3 undefined on input line 21.
-
-
-Package natbib Warning: Citation `he2025rewardingunlikelyliftinggrpo' on page 3 undefined on input line 21.
-
-
-Package natbib Warning: Citation `anschel2025group' on page 3 undefined on input line 21.
-
-) (./notes_arxiv/3_method.tex
-<figures/time.pdf, id=32, 2054.33868pt x 921.76947pt>
+ [2 <./figures/method_v3.png> <./figures/blue.png>]) (./notes_arxiv/6_related_work.tex [3]) (./notes_arxiv/3_method.tex
+<figures/time.pdf, id=422, 2054.33868pt x 921.76947pt>
 File: figures/time.pdf Graphic file (type pdf)
 <use figures/time.pdf>
 Package pdftex.def Info: figures/time.pdf  used on input line 6.
 (pdftex.def)             Requested size: 397.48499pt x 178.34485pt.
+ [4 <./figures/time.pdf>] [5]
+Underfull \hbox (badness 5260) in paragraph at lines 101--111
+ []\T1/ptm/b/n/10 (+20) Diversity Scor-ing.[] \T1/ptm/m/n/10 (+20) For each prompt, the re-sponse group $\OMS/cmsy/m/n/10 Y \OT1/cmr/m/n/10 = \OMS/cmsy/m/n/10 f\OML/cmm/m/it/10 y[]; [] ; y[]\OMS/cmsy/m/n/10 g$ \T1/ptm/m/n/10 (+20) con-
+ []
 
 
-Package natbib Warning: Citation `shao2024deepseekmath' on page 3 undefined on input line 15.
+Underfull \hbox (badness 2359) in paragraph at lines 101--111
+\T1/ptm/m/n/10 (+20) tains one can-di-date from each of the six modes and best fits on 4 GPUs: one for
+ []
 
 
-Package natbib Warning: Citation `Guo_2025' on page 3 undefined on input line 15.
-
-
-Package natbib Warning: Citation `kirk2024understandingeffectsrlhfllm' on page 3 undefined on input line 15.
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [3]
-
-Package natbib Warning: Citation `eysenbach2018diversityneedlearningskills' on page 4 undefined on input line 46.
-
-
-Package natbib Warning: Citation `liang2024learning' on page 4 undefined on input line 46.
-
-
-Package natbib Warning: Citation `li2021celebratingdiversitysharedmultiagent' on page 4 undefined on input line 46.
-
-[4 <./figures/time.pdf>]
-
-LaTeX Warning: Reference `subsec:qgdr' on page 5 undefined on input line 50.
-
-
-Package natbib Warning: Citation `shao2024deepseekmath' on page 5 undefined on input line 50.
-
-
-LaTeX Warning: Reference `alg: moda short' on page 5 undefined on input line 50.
-
-
-LaTeX Warning: Reference `alg:moda' on page 5 undefined on input line 50.
-
-[5]
-
-Package natbib Warning: Citation `wang2020minilmdeepselfattentiondistillation' on page 6 undefined on input line 103.
-
-
-Package natbib Warning: Citation `shao2024deepseekmath' on page 6 undefined on input line 128.
-
-
-Package natbib Warning: Citation `kloek1978bayesian' on page 6 undefined on input line 143.
-
-
-LaTeX Warning: Reference `eq:qgdr' on page 6 undefined on input line 146.
-
-
-Package natbib Warning: Citation `jaques2017sequencetutorconservativefinetuning' on page 6 undefined on input line 146.
+Underfull \hbox (badness 3503) in paragraph at lines 101--111
+\T1/ptm/m/n/10 (+20) the re-ward model and three for in-fer-ence. We em-bed the fi-nal an-swer text us-ing
+ []
 
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on input line 150.
-) (./notes_arxiv/4_experiments.tex
+[6]) (./notes_arxiv/4_experiments.tex
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-Package natbib Warning: Citation `sheng2024hybridflow' on page 6 undefined on input line 5.
-
-
-Package natbib Warning: Citation `kwon2023efficient' on page 6 undefined on input line 5.
-
-
-Package natbib Warning: Citation `zhao2023pytorch' on page 6 undefined on input line 5.
-
-
-Package natbib Warning: Citation `yang2025qwen3technicalreport' on page 6 undefined on input line 5.
-
-
-Package natbib Warning: Citation `liu2025skywork' on page 6 undefined on input line 5.
-
-
-Package natbib Warning: Citation `wang2020minilmdeepselfattentiondistillation' on page 6 undefined on input line 5.
-
-
-LaTeX Warning: Reference `appx:implementation' on page 6 undefined on input line 5.
-
-
-Package natbib Warning: Citation `li2025jointlyreinforcingdiversityquality' on page 6 undefined on input line 9.
-
-
-Package natbib Warning: Citation `lanchantin2025diverse' on page 6 undefined on input line 9.
-
-
-LaTeX Warning: Reference `subsec:training data' on page 6 undefined on input line 9.
-
-
-Package natbib Warning: Citation `Misaki2026' on page 6 undefined on input line 9.
-
-[6]
-
-Package natbib Warning: Citation `lambert2024tulu3' on page 7 undefined on input line 20.
-
-
-Package natbib Warning: Citation `jiang2025artificialhivemindopenendedhomogeneity' on page 7 undefined on input line 20.
-
-
-Package natbib Warning: Citation `liu2026hypobenchsystematicprincipledbenchmarking' on page 7 undefined on input line 24.
-
-
-Package natbib Warning: Citation `Ajith2026' on page 7 undefined on input line 24.
-
-
-Package natbib Warning: Citation `zhang2025noveltybenchevaluatinglanguagemodels' on page 7 undefined on input line 24.
-
-
-Package natbib Warning: Citation `jiang2025artificialhivemindopenendedhomogeneity' on page 7 undefined on input line 24.
-
-
-LaTeX Warning: Reference `app:domain application' on page 7 undefined on input line 24.
-
-
-Package natbib Warning: Citation `friedman2023vendiscorediversityevaluation' on page 7 undefined on input line 24.
-
-
-LaTeX Warning: Reference `appx:discriminator' on page 7 undefined on input line 24.
-
-
-Package natbib Warning: Citation `cobbe2021gsm8k' on page 7 undefined on input line 44.
-
-
-Package natbib Warning: Citation `hendryckstest2021' on page 7 undefined on input line 44.
-
-
-Package natbib Warning: Citation `rein2024gpqa' on page 7 undefined on input line 44.
-
-
-Package natbib Warning: Citation `clark2019boolq' on page 7 undefined on input line 44.
-
-
-Package natbib Warning: Citation `zellers2019hellaswag' on page 7 undefined on input line 44.
-
-
-Package natbib Warning: Citation `lin2022truthfulqameasuringmodelsmimic' on page 7 undefined on input line 44.
-
-
-Package natbib Warning: Citation `zhou2023instructionfollowingevaluationlargelanguage' on page 7 undefined on input line 44.
-
-[7]
-
-LaTeX Warning: Reference `fig: domain application pareto' on page 8 undefined on input line 68.
-
-
-LaTeX Warning: Reference `appx:generative diversity evaluation' on page 8 undefined on input line 68.
-
-
-LaTeX Warning: Reference `tab:domain-app-diversity-main' on page 8 undefined on input line 68.
-
-<figures/pareto_infinite-chat_quality_thinking_false_base_model_qwen3-8b_composite.png, id=137, 534.798pt x 404.712pt>
+ [7]
+<figures/pareto_infinite-chat_quality_thinking_false_base_model_qwen3-8b_composite.png, id=599, 534.798pt x 404.712pt>
 File: figures/pareto_infinite-chat_quality_thinking_false_base_model_qwen3-8b_composite.png Graphic file (type png)
 <use figures/pareto_infinite-chat_quality_thinking_false_base_model_qwen3-8b_composite.png>
-Package pdftex.def Info: figures/pareto_infinite-chat_quality_thinking_false_base_model_qwen3-8b_composite.png  used on input line 72.
-(pdftex.def)             Requested size: 158.99156pt x 120.3153pt.
-
-LaTeX Warning: Reference `appx:generative diversity evaluation' on page 8 undefined on input line 73.
-
-
-LaTeX Warning: Reference `appx:generative diversity evaluation' on page 8 undefined on input line 73.
-
-(./notes_arxiv/table/diversity_main.tex
-
-LaTeX Warning: Reference `appx:generative diversity evaluation' on page 8 undefined on input line 35.
-
-
-LaTeX Warning: Reference `appx:generative diversity evaluation' on page 8 undefined on input line 35.
-
-)
-
-LaTeX Warning: Reference `tab:general-capability-pass1' on page 8 undefined on input line 78.
-
-
-LaTeX Warning: Reference `fig:general capability pass@k' on page 8 undefined on input line 78.
-
-[8 <./figures/pareto_infinite-chat_quality_thinking_false_base_model_qwen3-8b_composite.png>] (./notes_arxiv/table/general_capability.tex
+Package pdftex.def Info: figures/pareto_infinite-chat_quality_thinking_false_base_model_qwen3-8b_composite.png  used on input line 74.
+(pdftex.def)             Requested size: 127.1981pt x 96.25595pt.
+ (./notes_arxiv/table/diversity_main.tex) (./notes_arxiv/table/general_capability.tex
 Overfull \hbox (2.86073pt too wide) in paragraph at lines 5--5
  []|\T1/ptm/m/n/9 (-20) GSM8K| 
  []
 
 )
-
-LaTeX Warning: Reference `appx:general capability retention' on page 9 undefined on input line 90.
-
-
-LaTeX Warning: Reference `tab:general-capability-pass1-error-bar' on page 9 undefined on input line 90.
-
-
-LaTeX Warning: Reference `appx:general capability retention' on page 9 undefined on input line 90.
-
-
-LaTeX Warning: Reference `tab:general-capability-pass1-error-bar' on page 9 undefined on input line 90.
-
-<figures/main_pass_k/pass_at_k_figures/pass_at_k_avg_thinking_false_base_model_qwen3-8b.png, id=146, 631.6398pt x 596.2275pt>
+<figures/main_pass_k/pass_at_k_figures/pass_at_k_avg_thinking_false_base_model_qwen3-8b.png, id=603, 631.6398pt x 596.2275pt>
 File: figures/main_pass_k/pass_at_k_figures/pass_at_k_avg_thinking_false_base_model_qwen3-8b.png Graphic file (type png)
 <use figures/main_pass_k/pass_at_k_figures/pass_at_k_avg_thinking_false_base_model_qwen3-8b.png>
-Package pdftex.def Info: figures/main_pass_k/pass_at_k_figures/pass_at_k_avg_thinking_false_base_model_qwen3-8b.png  used on input line 95.
-(pdftex.def)             Requested size: 111.2953pt x 105.051pt.
-
-LaTeX Warning: Reference `appx:general capability retention' on page 9 undefined on input line 96.
-
-
-LaTeX Warning: Reference `fig:general capability pass@k thinking disabled' on page 9 undefined on input line 96.
-
-
-LaTeX Warning: Reference `appx:general capability retention' on page 9 undefined on input line 96.
-
-
-LaTeX Warning: Reference `fig:general capability pass@k thinking disabled' on page 9 undefined on input line 96.
-
-
-LaTeX Warning: Reference `fig:time' on page 9 undefined on input line 125.
-
-
-LaTeX Warning: Reference `fig:moda + 40blue' on page 9 undefined on input line 125.
-
-
-LaTeX Warning: Reference `appx: generation examples' on page 9 undefined on input line 127.
-
-
-LaTeX Warning: Reference `fig:qualitative-example-books' on page 9 undefined on input line 127.
-
-
-LaTeX Warning: Reference `appx: ablation model implementations' on page 9 undefined on input line 136.
-
-[9 <./figures/main_pass_k/pass_at_k_figures/pass_at_k_avg_thinking_false_base_model_qwen3-8b.png>]
-<figures/pareto_ablation_standard_vs_diverse.png, id=156, 641.7576pt x 505.89pt>
-File: figures/pareto_ablation_standard_vs_diverse.png Graphic file (type png)
-<use figures/pareto_ablation_standard_vs_diverse.png>
-Package pdftex.def Info: figures/pareto_ablation_standard_vs_diverse.png  used on input line 142.
-(pdftex.def)             Requested size: 139.12216pt x 109.66737pt.
-<figures/pareto_infinite-chat_quality_ablations_composite.png, id=157, 641.7576pt x 505.89pt>
-File: figures/pareto_infinite-chat_quality_ablations_composite.png Graphic file (type png)
-<use figures/pareto_infinite-chat_quality_ablations_composite.png>
-Package pdftex.def Info: figures/pareto_infinite-chat_quality_ablations_composite.png  used on input line 148.
-(pdftex.def)             Requested size: 139.12216pt x 109.66737pt.
-<figures/ablation_pass_k/pass_at_k_avg_ablations.png, id=158, 631.6398pt x 596.2275pt>
-File: figures/ablation_pass_k/pass_at_k_avg_ablations.png Graphic file (type png)
-<use figures/ablation_pass_k/pass_at_k_avg_ablations.png>
-Package pdftex.def Info: figures/ablation_pass_k/pass_at_k_avg_ablations.png  used on input line 154.
-(pdftex.def)             Requested size: 115.26797pt x 108.79924pt.
-
-
-LaTeX Warning: Reference `appx: ablation results' on page 10 undefined on input line 160.
-
-
-LaTeX Warning: Reference `fig:general capability pass@k ablation by benchmark' on page 10 undefined on input line 160.
-
-
-LaTeX Warning: Reference `appx: ablation results' on page 10 undefined on input line 160.
-
-
-LaTeX Warning: Reference `fig:general capability pass@k ablation by benchmark' on page 10 undefined on input line 160.
-
-
-LaTeX Warning: Reference `fig:ablation-pareto-pass-k' on page 10 undefined on input line 166.
-
-
-LaTeX Warning: Reference `fig:ablation-pareto-pass-k' on page 10 undefined on input line 166.
-
-
-Package natbib Warning: Citation `mouret2015illuminatingsearchspacesmapping' on page 10 undefined on input line 168.
-
-
-Package natbib Warning: Citation `Chen2025PosttrainingLL' on page 10 undefined on input line 168.
-
-
-Package natbib Warning: Citation `park2024generative' on page 10 undefined on input line 173.
-
-
-Package natbib Warning: Citation `argyle2023out' on page 10 undefined on input line 173.
-
-
-LaTeX Warning: Reference `tab:ablation' on page 10 undefined on input line 174.
-
-) (./notes_arxiv/5_discussions.tex
+Package pdftex.def Info: figures/main_pass_k/pass_at_k_figures/pass_at_k_avg_thinking_false_base_model_qwen3-8b.png  used on input line 101.
+(pdftex.def)             Requested size: 151.04623pt x 142.57895pt.
+ [8]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [10 <./figures/pareto_ablation_standard_vs_diverse.png> <./figures/pareto_infinite-chat_quality_ablations_composite.png> <./figures/ablation_pass_k/pass_at_k_avg_ablations.png>]) [11] (./main.bbl [12] [13] [14] [15] [16]) (./notes_arxiv/appendix.tex [17]
+ [9 <./figures/pareto_infinite-chat_quality_thinking_false_base_model_qwen3-8b_composite.png> <./figures/main_pass_k/pass_at_k_figures/pass_at_k_avg_thinking_false_base_model_qwen3-8b.png>]
+<figures/pareto_ablation_standard_vs_diverse.png, id=642, 641.7576pt x 505.89pt>
+File: figures/pareto_ablation_standard_vs_diverse.png Graphic file (type png)
+<use figures/pareto_ablation_standard_vs_diverse.png>
+Package pdftex.def Info: figures/pareto_ablation_standard_vs_diverse.png  used on input line 148.
+(pdftex.def)             Requested size: 139.12216pt x 109.66737pt.
+<figures/pareto_infinite-chat_quality_ablations_composite.png, id=643, 641.7576pt x 505.89pt>
+File: figures/pareto_infinite-chat_quality_ablations_composite.png Graphic file (type png)
+<use figures/pareto_infinite-chat_quality_ablations_composite.png>
+Package pdftex.def Info: figures/pareto_infinite-chat_quality_ablations_composite.png  used on input line 154.
+(pdftex.def)             Requested size: 139.12216pt x 109.66737pt.
+<figures/ablation_pass_k/pass_at_k_avg_ablations.png, id=644, 631.6398pt x 596.2275pt>
+File: figures/ablation_pass_k/pass_at_k_avg_ablations.png Graphic file (type png)
+<use figures/ablation_pass_k/pass_at_k_avg_ablations.png>
+Package pdftex.def Info: figures/ablation_pass_k/pass_at_k_avg_ablations.png  used on input line 160.
+(pdftex.def)             Requested size: 115.26797pt x 108.79924pt.
+) (./notes_arxiv/5_discussions.tex [10 <./figures/pareto_ablation_standard_vs_diverse.png> <./figures/pareto_infinite-chat_quality_ablations_composite.png> <./figures/ablation_pass_k/pass_at_k_avg_ablations.png>]) [11] (./main.bbl [12] [13] [14] [15] [16]) (./notes_arxiv/appendix.tex [17]
 \c@ttl@toc@sections=\count368
  (./main.ptc) [18
 
+] (./notes_arxiv/appendix/limitations.tex) [19
+
 ] (./notes_arxiv/appendix/algorithm.tex
-LaTeX Font Info:    Trying to load font information for U+bbm on input line 70.
+LaTeX Font Info:    Trying to load font information for U+bbm on input line 73.
  (/usr/local/texlive/2026/texmf-dist/tex/latex/bbm-macros/ubbm.fd
 File: ubbm.fd 1999/03/15 V 1.2 Font definition for bbm font - TH
-) [19
+) [20
 
 ]
-Overfull \hbox (64.07817pt too wide) detected at line 121
+Overfull \hbox (64.07817pt too wide) detected at line 124
 \OML/cmm/m/it/10 ^^R \OMS/cmsy/m/n/10   [] [] \U/msb/m/n/10 E [] \OML/cmm/m/it/10 ;
  []
 
-) [20] (./notes_arxiv/appendix/implementation.tex
+) [21] (./notes_arxiv/appendix/implementation.tex [22
 
-LaTeX Warning: Reference `tab:hyperparameter' on page 21 undefined on input line 11.
-
-
-Package natbib Warning: Citation `lambert2024tulu3' on page 21 undefined on input line 116.
-
-
-Package natbib Warning: Citation `alpaca' on page 21 undefined on input line 120.
-
-[21
-
-] [22]
-
-LaTeX Warning: Reference `fig:ablation-training-curves' on page 23 undefined on input line 141.
-
-<figures/no_role_wo.png, id=421, 1006.7211pt x 151.0443pt>
+] [23]
+<figures/no_role_wo.png, id=849, 1006.7211pt x 151.0443pt>
 File: figures/no_role_wo.png Graphic file (type png)
 <use figures/no_role_wo.png>
 Package pdftex.def Info: figures/no_role_wo.png  used on input line 149.
 (pdftex.def)             Requested size: 325.9406pt x 48.90211pt.
-<figures/no_role_w.png, id=422, 1006.4802pt x 151.2852pt>
+<figures/no_role_w.png, id=850, 1006.4802pt x 151.2852pt>
 File: figures/no_role_w.png Graphic file (type png)
 <use figures/no_role_w.png>
 Package pdftex.def Info: figures/no_role_w.png  used on input line 155.
 (pdftex.def)             Requested size: 325.9406pt x 48.99165pt.
-<figures/quality_only_wo.png, id=423, 1006.4802pt x 151.0443pt>
+<figures/quality_only_wo.png, id=851, 1006.4802pt x 151.0443pt>
 File: figures/quality_only_wo.png Graphic file (type png)
 <use figures/quality_only_wo.png>
 Package pdftex.def Info: figures/quality_only_wo.png  used on input line 163.
 (pdftex.def)             Requested size: 325.9406pt x 48.91365pt.
-<figures/quality_only_w.png, id=424, 1012.7436pt x 151.2852pt>
+<figures/quality_only_w.png, id=852, 1012.7436pt x 151.2852pt>
 File: figures/quality_only_w.png Graphic file (type png)
 <use figures/quality_only_w.png>
 Package pdftex.def Info: figures/quality_only_w.png  used on input line 172.
 (pdftex.def)             Requested size: 325.9406pt x 48.68925pt.
-<figures/diversity_only_wo.png, id=425, 1006.4802pt x 151.2852pt>
+<figures/diversity_only_wo.png, id=853, 1006.4802pt x 151.2852pt>
 File: figures/diversity_only_wo.png Graphic file (type png)
 <use figures/diversity_only_wo.png>
 Package pdftex.def Info: figures/diversity_only_wo.png  used on input line 180.
 (pdftex.def)             Requested size: 325.9406pt x 48.99165pt.
-<figures/diversity_only_w.png, id=426, 1012.7436pt x 151.2852pt>
+<figures/diversity_only_w.png, id=854, 1012.7436pt x 151.2852pt>
 File: figures/diversity_only_w.png Graphic file (type png)
 <use figures/diversity_only_w.png>
 Package pdftex.def Info: figures/diversity_only_w.png  used on input line 189.
 (pdftex.def)             Requested size: 325.9406pt x 48.68925pt.
-<figures/crafted_wo.png, id=427, 1006.7211pt x 151.0443pt>
+<figures/crafted_wo.png, id=855, 1006.7211pt x 151.0443pt>
 File: figures/crafted_wo.png Graphic file (type png)
 <use figures/crafted_wo.png>
 Package pdftex.def Info: figures/crafted_wo.png  used on input line 197.
 (pdftex.def)             Requested size: 325.9406pt x 48.90211pt.
-<figures/crafted_w.png, id=428, 1006.4802pt x 151.0443pt>
+<figures/crafted_w.png, id=856, 1006.4802pt x 151.0443pt>
 File: figures/crafted_w.png Graphic file (type png)
 <use figures/crafted_w.png>
 Package pdftex.def Info: figures/crafted_w.png  used on input line 206.
 (pdftex.def)             Requested size: 325.9406pt x 48.91365pt.
-) [23] [24 <./figures/no_role_wo.png> <./figures/no_role_w.png> <./figures/quality_only_wo.png> <./figures/quality_only_w.png> <./figures/diversity_only_wo.png> <./figures/diversity_only_w.png> <./figures/crafted_wo.png> <./figures/crafted_w.png>] (./notes_arxiv/appendix/additional_results.tex
-<figures/pareto_infinite-chat_quality_thinking_true_base_model_qwen3-8b_composite.png, id=446, 534.798pt x 404.712pt>
+) [24] [25 <./figures/no_role_wo.png> <./figures/no_role_w.png> <./figures/quality_only_wo.png> <./figures/quality_only_w.png> <./figures/diversity_only_wo.png> <./figures/diversity_only_w.png> <./figures/crafted_wo.png> <./figures/crafted_w.png>] (./notes_arxiv/appendix/additional_results.tex
+<figures/pareto_infinite-chat_quality_thinking_true_base_model_qwen3-8b_composite.png, id=876, 534.798pt x 404.712pt>
 File: figures/pareto_infinite-chat_quality_thinking_true_base_model_qwen3-8b_composite.png Graphic file (type png)
 <use figures/pareto_infinite-chat_quality_thinking_true_base_model_qwen3-8b_composite.png>
 Package pdftex.def Info: figures/pareto_infinite-chat_quality_thinking_true_base_model_qwen3-8b_composite.png  used on input line 11.
 (pdftex.def)             Requested size: 190.79109pt x 144.38084pt.
-<figures/pareto_infinite-chat_quality_thinking_false_base_model_llama_glm_composite.png, id=447, 534.798pt x 404.712pt>
+<figures/pareto_infinite-chat_quality_thinking_false_base_model_llama_glm_composite.png, id=877, 534.798pt x 404.712pt>
 File: figures/pareto_infinite-chat_quality_thinking_false_base_model_llama_glm_composite.png Graphic file (type png)
 <use figures/pareto_infinite-chat_quality_thinking_false_base_model_llama_glm_composite.png>
 Package pdftex.def Info: figures/pareto_infinite-chat_quality_thinking_false_base_model_llama_glm_composite.png  used on input line 15.
 (pdftex.def)             Requested size: 190.79109pt x 144.38084pt.
-
-
-LaTeX Warning: Reference `fig: domain application pareto' on page 25 undefined on input line 17.
-
-
-LaTeX Warning: Reference `fig: domain application pareto' on page 25 undefined on input line 17.
-
-(./notes_arxiv/appendix/diversity_main_error_bar.tex
+ (./notes_arxiv/appendix/diversity_main_error_bar.tex
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [25
+ [26
 
  <./figures/pareto_infinite-chat_quality_thinking_true_base_model_qwen3-8b_composite.png> <./figures/pareto_infinite-chat_quality_thinking_false_base_model_llama_glm_composite.png>])
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [26] (./notes_arxiv/appendix/general_capability_error_bar.tex
+ [27] (./notes_arxiv/appendix/general_capability_error_bar.tex
 Overfull \hbox (48.37599pt too wide) in paragraph at lines 5--32
  [][] 
  []
@@ -1437,85 +927,78 @@ File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 ))
 Underfull \vbox (badness 1226) has occurred while \output is active []
 
- [27]
-<figures/main_pass_k/pass_at_k_figures/pass_at_k_gsm8k_thinking_false_base_model_qwen3-8b.png, id=475, 631.6398pt x 596.2275pt>
+ [28]
+<figures/main_pass_k/pass_at_k_figures/pass_at_k_gsm8k_thinking_false_base_model_qwen3-8b.png, id=905, 631.6398pt x 596.2275pt>
 File: figures/main_pass_k/pass_at_k_figures/pass_at_k_gsm8k_thinking_false_base_model_qwen3-8b.png Graphic file (type png)
 <use figures/main_pass_k/pass_at_k_figures/pass_at_k_gsm8k_thinking_false_base_model_qwen3-8b.png>
 Package pdftex.def Info: figures/main_pass_k/pass_at_k_figures/pass_at_k_gsm8k_thinking_false_base_model_qwen3-8b.png  used on input line 76.
 (pdftex.def)             Requested size: 95.39857pt x 90.0489pt.
-<figures/main_pass_k/pass_at_k_figures/pass_at_k_mmlu_thinking_false_base_model_qwen3-8b.png, id=476, 631.6398pt x 596.2275pt>
+<figures/main_pass_k/pass_at_k_figures/pass_at_k_mmlu_thinking_false_base_model_qwen3-8b.png, id=906, 631.6398pt x 596.2275pt>
 File: figures/main_pass_k/pass_at_k_figures/pass_at_k_mmlu_thinking_false_base_model_qwen3-8b.png Graphic file (type png)
 <use figures/main_pass_k/pass_at_k_figures/pass_at_k_mmlu_thinking_false_base_model_qwen3-8b.png>
 Package pdftex.def Info: figures/main_pass_k/pass_at_k_figures/pass_at_k_mmlu_thinking_false_base_model_qwen3-8b.png  used on input line 80.
 (pdftex.def)             Requested size: 95.39857pt x 90.0489pt.
-<figures/main_pass_k/pass_at_k_figures/pass_at_k_gpqa_thinking_false_base_model_qwen3-8b.png, id=477, 631.6398pt x 596.2275pt>
+<figures/main_pass_k/pass_at_k_figures/pass_at_k_gpqa_thinking_false_base_model_qwen3-8b.png, id=907, 631.6398pt x 596.2275pt>
 File: figures/main_pass_k/pass_at_k_figures/pass_at_k_gpqa_thinking_false_base_model_qwen3-8b.png Graphic file (type png)
 <use figures/main_pass_k/pass_at_k_figures/pass_at_k_gpqa_thinking_false_base_model_qwen3-8b.png>
 Package pdftex.def Info: figures/main_pass_k/pass_at_k_figures/pass_at_k_gpqa_thinking_false_base_model_qwen3-8b.png  used on input line 84.
 (pdftex.def)             Requested size: 95.39857pt x 90.0489pt.
-<figures/main_pass_k/pass_at_k_figures/pass_at_k_boolq_thinking_false_base_model_qwen3-8b.png, id=478, 631.6398pt x 596.2275pt>
+<figures/main_pass_k/pass_at_k_figures/pass_at_k_boolq_thinking_false_base_model_qwen3-8b.png, id=908, 631.6398pt x 596.2275pt>
 File: figures/main_pass_k/pass_at_k_figures/pass_at_k_boolq_thinking_false_base_model_qwen3-8b.png Graphic file (type png)
 <use figures/main_pass_k/pass_at_k_figures/pass_at_k_boolq_thinking_false_base_model_qwen3-8b.png>
 Package pdftex.def Info: figures/main_pass_k/pass_at_k_figures/pass_at_k_boolq_thinking_false_base_model_qwen3-8b.png  used on input line 88.
 (pdftex.def)             Requested size: 95.39857pt x 90.0489pt.
-<figures/main_pass_k/pass_at_k_curves_hellaswag.png, id=479, 632.3625pt x 596.9502pt>
+<figures/main_pass_k/pass_at_k_curves_hellaswag.png, id=909, 632.3625pt x 596.9502pt>
 File: figures/main_pass_k/pass_at_k_curves_hellaswag.png Graphic file (type png)
 <use figures/main_pass_k/pass_at_k_curves_hellaswag.png>
 Package pdftex.def Info: figures/main_pass_k/pass_at_k_curves_hellaswag.png  used on input line 94.
 (pdftex.def)             Requested size: 95.39857pt x 90.04875pt.
-<figures/main_pass_k/pass_at_k_figures/pass_at_k_truthfulqa_thinking_false_base_model_qwen3-8b.png, id=480, 631.6398pt x 596.2275pt>
+<figures/main_pass_k/pass_at_k_figures/pass_at_k_truthfulqa_thinking_false_base_model_qwen3-8b.png, id=910, 631.6398pt x 596.2275pt>
 File: figures/main_pass_k/pass_at_k_figures/pass_at_k_truthfulqa_thinking_false_base_model_qwen3-8b.png Graphic file (type png)
 <use figures/main_pass_k/pass_at_k_figures/pass_at_k_truthfulqa_thinking_false_base_model_qwen3-8b.png>
 Package pdftex.def Info: figures/main_pass_k/pass_at_k_figures/pass_at_k_truthfulqa_thinking_false_base_model_qwen3-8b.png  used on input line 98.
 (pdftex.def)             Requested size: 95.39857pt x 90.0489pt.
-<figures/main_pass_k/pass_at_k_figures/pass_at_k_ifeval_thinking_false_base_model_qwen3-8b.png, id=481, 631.6398pt x 596.2275pt>
+<figures/main_pass_k/pass_at_k_figures/pass_at_k_ifeval_thinking_false_base_model_qwen3-8b.png, id=911, 631.6398pt x 596.2275pt>
 File: figures/main_pass_k/pass_at_k_figures/pass_at_k_ifeval_thinking_false_base_model_qwen3-8b.png Graphic file (type png)
 <use figures/main_pass_k/pass_at_k_figures/pass_at_k_ifeval_thinking_false_base_model_qwen3-8b.png>
 Package pdftex.def Info: figures/main_pass_k/pass_at_k_figures/pass_at_k_ifeval_thinking_false_base_model_qwen3-8b.png  used on input line 102.
 (pdftex.def)             Requested size: 95.39857pt x 90.0489pt.
-
-
-LaTeX Warning: Reference `fig:general capability pass@k' on page 28 undefined on input line 104.
-
-
-LaTeX Warning: Reference `fig:general capability pass@k' on page 28 undefined on input line 104.
-
-<figures/main_pass_k/pass_at_k_figures/pass_at_k_avg_thinking_true.png, id=482, 631.6398pt x 596.2275pt>
+<figures/main_pass_k/pass_at_k_figures/pass_at_k_avg_thinking_true.png, id=914, 631.6398pt x 596.2275pt>
 File: figures/main_pass_k/pass_at_k_figures/pass_at_k_avg_thinking_true.png Graphic file (type png)
 <use figures/main_pass_k/pass_at_k_figures/pass_at_k_avg_thinking_true.png>
 Package pdftex.def Info: figures/main_pass_k/pass_at_k_figures/pass_at_k_avg_thinking_true.png  used on input line 112.
 (pdftex.def)             Requested size: 95.39857pt x 90.0489pt.
-<figures/main_pass_k/pass_at_k_figures/pass_at_k_gsm8k_thinking_true.png, id=483, 631.6398pt x 596.2275pt>
+<figures/main_pass_k/pass_at_k_figures/pass_at_k_gsm8k_thinking_true.png, id=915, 631.6398pt x 596.2275pt>
 File: figures/main_pass_k/pass_at_k_figures/pass_at_k_gsm8k_thinking_true.png Graphic file (type png)
 <use figures/main_pass_k/pass_at_k_figures/pass_at_k_gsm8k_thinking_true.png>
 Package pdftex.def Info: figures/main_pass_k/pass_at_k_figures/pass_at_k_gsm8k_thinking_true.png  used on input line 117.
 (pdftex.def)             Requested size: 95.39857pt x 90.0489pt.
-<figures/main_pass_k/pass_at_k_figures/pass_at_k_truthfulqa_thinking_true.png, id=484, 631.6398pt x 596.2275pt>
+<figures/main_pass_k/pass_at_k_figures/pass_at_k_truthfulqa_thinking_true.png, id=916, 631.6398pt x 596.2275pt>
 File: figures/main_pass_k/pass_at_k_figures/pass_at_k_truthfulqa_thinking_true.png Graphic file (type png)
 <use figures/main_pass_k/pass_at_k_figures/pass_at_k_truthfulqa_thinking_true.png>
 Package pdftex.def Info: figures/main_pass_k/pass_at_k_figures/pass_at_k_truthfulqa_thinking_true.png  used on input line 121.
 (pdftex.def)             Requested size: 95.39857pt x 90.0489pt.
-<figures/main_pass_k/pass_at_k_figures/pass_at_k_hellaswag_thinking_true.png, id=485, 631.6398pt x 596.2275pt>
+<figures/main_pass_k/pass_at_k_figures/pass_at_k_hellaswag_thinking_true.png, id=917, 631.6398pt x 596.2275pt>
 File: figures/main_pass_k/pass_at_k_figures/pass_at_k_hellaswag_thinking_true.png Graphic file (type png)
 <use figures/main_pass_k/pass_at_k_figures/pass_at_k_hellaswag_thinking_true.png>
 Package pdftex.def Info: figures/main_pass_k/pass_at_k_figures/pass_at_k_hellaswag_thinking_true.png  used on input line 125.
 (pdftex.def)             Requested size: 95.39857pt x 90.0489pt.
-<figures/main_pass_k/pass_at_k_figures/pass_at_k_boolq_thinking_true.png, id=486, 631.6398pt x 596.2275pt>
+<figures/main_pass_k/pass_at_k_figures/pass_at_k_boolq_thinking_true.png, id=918, 631.6398pt x 596.2275pt>
 File: figures/main_pass_k/pass_at_k_figures/pass_at_k_boolq_thinking_true.png Graphic file (type png)
 <use figures/main_pass_k/pass_at_k_figures/pass_at_k_boolq_thinking_true.png>
 Package pdftex.def Info: figures/main_pass_k/pass_at_k_figures/pass_at_k_boolq_thinking_true.png  used on input line 130.
 (pdftex.def)             Requested size: 95.39857pt x 90.0489pt.
-<figures/main_pass_k/pass_at_k_figures/pass_at_k_mmlu_thinking_true.png, id=487, 631.6398pt x 596.2275pt>
+<figures/main_pass_k/pass_at_k_figures/pass_at_k_mmlu_thinking_true.png, id=919, 631.6398pt x 596.2275pt>
 File: figures/main_pass_k/pass_at_k_figures/pass_at_k_mmlu_thinking_true.png Graphic file (type png)
 <use figures/main_pass_k/pass_at_k_figures/pass_at_k_mmlu_thinking_true.png>
 Package pdftex.def Info: figures/main_pass_k/pass_at_k_figures/pass_at_k_mmlu_thinking_true.png  used on input line 135.
 (pdftex.def)             Requested size: 95.39857pt x 90.0489pt.
-<figures/main_pass_k/pass_at_k_figures/pass_at_k_gpqa_thinking_true.png, id=488, 631.6398pt x 596.2275pt>
+<figures/main_pass_k/pass_at_k_figures/pass_at_k_gpqa_thinking_true.png, id=920, 631.6398pt x 596.2275pt>
 File: figures/main_pass_k/pass_at_k_figures/pass_at_k_gpqa_thinking_true.png Graphic file (type png)
 <use figures/main_pass_k/pass_at_k_figures/pass_at_k_gpqa_thinking_true.png>
 Package pdftex.def Info: figures/main_pass_k/pass_at_k_figures/pass_at_k_gpqa_thinking_true.png  used on input line 139.
 (pdftex.def)             Requested size: 95.39857pt x 90.0489pt.
-<figures/main_pass_k/pass_at_k_figures/pass_at_k_ifeval_thinking_true.png, id=489, 631.6398pt x 596.2275pt>
+<figures/main_pass_k/pass_at_k_figures/pass_at_k_ifeval_thinking_true.png, id=921, 631.6398pt x 596.2275pt>
 File: figures/main_pass_k/pass_at_k_figures/pass_at_k_ifeval_thinking_true.png Graphic file (type png)
 <use figures/main_pass_k/pass_at_k_figures/pass_at_k_ifeval_thinking_true.png>
 Package pdftex.def Info: figures/main_pass_k/pass_at_k_figures/pass_at_k_ifeval_thinking_true.png  used on input line 143.
@@ -1523,83 +1006,83 @@ Package pdftex.def Info: figures/main_pass_k/pass_at_k_figures/pass_at_k_ifeval_
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [28 <./figures/main_pass_k/pass_at_k_figures/pass_at_k_gsm8k_thinking_false_base_model_qwen3-8b.png> <./figures/main_pass_k/pass_at_k_figures/pass_at_k_mmlu_thinking_false_base_model_qwen3-8b.png> <./figures/main_pass_k/pass_at_k_figures/pass_at_k_gpqa_thinking_false_base_model_qwen3-8b.png> <./figures/main_pass_k/pass_at_k_figures/pass_at_k_boolq_thinking_false_base_model_qwen3-8b.png> <./figures/main_pass_k/pass_at_k_curves_hellaswag.png> <./figures/main_pass_k/pass_at_k_figures/pass_at_k_truthfulqa_thinking_false_base_model_qwen3-8b.png> <./figures/main_pass_k/pass_at_k_figures/pass_at_k_ifeval_thinking_false_base_model_qwen3-8b.png>]
-<figures/main_pass_k/pass_at_k_figures/pass_at_k_avg_thinking_false_base_model_llama3_1-8b.png, id=503, 631.6398pt x 596.2275pt>
+ [29 <./figures/main_pass_k/pass_at_k_figures/pass_at_k_gsm8k_thinking_false_base_model_qwen3-8b.png> <./figures/main_pass_k/pass_at_k_figures/pass_at_k_mmlu_thinking_false_base_model_qwen3-8b.png> <./figures/main_pass_k/pass_at_k_figures/pass_at_k_gpqa_thinking_false_base_model_qwen3-8b.png> <./figures/main_pass_k/pass_at_k_figures/pass_at_k_boolq_thinking_false_base_model_qwen3-8b.png> <./figures/main_pass_k/pass_at_k_curves_hellaswag.png> <./figures/main_pass_k/pass_at_k_figures/pass_at_k_truthfulqa_thinking_false_base_model_qwen3-8b.png> <./figures/main_pass_k/pass_at_k_figures/pass_at_k_ifeval_thinking_false_base_model_qwen3-8b.png>]
+<figures/main_pass_k/pass_at_k_figures/pass_at_k_avg_thinking_false_base_model_llama3_1-8b.png, id=934, 631.6398pt x 596.2275pt>
 File: figures/main_pass_k/pass_at_k_figures/pass_at_k_avg_thinking_false_base_model_llama3_1-8b.png Graphic file (type png)
 <use figures/main_pass_k/pass_at_k_figures/pass_at_k_avg_thinking_false_base_model_llama3_1-8b.png>
 Package pdftex.def Info: figures/main_pass_k/pass_at_k_figures/pass_at_k_avg_thinking_false_base_model_llama3_1-8b.png  used on input line 153.
 (pdftex.def)             Requested size: 95.39857pt x 90.0489pt.
-<figures/main_pass_k/pass_at_k_figures/pass_at_k_gsm8k_thinking_false_base_model_llama3_1-8b.png, id=504, 631.6398pt x 596.2275pt>
+<figures/main_pass_k/pass_at_k_figures/pass_at_k_gsm8k_thinking_false_base_model_llama3_1-8b.png, id=935, 631.6398pt x 596.2275pt>
 File: figures/main_pass_k/pass_at_k_figures/pass_at_k_gsm8k_thinking_false_base_model_llama3_1-8b.png Graphic file (type png)
 <use figures/main_pass_k/pass_at_k_figures/pass_at_k_gsm8k_thinking_false_base_model_llama3_1-8b.png>
 Package pdftex.def Info: figures/main_pass_k/pass_at_k_figures/pass_at_k_gsm8k_thinking_false_base_model_llama3_1-8b.png  used on input line 158.
 (pdftex.def)             Requested size: 95.39857pt x 90.0489pt.
-<figures/main_pass_k/pass_at_k_figures/pass_at_k_truthfulqa_thinking_false_base_model_llama3_1-8b.png, id=505, 631.6398pt x 596.2275pt>
+<figures/main_pass_k/pass_at_k_figures/pass_at_k_truthfulqa_thinking_false_base_model_llama3_1-8b.png, id=936, 631.6398pt x 596.2275pt>
 File: figures/main_pass_k/pass_at_k_figures/pass_at_k_truthfulqa_thinking_false_base_model_llama3_1-8b.png Graphic file (type png)
 <use figures/main_pass_k/pass_at_k_figures/pass_at_k_truthfulqa_thinking_false_base_model_llama3_1-8b.png>
 Package pdftex.def Info: figures/main_pass_k/pass_at_k_figures/pass_at_k_truthfulqa_thinking_false_base_model_llama3_1-8b.png  used on input line 162.
 (pdftex.def)             Requested size: 95.39857pt x 90.0489pt.
-<figures/main_pass_k/pass_at_k_figures/pass_at_k_hellaswag_thinking_false_base_model_llama3_1-8b.png, id=506, 631.6398pt x 596.2275pt>
+<figures/main_pass_k/pass_at_k_figures/pass_at_k_hellaswag_thinking_false_base_model_llama3_1-8b.png, id=937, 631.6398pt x 596.2275pt>
 File: figures/main_pass_k/pass_at_k_figures/pass_at_k_hellaswag_thinking_false_base_model_llama3_1-8b.png Graphic file (type png)
 <use figures/main_pass_k/pass_at_k_figures/pass_at_k_hellaswag_thinking_false_base_model_llama3_1-8b.png>
 Package pdftex.def Info: figures/main_pass_k/pass_at_k_figures/pass_at_k_hellaswag_thinking_false_base_model_llama3_1-8b.png  used on input line 166.
 (pdftex.def)             Requested size: 95.39857pt x 90.0489pt.
-<figures/main_pass_k/pass_at_k_figures/pass_at_k_boolq_thinking_false_base_model_llama3_1-8b.png, id=507, 631.6398pt x 596.2275pt>
+<figures/main_pass_k/pass_at_k_figures/pass_at_k_boolq_thinking_false_base_model_llama3_1-8b.png, id=938, 631.6398pt x 596.2275pt>
 File: figures/main_pass_k/pass_at_k_figures/pass_at_k_boolq_thinking_false_base_model_llama3_1-8b.png Graphic file (type png)
 <use figures/main_pass_k/pass_at_k_figures/pass_at_k_boolq_thinking_false_base_model_llama3_1-8b.png>
 Package pdftex.def Info: figures/main_pass_k/pass_at_k_figures/pass_at_k_boolq_thinking_false_base_model_llama3_1-8b.png  used on input line 171.
 (pdftex.def)             Requested size: 95.39857pt x 90.0489pt.
-<figures/main_pass_k/pass_at_k_figures/pass_at_k_mmlu_thinking_false_base_model_llama3_1-8b.png, id=508, 631.6398pt x 596.2275pt>
+<figures/main_pass_k/pass_at_k_figures/pass_at_k_mmlu_thinking_false_base_model_llama3_1-8b.png, id=939, 631.6398pt x 596.2275pt>
 File: figures/main_pass_k/pass_at_k_figures/pass_at_k_mmlu_thinking_false_base_model_llama3_1-8b.png Graphic file (type png)
 <use figures/main_pass_k/pass_at_k_figures/pass_at_k_mmlu_thinking_false_base_model_llama3_1-8b.png>
 Package pdftex.def Info: figures/main_pass_k/pass_at_k_figures/pass_at_k_mmlu_thinking_false_base_model_llama3_1-8b.png  used on input line 176.
 (pdftex.def)             Requested size: 95.39857pt x 90.0489pt.
-<figures/main_pass_k/pass_at_k_figures/pass_at_k_gpqa_thinking_false_base_model_llama3_1-8b.png, id=509, 631.6398pt x 596.2275pt>
+<figures/main_pass_k/pass_at_k_figures/pass_at_k_gpqa_thinking_false_base_model_llama3_1-8b.png, id=940, 631.6398pt x 596.2275pt>
 File: figures/main_pass_k/pass_at_k_figures/pass_at_k_gpqa_thinking_false_base_model_llama3_1-8b.png Graphic file (type png)
 <use figures/main_pass_k/pass_at_k_figures/pass_at_k_gpqa_thinking_false_base_model_llama3_1-8b.png>
 Package pdftex.def Info: figures/main_pass_k/pass_at_k_figures/pass_at_k_gpqa_thinking_false_base_model_llama3_1-8b.png  used on input line 180.
 (pdftex.def)             Requested size: 95.39857pt x 90.0489pt.
-<figures/main_pass_k/pass_at_k_figures/pass_at_k_ifeval_thinking_false_base_model_llama3_1-8b.png, id=510, 631.6398pt x 596.2275pt>
+<figures/main_pass_k/pass_at_k_figures/pass_at_k_ifeval_thinking_false_base_model_llama3_1-8b.png, id=941, 631.6398pt x 596.2275pt>
 File: figures/main_pass_k/pass_at_k_figures/pass_at_k_ifeval_thinking_false_base_model_llama3_1-8b.png Graphic file (type png)
 <use figures/main_pass_k/pass_at_k_figures/pass_at_k_ifeval_thinking_false_base_model_llama3_1-8b.png>
 Package pdftex.def Info: figures/main_pass_k/pass_at_k_figures/pass_at_k_ifeval_thinking_false_base_model_llama3_1-8b.png  used on input line 184.
 (pdftex.def)             Requested size: 95.39857pt x 90.0489pt.
-<figures/main_pass_k/pass_at_k_figures/pass_at_k_avg_thinking_false_base_model_glm-4-9b.png, id=511, 631.6398pt x 596.2275pt>
+<figures/main_pass_k/pass_at_k_figures/pass_at_k_avg_thinking_false_base_model_glm-4-9b.png, id=942, 631.6398pt x 596.2275pt>
 File: figures/main_pass_k/pass_at_k_figures/pass_at_k_avg_thinking_false_base_model_glm-4-9b.png Graphic file (type png)
 <use figures/main_pass_k/pass_at_k_figures/pass_at_k_avg_thinking_false_base_model_glm-4-9b.png>
 Package pdftex.def Info: figures/main_pass_k/pass_at_k_figures/pass_at_k_avg_thinking_false_base_model_glm-4-9b.png  used on input line 195.
 (pdftex.def)             Requested size: 95.39857pt x 90.0489pt.
-<figures/main_pass_k/pass_at_k_figures/pass_at_k_gsm8k_thinking_false_base_model_glm-4-9b.png, id=512, 631.6398pt x 596.2275pt>
+<figures/main_pass_k/pass_at_k_figures/pass_at_k_gsm8k_thinking_false_base_model_glm-4-9b.png, id=943, 631.6398pt x 596.2275pt>
 File: figures/main_pass_k/pass_at_k_figures/pass_at_k_gsm8k_thinking_false_base_model_glm-4-9b.png Graphic file (type png)
 <use figures/main_pass_k/pass_at_k_figures/pass_at_k_gsm8k_thinking_false_base_model_glm-4-9b.png>
 Package pdftex.def Info: figures/main_pass_k/pass_at_k_figures/pass_at_k_gsm8k_thinking_false_base_model_glm-4-9b.png  used on input line 200.
 (pdftex.def)             Requested size: 95.39857pt x 90.0489pt.
-<figures/main_pass_k/pass_at_k_figures/pass_at_k_truthfulqa_thinking_false_base_model_glm-4-9b.png, id=513, 631.6398pt x 596.2275pt>
+<figures/main_pass_k/pass_at_k_figures/pass_at_k_truthfulqa_thinking_false_base_model_glm-4-9b.png, id=944, 631.6398pt x 596.2275pt>
 File: figures/main_pass_k/pass_at_k_figures/pass_at_k_truthfulqa_thinking_false_base_model_glm-4-9b.png Graphic file (type png)
 <use figures/main_pass_k/pass_at_k_figures/pass_at_k_truthfulqa_thinking_false_base_model_glm-4-9b.png>
 Package pdftex.def Info: figures/main_pass_k/pass_at_k_figures/pass_at_k_truthfulqa_thinking_false_base_model_glm-4-9b.png  used on input line 204.
 (pdftex.def)             Requested size: 95.39857pt x 90.0489pt.
-<figures/main_pass_k/pass_at_k_figures/pass_at_k_hellaswag_thinking_false_base_model_glm-4-9b.png, id=514, 631.6398pt x 596.2275pt>
+<figures/main_pass_k/pass_at_k_figures/pass_at_k_hellaswag_thinking_false_base_model_glm-4-9b.png, id=945, 631.6398pt x 596.2275pt>
 File: figures/main_pass_k/pass_at_k_figures/pass_at_k_hellaswag_thinking_false_base_model_glm-4-9b.png Graphic file (type png)
 <use figures/main_pass_k/pass_at_k_figures/pass_at_k_hellaswag_thinking_false_base_model_glm-4-9b.png>
 Package pdftex.def Info: figures/main_pass_k/pass_at_k_figures/pass_at_k_hellaswag_thinking_false_base_model_glm-4-9b.png  used on input line 208.
 (pdftex.def)             Requested size: 95.39857pt x 90.0489pt.
-<figures/main_pass_k/pass_at_k_figures/pass_at_k_boolq_thinking_false_base_model_glm-4-9b.png, id=515, 631.6398pt x 596.2275pt>
+<figures/main_pass_k/pass_at_k_figures/pass_at_k_boolq_thinking_false_base_model_glm-4-9b.png, id=946, 631.6398pt x 596.2275pt>
 File: figures/main_pass_k/pass_at_k_figures/pass_at_k_boolq_thinking_false_base_model_glm-4-9b.png Graphic file (type png)
 <use figures/main_pass_k/pass_at_k_figures/pass_at_k_boolq_thinking_false_base_model_glm-4-9b.png>
 Package pdftex.def Info: figures/main_pass_k/pass_at_k_figures/pass_at_k_boolq_thinking_false_base_model_glm-4-9b.png  used on input line 213.
 (pdftex.def)             Requested size: 95.39857pt x 90.0489pt.
-<figures/main_pass_k/pass_at_k_figures/pass_at_k_mmlu_thinking_false_base_model_glm-4-9b.png, id=516, 631.6398pt x 596.2275pt>
+<figures/main_pass_k/pass_at_k_figures/pass_at_k_mmlu_thinking_false_base_model_glm-4-9b.png, id=947, 631.6398pt x 596.2275pt>
 File: figures/main_pass_k/pass_at_k_figures/pass_at_k_mmlu_thinking_false_base_model_glm-4-9b.png Graphic file (type png)
 <use figures/main_pass_k/pass_at_k_figures/pass_at_k_mmlu_thinking_false_base_model_glm-4-9b.png>
 Package pdftex.def Info: figures/main_pass_k/pass_at_k_figures/pass_at_k_mmlu_thinking_false_base_model_glm-4-9b.png  used on input line 218.
 (pdftex.def)             Requested size: 95.39857pt x 90.0489pt.
-<figures/main_pass_k/pass_at_k_figures/pass_at_k_gpqa_thinking_false_base_model_glm-4-9b.png, id=517, 631.6398pt x 596.2275pt>
+<figures/main_pass_k/pass_at_k_figures/pass_at_k_gpqa_thinking_false_base_model_glm-4-9b.png, id=948, 631.6398pt x 596.2275pt>
 File: figures/main_pass_k/pass_at_k_figures/pass_at_k_gpqa_thinking_false_base_model_glm-4-9b.png Graphic file (type png)
 <use figures/main_pass_k/pass_at_k_figures/pass_at_k_gpqa_thinking_false_base_model_glm-4-9b.png>
 Package pdftex.def Info: figures/main_pass_k/pass_at_k_figures/pass_at_k_gpqa_thinking_false_base_model_glm-4-9b.png  used on input line 222.
 (pdftex.def)             Requested size: 95.39857pt x 90.0489pt.
-<figures/main_pass_k/pass_at_k_figures/pass_at_k_ifeval_thinking_false_base_model_glm-4-9b.png, id=518, 631.6398pt x 596.2275pt>
+<figures/main_pass_k/pass_at_k_figures/pass_at_k_ifeval_thinking_false_base_model_glm-4-9b.png, id=949, 631.6398pt x 596.2275pt>
 File: figures/main_pass_k/pass_at_k_figures/pass_at_k_ifeval_thinking_false_base_model_glm-4-9b.png Graphic file (type png)
 <use figures/main_pass_k/pass_at_k_figures/pass_at_k_ifeval_thinking_false_base_model_glm-4-9b.png>
 Package pdftex.def Info: figures/main_pass_k/pass_at_k_figures/pass_at_k_ifeval_thinking_false_base_model_glm-4-9b.png  used on input line 226.
@@ -1607,99 +1090,45 @@ Package pdftex.def Info: figures/main_pass_k/pass_at_k_figures/pass_at_k_ifeval_
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [29 <./figures/main_pass_k/pass_at_k_figures/pass_at_k_avg_thinking_true.png> <./figures/main_pass_k/pass_at_k_figures/pass_at_k_gsm8k_thinking_true.png> <./figures/main_pass_k/pass_at_k_figures/pass_at_k_truthfulqa_thinking_true.png> <./figures/main_pass_k/pass_at_k_figures/pass_at_k_hellaswag_thinking_true.png> <./figures/main_pass_k/pass_at_k_figures/pass_at_k_boolq_thinking_true.png> <./figures/main_pass_k/pass_at_k_figures/pass_at_k_mmlu_thinking_true.png> <./figures/main_pass_k/pass_at_k_figures/pass_at_k_gpqa_thinking_true.png> <./figures/main_pass_k/pass_at_k_figures/pass_at_k_ifeval_thinking_true.png> <./figures/main_pass_k/pass_at_k_figures/pass_at_k_avg_thinking_false_base_model_llama3_1-8b.png> <./figures/main_pass_k/pass_at_k_figures/pass_at_k_gsm8k_thinking_false_base_model_llama3_1-8b.png> <./figures/main_pass_k/pass_at_k_figures/pass_at_k_truthfulqa_thinking_false_base_model_llama3_1-8b.png> <./figures/main_pass_k/pass_at_k_figures/pass_at_k_hellaswag_thinking_false_base_model_llama3_1-8b.png> <./figures/main_pass_k/pass_at_k_figures/pass_at_k_boolq_thinking_false_base_model_llama3_1-8b.png> <./figures/main_pass_k/pass_at_k_figures/pass_at_k_mmlu_thinking_false_base_model_llama3_1-8b.png> <./figures/main_pass_k/pass_at_k_figures/pass_at_k_gpqa_thinking_false_base_model_llama3_1-8b.png> <./figures/main_pass_k/pass_at_k_figures/pass_at_k_ifeval_thinking_false_base_model_llama3_1-8b.png>] (./notes_arxiv/table/ablation_table.tex)
-<figures/ablation_pass_k/pass_at_k_gsm8k_ablations.png, id=541, 631.6398pt x 596.2275pt>
+ [30 <./figures/main_pass_k/pass_at_k_figures/pass_at_k_avg_thinking_true.png> <./figures/main_pass_k/pass_at_k_figures/pass_at_k_gsm8k_thinking_true.png> <./figures/main_pass_k/pass_at_k_figures/pass_at_k_truthfulqa_thinking_true.png> <./figures/main_pass_k/pass_at_k_figures/pass_at_k_hellaswag_thinking_true.png> <./figures/main_pass_k/pass_at_k_figures/pass_at_k_boolq_thinking_true.png> <./figures/main_pass_k/pass_at_k_figures/pass_at_k_mmlu_thinking_true.png> <./figures/main_pass_k/pass_at_k_figures/pass_at_k_gpqa_thinking_true.png> <./figures/main_pass_k/pass_at_k_figures/pass_at_k_ifeval_thinking_true.png> <./figures/main_pass_k/pass_at_k_figures/pass_at_k_avg_thinking_false_base_model_llama3_1-8b.png> <./figures/main_pass_k/pass_at_k_figures/pass_at_k_gsm8k_thinking_false_base_model_llama3_1-8b.png> <./figures/main_pass_k/pass_at_k_figures/pass_at_k_truthfulqa_thinking_false_base_model_llama3_1-8b.png> <./figures/main_pass_k/pass_at_k_figures/pass_at_k_hellaswag_thinking_false_base_model_llama3_1-8b.png> <./figures/main_pass_k/pass_at_k_figures/pass_at_k_boolq_thinking_false_base_model_llama3_1-8b.png> <./figures/main_pass_k/pass_at_k_figures/pass_at_k_mmlu_thinking_false_base_model_llama3_1-8b.png> <./figures/main_pass_k/pass_at_k_figures/pass_at_k_gpqa_thinking_false_base_model_llama3_1-8b.png> <./figures/main_pass_k/pass_at_k_figures/pass_at_k_ifeval_thinking_false_base_model_llama3_1-8b.png>] (./notes_arxiv/table/ablation_table.tex)
+<figures/ablation_pass_k/pass_at_k_gsm8k_ablations.png, id=972, 631.6398pt x 596.2275pt>
 File: figures/ablation_pass_k/pass_at_k_gsm8k_ablations.png Graphic file (type png)
 <use figures/ablation_pass_k/pass_at_k_gsm8k_ablations.png>
 Package pdftex.def Info: figures/ablation_pass_k/pass_at_k_gsm8k_ablations.png  used on input line 240.
 (pdftex.def)             Requested size: 127.1981pt x 120.06218pt.
-<figures/ablation_pass_k/pass_at_k_mmlu_ablations.png, id=542, 631.6398pt x 596.2275pt>
+<figures/ablation_pass_k/pass_at_k_mmlu_ablations.png, id=973, 631.6398pt x 596.2275pt>
 File: figures/ablation_pass_k/pass_at_k_mmlu_ablations.png Graphic file (type png)
 <use figures/ablation_pass_k/pass_at_k_mmlu_ablations.png>
 Package pdftex.def Info: figures/ablation_pass_k/pass_at_k_mmlu_ablations.png  used on input line 247.
 (pdftex.def)             Requested size: 127.1981pt x 120.06218pt.
-<figures/ablation_pass_k/pass_at_k_gpqa_ablations.png, id=543, 631.6398pt x 596.2275pt>
+<figures/ablation_pass_k/pass_at_k_gpqa_ablations.png, id=974, 631.6398pt x 596.2275pt>
 File: figures/ablation_pass_k/pass_at_k_gpqa_ablations.png Graphic file (type png)
 <use figures/ablation_pass_k/pass_at_k_gpqa_ablations.png>
 Package pdftex.def Info: figures/ablation_pass_k/pass_at_k_gpqa_ablations.png  used on input line 254.
 (pdftex.def)             Requested size: 127.1981pt x 120.06218pt.
-<figures/ablation_pass_k/pass_at_k_truthfulqa_ablations.png, id=544, 631.6398pt x 596.2275pt>
+<figures/ablation_pass_k/pass_at_k_truthfulqa_ablations.png, id=975, 631.6398pt x 596.2275pt>
 File: figures/ablation_pass_k/pass_at_k_truthfulqa_ablations.png Graphic file (type png)
 <use figures/ablation_pass_k/pass_at_k_truthfulqa_ablations.png>
 Package pdftex.def Info: figures/ablation_pass_k/pass_at_k_truthfulqa_ablations.png  used on input line 261.
 (pdftex.def)             Requested size: 127.1981pt x 120.06218pt.
-<figures/ablation_pass_k/pass_at_k_boolq_ablations.png, id=545, 631.6398pt x 596.2275pt>
+<figures/ablation_pass_k/pass_at_k_boolq_ablations.png, id=976, 631.6398pt x 596.2275pt>
 File: figures/ablation_pass_k/pass_at_k_boolq_ablations.png Graphic file (type png)
 <use figures/ablation_pass_k/pass_at_k_boolq_ablations.png>
 Package pdftex.def Info: figures/ablation_pass_k/pass_at_k_boolq_ablations.png  used on input line 268.
 (pdftex.def)             Requested size: 127.1981pt x 120.06218pt.
-<figures/ablation_pass_k/pass_at_k_hellaswag_ablations.png, id=546, 631.6398pt x 596.2275pt>
+<figures/ablation_pass_k/pass_at_k_hellaswag_ablations.png, id=977, 631.6398pt x 596.2275pt>
 File: figures/ablation_pass_k/pass_at_k_hellaswag_ablations.png Graphic file (type png)
 <use figures/ablation_pass_k/pass_at_k_hellaswag_ablations.png>
 Package pdftex.def Info: figures/ablation_pass_k/pass_at_k_hellaswag_ablations.png  used on input line 274.
 (pdftex.def)             Requested size: 127.1981pt x 120.06218pt.
-<figures/ablation_pass_k/pass_at_k_ifeval_ablations.png, id=547, 631.6398pt x 596.2275pt>
+<figures/ablation_pass_k/pass_at_k_ifeval_ablations.png, id=978, 631.6398pt x 596.2275pt>
 File: figures/ablation_pass_k/pass_at_k_ifeval_ablations.png Graphic file (type png)
 <use figures/ablation_pass_k/pass_at_k_ifeval_ablations.png>
 Package pdftex.def Info: figures/ablation_pass_k/pass_at_k_ifeval_ablations.png  used on input line 281.
 (pdftex.def)             Requested size: 127.1981pt x 120.06218pt.
-) [30 <./figures/main_pass_k/pass_at_k_figures/pass_at_k_avg_thinking_false_base_model_glm-4-9b.png> <./figures/main_pass_k/pass_at_k_figures/pass_at_k_gsm8k_thinking_false_base_model_glm-4-9b.png> <./figures/main_pass_k/pass_at_k_figures/pass_at_k_truthfulqa_thinking_false_base_model_glm-4-9b.png> <./figures/main_pass_k/pass_at_k_figures/pass_at_k_hellaswag_thinking_false_base_model_glm-4-9b.png> <./figures/main_pass_k/pass_at_k_figures/pass_at_k_boolq_thinking_false_base_model_glm-4-9b.png> <./figures/main_pass_k/pass_at_k_figures/pass_at_k_mmlu_thinking_false_base_model_glm-4-9b.png> <./figures/main_pass_k/pass_at_k_figures/pass_at_k_gpqa_thinking_false_base_model_glm-4-9b.png> <./figures/main_pass_k/pass_at_k_figures/pass_at_k_ifeval_thinking_false_base_model_glm-4-9b.png>] [31 <./figures/ablation_pass_k/pass_at_k_gsm8k_ablations.png> <./figures/ablation_pass_k/pass_at_k_mmlu_ablations.png> <./figures/ablation_pass_k/pass_at_k_gpqa_ablations.png> <./figures/ablation_pass_k/pass_at_k_truthfulqa_ablations.png> <./figures/ablation_pass_k/pass_at_k_boolq_ablations.png> <./figures/ablation_pass_k/pass_at_k_hellaswag_ablations.png> <./figures/ablation_pass_k/pass_at_k_ifeval_ablations.png>] (./notes_arxiv/appendix/benchmarks.tex
+) [31 <./figures/main_pass_k/pass_at_k_figures/pass_at_k_avg_thinking_false_base_model_glm-4-9b.png> <./figures/main_pass_k/pass_at_k_figures/pass_at_k_gsm8k_thinking_false_base_model_glm-4-9b.png> <./figures/main_pass_k/pass_at_k_figures/pass_at_k_truthfulqa_thinking_false_base_model_glm-4-9b.png> <./figures/main_pass_k/pass_at_k_figures/pass_at_k_hellaswag_thinking_false_base_model_glm-4-9b.png> <./figures/main_pass_k/pass_at_k_figures/pass_at_k_boolq_thinking_false_base_model_glm-4-9b.png> <./figures/main_pass_k/pass_at_k_figures/pass_at_k_mmlu_thinking_false_base_model_glm-4-9b.png> <./figures/main_pass_k/pass_at_k_figures/pass_at_k_gpqa_thinking_false_base_model_glm-4-9b.png> <./figures/main_pass_k/pass_at_k_figures/pass_at_k_ifeval_thinking_false_base_model_glm-4-9b.png>] [32 <./figures/ablation_pass_k/pass_at_k_gsm8k_ablations.png> <./figures/ablation_pass_k/pass_at_k_mmlu_ablations.png> <./figures/ablation_pass_k/pass_at_k_gpqa_ablations.png> <./figures/ablation_pass_k/pass_at_k_truthfulqa_ablations.png> <./figures/ablation_pass_k/pass_at_k_boolq_ablations.png> <./figures/ablation_pass_k/pass_at_k_hellaswag_ablations.png> <./figures/ablation_pass_k/pass_at_k_ifeval_ablations.png>] (./notes_arxiv/appendix/benchmarks.tex [33
 
-LaTeX Warning: Reference `appx:implementation' on page 32 undefined on input line 9.
-
-
-Package natbib Warning: Citation `reimers2019sentencebertsentenceembeddingsusing' on page 32 undefined on input line 67.
-
-
-LaTeX Warning: Reference `appx:implementation' on page 32 undefined on input line 77.
-
-
-LaTeX Warning: Reference `appx:discriminator' on page 32 undefined on input line 111.
-
-
-Package natbib Warning: Citation `cobbe2021gsm8k' on page 32 undefined on input line 120.
-
-
-Package natbib Warning: Citation `hendryckstest2021' on page 32 undefined on input line 120.
-
-
-Package natbib Warning: Citation `rein2024gpqa' on page 32 undefined on input line 120.
-
-
-Package natbib Warning: Citation `clark2019boolq' on page 32 undefined on input line 120.
-
-
-Package natbib Warning: Citation `zellers2019hellaswag' on page 32 undefined on input line 120.
-
-
-Package natbib Warning: Citation `lin2022truthfulqameasuringmodelsmimic' on page 32 undefined on input line 120.
-
-
-Package natbib Warning: Citation `zhou2023instructionfollowingevaluationlargelanguage' on page 32 undefined on input line 121.
-
-[32
-
-]
-
-Package natbib Warning: Citation `liu2026hypobenchsystematicprincipledbenchmarking' on page 33 undefined on input line 130.
-
-
-Package natbib Warning: Citation `Ajith2026' on page 33 undefined on input line 139.
-
-
-Package natbib Warning: Citation `zhang2025noveltybenchevaluatinglanguagemodels' on page 33 undefined on input line 141.
-
-
-Package natbib Warning: Citation `jiang2025artificialhivemindopenendedhomogeneity' on page 33 undefined on input line 143.
-
-) [33] (./notes_arxiv/appendix/generation_examples.tex (./notes_arxiv/appendix/generation_book_list.tex) (./notes_arxiv/appendix/generation_chess.tex
-
-LaTeX Warning: Reference `fig:qualitative-example-chess-baseline' on page 34 undefined on input line 156.
-
-
-LaTeX Warning: Reference `fig:qualitative-example-chess-baseline' on page 34 undefined on input line 156.
-
-) (./notes_arxiv/appendix/generation_5_word.tex
+]) [34] (./notes_arxiv/appendix/generation_examples.tex (./notes_arxiv/appendix/generation_book_list.tex) (./notes_arxiv/appendix/generation_chess.tex) (./notes_arxiv/appendix/generation_5_word.tex
 Underfull \hbox (badness 1194) in paragraph at lines 40--41
 []\T1/ptm/m/n/6 (+20) Moonlight - Whis-per - Jour-ney - Echo -
  []
@@ -1709,105 +1138,35 @@ Underfull \hbox (badness 10000) in paragraph at lines 143--144
 []\T1/ptm/m/n/6 (+20) Why not try the \T1/ptm/b/n/6 (+20) ``Phan-tom of the
  []
 
-)) [34
+)) [35
 
-] [35] [36] [37] [38] [39] (./notes_arxiv/appendix/related_work_table.tex
-
-LaTeX Warning: Reference `tab:related-work' on page 40 undefined on input line 4.
-
-
-LaTeX Warning: Reference `sec:related_work' on page 40 undefined on input line 4.
-
-
-Package natbib Warning: Citation `Zhang2025' on page 40 undefined on input line 16.
-
-
-Package natbib Warning: Citation `Misaki2026' on page 40 undefined on input line 17.
-
-
-Package natbib Warning: Citation `lau2025dipperdiversitypromptsproducing' on page 40 undefined on input line 18.
-
-
-Package natbib Warning: Citation `lagzian2025multinoveltyimprovediversitynovelty' on page 40 undefined on input line 19.
-
-
-Package natbib Warning: Citation `wang2025multilingualpromptingimprovingllm' on page 40 undefined on input line 20.
-
-
-Package natbib Warning: Citation `holtzman2020curiouscaseneuraltext' on page 40 undefined on input line 21.
-
-
-Package natbib Warning: Citation `nguyen2024turningheatminpsampling' on page 40 undefined on input line 22.
-
-
-Package natbib Warning: Citation `ruan-etal-2025-g2' on page 40 undefined on input line 23.
-
-
-Package natbib Warning: Citation `wang2024lpoadaptivedecodinglatent' on page 40 undefined on input line 24.
-
-
-Package natbib Warning: Citation `li2025jointlyreinforcingdiversityquality' on page 40 undefined on input line 27.
-
-
-Package natbib Warning: Citation `lanchantin2025diverse' on page 40 undefined on input line 28.
-
-
-Package natbib Warning: Citation `Chen2025PosttrainingLL' on page 40 undefined on input line 29.
-
-
-Package natbib Warning: Citation `Puri2026' on page 40 undefined on input line 30.
-
-
-Package natbib Warning: Citation `slocum2025diversepreferencelearningcapabilities' on page 40 undefined on input line 31.
-
-))
-
-Package natbib Warning: There were undefined citations.
-
+] [36] [37] [38] [39] [40] (./notes_arxiv/appendix/related_work_table.tex))
 \tf@ptc=\write5
 \openout5 = `main.ptc'.
 
-[40
+ [41
 
-] (./main.aux
-
-Package natbib Warning: Citation(s) may have changed.
-(natbib)                Rerun to get citations correct.
-
-)
+] (./main.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
  ***********
-
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-
-Package rerunfilecheck Warning: File `main.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  B3222014352244D07DAD285B4FE5C971;5727.
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: AE8C64C1ED5E53562D7C58BB4215E30C;6010.
  ) 
 Here is how much of TeX's memory you used:
- 34536 strings out of 467525
- 701088 string characters out of 5418982
- 1177594 words of memory out of 5000000
- 61949 multiletter control sequences out of 15000+600000
- 743936 words of font info for 556 fonts, out of 8000000 for 9000
+ 34573 strings out of 467525
+ 701854 string characters out of 5418982
+ 1197470 words of memory out of 5000000
+ 61992 multiletter control sequences out of 15000+600000
+ 745815 words of font info for 545 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 98i,16n,108p,2120b,1016s stack positions out of 10000i,1000n,20000p,200000b,200000s
- </Users/carrieyuan/Library/texlive/2026/texmf-var/fonts/pk/ljfour/public/bbm/bbm10.600pk></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex9.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/urw/times/utmri8a.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on main.pdf (40 pages, 16242133 bytes).
+ 98i,16n,108p,2120b,1022s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ </Users/carrieyuan/Library/texlive/2026/texmf-var/fonts/pk/ljfour/public/bbm/bbm10.600pk></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex7.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/urw/times/utmri8a.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
+Output written on main.pdf (41 pages, 16257640 bytes).
 PDF statistics:
- 784 PDF objects out of 1000 (max. 8388607)
- 558 compressed objects within 6 object streams
- 220 named destinations out of 1000 (max. 500000)
- 94501 words of extra memory for PDF output out of 106986 (max. 10000000)
+ 1273 PDF objects out of 1440 (max. 8388607)
+ 1029 compressed objects within 11 object streams
+ 222 named destinations out of 1000 (max. 500000)
+ 98877 words of extra memory for PDF output out of 106986 (max. 10000000)
 

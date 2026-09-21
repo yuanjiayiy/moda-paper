@@ -1,7 +1,5 @@
-\begin{table*}[t]
-\centering
 \setlength{\tabcolsep}{3pt}
-\resizebox{\textwidth}{!}{%
+\resizebox{\linewidth}{!}{%
 \begin{tabular}{lccccccccccccccccccc}
 \toprule
 Model & \multicolumn{4}{c}{\textit{Infinite-Chat}} & \multicolumn{4}{c}{\textit{NoveltyBench}} & \multicolumn{4}{c}{\textit{HypoBench}} & \multicolumn{4}{c}{\textit{PreScience}} & \multicolumn{3}{c}{Avg.} \\
@@ -32,8 +30,5 @@ GLM-4-9B & 0.421 & 0.234 & 2.60 & 44.9  & \textbf{0.544} & 0.408 & 4.08 & \textb
 \bottomrule
 \end{tabular}
 }
-\caption{Per-domain diversity (Disc. = discriminator diversity, SBERT = SBERT embedding pairwise distance, E-V = E-Vendi score) and quality (Qual.), averaged over $n{=}3$ random seeds. Infinite-Chat quality is general capability accuracy (\%); all other domains use the native quality score. Bold marks the best value within each model group. Table with error bar can be found in Appx \ref{appx:generative diversity evaluation}.}
-\label{tab:domain-app-diversity-main}
-\end{table*}
 
 
