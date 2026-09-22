@@ -234,6 +234,14 @@ We show pass@k figures for the rest of the general capability suite tasks below.
 We show the mean benchmark accuracy, under both standard and diverse decoding mode, on the general capability suite, and Infinite-Chat response diversity on the held out test set for the ablation study models.
 \input{notes_arxiv/table/ablation_table}
 
+\begin{figure}[ht]
+\centering
+  \centering
+  \includegraphics[width=0.5\linewidth]{figures/pareto_ablation_standard_vs_diverse.png}
+  \label{fig: ablation diverse standard}
+  \caption{Diversity-quality trade-off under diverse and standard mode. Pass@1 accuracy.}
+\end{figure}
+
 \begin{figure}
 \begin{minipage}{0.32\textwidth}
   \centering
@@ -281,6 +289,13 @@ We show the mean benchmark accuracy, under both standard and diverse decoding mo
   \includegraphics[width=\linewidth]{figures/ablation_pass_k/pass_at_k_ifeval_ablations.png}
   \small Pass@k, IF-Eval
   \label{fig: ablation pass@k IF-Eval}
+\end{minipage}\hfill
+\centering
+\begin{minipage}{0.32\textwidth}
+  \centering
+  \includegraphics[width=\linewidth]{figures/ablation_pass_k/pass_at_k_avg_ablations.png}
+  \small Pass@k, Avg
+  \label{fig: ablation pass@k avg}
 \end{minipage}\hfill
 \caption{\textbf{General capability retention for ablated models}: pass@k accuracy by benchmarks, standard vs diverse decoding mode.}
 \label{fig:general capability pass@k ablation by benchmark}

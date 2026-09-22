@@ -17,7 +17,7 @@ Given that \method{} is a training-based method, the most direct comparisons are
 
 \paragraph{Training Data.}
 \label{subsec:training data}
-The training set contains 10K prompts, constructed from a 4:1 mixture of uniformly sampled Tulu3-SFT-Mixture prompts~\citep{lambert2024tulu3} and Infinite-Chat dataset~\citep{jiang2025artificialhivemindopenendedhomogeneity}. This mixture balances quality and diversity: Tulu3-SFT-Mixture provides instruction-following prompts that preserve response quality, while Infinite-Chat encourages open-ended exploration.
+The training set contains 10K prompts, constructed from a 4:1 mixture of uniformly sampled Tulu3-SFT-Mix prompts~\citep{lambert2024tulu3} and Infinite-Chat dataset~\citep{jiang2025artificialhivemindopenendedhomogeneity}. This mixture balances quality and diversity: Tulu3-SFT-Mixture provides instruction-following prompts that preserve response quality, while Infinite-Chat encourages open-ended exploration.
 
 
 \paragraph{Generative Diversity Evaluation.}
@@ -41,7 +41,7 @@ To evaluate generative diversity, we focus on two application domains where mult
 \paragraph{General Capability Retention Evaluation.}
 
 \liweiaddressed{add a short sentence to highlight why we need general capability tests.}
-To assess whether our method preserves the model's reasoning capability, we evaluate each trained model in the standard single-response setting on a suite of seven widely used benchmarks under the \textbf{standard mode}. Specifically, we use GSM8K~\citep{cobbe2021gsm8k} to evaluate mathematical reasoning; MMLU~\citep{hendryckstest2021}, GPQA~\citep{rein2024gpqa}, and BoolQ~\citep{clark2019boolq} to evaluate broad knowledge and question answering; HellaSwag~\citep{zellers2019hellaswag} to evaluate commonsense inference; TruthfulQA-MC1~\citep{lin2022truthfulqameasuringmodelsmimic} to evaluate truthfulness; and IFEval~\citep{zhou2023instructionfollowingevaluationlargelanguage} to evaluate instruction following. We used a max token length of 8192 for the thinking-enabled setting, 2048 for the thinking-disabled setting. 
+To assess whether our method preserves the model's reasoning capability, we evaluate each trained model in the standard single-response setting on a suite of seven widely used benchmarks under the \textbf{standard mode}. Specifically, we use GSM8K~\citep{cobbe2021gsm8k} to evaluate mathematical reasoning; MMLU~\citep{hendryckstest2021}, GPQA~\citep{rein2024gpqa}, and BoolQ~\citep{clark2019boolq} to evaluate broad knowledge and question answering; HellaSwag~\citep{zellers2019hellaswag} to evaluate commonsense inference; TruthfulQA-MC1~\citep{lin2022truthfulqameasuringmodelsmimic} to evaluate truthfulness; IFEval~\citep{zhou2023instructionfollowingevaluationlargelanguage} to evaluate instruction following. We used a max token length of 8192 for the thinking-enabled setting, 2048 for the thinking-disabled setting. 
 % \liwei{where do we include these general capability results?}
 
 \liweiaddressed{Can we specify in what mode of the dual mode did we test the general benchmarks on?}
@@ -65,11 +65,14 @@ To assess whether our method preserves the model's reasoning capability, we eval
 % \label{fig:intro}
 % \end{figure}
 
-\textbf{Generative Diversity Evaluation.} As shown in Figure~\ref{fig: domain application pareto}, \method{} Pareto-dominates all baselines on the held-out Infinite-Chat set across every setting (thinking enabled/disabled, different base models), achieving both higher diversity and higher quality simultaneously; the remaining settings are shown in Appendix~\ref{appx:generative diversity evaluation}. We provide a breakdown by individual benchmarks in Table~\ref{tab:domain-app-diversity-main}. Across four domains and three model families, \method{} achieves the best average diversity across all evaluated baselines, while matching or improving quality on most domains except PreScience. Notably, \method{} outperforms all baselines on HypoBench, a scientific ideation task that is out of domain relative to our training set, which primarily consists of standard SFT data and open-ended questions. These results suggest that \method{} enhances general exploration capability across thinking settings and base models, even on out-of-domain topics.
+\textbf{Generative Diversity Evaluation.} As shown in Figure~\ref{fig: domain application pareto}a, \method{} Pareto-dominates all baselines on the held-out Infinite-Chat set across every setting (thinking enabled/disabled, different base models), achieving both higher diversity and higher quality simultaneously; the remaining settings are shown in Appendix~\ref{appx:generative diversity evaluation}. We provide a breakdown by individual benchmarks in Table~\ref{tab:domain-app-diversity-main}. Across four domains and three model families, \method{} achieves the best average diversity across all evaluated baselines, while matching or improving quality on most domains except PreScience. Notably, \method{} outperforms all baselines on HypoBench, a scientific ideation task that is out of domain relative to our training set, which primarily consists of standard SFT data and open-ended questions. These results suggest that \method{} enhances general exploration capability across thinking settings and base models, even on out-of-domain topics.
 
 \begin{figure}[ht]
 \centering
-\includegraphics[width=0.42\linewidth]{figures/pareto_infinite-chat_quality_thinking_false_base_model_qwen3-8b_composite.png}
+\includegraphics[width=0.45\linewidth]{figures/pareto_infinite-chat_quality_thinking_false_base_model_qwen3-8b_composite.png}
+\hfill
+\includegraphics[width=0.45\linewidth]{figures/pareto_infinite-chat_quality_ablations_composite.png}
+\label{fig: ablation diversity quality pareto}
 \caption{\textbf{Diversity vs. quality pareto front (Qwen3-8B base, thinking disabled).} The x-axis is Infinite-Chat response diversity (mean z-score of Disc./SBERT/EmbVendi) and the y-axis is general capability (mean benchmark accuracy). \method{} Pareto-dominates all the baselines, achieving better diversity and quality simultaneously. Results for Qwen3-8B (thinking enabled) and Llama-3.1-8B / GLM-4-9B (thinking disabled) are shown in Appendix~\ref{appx:generative diversity evaluation}.}
 \label{fig: domain application pareto}
 \end{figure}
@@ -159,10 +162,10 @@ One well-received book that often appears in top book lists is \textbf{To Kill a
 % In this section, we perform ablation studies on the design choices of \method. 
 
 \paragraph{Ablation Setups.}
-First, to understand whether the diversity improvement comes from training or solely from role injection, we inject numbered roles to the base model (\textbf{Role-conditioned prompting}). Second, to examine whether the diversity gains are driven by the explicit diversity reward or arise naturally from repeated sampling and RL optimization, we trained \method{} with \textbf{Diversity only} reward and \textbf{Quality only} reward. Third, to understand the effect of quality-gated diversity reward, we trained \method{} with additive reward of weighted sum of quality and diversity metrics, with diversity weight = 1, 10 and 100 (\textbf{Additive w=1\textbackslash10\textbackslash 100}). Finally, to understand the effect of the naive numbered role injection, we trained several variants of \method: (1) \textbf{Crafted personas}, which conditions the roles with manually crafted persona descriptions (e.g. ``You are a creative problem solver.''; (2) \textbf{Single role}, conditions with only one role; (3) \textbf{Token-based roles}\liweiaddressed{again I think we should change this name to something a bit more serious.}, conditions the role with a dummy token (e.g. ``Start your response with APPLE.''). More implementation details are in Appendix \ref{appx: ablation model implementations}. We evaluate each ablation variants on general capability suite under standard and diverse decoding, and application domain suite under diverse decoding.
+First, to understand whether the diversity improvement comes from training or solely from role injection, we inject numbered roles to the base model (\textbf{Role-conditioned prompting}). Second, to examine whether the diversity gains are driven by the explicit diversity reward or arise naturally from repeated sampling and RL optimization, we trained \method{} with \textbf{Diversity only} reward and \textbf{Quality only} reward. Third, to understand the effect of quality-gated diversity reward, we trained \method{} with additive reward of weighted sum of quality and diversity metrics, with diversity weight = 1, 10 and 100 (\textbf{Additive w=1\textbackslash10\textbackslash 100}). Finally, to understand the effect of the naive numbered role injection, we trained several variants of \method: (1) \textbf{Crafted personas}, which conditions the roles with manually crafted persona descriptions (e.g. ``You are a creative problem solver.''; (2) \textbf{Single role}, conditions with only one role; (3) \textbf{Token-based roles}\liweiaddressed{again I think we should change this name to something a bit more serious.}, conditions the role with a dummy token (e.g. ``Start your response with APPLE.''). More implementation details are in Appendix \ref{appx: ablation model implementations}. We evaluate each ablated variants for general capability under standard and diverse decoding, and application domain suite under diverse decoding, with full results in Appendix \ref{appx: ablation results}.
 
 \liweiaddressed{add a paragraph title to this, like the follwing two paragraphs.}
-\textbf{Quality-Diversity Trade-off.} As shown in Figure~\ref{fig:ablation-pareto-pass-k}a and \ref{fig:ablation-pareto-pass-k}b, \method{} achieves the best accuracy on the general capability suite among all variants. \method{} also achieves 77\% higher SBERT diversity and 41.6\% higher E-Vendi diversity than role-conditioning prompting alone, indicating that role-conditioning prompting by itself is insufficient to induce diverse generation. The quality-only variant regresses in diversity relative to role-conditioning prompting, suggesting that an explicit diversity objective is necessary for diversity gains. The diversity-only variant achieves the best diversity metrics overall, but with the lowest accuracy under standard decoding, and its performance collapses entirely under diverse decoding, indicating that explicit quality gating is critical to preserving response quality.
+\textbf{Quality-Diversity Trade-off.} As shown in Figure~\ref{fig: domain application pareto}b, \method{} achieves the best accuracy on the general capability suite among all variants. \method{} also achieves 77\% higher SBERT diversity and 41.6\% higher E-Vendi diversity than role-conditioning prompting alone, indicating that role-conditioning prompting by itself is insufficient to induce diverse generation. The quality-only variant regresses in diversity relative to role-conditioning prompting, suggesting that an explicit diversity objective is necessary for diversity gains. The diversity-only variant achieves the best diversity metrics overall, but with the lowest accuracy under standard decoding, and its performance collapses entirely under diverse decoding, indicating that explicit quality gating is critical to preserving response quality.
 
 \textbf{Additive Aggregation.}\label{ablation: additive aggregation} Many existing works on quality-diversity optimization aggregate quality and diversity objectives using a weighted sum~\citep{mouret2015illuminatingsearchspacesmapping, Chen2025PosttrainingLL}. We compare our method with variants trained using an additive reward objective. We find that additive aggregation is highly sensitive to the diversity weight $\lambda_d$. at $\lambda_d=1$, the additive variant shows modest diversity improvement over the baseline, but substantially less than \method{}; at $\lambda_d=10$ and $\lambda_d=100$, diversity improves significantly, but at the cost of general capability performance under diverse decoding. In contrast, \method{} separates quality control from diversity optimization through the quality gate, making the reward less sensitive to coefficient scaling and enables faster iteration.
 
@@ -171,29 +174,3 @@ First, to understand whether the diversity improvement comes from training or so
 Prior work has shown that manually designed prompts can induce different model
 behaviors \citep{park2024generative, argyle2023out}. We therefore craft six personas and inject them into the system prompt instead of the abstract numbered roles, testing whether hand-designed personas provide a stronger diversity prior than the abstract numbered role used in the main setting. To isolate the effect of role multiplicity from role content, we train a single-role variant in which every response is generated under the same \textit{``You are Role 1.''} system prompt. To study the effect of the identity-based role, we train a token-based conditioning variant in which the system prompt instructs a token-based distinguishing signal (e.g. \textit{``Start your response with APPLE/BANANA/ORANGE.''}).
 As shown in Table~\ref{tab:ablation}, all variants exhibit a slight diversity improvement over the base model, but their gains are smaller than \method{}'s, indicating that multiple abstract numbered identity-based role provides a more effective exploration space than all the ablated variants, without sacrificing generalization.
-
-\begin{figure}[ht]
-\centering
-\begin{minipage}{0.35\textwidth}
-  \centering
-  \includegraphics[width=\linewidth]{figures/pareto_ablation_standard_vs_diverse.png}
-  \small (a) Diverse vs. standard decoding mode
-  \label{fig: ablation diverse standard}
-\end{minipage}\hfill
-\begin{minipage}{0.35\textwidth}
-  \centering
-  \includegraphics[width=\linewidth]{figures/pareto_infinite-chat_quality_ablations_composite.png}
-  \small (b) Diversity-quality pareto front
-  \label{fig: ablation diversity quality pareto}
-\end{minipage}\hfill
-\begin{minipage}{0.29\textwidth}
-  \centering
-  \includegraphics[width=\linewidth]{figures/ablation_pass_k/pass_at_k_avg_ablations.png}
-  \small (c) Pass@k, Avg.
-  \label{fig: ablation pass@k avg}
-\end{minipage}\hfill
-\caption{\textbf{Ablation study: diversity-quality trade-off under diverse and standard mode, and general capability retention pass@k accuracy.}
-\textbf{(a)} Diverse vs standard mode avg. pass@1 accuracy.
-\textbf{(b)} Infinite-Chat diversity vs.\ quality (general capability pass@1 accuracy) across ablation variants. \textbf{(c)} Pass@k accuracy curves for the ablation variants on the general capability suite average, showing how capability under standard (solid) and diverse (dotted) decoding scales with $k$. We provide a breakdown by individual benchmarks in Appendix \ref{appx: ablation results} Figure \ref{fig:general capability pass@k ablation by benchmark}.}
-\label{fig:ablation-pareto-pass-k}
-\end{figure}
