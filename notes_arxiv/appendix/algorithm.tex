@@ -1,4 +1,32 @@
-\section{Algorithm}
+\section{Policy Optimization and Algorithm}
+\label{appx:policy-optimization-algorithm}
+
+\subsection{Policy Optimization}
+\label{subsec:policy_optimization}
+
+We optimize the shared policy with on-policy reinforcement learning. For each prompt, all role-conditioned samples form one reward group. We optimize $\pi_\theta$ using Group Relative Policy Optimization
+(GRPO~\citep{shao2024deepseekmath}), which estimates advantages from
+within-group reward comparisons without a separate value network:
+\begin{equation}
+    \mathcal{L}_{\mathrm{GRPO}}
+    = \mathbb{E}_{x,\{y_i\}}\!\left[
+        \frac{1}{k} \sum_{i=1}^{k}
+        \min\!\left(
+            \rho_i \hat{A}_i,\;
+            \mathrm{clip}(\rho_i,\, 1{-}\varepsilon,\, 1{+}\varepsilon)\,\hat{A}_i
+        \right)
+        - \beta\,\mathbb{D}_{\mathrm{KL}}\!\left(\pi_\theta \,\|\, \pi_{\mathrm{ref}}\right)
+    \right]
+    \label{eq:grpo}
+\end{equation}
+where $\rho_i = \pi_\theta(y_i \mid x) / \pi_{\mathrm{ref}}(y_i \mid x)$ is the
+importance ratio \citep{kloek1978bayesian}, $\hat{A}_i = (r_i - \mathrm{mean}(\mathbf{r})) /
+\mathrm{std}(\mathbf{r})$ is the group-normalized advantage over
+$\mathbf{r} = \{r(x, y_i, \mathcal{Y})\}_{i=1}^{k}$
+from Eq.~\ref{eq:qgdr}, and $\mathbb{D}_{\mathrm{KL}}\!(\pi_\theta \,\|\, \pi_{\mathrm{ref}})$ controls divergence from the base language model \citep{jaques2017sequencetutorconservativefinetuning}.
+The reward is computed over the set of role-conditioned generations, but the trainable model remains a single shared policy. Algorithm~\ref{alg: moda short} in the main text summarizes the training procedure.
+
+\subsection{Algorithm}
 \label{appx:algorithm}
 
 \begin{breakablealgorithm}

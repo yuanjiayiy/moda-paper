@@ -122,30 +122,7 @@ Here, $y_i$ and every $y_j$ are responses to the same prompt but are generated u
 \paragraph{Reward-Hacking Penalties.}
 The terms $r_{\mathrm{len}}$, $r_{\mathrm{lang}}$, and $r_{\mathrm{fmt}}$ are non-positive penalties for excessive length, language mismatch, and formatting or role-label leakage, respectively. These terms suppress superficial ways of increasing measured diversity without improving the usefulness of the response.
 
-\subsection{Policy Optimization}
-\label{subsec:policy_optimization}
-
-We optimize the shared policy with on-policy reinforcement learning. For each prompt, all role-conditioned samples form one reward group. We optimize $\pi_\theta$ using Group Relative Policy Optimization
-(GRPO~\citep{shao2024deepseekmath}), which estimates advantages from
-within-group reward comparisons without a separate value network:
-\begin{equation}
-    \mathcal{L}_{\mathrm{GRPO}}
-    = \mathbb{E}_{x,\{y_i\}}\!\left[
-        \frac{1}{k} \sum_{i=1}^{k}
-        \min\!\left(
-            \rho_i \hat{A}_i,\;
-            \mathrm{clip}(\rho_i,\, 1{-}\varepsilon,\, 1{+}\varepsilon)\,\hat{A}_i
-        \right)
-        - \beta\,\mathbb{D}_{\mathrm{KL}}\!\left(\pi_\theta \,\|\, \pi_{\mathrm{ref}}\right)
-    \right]
-    \label{eq:grpo}
-\end{equation}
-where $\rho_i = \pi_\theta(y_i \mid x) / \pi_{\mathrm{ref}}(y_i \mid x)$ is the
-importance ratio \citep{kloek1978bayesian}, $\hat{A}_i = (r_i - \mathrm{mean}(\mathbf{r})) /
-\mathrm{std}(\mathbf{r})$ is the group-normalized advantage over
-$\mathbf{r} = \{r(x, y_i, \mathcal{Y})\}_{i=1}^{k}$
-from Eq.~\ref{eq:qgdr}, and $\mathbb{D}_{\mathrm{KL}}\!(\pi_\theta \,\|\, \pi_{\mathrm{ref}})$ controls divergence from the base language model \citep{jaques2017sequencetutorconservativefinetuning}.
-The reward is computed over the set of role-conditioned generations, but the trainable model remains a single shared policy.
+We optimize the shared policy via Group Relative Policy Optimization (GRPO~\citep{shao2024deepseekmath}), estimating advantages from within-group reward comparisons over the role-conditioned response set without a separate value network. The full training objective is provided in Appendix~\ref{subsec:policy_optimization}.
 
 \begin{algorithm}
 \caption{\textsc{MoDA}: \textbf{Mo}de-Conditioned \textbf{D}iversity \textbf{A}lignment }
