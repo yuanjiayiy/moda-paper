@@ -8,29 +8,7 @@ Recent RL post-training has substantially improved the utility and safety of LLM
 
 Let $\mathcal{S}$ denote the space of natural language token sequences. Given a prompt $x \in \mathcal{S}$, a language model $\pi(\cdot \mid x)$ defines a probability distribution over responses in $\mathcal{S}$, where $\pi(y \mid x)$ denotes the probability of generating response $y \in \mathcal{S}$. For each prompt, we independently sample $k$ responses, $y_1, \ldots, y_k \sim \pi(\cdot \mid x)$, forming a \emph{response group} $\mathcal{Y}=\{y_i\}_{i=1}^{k}$.
 
-Conventional RL post-training maximizes the expected reward
-\begin{equation}
-\max_{\theta}
-\;
-J_{\mathrm{RL}}(\theta)
-=
-\mathbb{E}_{x \sim \mathcal{D}}
-\left[
-\mathbb{E}_{y \sim \pi_{\theta}(\cdot \mid x)}
-r(x,y)
-\right],
-\end{equation}
-where $r(x,y)$ is the reward assigned to response $y$ for prompt $x$. Optimizing this objective alone progressively concentrates the policy on a small set of high-reward responses, reducing the policy entropy, which is defined as: 
-\begin{equation}
-H(\pi_{\theta}(\cdot \mid x))
-=
--
-\sum_{y \in \mathcal{S}}
-\pi_{\theta}(y \mid x)
-\log
-\pi_{\theta}(y \mid x),
-\end{equation}
-and causing the model to repeatedly generate only a few dominant responses despite the existence of many alternatives with comparable rewards. We refer to this phenomenon as \emph{mode collapse}.
+Conventional RL post-training maximizes the expected reward $\max_{\theta} J_{\mathrm{RL}}(\theta) = \mathbb{E}_{x \sim \mathcal{D}}\left[\mathbb{E}_{y \sim \pi_{\theta}(\cdot \mid x)} r(x,y)\right]$, where $r(x,y)$ is the reward assigned to response $y$ for prompt $x$. Optimizing this objective alone progressively concentrates the policy on a small set of high-reward responses, reducing the policy entropy $H(\pi_{\theta}(\cdot \mid x)) = -\sum_{y \in \mathcal{S}} \pi_{\theta}(y \mid x) \log \pi_{\theta}(y \mid x)$ and causing the model to repeatedly generate only a few dominant responses despite the existence of many alternatives with comparable rewards. We refer to this phenomenon as \emph{mode collapse}.
 
 
 \subsection{Multi-Agent Reinforcement Learning (MARL)-Inspired Mode Conditioning}

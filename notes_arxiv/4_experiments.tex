@@ -4,9 +4,9 @@
 \label{sec:experiments}
 We implement \method~using the verl codebase \citep{sheng2024hybridflow}, using vLLM \citep{kwon2023efficient} for inference and FSDP \citep{zhao2023pytorch} for training. We use Qwen3-8B-Instruct (Qwen/Qwen3-8B) \citep{yang2025qwen3technicalreport} as the base model. We sample 5 responses using the initial policy for each prompt, precompute the reference responses using the reward model \texttt{Skywork-Reward-V2-Llama-3.1-8B-40M} \citep{liu2025skywork}, and store them as part of the dataset. During training, we sample 6 role-response pairs from the model for each prompt as a response group, and embed them using \texttt{all-MiniLM-L6-v2} \citep{wang2020minilmdeepselfattentiondistillation}. Our training has two generation settings: thinking-enabled and thinking-disabled. Quality and diversity metrics are computed only over the final answer, with the thinking trace masked out, throughout the training-time reward computation and evaluation. We include more implementation details in Appendix \ref{appx:implementation}.
 
-\subsection{Baselines}
+\paragraph{Baselines.}
 \label{subsec:baselines}
-Given that \method{} is a training-based method, the most direct comparisons are training-time approaches. Both \textbf{DARLING}~\citep{li2025jointlyreinforcingdiversityquality} and \textbf{DivPO} \citep{lanchantin2025diverse} update model parameters to jointly optimize for diversity and quality during the training time. \textbf{DivPO} is a preference-optimization (DPO) method that constructs response preference pairs by selecting rare, high-quality responses as preferred and common, low-quality ones as rejected. \textbf{DARLING} optimizes an online RL objective with a learned diversity signal. We trained two versions of DARLING: one using our mixture data specified in Sec \ref{subsec:training data} and one using their specified recipe (10k prompts subsampled from WildChat). On the inference-time side,  we \textbf{repeatedly sample} the base model $k$ times per prompt without role conditioning, testing whether stochastic decoding alone suffices. We also compared with \textbf{\ssot}~\citep{Misaki2026}, a representative prompting method that induces diversity by injecting random string seeds in the thinking tokens as an entropy source. Notably, inference-time and training-time methods are complementary. We can apply inference-time methods to \method{} at decoding time to further amplify diversity improvements.
+Given that \method{} is a training-based method, the most direct comparisons are training-time approaches. Both \textbf{DARLING}~\citep{li2025jointlyreinforcingdiversityquality} and \textbf{DivPO} \citep{lanchantin2025diverse} update model parameters to jointly optimize for diversity and quality during the training time. \textbf{DivPO} is a preference-optimization (DPO) method that constructs response preference pairs by selecting rare, high-quality responses as preferred and common, low-quality ones as rejected. \textbf{DARLING} optimizes an online RL objective with a learned diversity signal. We trained two versions of DARLING: one using our mixture data (Training Data, below) and one using their specified recipe (10k prompts subsampled from WildChat). On the inference-time side,  we \textbf{repeatedly sample} the base model $k$ times per prompt without role conditioning, testing whether stochastic decoding alone suffices. We also compared with \textbf{\ssot}~\citep{Misaki2026}, a representative prompting method that induces diversity by injecting random string seeds in the thinking tokens as an entropy source. Notably, inference-time and training-time methods are complementary. We can apply inference-time methods to \method{} at decoding time to further amplify diversity improvements.
 
 
 %\textbf{Naive Role Prompting} applies the same role codes to the frozen model without role-diversity training, isolating the contribution of training from role labels alone. \textbf{Quality-Only RL} trains with the quality reward and penalties with $\lambda_d = 0$, ablating the diversity term.
@@ -15,12 +15,12 @@ Given that \method{} is a training-based method, the most direct comparisons are
 %We include DARLING because it is the closest training-time baseline for jointly reinforcing quality and diversity. 
 %When possible, we use the official implementation; otherwise, we reproduce the reward structure in the same training stack used for our method.
 
-\subsection{Training Data}
+\paragraph{Training Data.}
 \label{subsec:training data}
 The training set contains 10K prompts, constructed from a 4:1 mixture of uniformly sampled Tulu3-SFT-Mixture prompts~\citep{lambert2024tulu3} and Infinite-Chat dataset~\citep{jiang2025artificialhivemindopenendedhomogeneity}. This mixture balances quality and diversity: Tulu3-SFT-Mixture provides instruction-following prompts that preserve response quality, while Infinite-Chat encourages open-ended exploration.
 
 
-\subsection{Generative Diversity Evaluation}
+\paragraph{Generative Diversity Evaluation.}
 To evaluate generative diversity, we focus on two application domains where multiple distinct high-quality outputs are desirable: \textbf{scientific ideation} and \textbf{creative writing}. We evaluate all methods under the \textbf{diverse mode}, with the role code injected into the system prompt. Notably, none of the evaluation datasets below overlap with our training data, so strong performance here reflects genuine transfer rather than in-domain memorization. In the \textbf{science ideation} domain, we adapt HypoBench~\citep{liu2026hypobenchsystematicprincipledbenchmarking} and PreScience~\citep{Ajith2026} for our cases. In the \textbf{creative writing} domain, we evaluate on NoveltyBench~\citep{zhang2025noveltybenchevaluatinglanguagemodels} and a held-out set of Infinite-Chat~\citep{jiang2025artificialhivemindopenendedhomogeneity}. We describe the adaptation of HypoBench and PreScience to our setting in Appendix~\ref{app:domain application}. We measure output diversity using a comprehensive set of diversity metrics: \textit{semantic-level} (SBERT), \textit{entropy-level} (E-Vendi) \citep{friedman2023vendiscorediversityevaluation}, and \textit{entailment-level} (Discriminator/Disc.), a pairwise classifier trained to predict whether two responses to the same prompt are conceptually distinct (training details in Appendix~\ref{appx:discriminator}).
 
 
@@ -38,7 +38,7 @@ To evaluate generative diversity, we focus on two application domains where mult
 \liweiaddressed{The hierarchy of the following paragraphs is a bit confusing. There are two types of benchmarks: general capability, diversity. So the first two paragraphs should lie at the same layer of hierarchy. HypoBench and PreScience are two specific benchmarks for the second type of benchmark. Also, there are two more benchmarks (novelty bench, Infinite-Chat) that are not introduced. Could we have the experiment section to be organized as following: (1) baselines; (2) training data; (3) diversity evaluations (introducing those four benchmarks); (4) general capability benchmarks. Also, we should be informative with the naming of the diversity benchmark. "domain application" feel a bit too genetic.}
 
 
-\subsection{General Capability Retention Evaluation}
+\paragraph{General Capability Retention Evaluation.}
 
 \liweiaddressed{add a short sentence to highlight why we need general capability tests.}
 To assess whether our method preserves the model's reasoning capability, we evaluate each trained model in the standard single-response setting on a suite of seven widely used benchmarks under the \textbf{standard mode}. Specifically, we use GSM8K~\citep{cobbe2021gsm8k} to evaluate mathematical reasoning; MMLU~\citep{hendryckstest2021}, GPQA~\citep{rein2024gpqa}, and BoolQ~\citep{clark2019boolq} to evaluate broad knowledge and question answering; HellaSwag~\citep{zellers2019hellaswag} to evaluate commonsense inference; TruthfulQA-MC1~\citep{lin2022truthfulqameasuringmodelsmimic} to evaluate truthfulness; and IFEval~\citep{zhou2023instructionfollowingevaluationlargelanguage} to evaluate instruction following. We used a max token length of 8192 for the thinking-enabled setting, 2048 for the thinking-disabled setting. 
@@ -65,23 +65,16 @@ To assess whether our method preserves the model's reasoning capability, we eval
 % \label{fig:intro}
 % \end{figure}
 
-\textbf{Generative Diversity Evaluation.} As shown in Figure~\ref{fig: domain application pareto} (left), \method{} Pareto-dominates all baselines on the held-out Infinite-Chat set across every setting (thinking enabled/disabled, different base models), achieving both higher diversity and higher quality simultaneously; the remaining settings are shown in Appendix~\ref{appx:generative diversity evaluation}. Across four domains and three model families, \method{} achieves the best average diversity across all evaluated baselines, while matching or improving quality on most domains except PreScience. Notably, \method{} outperforms all baselines on HypoBench, a scientific ideation task that is out of domain relative to our training set, which primarily consists of standard SFT data and open-ended questions. These results suggest that \method{} enhances general exploration capability across thinking settings and base models, even on out-of-domain topics.
+\textbf{Generative Diversity Evaluation.} As shown in Figure~\ref{fig: domain application pareto}, \method{} Pareto-dominates all baselines on the held-out Infinite-Chat set across every setting (thinking enabled/disabled, different base models), achieving both higher diversity and higher quality simultaneously; the remaining settings are shown in Appendix~\ref{appx:generative diversity evaluation}. We provide a breakdown by individual benchmarks in Table~\ref{tab:domain-app-diversity-main}. Across four domains and three model families, \method{} achieves the best average diversity across all evaluated baselines, while matching or improving quality on most domains except PreScience. Notably, \method{} outperforms all baselines on HypoBench, a scientific ideation task that is out of domain relative to our training set, which primarily consists of standard SFT data and open-ended questions. These results suggest that \method{} enhances general exploration capability across thinking settings and base models, even on out-of-domain topics.
 
 \begin{figure}[ht]
 \centering
-\begin{minipage}[ht]{0.32\linewidth}
-  \centering
-  \includegraphics[width=\linewidth]{figures/pareto_infinite-chat_quality_thinking_false_base_model_qwen3-8b_composite.png}
-\end{minipage}\hfill
-\begin{minipage}[ht]{0.67\linewidth}
-  \centering
-  \resizebox{\linewidth}{!}{%
-  \input{notes_arxiv/table/diversity_main}%
-  }
-\end{minipage}
-\caption{\textbf{Left: Diversity vs. quality pareto front (Qwen3-8B base, thinking disabled).} The x-axis is Infinite-Chat response diversity (mean z-score of Disc./SBERT/EmbVendi) and the y-axis is general capability (mean benchmark accuracy). \method{} Pareto-dominates all the baselines, achieving better diversity and quality simultaneously. \textbf{Right: Per-domain diversity and quality.} (Disc. = discriminator diversity, SBERT = SBERT embedding pairwise distance, E-V = E-Vendi score) and quality (Qual.), averaged over $n{=}3$ random seeds. Infinite-Chat quality is general capability accuracy (\%); all other domains use the native quality score. Bold marks the best value within each model group. Additional results can be found in Appx \ref{appx:generative diversity evaluation}. }
+\includegraphics[width=0.42\linewidth]{figures/pareto_infinite-chat_quality_thinking_false_base_model_qwen3-8b_composite.png}
+\caption{\textbf{Diversity vs. quality pareto front (Qwen3-8B base, thinking disabled).} The x-axis is Infinite-Chat response diversity (mean z-score of Disc./SBERT/EmbVendi) and the y-axis is general capability (mean benchmark accuracy). \method{} Pareto-dominates all the baselines, achieving better diversity and quality simultaneously. Results for Qwen3-8B (thinking enabled) and Llama-3.1-8B / GLM-4-9B (thinking disabled) are shown in Appendix~\ref{appx:generative diversity evaluation}.}
 \label{fig: domain application pareto}
 \end{figure}
+
+\input{notes_arxiv/table/diversity_main}
 
 \textbf{General Capability Retention.} As shown in Figure \ref{fig:general capability retention}, our model achieves the best overall average pass@1, pass@5 and pass@10 score for general capability retention across thinking settings and base models among all baselines. With Qwen3-8B base and thinking disabled, it matches or exceeds the base model on 5 out of 7 benchmarks and achieves the best score among all baselines on 4 of them on pass@1 accuracy. Notably, with the GLM-4-9B base, \method improves average pass@1 by 15.8 percentage points, including a 3.89x relative improvement on GSM8K and a 2.37x relative improvement on MMLU. These results suggest that our method is an effective alignment approach that preserves, and in several cases significantly improves, the model's capabilities. We note that the language mixing penalty is important to maintain quality in some cases; without it, quality drops due to reward hacking from language mixing.
 
@@ -128,8 +121,37 @@ To assess whether our method preserves the model's reasoning capability, we eval
 
 \subsection{Qualitative Results}
 \label{sec:qualitative results}
-We observe several interesting patterns in our experiments. Figure~\ref{fig:moda + 40blue} visualizes responses to the prompt \textbf{``Name a shade of blue''} from Qwen3-8B, Qwen3-8B with \ssot, and \method{} with thinking disabled. Consistent with the quantitative results, \method{} produces a larger set of valid and distinct responses. Interestingly, although \method{} uses only abstract numbered roles rather than hand-crafted personas, the model sometimes learns role-specific behavioral patterns, suggesting that abstract mode conditioning can induce differentiated characteristics, learned via competitive multi-agent training, without manually specifying each role. An additional qualitative generation example in Appendix~\ref{appx: generation examples} Figure~\ref{fig:qualitative-example-books} shows that, when asked to name a well-received book, the base model produces the same answer, ``To Kill a Mockingbird,'' in all six samples, whereas MODA produces six distinct titles.
+We observe several interesting patterns in our experiments. Figure~\ref{fig:moda + 40blue} visualizes responses to the prompt \textbf{``Name a shade of blue''} from Qwen3-8B, Qwen3-8B with \ssot, and \method{} with thinking disabled. Consistent with the quantitative results, \method{} produces a larger set of valid and distinct responses. Interestingly, although \method{} uses only abstract numbered roles rather than hand-crafted personas, the model sometimes learns role-specific behavioral patterns, suggesting that abstract mode conditioning can induce differentiated characteristics, learned via competitive multi-agent training, without manually specifying each role. Figure~\ref{fig:qualitative-example-books-main} shows that, when asked to name a well-received book, the base model produces the same answer, ``To Kill a Mockingbird,'' in all six samples, whereas \method{} produces six distinct titles; additional qualitative examples are provided in Appendix~\ref{appx: generation examples}.
 \liweiaddressed{can we pick example so that we can show across dirrent roles the generations are creative and different, while for other models, resampling doesn't give sufficiently creative candidates?}
+
+\begin{figure}[ht]
+\centering
+\begin{promptbox}
+\small\textit{Name one well received book that often appears in top book lists.}
+\end{promptbox}
+\begin{minipage}[t]{0.24\linewidth}
+\begin{respbox}{Sample 1}
+One well-received book that often appears in top book lists is \textbf{To Kill a Mockingbird} by Harper Lee. It is a classic of American literature and has consistently ranked high in various lists.
+\end{respbox}
+\end{minipage}\hfill%
+\begin{minipage}[t]{0.24\linewidth}
+\begin{respbox}{Sample 2}
+One well-received book that often appears in top book lists is \textbf{To Kill a Mockingbird} by Harper Lee. It is widely celebrated for its powerful themes of racial injustice, morality, and empathy.
+\end{respbox}
+\end{minipage}\hfill%
+\begin{minipage}[t]{0.24\linewidth}
+\begin{modarespbox}{Role 1}
+\textbf{``The Night Fire''} by Michael Connelly. \textbf{Award-winning author}: known for his intelligent, fast-paced crime fiction.
+\end{modarespbox}
+\end{minipage}\hfill%
+\begin{minipage}[t]{0.24\linewidth}
+\begin{modarespbox}{Role 2}
+\textbf{``The Night Circus''} by Erin Morgenstern. Known for its richly imaginative world-building and lyrical prose.
+\end{modarespbox}
+\end{minipage}
+\caption{\textbf{Qualitative example of diverse generation.} \textbf{Left two:} Qwen3-8B repeats the same title across samples. \textbf{Right two:} \method{} under distinct numbered roles produces conceptually distinct titles for the same prompt. More samples in Appendix~\ref{appx: generation examples} Figure~\ref{fig:qualitative-example-books}.}
+\label{fig:qualitative-example-books-main}
+\end{figure}
 
 
 \subsection{Ablation Studies.}
@@ -167,10 +189,10 @@ As shown in Table~\ref{tab:ablation}, all variants exhibit a slight diversity im
 \begin{minipage}{0.29\textwidth}
   \centering
   \includegraphics[width=\linewidth]{figures/ablation_pass_k/pass_at_k_avg_ablations.png}
-  \small (b) Pass@k, Avg.
+  \small (c) Pass@k, Avg.
   \label{fig: ablation pass@k avg}
 \end{minipage}\hfill
-\caption{\textbf{Ablation study: diversity-quality trade-off under diverse and standard mode, and general capability retention pass@k accuracy.} 
+\caption{\textbf{Ablation study: diversity-quality trade-off under diverse and standard mode, and general capability retention pass@k accuracy.}
 \textbf{(a)} Diverse vs standard mode avg. pass@1 accuracy.
 \textbf{(b)} Infinite-Chat diversity vs.\ quality (general capability pass@1 accuracy) across ablation variants. \textbf{(c)} Pass@k accuracy curves for the ablation variants on the general capability suite average, showing how capability under standard (solid) and diverse (dotted) decoding scales with $k$. We provide a breakdown by individual benchmarks in Appendix \ref{appx: ablation results} Figure \ref{fig:general capability pass@k ablation by benchmark}.}
 \label{fig:ablation-pareto-pass-k}
