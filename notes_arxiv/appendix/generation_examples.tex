@@ -2,6 +2,13 @@
 \label{appx: generation examples}
 \FloatBarrier
 
+\begin{figure}[ht!]
+    \centering
+    \includegraphics[width=\textwidth]{figures/time.pdf}
+    \caption{Responses to the query \textbf{``Write a metaphor about time''} clustered by applying PCA to reduce sentence embeddings to two dimensions. Each of the 23 off-the-shelf models and our trained non-thinking model generates 20 responses using top-$p$ sampling ($p = 1.0$) and temperature $= 1.0$. The \method{} generations occupy a larger region of the embedding space, suggesting that mode-conditioned training expands the model's exploration space. }
+    \label{fig:time}
+\end{figure}
+
 \input{notes_arxiv/appendix/generation_book_list}
 \input{notes_arxiv/appendix/generation_chess}
 \input{notes_arxiv/appendix/generation_5_word}

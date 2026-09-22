@@ -1,14 +1,6 @@
 \section{\methodcolor: Mode-Conditioned Diversity Alignment for LLMs}
 \label{sec:method}
 
-\begin{figure}[t!]
-    \centering
-    \includegraphics[width=\textwidth]{figures/time.pdf}
-    \caption{Responses to the query \textbf{``Write a metaphor about time''} clustered by applying PCA to reduce sentence embeddings to two dimensions. Each of the 23 off-the-shelf models and our trained non-thinking model generates 20 responses using top-$p$ sampling ($p = 1.0$) and temperature $= 1.0$.}
-    \label{fig:time}
-\end{figure}
-
-
 \subsection{Preliminaries: LLM RL Post-Training and Mode Collapse}
 \label{ssec:preliminaries}
 
@@ -43,9 +35,9 @@ and causing the model to repeatedly generate only a few dominant responses despi
 
 \subsection{Multi-Agent Reinforcement Learning (MARL)-Inspired Mode Conditioning}
 
-\paragraph{MARL Motivation.} Classical MARL studies how populations of agents can learn complementary behaviors by explicitly encouraging behavioral diversity through mechanisms such as information sharing, skill specialization, KL divergence maximization, and adversarial objectives \citep{eysenbach2018diversityneedlearningskills, liang2024learning, li2021celebratingdiversitysharedmultiagent}. We bring this perspective to LLM post-training by introducing \textit{mode conditioning}, where a single policy is conditioned on different role tokens and each role is treated as an abstract agent. Agents must learn how to produce responses that are unlike those of the other agents, introducing competitive dynamics that drive the agents to continually diversify their responses. Unlike standard alignment, which learns a single behavioral interface, mode conditioning provides a \textit{richer interface} that enables the model to internalize multiple high-quality behavioral modes.
+\paragraph{MARL Motivation.} Classical MARL studies how populations of agents can learn complementary behaviors by explicitly encouraging behavioral diversity through mechanisms such as information sharing, skill specialization, KL divergence maximization, and adversarial objectives \citep{eysenbach2018diversityneedlearningskills, liang2024learning, li2021celebratingdiversitysharedmultiagent}. We bring this perspective to LLM post-training by introducing \textit{mode conditioning}, where a single policy is conditioned on different role tokens and each role is treated as an abstract agent. Agents must learn how to produce responses that are unlike those of the other agents, introducing competitive dynamics that drive the agents to continually diversify their responses. Unlike standard alignment, mode conditioning provides a \textit{richer interface} that enables the model to internalize multiple high-quality behavioral modes.
 
-\paragraph{Mode Conditioning via System Role Identifiers.} We instantiate mode conditioning by prepending role identifiers into the system prompt. In our primary setting, we adopt an intentionally minimal identity-based conditioning: \texttt{You are role $i$}. We use numbered roles instead of hand-crafted personas to avoid injecting domain-specific assumptions about desirable perspectives. Although our ablations show that crafted personas (e.g., ``innovative thinker,'' ``passionate educator,'' or ``methodical experimenter'') and token-based conditioning (e.g. ``Start with your response with APPLE / BANANA / ORANGE.") are also effective, we adopt the minimal identity-based conditioning to encourage emergent specialization, where each agent adaptively learns how to play its role in order to  maximize the diversity objective.
+\paragraph{Mode Conditioning via System Role Identifiers.} We instantiate mode conditioning by prepending role identifiers into the system prompt. In our primary setting, we adopt an intentionally minimal identity-based conditioning: \texttt{You are role $i$}. We use numbered roles instead of hand-crafted personas to avoid injecting domain-specific assumptions about desirable perspectives. Although our ablations show that crafted personas (e.g., ``innovative thinker,'' ``passionate educator,'' or ``methodical experimenter'') and token-based conditioning (e.g. ``Start with your response with APPLE / BANANA / ORANGE.") are also effective, we adopt the minimal identity-based conditioning to encourage emergent specialization.
 
 Formally, let $x \in \mathcal{X}$ denote a user prompt and $\mathcal{Z}={z_1,\ldots,z_N}$ a fixed set of role identifiers. A shared policy $\pi_\theta(y\mid z_i, x)$ is conditioned on role $z_i$, with all roles sharing parameters $\theta$. During training, each role generate one response for $K$ prompts within the batch, forming a response group $\mathcal{Y}_x=\{y_{i,k}: i=1,\ldots,N; k=1,\ldots,K\}$. Each response receives a Quality-Gated Diversity Reward (\S~\ref{subsec:qgdr}), and the shared policy is optimized with Group Relative Policy Optimization (GRPO; \citep{shao2024deepseekmath}). Algorithm~\ref{alg: moda short} summarizes the training procedure.
 
@@ -127,7 +119,7 @@ We optimize the shared policy via Group Relative Policy Optimization (GRPO~\cite
 \begin{algorithm}
 \caption{\textsc{MoDA}: \textbf{Mo}de-Conditioned \textbf{D}iversity \textbf{A}lignment }
 \label{alg: moda-stage2}
-\scriptsize
+\small
 \begin{algorithmic}[1]
 \Require Dataset $\mathcal{D}$ with precomputed $(s_{\min},s_{\max},\mu_{\rm ref})$; policy $\pi_\theta$; reference policy $\pi_{\rm ref}$; reward model $S_\phi$; abstract roles $\mathcal{M}=\{m_i\}_{i=1}^N$; diversity metric $\delta$; weights $\lambda_q,\lambda_d$; constants $\alpha,\gamma,\epsilon,\eta$
 \For{training iteration $t=1,\ldots,T$}
