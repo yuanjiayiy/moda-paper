@@ -75,6 +75,15 @@ Language mixing penalty weight (GLM) & 10 \\
 
 \subsection{Ablation Model Implementations}
 \label{appx: ablation model implementations}
+
+\textbf{Additive Aggregation.}\label{ablation: additive aggregation} Many existing works on quality-diversity optimization aggregate quality and diversity objectives using a weighted sum~\citep{mouret2015illuminatingsearchspacesmapping, Chen2025PosttrainingLL}. We compare our method with variants trained using an additive reward objective. We find that additive aggregation is highly sensitive to the diversity weight $\lambda_d$. at $\lambda_d=1$, the additive variant shows modest diversity improvement over the baseline, but substantially less than \method{}; at $\lambda_d=10$ and $\lambda_d=100$, diversity improves significantly, but at the cost of general capability performance under diverse decoding. In contrast, \method{} separates quality control from diversity optimization through the quality gate, making the reward less sensitive to coefficient scaling and enables faster iteration.
+
+\textbf{Role Injection.}
+\label{ablation: role injection}
+Prior work has shown that manually designed prompts can induce different model
+behaviors \citep{park2024generative, argyle2023out}. We therefore craft six personas and inject them into the system prompt instead of the abstract numbered roles, testing whether hand-designed personas provide a stronger diversity prior than the abstract numbered role used in the main setting. To isolate the effect of role multiplicity from role content, we train a single-role variant in which every response is generated under the same \textit{``You are Role 1.''} system prompt. To study the effect of the identity-based role, we train a token-based conditioning variant in which the system prompt instructs a token-based distinguishing signal (e.g. \textit{``Start your response with APPLE/BANANA/ORANGE.''}).
+As shown in Table~\ref{tab:ablation}, all variants exhibit a slight diversity improvement over the base model, but their gains are smaller than \method{}'s, indicating that multiple abstract numbered identity-based role provides a more effective exploration space than all the ablated variants, without sacrificing generalization.
+
 \paragraph{Token-based roles}
 As an ablation, we replace the abstract numbered role instructions with dummy roles. Specifically, for each prompt, we prepend one of the
 following system prompts. We stripped the dummy tokens (e.g., \textit{APPLE}/\textit{ORANGE}/\textit{BANANA}) from the responses before computing the diversity and quality metrics, both during the training and during the evaluation.
