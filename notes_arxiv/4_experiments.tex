@@ -132,37 +132,10 @@ To assess whether our method preserves the model's reasoning capability, we eval
 
 \subsection{Qualitative Results}
 \label{sec:qualitative results}
-We observe several interesting patterns in our experiments. Figure~\ref{fig:moda + 40blue} visualizes responses to the prompt \textbf{``Name a shade of blue''} from Qwen3-8B, Qwen3-8B with \ssot, and \method{} with thinking disabled. Consistent with the quantitative results, \method{} produces a larger set of valid and distinct responses. Interestingly, although \method{} uses only abstract numbered roles rather than hand-crafted personas, the model sometimes learns role-specific behavioral patterns, suggesting that abstract mode conditioning can induce differentiated characteristics, learned via competitive multi-agent training, without manually specifying each role. Figure~\ref{fig:qualitative-example-books-main} shows that, when asked to name a well-received book, the base model produces the same answer, ``To Kill a Mockingbird,'' in all six samples, whereas \method{} produces six distinct titles; additional qualitative examples are provided in Appendix~\ref{appx: generation examples}.
+We observe several interesting patterns in our experiments. Figure~\ref{fig:moda + 40blue} visualizes responses to the prompt \textbf{``Name a shade of blue''} from Qwen3-8B, Qwen3-8B with \ssot, and \method{} with thinking disabled. Consistent with the quantitative results, \method{} produces a larger set of valid and distinct responses. Interestingly, although \method{} uses only abstract numbered roles rather than hand-crafted personas, the model sometimes learns role-specific behavioral patterns, suggesting that abstract mode conditioning can induce differentiated characteristics, learned via competitive multi-agent training, without manually specifying each role. Figure~\ref{fig:qualitative-example-books} shows that, when asked to name a well-received book, the base model produces the same answer, ``To Kill a Mockingbird,'' in all six samples, whereas \method{} produces six distinct titles; additional qualitative examples are provided in Appendix~\ref{appx: generation examples}.
 \liweiaddressed{can we pick example so that we can show across dirrent roles the generations are creative and different, while for other models, resampling doesn't give sufficiently creative candidates?}
 
-\begin{figure}[ht]
-\centering
-\begin{promptbox}
-\small\textit{Name one well received book that often appears in top book lists.}
-\end{promptbox}
-\begin{minipage}[t]{0.24\linewidth}
-\begin{respbox}{Sample 1}
-One well-received book that often appears in top book lists is \textbf{To Kill a Mockingbird} by Harper Lee. It is a classic of American literature and has consistently ranked high in various lists.
-\end{respbox}
-\end{minipage}\hfill%
-\begin{minipage}[t]{0.24\linewidth}
-\begin{respbox}{Sample 2}
-One well-received book that often appears in top book lists is \textbf{To Kill a Mockingbird} by Harper Lee. It is widely celebrated for its powerful themes of racial injustice, morality, and empathy.
-\end{respbox}
-\end{minipage}\hfill%
-\begin{minipage}[t]{0.24\linewidth}
-\begin{modarespbox}{Role 1}
-\textbf{``The Night Fire''} by Michael Connelly. \textbf{Award-winning author}: known for his intelligent, fast-paced crime fiction.
-\end{modarespbox}
-\end{minipage}\hfill%
-\begin{minipage}[t]{0.24\linewidth}
-\begin{modarespbox}{Role 2}
-\textbf{``The Night Circus''} by Erin Morgenstern. Known for its richly imaginative world-building and lyrical prose.
-\end{modarespbox}
-\end{minipage}
-\caption{\textbf{Qualitative example of diverse generation.} \textbf{Left two:} Qwen3-8B repeats the same title across samples. \textbf{Right two:} \method{} under distinct numbered roles produces conceptually distinct titles for the same prompt. More samples in Appendix~\ref{appx: generation examples} Figure~\ref{fig:qualitative-example-books}.}
-\label{fig:qualitative-example-books-main}
-\end{figure}
+\input{notes_arxiv/appendix/generation_book_list}
 
 
 \subsection{Ablation Studies.}
