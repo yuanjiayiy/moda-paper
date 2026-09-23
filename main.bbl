@@ -1,4 +1,4 @@
-\begin{thebibliography}{77}
+\begin{thebibliography}{73}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -133,21 +133,21 @@ Nate Gruver, Samuel Stanton, Nathan~C. Frey, Tim G.~J. Rudner, Isidro Hotzel,
 \newblock Protein design with guided discrete diffusion, 2023.
 \newblock URL \url{https://arxiv.org/abs/2305.20009}.
 
-\bibitem[Guo et~al.(2025{\natexlab{a}})Guo, Yang, Zhang, Song, Wang, Zhu, Xu,
-  Zhang, Ma, Bi, Zhang, Yu, Wu, Wu, Gou, Shao, Li, Gao, Liu, Xue, Wang, Wu,
-  Feng, Lu, Zhao, Deng, Ruan, Dai, Chen, Ji, Li, Lin, Dai, Luo, Hao, Chen, Li,
-  Zhang, Xu, Ding, Gao, Qu, Li, Guo, Li, Chen, Yuan, Tu, Qiu, Li, Cai, Ni,
-  Liang, Chen, Dong, Hu, You, Gao, Guan, Huang, Yu, Wang, Zhang, Zhao, Wang,
-  Zhang, Xu, Xia, Zhang, Zhang, Tang, Zhou, Li, Wang, Li, Tian, Huang, Zhang,
-  Wang, Chen, Du, Ge, Zhang, Pan, Wang, Chen, Jin, Chen, Lu, Zhou, Chen, Ye,
-  Wang, Yu, Zhou, Pan, Li, Zhou, Wu, Yun, Pei, Sun, Wang, Zeng, Liu, Liang,
-  Gao, Yu, Zhang, Xiao, An, Liu, Wang, Chen, Nie, Cheng, Liu, Xie, Liu, Yang,
-  Li, Su, Lin, Li, Jin, Shen, Chen, Sun, Wang, Song, Zhou, Wang, Shan, Li,
-  Wang, Wei, Zhang, Xu, Li, Zhao, Sun, Wang, Yu, Zhang, Shi, Xiong, He, Piao,
-  Wang, Tan, Ma, Liu, Guo, Ou, Wang, Gong, Zou, He, Xiong, Luo, You, Liu, Zhou,
-  Zhu, Huang, Li, Zheng, Zhu, Ma, Tang, Zha, Yan, Ren, Ren, Sha, Fu, Xu, Xie,
-  Zhang, Hao, Ma, Yan, Wu, Gu, Zhu, Liu, Li, Xie, Song, Pan, Huang, Xu, Zhang,
-  and Zhang]{Guo_2025}
+\bibitem[Guo et~al.(2025)Guo, Yang, Zhang, Song, Wang, Zhu, Xu, Zhang, Ma, Bi,
+  Zhang, Yu, Wu, Wu, Gou, Shao, Li, Gao, Liu, Xue, Wang, Wu, Feng, Lu, Zhao,
+  Deng, Ruan, Dai, Chen, Ji, Li, Lin, Dai, Luo, Hao, Chen, Li, Zhang, Xu, Ding,
+  Gao, Qu, Li, Guo, Li, Chen, Yuan, Tu, Qiu, Li, Cai, Ni, Liang, Chen, Dong,
+  Hu, You, Gao, Guan, Huang, Yu, Wang, Zhang, Zhao, Wang, Zhang, Xu, Xia,
+  Zhang, Zhang, Tang, Zhou, Li, Wang, Li, Tian, Huang, Zhang, Wang, Chen, Du,
+  Ge, Zhang, Pan, Wang, Chen, Jin, Chen, Lu, Zhou, Chen, Ye, Wang, Yu, Zhou,
+  Pan, Li, Zhou, Wu, Yun, Pei, Sun, Wang, Zeng, Liu, Liang, Gao, Yu, Zhang,
+  Xiao, An, Liu, Wang, Chen, Nie, Cheng, Liu, Xie, Liu, Yang, Li, Su, Lin, Li,
+  Jin, Shen, Chen, Sun, Wang, Song, Zhou, Wang, Shan, Li, Wang, Wei, Zhang, Xu,
+  Li, Zhao, Sun, Wang, Yu, Zhang, Shi, Xiong, He, Piao, Wang, Tan, Ma, Liu,
+  Guo, Ou, Wang, Gong, Zou, He, Xiong, Luo, You, Liu, Zhou, Zhu, Huang, Li,
+  Zheng, Zhu, Ma, Tang, Zha, Yan, Ren, Ren, Sha, Fu, Xu, Xie, Zhang, Hao, Ma,
+  Yan, Wu, Gu, Zhu, Liu, Li, Xie, Song, Pan, Huang, Xu, Zhang, and
+  Zhang]{Guo_2025}
 Daya Guo, Dejian Yang, Haowei Zhang, Junxiao Song, Peiyi Wang, Qihao Zhu,
   Runxin Xu, Ruoyu Zhang, Shirong Ma, Xiao Bi, Xiaokang Zhang, Xingkai Yu,
   Yu~Wu, Z.~F. Wu, Zhibin Gou, Zhihong Shao, Zhuoshu Li, Ziyi Gao, Aixin Liu,
@@ -182,18 +182,10 @@ Daya Guo, Dejian Yang, Haowei Zhang, Junxiao Song, Peiyi Wang, Qihao Zhu,
   Zhang.
 \newblock Deepseek-r1 incentivizes reasoning in llms through reinforcement
   learning.
-\newblock \emph{Nature}, 645\penalty0 (8081):\penalty0 633–638,
-  2025{\natexlab{a}}.
+\newblock \emph{Nature}, 645\penalty0 (8081):\penalty0 633–638, 2025.
 \newblock ISSN 1476-4687.
 \newblock \doi{10.1038/s41586-025-09422-z}.
 \newblock URL \url{http://dx.doi.org/10.1038/s41586-025-09422-z}.
-
-\bibitem[Guo et~al.(2025{\natexlab{b}})Guo, Shang, and
-  Clavel]{guo2025benchmarking}
-Yanzhu Guo, Guokan Shang, and Chlo{\'e} Clavel.
-\newblock Benchmarking linguistic diversity of large language models.
-\newblock \emph{Transactions of the Association for Computational Linguistics},
-  13:\penalty0 1507--1526, 2025{\natexlab{b}}.
 
 \bibitem[He et~al.(2025)He, Fried, and
   Welleck]{he2025rewardingunlikelyliftinggrpo}
@@ -373,13 +365,6 @@ Haokun Liu, Sicong Huang, Jingyu Hu, Yangqiaoyu Zhou, and Chenhao Tan.
   hypothesis generation, 2026.
 \newblock URL \url{https://arxiv.org/abs/2504.11524}.
 
-\bibitem[Luo et~al.(2025)Luo, Yang, Meng, Li, Zhou, and
-  Zhang]{luo2025empiricalstudycatastrophicforgetting}
-Yun Luo, Zhen Yang, Fandong Meng, Yafu Li, Jie Zhou, and Yue Zhang.
-\newblock An empirical study of catastrophic forgetting in large language
-  models during continual fine-tuning, 2025.
-\newblock URL \url{https://arxiv.org/abs/2308.08747}.
-
 \bibitem[McCarthy \& Jarvis(2010)McCarthy and Jarvis]{McCarthy2010MTLDVA}
 Philip~M. McCarthy and Scott Jarvis.
 \newblock Mtld, vocd-d, and hd-d: A validation study of sophisticated
@@ -472,13 +457,6 @@ Zhiwen Ruan, Yixia Li, Yefeng Liu, Yun Chen, Weihua Luo, Peng Li, Yang Liu, and
 \newblock \doi{10.18653/v1/2025.emnlp-main.713}.
 \newblock URL \url{https://aclanthology.org/2025.emnlp-main.713/}.
 
-\bibitem[Shahid et~al.(2025)Shahid, Radensky, Fok, Siangliulue, Weld, and
-  Hope]{Shahid2025}
-Simra Shahid, Marissa Radensky, Raymond Fok, Pao Siangliulue, Daniel~S Weld,
-  and Tom Hope.
-\newblock Literature-grounded novelty assessment of scientific ideas.
-\newblock Technical report, 2025.
-
 \bibitem[Shaib et~al.(2024)Shaib, Barrow, Sun, Siu, Wallace, and
   Nenkova]{shaib2024standardizing}
 Chantal Shaib, Joe Barrow, Jiuding Sun, Alexa~F. Siu, Byron~C. Wallace, and Ani
@@ -536,13 +514,6 @@ Rohan Taori, Ishaan Gulrajani, Tianyi Zhang, Yann Dubois, Xuechen Li, Carlos
   Guestrin, Percy Liang, and Tatsunori~B. Hashimoto.
 \newblock Stanford alpaca: An instruction-following llama model.
 \newblock \url{https://github.com/tatsu-lab/stanford_alpaca}, 2023.
-
-\bibitem[Wan et~al.(2025)Wan, Wu, Abdulhai, Shani, and
-  Jaques]{wan2025enhancingpersonalizedmultiturndialogue}
-Yanming Wan, Jiaxing Wu, Marwa Abdulhai, Lior Shani, and Natasha Jaques.
-\newblock Enhancing personalized multi-turn dialogue with curiosity reward,
-  2025.
-\newblock URL \url{https://arxiv.org/abs/2504.03206}.
 
 \bibitem[Wang et~al.(2025)Wang, Pan, Linzen, and
   Black]{wang2025multilingualpromptingimprovingllm}

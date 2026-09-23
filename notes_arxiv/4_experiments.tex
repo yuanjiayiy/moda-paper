@@ -69,11 +69,19 @@ To assess whether our method preserves the model's reasoning capability, we eval
 
 \begin{figure}[ht]
 \centering
-\includegraphics[width=0.45\linewidth]{figures/pareto_infinite-chat_quality_thinking_false_base_model_qwen3-8b_composite.png}
-\hfill
-\includegraphics[width=0.45\linewidth]{figures/pareto_infinite-chat_quality_ablations_composite.png}
-\label{fig: ablation diversity quality pareto}
-\caption{\textbf{Diversity vs. quality pareto front (Qwen3-8B base, thinking disabled).} The x-axis is Infinite-Chat response diversity (mean z-score of Disc./SBERT/EmbVendi) and the y-axis is general capability (mean benchmark accuracy). \method{} Pareto-dominates all the baselines, achieving better diversity and quality simultaneously. Results for Qwen3-8B (thinking enabled) and Llama-3.1-8B / GLM-4-9B (thinking disabled) are shown in Appendix~\ref{appx:generative diversity evaluation}.}
+\begin{minipage}{0.45\linewidth}
+  \centering
+  \includegraphics[width=\linewidth]{figures/pareto_infinite-chat_quality_thinking_false_base_model_qwen3-8b_composite.png}
+  \small (a) Baselines
+  \label{fig: domain application pareto baselines}
+\end{minipage}\hfill
+\begin{minipage}{0.5\linewidth}
+  \centering
+  \includegraphics[width=\linewidth]{figures/pareto_infinite-chat_quality_ablations_composite.png}
+  \small (b) Ablation variants
+  \label{fig: domain application pareto ablations}
+\end{minipage}
+\caption{\textbf{Quality-diversity pareto front (Qwen3-8B, thinking disabled) baselines and ablated variants.} The x-axis is Infinite-Chat response diversity (mean z-score of Disc./SBERT/EmbVendi) and the y-axis is general capability (mean benchmark accuracy). \textbf{(a)} \method{} Pareto-dominates all the baselines, achieving better diversity and quality simultaneously. Results for Qwen3-8B (thinking enabled) and Llama-3.1-8B / GLM-4-9B (thinking disabled) are shown in Appendix~\ref{appx:generative diversity evaluation}. \textbf{(b)} The same comparison across \method{}'s ablated variants.}
 \label{fig: domain application pareto}
 \end{figure}
 

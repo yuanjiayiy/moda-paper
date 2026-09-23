@@ -113,8 +113,10 @@
 \citation{zhou2023instructionfollowingevaluationlargelanguage}
 \@writefile{toc}{\contentsline {paragraph}{General Capability Retention Evaluation.}{7}{section*.14}\protected@file@percent }
 \@writefile{toc}{\contentsline {section}{\numberline {5}Results}{7}{section.5}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces \textbf  {Diversity vs. quality pareto front (Qwen3-8B base, thinking disabled).} The x-axis is Infinite-Chat response diversity (mean z-score of Disc./SBERT/EmbVendi) and the y-axis is general capability (mean benchmark accuracy). \textsc  {MoDA}\xspace  {} Pareto-dominates all the baselines, achieving better diversity and quality simultaneously. Results for Qwen3-8B (thinking enabled) and Llama-3.1-8B / GLM-4-9B (thinking disabled) are shown in Appendix~\ref {appx:generative diversity evaluation}.}}{7}{figure.caption.15}\protected@file@percent }
-\newlabel{fig: domain application pareto}{{2}{7}{\textbf {Diversity vs. quality pareto front (Qwen3-8B base, thinking disabled).} The x-axis is Infinite-Chat response diversity (mean z-score of Disc./SBERT/EmbVendi) and the y-axis is general capability (mean benchmark accuracy). \method {} Pareto-dominates all the baselines, achieving better diversity and quality simultaneously. Results for Qwen3-8B (thinking enabled) and Llama-3.1-8B / GLM-4-9B (thinking disabled) are shown in Appendix~\ref {appx:generative diversity evaluation}}{figure.caption.15}{}}
+\newlabel{fig: domain application pareto baselines}{{\caption@xref {??}{ on input line 76}}{7}{Results}{figure.caption.15}{}}
+\newlabel{fig: domain application pareto ablations}{{\caption@xref {??}{ on input line 82}}{7}{Results}{figure.caption.15}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces \textbf  {Quality-diversity pareto front (Qwen3-8B, thinking disabled) baselines and ablated variants.} The x-axis is Infinite-Chat response diversity (mean z-score of Disc./SBERT/EmbVendi) and the y-axis is general capability (mean benchmark accuracy). \textbf  {(a)} \textsc  {MoDA}\xspace  {} Pareto-dominates all the baselines, achieving better diversity and quality simultaneously. Results for Qwen3-8B (thinking enabled) and Llama-3.1-8B / GLM-4-9B (thinking disabled) are shown in Appendix~\ref {appx:generative diversity evaluation}. \textbf  {(b)} The same comparison across \textsc  {MoDA}\xspace  {}'s ablated variants.}}{7}{figure.caption.15}\protected@file@percent }
+\newlabel{fig: domain application pareto}{{2}{7}{\textbf {Quality-diversity pareto front (Qwen3-8B, thinking disabled) baselines and ablated variants.} The x-axis is Infinite-Chat response diversity (mean z-score of Disc./SBERT/EmbVendi) and the y-axis is general capability (mean benchmark accuracy). \textbf {(a)} \method {} Pareto-dominates all the baselines, achieving better diversity and quality simultaneously. Results for Qwen3-8B (thinking enabled) and Llama-3.1-8B / GLM-4-9B (thinking disabled) are shown in Appendix~\ref {appx:generative diversity evaluation}. \textbf {(b)} The same comparison across \method {}'s ablated variants}{figure.caption.15}{}}
 \@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Per-domain diversity (Disc. = discriminator diversity, SBERT = SBERT embedding pairwise distance, E-V = E-Vendi score) and quality (Qual.), averaged over $n{=}3$ random seeds. Infinite-Chat quality is general capability accuracy (\%); all other domains use the native quality score. Bold marks the best value within each model group. Table with error bar can be found in Appx \ref {appx:generative diversity evaluation}.}}{8}{table.caption.16}\protected@file@percent }
 \newlabel{tab:domain-app-diversity-main}{{1}{8}{Per-domain diversity (Disc. = discriminator diversity, SBERT = SBERT embedding pairwise distance, E-V = E-Vendi score) and quality (Qual.), averaged over $n{=}3$ random seeds. Infinite-Chat quality is general capability accuracy (\%); all other domains use the native quality score. Bold marks the best value within each model group. Table with error bar can be found in Appx \ref {appx:generative diversity evaluation}}{table.caption.16}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces \textbf  {Left: General capability retention (Pass@1 accuracy \%)}, averaged over $n=3$ random seeds. Bold marks the best value within each model group; underline marks the second-best value within the Qwen3-8B groups. Table with error bar can be found in Appendix \ref {appx:general capability retention} Table \ref {tab:general-capability-pass1-error-bar}. \textbf  {Right: General capability retention: pass@k accuracy.} Qwen3-8B base, thinking disabled models on the general capability suite average. Per-benchmark results are shown in Appendix \ref {appx:general capability retention} Figure \ref {fig:general capability pass@k thinking disabled}.}}{8}{figure.caption.17}\protected@file@percent }
@@ -131,11 +133,6 @@
 \newlabel{ablation: role injection}{{5.2}{9}{Ablation Setups}{section*.19}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {6}Discussions}{9}{section.6}\protected@file@percent }
 \newlabel{sec:discussions}{{6}{9}{Discussions}{section.6}{}}
-\newlabel{fig: ablation diverse standard}{{\caption@xref {??}{ on input line 181}}{10}{Ablation Setups}{figure.caption.20}{}}
-\newlabel{fig: ablation diversity quality pareto}{{\caption@xref {??}{ on input line 187}}{10}{Ablation Setups}{figure.caption.20}{}}
-\newlabel{fig: ablation pass@k avg}{{\caption@xref {??}{ on input line 193}}{10}{Ablation Setups}{figure.caption.20}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces \textbf  {Ablation study: diversity-quality trade-off under diverse and standard mode, and general capability retention pass@k accuracy.} \textbf  {(a)} Diverse vs standard mode avg. pass@1 accuracy. \textbf  {(b)} Infinite-Chat diversity vs.\ quality (general capability pass@1 accuracy) across ablation variants. \textbf  {(c)} Pass@k accuracy curves for the ablation variants on the general capability suite average, showing how capability under standard (solid) and diverse (dotted) decoding scales with $k$. We provide a breakdown by individual benchmarks in Appendix \ref {appx: ablation results} Figure \ref {fig:general capability pass@k ablation by benchmark}.}}{10}{figure.caption.20}\protected@file@percent }
-\newlabel{fig:ablation-pareto-pass-k}{{5}{10}{\textbf {Ablation study: diversity-quality trade-off under diverse and standard mode, and general capability retention pass@k accuracy.} \textbf {(a)} Diverse vs standard mode avg. pass@1 accuracy. \textbf {(b)} Infinite-Chat diversity vs.\ quality (general capability pass@1 accuracy) across ablation variants. \textbf {(c)} Pass@k accuracy curves for the ablation variants on the general capability suite average, showing how capability under standard (solid) and diverse (dotted) decoding scales with $k$. We provide a breakdown by individual benchmarks in Appendix \ref {appx: ablation results} Figure \ref {fig:general capability pass@k ablation by benchmark}}{figure.caption.20}{}}
 \bibdata{reference}
 \bibcite{abdulhai2026llmsdistortwrittenlanguage}{{1}{2026}{{Abdulhai et~al.}}{{Abdulhai, White, Wan, Qureshi, Leibo, Kleiman-Weiner, and Jaques}}}
 \bibcite{Ajith2026}{{2}{2026}{{Ajith et~al.}}{{Ajith, Singh, DeYoung, Kunievsky, Kozlowski, Tafjord, Evans, Weld, Hope, and Downey}}}
@@ -152,70 +149,66 @@
 \bibcite{eysenbach2018diversityneedlearningskills}{{13}{2018}{{Eysenbach et~al.}}{{Eysenbach, Gupta, Ibarz, and Levine}}}
 \bibcite{friedman2023vendiscorediversityevaluation}{{14}{2023}{{Friedman \& Dieng}}{{Friedman and Dieng}}}
 \bibcite{gruver2023proteindesignguideddiscrete}{{15}{2023}{{Gruver et~al.}}{{Gruver, Stanton, Frey, Rudner, Hotzel, Lafrance-Vanasse, Rajpal, Cho, and Wilson}}}
-\bibcite{Guo_2025}{{16}{2025{a}}{{Guo et~al.}}{{Guo, Yang, Zhang, Song, Wang, Zhu, Xu, Zhang, Ma, Bi, Zhang, Yu, Wu, Wu, Gou, Shao, Li, Gao, Liu, Xue, Wang, Wu, Feng, Lu, Zhao, Deng, Ruan, Dai, Chen, Ji, Li, Lin, Dai, Luo, Hao, Chen, Li, Zhang, Xu, Ding, Gao, Qu, Li, Guo, Li, Chen, Yuan, Tu, Qiu, Li, Cai, Ni, Liang, Chen, Dong, Hu, You, Gao, Guan, Huang, Yu, Wang, Zhang, Zhao, Wang, Zhang, Xu, Xia, Zhang, Zhang, Tang, Zhou, Li, Wang, Li, Tian, Huang, Zhang, Wang, Chen, Du, Ge, Zhang, Pan, Wang, Chen, Jin, Chen, Lu, Zhou, Chen, Ye, Wang, Yu, Zhou, Pan, Li, Zhou, Wu, Yun, Pei, Sun, Wang, Zeng, Liu, Liang, Gao, Yu, Zhang, Xiao, An, Liu, Wang, Chen, Nie, Cheng, Liu, Xie, Liu, Yang, Li, Su, Lin, Li, Jin, Shen, Chen, Sun, Wang, Song, Zhou, Wang, Shan, Li, Wang, Wei, Zhang, Xu, Li, Zhao, Sun, Wang, Yu, Zhang, Shi, Xiong, He, Piao, Wang, Tan, Ma, Liu, Guo, Ou, Wang, Gong, Zou, He, Xiong, Luo, You, Liu, Zhou, Zhu, Huang, Li, Zheng, Zhu, Ma, Tang, Zha, Yan, Ren, Ren, Sha, Fu, Xu, Xie, Zhang, Hao, Ma, Yan, Wu, Gu, Zhu, Liu, Li, Xie, Song, Pan, Huang, Xu, Zhang, and Zhang}}}
-\bibcite{guo2025benchmarking}{{17}{2025{b}}{{Guo et~al.}}{{Guo, Shang, and Clavel}}}
-\bibcite{he2025rewardingunlikelyliftinggrpo}{{18}{2025}{{He et~al.}}{{He, Fried, and Welleck}}}
-\bibcite{hendryckstest2021}{{19}{2021}{{Hendrycks et~al.}}{{Hendrycks, Burns, Basart, Zou, Mazeika, Song, and Steinhardt}}}
-\bibcite{holtzman2020curiouscaseneuraltext}{{20}{2020}{{Holtzman et~al.}}{{Holtzman, Buys, Du, Forbes, and Choi}}}
-\bibcite{huang2024self}{{21}{2024}{{Huang et~al.}}{{Huang, Block, Foster, Rohatgi, Zhang, Simchowitz, Ash, and Krishnamurthy}}}
-\bibcite{ippolito2019comparison}{{22}{2019}{{Ippolito et~al.}}{{Ippolito, Kriz, Sedoc, Kustikova, and Callison-Burch}}}
-\bibcite{jalali2024conditionalvendiscoreinformationtheoretic}{{23}{2024}{{Jalali et~al.}}{{Jalali, Ospanov, Gohari, and Farnia}}}
-\bibcite{jaques2017sequencetutorconservativefinetuning}{{24}{2017}{{Jaques et~al.}}{{Jaques, Gu, Bahdanau, Hernández-Lobato, Turner, and Eck}}}
-\bibcite{jiang2025artificialhivemindopenendedhomogeneity}{{25}{2025}{{Jiang et~al.}}{{Jiang, Chai, Li, Liu, Fok, Dziri, Tsvetkov, Sap, Albalak, and Choi}}}
-\bibcite{jung2025prismaticsynthesisgradientbaseddata}{{26}{2025}{{Jung et~al.}}{{Jung, Han, Lu, Hallinan, Acuna, Prabhumoye, Patwary, Shoeybi, Catanzaro, and Choi}}}
-\bibcite{Kim2026}{{27}{2026}{{Kim et~al.}}{{Kim, Yang, and Jung}}}
-\bibcite{kirk2024understandingeffectsrlhfllm}{{28}{2024}{{Kirk et~al.}}{{Kirk, Mediratta, Nalmpantis, Luketina, Hambro, Grefenstette, and Raileanu}}}
-\bibcite{kloek1978bayesian}{{29}{1978}{{Kloek \& Van~Dijk}}{{Kloek and Van~Dijk}}}
-\bibcite{kwon2023efficient}{{30}{2023}{{Kwon et~al.}}{{Kwon, Li, Zhuang, Sheng, Zheng, Yu, Gonzalez, Zhang, and Stoica}}}
-\bibcite{lagzian2025multinoveltyimprovediversitynovelty}{{31}{2025}{{Lagzian et~al.}}{{Lagzian, Anumasa, and Liu}}}
-\bibcite{lambert2024tulu3}{{32}{2024}{{Lambert et~al.}}{{Lambert, Morrison, Pyatkin, Huang, Ivison, Brahman, Miranda, Liu, Dziri, Lyu, Gu, Malik, Graf, Hwang, Yang, Bras, Tafjord, Wilhelm, Soldaini, Smith, Wang, Dasigi, and Hajishirzi}}}
-\bibcite{lanchantin2025diverse}{{33}{2025}{{Lanchantin et~al.}}{{Lanchantin, Chen, Dhuliawala, Yu, Weston, Sukhbaatar, and Kulikov}}}
-\bibcite{lau2025dipperdiversitypromptsproducing}{{34}{2025}{{Lau et~al.}}{{Lau, Hu, Liu, Chen, Ng, and Low}}}
-\bibcite{li2021celebratingdiversitysharedmultiagent}{{35}{2021}{{Li et~al.}}{{Li, Wang, Wu, Zhao, Yang, and Zhang}}}
-\bibcite{li2025jointlyreinforcingdiversityquality}{{36}{2025}{{Li et~al.}}{{Li, Zhang, Yu, Saha, Khashabi, Weston, Lanchantin, and Wang}}}
-\bibcite{liang2024learning}{{37}{2024}{{Liang et~al.}}{{Liang, Chen, Gupta, Du, and Jaques}}}
-\bibcite{lin2022truthfulqameasuringmodelsmimic}{{38}{2022}{{Lin et~al.}}{{Lin, Hilton, and Evans}}}
-\bibcite{liu2025skywork}{{39}{2025}{{Liu et~al.}}{{Liu, Zeng, Xiao, He, Liu, Wang, Yan, Shen, Zhang, Xu, et~al.}}}
-\bibcite{liu2026hypobenchsystematicprincipledbenchmarking}{{40}{2026}{{Liu et~al.}}{{Liu, Huang, Hu, Zhou, and Tan}}}
-\bibcite{luo2025empiricalstudycatastrophicforgetting}{{41}{2025}{{Luo et~al.}}{{Luo, Yang, Meng, Li, Zhou, and Zhang}}}
-\bibcite{McCarthy2010MTLDVA}{{42}{2010}{{McCarthy \& Jarvis}}{{McCarthy and Jarvis}}}
-\bibcite{Misaki2026}{{43}{2026}{{Misaki \& Akiba}}{{Misaki and Akiba}}}
-\bibcite{mouret2015illuminatingsearchspacesmapping}{{44}{2015}{{Mouret \& Clune}}{{Mouret and Clune}}}
-\bibcite{nguyen2024turningheatminpsampling}{{45}{2024}{{Nguyen et~al.}}{{Nguyen, Baker, Neo, Roush, Kirsch, and Shwartz-Ziv}}}
-\bibcite{omahony2024attributingmodecollapsefinetuning}{{46}{2024}{{O'Mahony et~al.}}{{O'Mahony, Grinsztajn, Schoelkopf, and Biderman}}}
-\bibcite{padmakumar2023does}{{47}{2023}{{Padmakumar \& He}}{{Padmakumar and He}}}
-\bibcite{park2024generative}{{48}{2024}{{Park et~al.}}{{Park, Zou, Shaw, Hill, Cai, Morris, Willer, Liang, and Bernstein}}}
-\bibcite{Puri2026}{{49}{2026}{{Puri et~al.}}{{Puri, Damani, Shenfeld, Ghassemi, Andreas, and Kim}}}
-\bibcite{reimers2019sentencebertsentenceembeddingsusing}{{50}{2019}{{Reimers \& Gurevych}}{{Reimers and Gurevych}}}
-\bibcite{rein2024gpqa}{{51}{2024}{{Rein et~al.}}{{Rein, Hou, Stickland, Petty, Pang, Dirani, Michael, and Bowman}}}
-\bibcite{romera2024mathematical}{{52}{2024}{{Romera-Paredes et~al.}}{{Romera-Paredes, Barekatain, Novikov, Balog, Kumar, Dupont, Ruiz, Ellenberg, Wang, Fawzi, et~al.}}}
-\bibcite{ruan-etal-2025-g2}{{53}{2025}{{Ruan et~al.}}{{Ruan, Li, Liu, Chen, Luo, Li, Liu, and Chen}}}
-\bibcite{Shahid2025}{{54}{2025}{{Shahid et~al.}}{{Shahid, Radensky, Fok, Siangliulue, Weld, and Hope}}}
-\bibcite{shaib2024standardizing}{{55}{2024}{{Shaib et~al.}}{{Shaib, Barrow, Sun, Siu, Wallace, and Nenkova}}}
-\bibcite{shao2024deepseekmath}{{56}{2024}{{Shao et~al.}}{{Shao, Wang, Zhu, Xu, Song, Bi, Zhang, Zhang, Li, Wu, and Guo}}}
-\bibcite{sheng2024hybridflow}{{57}{2024}{{Sheng et~al.}}{{Sheng, Zhang, Ye, Wu, Zhang, Zhang, Peng, Lin, and Wu}}}
-\bibcite{Shumailov2024AIMC}{{58}{2024}{{Shumailov et~al.}}{{Shumailov, Shumaylov, Zhao, Papernot, Anderson, and Gal}}}
-\bibcite{shypula2025evaluatingdiversityqualityllm}{{59}{2025}{{Shypula et~al.}}{{Shypula, Li, Zhang, Padmakumar, Yin, and Bastani}}}
-\bibcite{slocum2025diversepreferencelearningcapabilities}{{60}{2025}{{Slocum et~al.}}{{Slocum, Parker-Sartori, and Hadfield-Menell}}}
-\bibcite{sourati2026homogenizingeffectlargelanguage}{{61}{2026}{{Sourati et~al.}}{{Sourati, Ziabari, and Dehghani}}}
-\bibcite{alpaca}{{62}{2023}{{Taori et~al.}}{{Taori, Gulrajani, Zhang, Dubois, Li, Guestrin, Liang, and Hashimoto}}}
-\bibcite{wan2025enhancingpersonalizedmultiturndialogue}{{63}{2025}{{Wan et~al.}}{{Wan, Wu, Abdulhai, Shani, and Jaques}}}
-\bibcite{wang2025multilingualpromptingimprovingllm}{{64}{2025}{{Wang et~al.}}{{Wang, Pan, Linzen, and Black}}}
-\bibcite{wang2020minilmdeepselfattentiondistillation}{{65}{2020}{{Wang et~al.}}{{Wang, Wei, Dong, Bao, Yang, and Zhou}}}
-\bibcite{west2025base}{{66}{2025}{{West \& Potts}}{{West and Potts}}}
-\bibcite{wieting2018paranmt}{{67}{2018}{{Wieting \& Gimpel}}{{Wieting and Gimpel}}}
-\bibcite{Wu2025}{{68}{2025}{{Wu et~al.}}{{Wu, Goyal, and Raghunathan}}}
-\bibcite{yang2025qwen3technicalreport}{{69}{2025}{{Yang et~al.}}{{Yang, Li, Yang, Zhang, Hui, Zheng, Yu, Gao, Huang, Lv, Zheng, Liu, Zhou, Huang, Hu, Ge, Wei, Lin, Tang, Yang, Tu, Zhang, Yang, Yang, Zhou, Zhou, Lin, Dang, Bao, Yang, Yu, Deng, Li, Xue, Li, Zhang, Wang, Zhu, Men, Gao, Liu, Luo, Li, Tang, Yin, Ren, Wang, Zhang, Ren, Fan, Su, Zhang, Zhang, Wan, Liu, Wang, Cui, Zhang, Zhou, and Qiu}}}
-\bibcite{yuan2026agenticredevolvingagenticsystems}{{70}{2026}{{Yuan et~al.}}{{Yuan, Nöther, Jaques, and Radanović}}}
-\bibcite{zellers2019hellaswag}{{71}{2019}{{Zellers et~al.}}{{Zellers, Holtzman, Bisk, Farhadi, and Choi}}}
-\bibcite{Zhang2025}{{72}{2025{a}}{{Zhang et~al.}}{{Zhang, Yu, Chong, Sicilia, Tomz, Manning, and Shi}}}
-\bibcite{zhang2025noveltybenchevaluatinglanguagemodels}{{73}{2025{b}}{{Zhang et~al.}}{{Zhang, Diddee, Holm, Liu, Liu, Samuel, Wang, and Ippolito}}}
-\bibcite{zhao2023pytorch}{{74}{2023}{{Zhao et~al.}}{{Zhao, Gu, Varma, Luo, Huang, Xu, Wright, Shojanazeri, Ott, Shleifer, Desmaison, Balioglu, Damania, Nguyen, Chauhan, Hao, Mathews, and Li}}}
-\bibcite{zhou2023instructionfollowingevaluationlargelanguage}{{75}{2023}{{Zhou et~al.}}{{Zhou, Lu, Mishra, Brahma, Basu, Luan, Zhou, and Hou}}}
-\bibcite{zhu2018texygen}{{76}{2018}{{Zhu et~al.}}{{Zhu, Lu, Zheng, Guo, Zhang, Wang, and Yu}}}
-\bibcite{zou2026fmlbenchbenchmarkingmachinelearning}{{77}{2026}{{Zou et~al.}}{{Zou, Lam, Zhao, Tang, Chen, Yu, Zhang, Liu, Ji, and Liu}}}
+\bibcite{Guo_2025}{{16}{2025}{{Guo et~al.}}{{Guo, Yang, Zhang, Song, Wang, Zhu, Xu, Zhang, Ma, Bi, Zhang, Yu, Wu, Wu, Gou, Shao, Li, Gao, Liu, Xue, Wang, Wu, Feng, Lu, Zhao, Deng, Ruan, Dai, Chen, Ji, Li, Lin, Dai, Luo, Hao, Chen, Li, Zhang, Xu, Ding, Gao, Qu, Li, Guo, Li, Chen, Yuan, Tu, Qiu, Li, Cai, Ni, Liang, Chen, Dong, Hu, You, Gao, Guan, Huang, Yu, Wang, Zhang, Zhao, Wang, Zhang, Xu, Xia, Zhang, Zhang, Tang, Zhou, Li, Wang, Li, Tian, Huang, Zhang, Wang, Chen, Du, Ge, Zhang, Pan, Wang, Chen, Jin, Chen, Lu, Zhou, Chen, Ye, Wang, Yu, Zhou, Pan, Li, Zhou, Wu, Yun, Pei, Sun, Wang, Zeng, Liu, Liang, Gao, Yu, Zhang, Xiao, An, Liu, Wang, Chen, Nie, Cheng, Liu, Xie, Liu, Yang, Li, Su, Lin, Li, Jin, Shen, Chen, Sun, Wang, Song, Zhou, Wang, Shan, Li, Wang, Wei, Zhang, Xu, Li, Zhao, Sun, Wang, Yu, Zhang, Shi, Xiong, He, Piao, Wang, Tan, Ma, Liu, Guo, Ou, Wang, Gong, Zou, He, Xiong, Luo, You, Liu, Zhou, Zhu, Huang, Li, Zheng, Zhu, Ma, Tang, Zha, Yan, Ren, Ren, Sha, Fu, Xu, Xie, Zhang, Hao, Ma, Yan, Wu, Gu, Zhu, Liu, Li, Xie, Song, Pan, Huang, Xu, Zhang, and Zhang}}}
+\bibcite{he2025rewardingunlikelyliftinggrpo}{{17}{2025}{{He et~al.}}{{He, Fried, and Welleck}}}
+\bibcite{hendryckstest2021}{{18}{2021}{{Hendrycks et~al.}}{{Hendrycks, Burns, Basart, Zou, Mazeika, Song, and Steinhardt}}}
+\bibcite{holtzman2020curiouscaseneuraltext}{{19}{2020}{{Holtzman et~al.}}{{Holtzman, Buys, Du, Forbes, and Choi}}}
+\bibcite{huang2024self}{{20}{2024}{{Huang et~al.}}{{Huang, Block, Foster, Rohatgi, Zhang, Simchowitz, Ash, and Krishnamurthy}}}
+\bibcite{ippolito2019comparison}{{21}{2019}{{Ippolito et~al.}}{{Ippolito, Kriz, Sedoc, Kustikova, and Callison-Burch}}}
+\bibcite{jalali2024conditionalvendiscoreinformationtheoretic}{{22}{2024}{{Jalali et~al.}}{{Jalali, Ospanov, Gohari, and Farnia}}}
+\bibcite{jaques2017sequencetutorconservativefinetuning}{{23}{2017}{{Jaques et~al.}}{{Jaques, Gu, Bahdanau, Hernández-Lobato, Turner, and Eck}}}
+\bibcite{jiang2025artificialhivemindopenendedhomogeneity}{{24}{2025}{{Jiang et~al.}}{{Jiang, Chai, Li, Liu, Fok, Dziri, Tsvetkov, Sap, Albalak, and Choi}}}
+\bibcite{jung2025prismaticsynthesisgradientbaseddata}{{25}{2025}{{Jung et~al.}}{{Jung, Han, Lu, Hallinan, Acuna, Prabhumoye, Patwary, Shoeybi, Catanzaro, and Choi}}}
+\bibcite{Kim2026}{{26}{2026}{{Kim et~al.}}{{Kim, Yang, and Jung}}}
+\bibcite{kirk2024understandingeffectsrlhfllm}{{27}{2024}{{Kirk et~al.}}{{Kirk, Mediratta, Nalmpantis, Luketina, Hambro, Grefenstette, and Raileanu}}}
+\bibcite{kloek1978bayesian}{{28}{1978}{{Kloek \& Van~Dijk}}{{Kloek and Van~Dijk}}}
+\bibcite{kwon2023efficient}{{29}{2023}{{Kwon et~al.}}{{Kwon, Li, Zhuang, Sheng, Zheng, Yu, Gonzalez, Zhang, and Stoica}}}
+\bibcite{lagzian2025multinoveltyimprovediversitynovelty}{{30}{2025}{{Lagzian et~al.}}{{Lagzian, Anumasa, and Liu}}}
+\bibcite{lambert2024tulu3}{{31}{2024}{{Lambert et~al.}}{{Lambert, Morrison, Pyatkin, Huang, Ivison, Brahman, Miranda, Liu, Dziri, Lyu, Gu, Malik, Graf, Hwang, Yang, Bras, Tafjord, Wilhelm, Soldaini, Smith, Wang, Dasigi, and Hajishirzi}}}
+\bibcite{lanchantin2025diverse}{{32}{2025}{{Lanchantin et~al.}}{{Lanchantin, Chen, Dhuliawala, Yu, Weston, Sukhbaatar, and Kulikov}}}
+\bibcite{lau2025dipperdiversitypromptsproducing}{{33}{2025}{{Lau et~al.}}{{Lau, Hu, Liu, Chen, Ng, and Low}}}
+\bibcite{li2021celebratingdiversitysharedmultiagent}{{34}{2021}{{Li et~al.}}{{Li, Wang, Wu, Zhao, Yang, and Zhang}}}
+\bibcite{li2025jointlyreinforcingdiversityquality}{{35}{2025}{{Li et~al.}}{{Li, Zhang, Yu, Saha, Khashabi, Weston, Lanchantin, and Wang}}}
+\bibcite{liang2024learning}{{36}{2024}{{Liang et~al.}}{{Liang, Chen, Gupta, Du, and Jaques}}}
+\bibcite{lin2022truthfulqameasuringmodelsmimic}{{37}{2022}{{Lin et~al.}}{{Lin, Hilton, and Evans}}}
+\bibcite{liu2025skywork}{{38}{2025}{{Liu et~al.}}{{Liu, Zeng, Xiao, He, Liu, Wang, Yan, Shen, Zhang, Xu, et~al.}}}
+\bibcite{liu2026hypobenchsystematicprincipledbenchmarking}{{39}{2026}{{Liu et~al.}}{{Liu, Huang, Hu, Zhou, and Tan}}}
+\bibcite{McCarthy2010MTLDVA}{{40}{2010}{{McCarthy \& Jarvis}}{{McCarthy and Jarvis}}}
+\bibcite{Misaki2026}{{41}{2026}{{Misaki \& Akiba}}{{Misaki and Akiba}}}
+\bibcite{mouret2015illuminatingsearchspacesmapping}{{42}{2015}{{Mouret \& Clune}}{{Mouret and Clune}}}
+\bibcite{nguyen2024turningheatminpsampling}{{43}{2024}{{Nguyen et~al.}}{{Nguyen, Baker, Neo, Roush, Kirsch, and Shwartz-Ziv}}}
+\bibcite{omahony2024attributingmodecollapsefinetuning}{{44}{2024}{{O'Mahony et~al.}}{{O'Mahony, Grinsztajn, Schoelkopf, and Biderman}}}
+\bibcite{padmakumar2023does}{{45}{2023}{{Padmakumar \& He}}{{Padmakumar and He}}}
+\bibcite{park2024generative}{{46}{2024}{{Park et~al.}}{{Park, Zou, Shaw, Hill, Cai, Morris, Willer, Liang, and Bernstein}}}
+\bibcite{Puri2026}{{47}{2026}{{Puri et~al.}}{{Puri, Damani, Shenfeld, Ghassemi, Andreas, and Kim}}}
+\bibcite{reimers2019sentencebertsentenceembeddingsusing}{{48}{2019}{{Reimers \& Gurevych}}{{Reimers and Gurevych}}}
+\bibcite{rein2024gpqa}{{49}{2024}{{Rein et~al.}}{{Rein, Hou, Stickland, Petty, Pang, Dirani, Michael, and Bowman}}}
+\bibcite{romera2024mathematical}{{50}{2024}{{Romera-Paredes et~al.}}{{Romera-Paredes, Barekatain, Novikov, Balog, Kumar, Dupont, Ruiz, Ellenberg, Wang, Fawzi, et~al.}}}
+\bibcite{ruan-etal-2025-g2}{{51}{2025}{{Ruan et~al.}}{{Ruan, Li, Liu, Chen, Luo, Li, Liu, and Chen}}}
+\bibcite{shaib2024standardizing}{{52}{2024}{{Shaib et~al.}}{{Shaib, Barrow, Sun, Siu, Wallace, and Nenkova}}}
+\bibcite{shao2024deepseekmath}{{53}{2024}{{Shao et~al.}}{{Shao, Wang, Zhu, Xu, Song, Bi, Zhang, Zhang, Li, Wu, and Guo}}}
+\bibcite{sheng2024hybridflow}{{54}{2024}{{Sheng et~al.}}{{Sheng, Zhang, Ye, Wu, Zhang, Zhang, Peng, Lin, and Wu}}}
+\bibcite{Shumailov2024AIMC}{{55}{2024}{{Shumailov et~al.}}{{Shumailov, Shumaylov, Zhao, Papernot, Anderson, and Gal}}}
+\bibcite{shypula2025evaluatingdiversityqualityllm}{{56}{2025}{{Shypula et~al.}}{{Shypula, Li, Zhang, Padmakumar, Yin, and Bastani}}}
+\bibcite{slocum2025diversepreferencelearningcapabilities}{{57}{2025}{{Slocum et~al.}}{{Slocum, Parker-Sartori, and Hadfield-Menell}}}
+\bibcite{sourati2026homogenizingeffectlargelanguage}{{58}{2026}{{Sourati et~al.}}{{Sourati, Ziabari, and Dehghani}}}
+\bibcite{alpaca}{{59}{2023}{{Taori et~al.}}{{Taori, Gulrajani, Zhang, Dubois, Li, Guestrin, Liang, and Hashimoto}}}
+\bibcite{wang2025multilingualpromptingimprovingllm}{{60}{2025}{{Wang et~al.}}{{Wang, Pan, Linzen, and Black}}}
+\bibcite{wang2020minilmdeepselfattentiondistillation}{{61}{2020}{{Wang et~al.}}{{Wang, Wei, Dong, Bao, Yang, and Zhou}}}
+\bibcite{west2025base}{{62}{2025}{{West \& Potts}}{{West and Potts}}}
+\bibcite{wieting2018paranmt}{{63}{2018}{{Wieting \& Gimpel}}{{Wieting and Gimpel}}}
+\bibcite{Wu2025}{{64}{2025}{{Wu et~al.}}{{Wu, Goyal, and Raghunathan}}}
+\bibcite{yang2025qwen3technicalreport}{{65}{2025}{{Yang et~al.}}{{Yang, Li, Yang, Zhang, Hui, Zheng, Yu, Gao, Huang, Lv, Zheng, Liu, Zhou, Huang, Hu, Ge, Wei, Lin, Tang, Yang, Tu, Zhang, Yang, Yang, Zhou, Zhou, Lin, Dang, Bao, Yang, Yu, Deng, Li, Xue, Li, Zhang, Wang, Zhu, Men, Gao, Liu, Luo, Li, Tang, Yin, Ren, Wang, Zhang, Ren, Fan, Su, Zhang, Zhang, Wan, Liu, Wang, Cui, Zhang, Zhou, and Qiu}}}
+\bibcite{yuan2026agenticredevolvingagenticsystems}{{66}{2026}{{Yuan et~al.}}{{Yuan, Nöther, Jaques, and Radanović}}}
+\bibcite{zellers2019hellaswag}{{67}{2019}{{Zellers et~al.}}{{Zellers, Holtzman, Bisk, Farhadi, and Choi}}}
+\bibcite{Zhang2025}{{68}{2025{a}}{{Zhang et~al.}}{{Zhang, Yu, Chong, Sicilia, Tomz, Manning, and Shi}}}
+\bibcite{zhang2025noveltybenchevaluatinglanguagemodels}{{69}{2025{b}}{{Zhang et~al.}}{{Zhang, Diddee, Holm, Liu, Liu, Samuel, Wang, and Ippolito}}}
+\bibcite{zhao2023pytorch}{{70}{2023}{{Zhao et~al.}}{{Zhao, Gu, Varma, Luo, Huang, Xu, Wright, Shojanazeri, Ott, Shleifer, Desmaison, Balioglu, Damania, Nguyen, Chauhan, Hao, Mathews, and Li}}}
+\bibcite{zhou2023instructionfollowingevaluationlargelanguage}{{71}{2023}{{Zhou et~al.}}{{Zhou, Lu, Mishra, Brahma, Basu, Luan, Zhou, and Hou}}}
+\bibcite{zhu2018texygen}{{72}{2018}{{Zhu et~al.}}{{Zhu, Lu, Zheng, Guo, Zhang, Wang, and Yu}}}
+\bibcite{zou2026fmlbenchbenchmarkingmachinelearning}{{73}{2026}{{Zou et~al.}}{{Zou, Lam, Zhao, Tang, Chen, Yu, Zhang, Liu, Ji, and Liu}}}
 \bibstyle{iclr2027_conference}
-\@writefile{toc}{\contentsline {section}{Appendices}{17}{section*.22}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{Appendices}{17}{section*.21}\protected@file@percent }
 \ttl@writefile{ptc}{\ttl@starttoc{sections@1}}
 \@writefile{toc}{\contentsline {section}{\numberline {A}Limitations and Future Work}{18}{appendix.1.A}\protected@file@percent }
 \newlabel{appx:limitations}{{A}{18}{Limitations and Future Work}{appendix.1.A}{}}
@@ -235,8 +228,8 @@
 \citation{slocum2025diversepreferencelearningcapabilities}
 \@writefile{toc}{\contentsline {section}{\numberline {B}Extended Related Work: Method Comparison}{19}{appendix.1.B}\protected@file@percent }
 \newlabel{appx:related-work-table}{{B}{19}{Extended Related Work: Method Comparison}{appendix.1.B}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces \textbf  {Diversity-oriented methods.} \textsc  {MoDA}\xspace  {} conditions diversity on explicit mode tokens, inspired by MARL.}}{19}{table.caption.23}\protected@file@percent }
-\newlabel{tab:related-work}{{2}{19}{\textbf {Diversity-oriented methods.} \method {} conditions diversity on explicit mode tokens, inspired by MARL}{table.caption.23}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces \textbf  {Diversity-oriented methods.} \textsc  {MoDA}\xspace  {} conditions diversity on explicit mode tokens, inspired by MARL.}}{19}{table.caption.22}\protected@file@percent }
+\newlabel{tab:related-work}{{2}{19}{\textbf {Diversity-oriented methods.} \method {} conditions diversity on explicit mode tokens, inspired by MARL}{table.caption.22}{}}
 \citation{shao2024deepseekmath}
 \citation{kloek1978bayesian}
 \citation{jaques2017sequencetutorconservativefinetuning}
@@ -254,55 +247,58 @@
 \@writefile{toc}{\contentsline {section}{\numberline {D}Implementation}{22}{appendix.1.D}\protected@file@percent }
 \newlabel{appx:implementation}{{D}{22}{Implementation}{appendix.1.D}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {D.1}Overview}{22}{subsection.1.D.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{Training Stage}{22}{section*.24}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Training Stage}{22}{section*.23}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {D.2}Ablation Model Implementations}{22}{subsection.1.D.2}\protected@file@percent }
 \newlabel{appx: ablation model implementations}{{D.2}{22}{Ablation Model Implementations}{subsection.1.D.2}{}}
-\@writefile{toc}{\contentsline {paragraph}{Token-based roles}{22}{section*.26}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{Crafted roles}{22}{section*.27}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{Single role}{22}{section*.28}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Token-based roles}{22}{section*.25}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Crafted roles}{22}{section*.26}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Single role}{22}{section*.27}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {D.3}Dataset}{22}{subsection.1.D.3}\protected@file@percent }
 \newlabel{appx:dataset}{{D.3}{22}{Dataset}{subsection.1.D.3}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces  Training hyperparameters used for \textsc  {MoDA}\xspace  {}. }}{23}{table.caption.25}\protected@file@percent }
-\newlabel{tab:training-hyperparams}{{3}{23}{Training hyperparameters used for \method {}}{table.caption.25}{}}
-\newlabel{tab:hyperparameter}{{3}{23}{Training hyperparameters used for \method {}}{table.caption.25}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces  Training hyperparameters used for \textsc  {MoDA}\xspace  {}. }}{23}{table.caption.24}\protected@file@percent }
+\newlabel{tab:training-hyperparams}{{3}{23}{Training hyperparameters used for \method {}}{table.caption.24}{}}
+\newlabel{tab:hyperparameter}{{3}{23}{Training hyperparameters used for \method {}}{table.caption.24}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {D.4}Discriminator}{23}{subsection.1.D.4}\protected@file@percent }
 \newlabel{appx:discriminator}{{D.4}{23}{Discriminator}{subsection.1.D.4}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {D.5}Training Curve}{24}{subsection.1.D.5}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces  Training curves for ablation studies. Each row corresponds to one ablation setting, and each row reports four training diagnostics: total reward, diversity reward, quality reward, and answer token length. Results are shown under both thinking-disabled and thinking-enabled settings.}}{25}{figure.caption.29}\protected@file@percent }
-\newlabel{fig:ablation-training-curves}{{6}{25}{Training curves for ablation studies. Each row corresponds to one ablation setting, and each row reports four training diagnostics: total reward, diversity reward, quality reward, and answer token length. Results are shown under both thinking-disabled and thinking-enabled settings}{figure.caption.29}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces  Training curves for ablation studies. Each row corresponds to one ablation setting, and each row reports four training diagnostics: total reward, diversity reward, quality reward, and answer token length. Results are shown under both thinking-disabled and thinking-enabled settings.}}{25}{figure.caption.28}\protected@file@percent }
+\newlabel{fig:ablation-training-curves}{{5}{25}{Training curves for ablation studies. Each row corresponds to one ablation setting, and each row reports four training diagnostics: total reward, diversity reward, quality reward, and answer token length. Results are shown under both thinking-disabled and thinking-enabled settings}{figure.caption.28}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {E}Additional Experiment Results}{26}{appendix.1.E}\protected@file@percent }
 \newlabel{appx:additional results}{{E}{26}{Additional Experiment Results}{appendix.1.E}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {E.1}Generative Diversity Evaluation.}{26}{subsection.1.E.1}\protected@file@percent }
 \newlabel{appx:generative diversity evaluation}{{E.1}{26}{Generative Diversity Evaluation}{subsection.1.E.1}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces \textbf  {Diversity vs. quality pareto fronts, remaining settings} (extends Figure~\ref {fig: domain application pareto} in the main text). The x-axis is Infinite-Chat response diversity (mean z-score of Disc./SBERT/EmbVendi) and the y-axis is general capability (mean benchmark accuracy). \textbf  {Left}: Qwen3-8B base, thinking enabled. \textbf  {Right}: Llama-3.1-8B / GLM-4-9B base, thinking disabled. \textsc  {MoDA}\xspace  {} Pareto-dominates all baselines in both settings.}}{26}{figure.caption.30}\protected@file@percent }
-\newlabel{fig:domain-application-pareto-appendix}{{7}{26}{\textbf {Diversity vs. quality pareto fronts, remaining settings} (extends Figure~\ref {fig: domain application pareto} in the main text). The x-axis is Infinite-Chat response diversity (mean z-score of Disc./SBERT/EmbVendi) and the y-axis is general capability (mean benchmark accuracy). \textbf {Left}: Qwen3-8B base, thinking enabled. \textbf {Right}: Llama-3.1-8B / GLM-4-9B base, thinking disabled. \method {} Pareto-dominates all baselines in both settings}{figure.caption.30}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces \textbf  {Diversity vs. quality pareto fronts, remaining settings} (extends Figure~\ref {fig: domain application pareto} in the main text). The x-axis is Infinite-Chat response diversity (mean z-score of Disc./SBERT/EmbVendi) and the y-axis is general capability (mean benchmark accuracy). \textbf  {Left}: Qwen3-8B base, thinking enabled. \textbf  {Right}: Llama-3.1-8B / GLM-4-9B base, thinking disabled. \textsc  {MoDA}\xspace  {} Pareto-dominates all baselines in both settings.}}{26}{figure.caption.29}\protected@file@percent }
+\newlabel{fig:domain-application-pareto-appendix}{{6}{26}{\textbf {Diversity vs. quality pareto fronts, remaining settings} (extends Figure~\ref {fig: domain application pareto} in the main text). The x-axis is Infinite-Chat response diversity (mean z-score of Disc./SBERT/EmbVendi) and the y-axis is general capability (mean benchmark accuracy). \textbf {Left}: Qwen3-8B base, thinking enabled. \textbf {Right}: Llama-3.1-8B / GLM-4-9B base, thinking disabled. \method {} Pareto-dominates all baselines in both settings}{figure.caption.29}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {E.2}General Capability Retention}{28}{subsection.1.E.2}\protected@file@percent }
 \newlabel{appx:general capability retention}{{E.2}{28}{General Capability Retention}{subsection.1.E.2}{}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {E.2.1}Pass@1}{28}{subsubsection.1.E.2.1}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces General capability retention (accuracy \%, mean ± std error; bold = best per block)}}{28}{table.caption.39}\protected@file@percent }
-\newlabel{tab:general-capability-pass1-error-bar}{{4}{28}{General capability retention (accuracy \%, mean ± std error; bold = best per block)}{table.caption.39}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces General capability retention (accuracy \%, mean ± std error; bold = best per block)}}{28}{table.caption.38}\protected@file@percent }
+\newlabel{tab:general-capability-pass1-error-bar}{{4}{28}{General capability retention (accuracy \%, mean ± std error; bold = best per block)}{table.caption.38}{}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {E.2.2}Pass@5}{28}{subsubsection.1.E.2.2}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {5}{\ignorespaces General capability retention pass@5. For IFEval, strict instruction-following accuracy is reported. Avg.\ is the row mean across benchmarks. Bold marks the best average within each thinking setting.}}{29}{table.caption.40}\protected@file@percent }
-\newlabel{tab:general-capability-pass5}{{5}{29}{General capability retention pass@5. For IFEval, strict instruction-following accuracy is reported. Avg.\ is the row mean across benchmarks. Bold marks the best average within each thinking setting}{table.caption.40}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces \textbf  {General capability retention: pass@k accuracy.} Qwen3-8B base and thinking disabled models on the general capability suite tasks: GSM8K, MMLU, GPQA, BoolQ, HellaSwag, TruthfulQA, and IFEval. The suite average is shown in Figure~\ref {fig:general capability retention} in the main text.}}{29}{figure.caption.41}\protected@file@percent }
-\newlabel{fig:general capability pass@k thinking disabled}{{8}{29}{\textbf {General capability retention: pass@k accuracy.} Qwen3-8B base and thinking disabled models on the general capability suite tasks: GSM8K, MMLU, GPQA, BoolQ, HellaSwag, TruthfulQA, and IFEval. The suite average is shown in Figure~\ref {fig:general capability retention} in the main text}{figure.caption.41}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces \textbf  {General capability retention: pass@k accuracy.} Qwen3-8B base and thinking enabled models.}}{30}{figure.caption.42}\protected@file@percent }
-\newlabel{fig:general capability pass@k thinking enabled}{{9}{30}{\textbf {General capability retention: pass@k accuracy.} Qwen3-8B base and thinking enabled models}{figure.caption.42}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces \textbf  {General capability retention: pass@k accuracy.} Llama-3.1-8B base and thinking disabled models.}}{30}{figure.caption.43}\protected@file@percent }
-\newlabel{fig:general capability pass@k llama}{{10}{30}{\textbf {General capability retention: pass@k accuracy.} Llama-3.1-8B base and thinking disabled models}{figure.caption.43}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {11}{\ignorespaces \textbf  {General capability retention: pass@k accuracy.} GLM-4-9B base and thinking disabled models.}}{31}{figure.caption.44}\protected@file@percent }
-\newlabel{fig:general capability pass@k glm}{{11}{31}{\textbf {General capability retention: pass@k accuracy.} GLM-4-9B base and thinking disabled models}{figure.caption.44}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {5}{\ignorespaces General capability retention pass@5. For IFEval, strict instruction-following accuracy is reported. Avg.\ is the row mean across benchmarks. Bold marks the best average within each thinking setting.}}{29}{table.caption.39}\protected@file@percent }
+\newlabel{tab:general-capability-pass5}{{5}{29}{General capability retention pass@5. For IFEval, strict instruction-following accuracy is reported. Avg.\ is the row mean across benchmarks. Bold marks the best average within each thinking setting}{table.caption.39}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces \textbf  {General capability retention: pass@k accuracy.} Qwen3-8B base and thinking disabled models on the general capability suite tasks: GSM8K, MMLU, GPQA, BoolQ, HellaSwag, TruthfulQA, and IFEval. The suite average is shown in Figure~\ref {fig:general capability retention} in the main text.}}{29}{figure.caption.40}\protected@file@percent }
+\newlabel{fig:general capability pass@k thinking disabled}{{7}{29}{\textbf {General capability retention: pass@k accuracy.} Qwen3-8B base and thinking disabled models on the general capability suite tasks: GSM8K, MMLU, GPQA, BoolQ, HellaSwag, TruthfulQA, and IFEval. The suite average is shown in Figure~\ref {fig:general capability retention} in the main text}{figure.caption.40}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces \textbf  {General capability retention: pass@k accuracy.} Qwen3-8B base and thinking enabled models.}}{30}{figure.caption.41}\protected@file@percent }
+\newlabel{fig:general capability pass@k thinking enabled}{{8}{30}{\textbf {General capability retention: pass@k accuracy.} Qwen3-8B base and thinking enabled models}{figure.caption.41}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces \textbf  {General capability retention: pass@k accuracy.} Llama-3.1-8B base and thinking disabled models.}}{30}{figure.caption.42}\protected@file@percent }
+\newlabel{fig:general capability pass@k llama}{{9}{30}{\textbf {General capability retention: pass@k accuracy.} Llama-3.1-8B base and thinking disabled models}{figure.caption.42}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces \textbf  {General capability retention: pass@k accuracy.} GLM-4-9B base and thinking disabled models.}}{31}{figure.caption.43}\protected@file@percent }
+\newlabel{fig:general capability pass@k glm}{{10}{31}{\textbf {General capability retention: pass@k accuracy.} GLM-4-9B base and thinking disabled models}{figure.caption.43}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {E.3}Ablation Results}{31}{subsection.1.E.3}\protected@file@percent }
 \newlabel{appx: ablation results}{{E.3}{31}{Ablation Results}{subsection.1.E.3}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {6}{\ignorespaces \textbf  {Ablation results} for general capability (Pass@1) under standard and diverse decoding (accuracy \%) and Infinite-Chat diversity ($n{=}3$ random seeds). Bold marks the best value per column.}}{31}{table.caption.45}\protected@file@percent }
-\newlabel{tab:ablation}{{6}{31}{\textbf {Ablation results} for general capability (Pass@1) under standard and diverse decoding (accuracy \%) and Infinite-Chat diversity ($n{=}3$ random seeds). Bold marks the best value per column}{table.caption.45}{}}
-\newlabel{fig: ablation pass@k GSM8K}{{\caption@xref {??}{ on input line 242}}{32}{Ablation Results}{figure.caption.46}{}}
-\newlabel{fig: ablation pass@k MMLU}{{\caption@xref {??}{ on input line 249}}{32}{Ablation Results}{figure.caption.46}{}}
-\newlabel{fig: ablation pass@k GPQA}{{\caption@xref {??}{ on input line 256}}{32}{Ablation Results}{figure.caption.46}{}}
-\newlabel{fig: ablation pass@k TruthfulQA}{{\caption@xref {??}{ on input line 263}}{32}{Ablation Results}{figure.caption.46}{}}
-\newlabel{fig: ablation pass@k BoolQ}{{\caption@xref {??}{ on input line 270}}{32}{Ablation Results}{figure.caption.46}{}}
-\newlabel{fig: ablation pass@k HellaSwag}{{\caption@xref {??}{ on input line 276}}{32}{Ablation Results}{figure.caption.46}{}}
-\newlabel{fig: ablation pass@k IF-Eval}{{\caption@xref {??}{ on input line 283}}{32}{Ablation Results}{figure.caption.46}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {6}{\ignorespaces \textbf  {Ablation results} for general capability (Pass@1) under standard and diverse decoding (accuracy \%) and Infinite-Chat diversity ($n{=}3$ random seeds). Bold marks the best value per column.}}{31}{table.caption.44}\protected@file@percent }
+\newlabel{tab:ablation}{{6}{31}{\textbf {Ablation results} for general capability (Pass@1) under standard and diverse decoding (accuracy \%) and Infinite-Chat diversity ($n{=}3$ random seeds). Bold marks the best value per column}{table.caption.44}{}}
+\newlabel{fig: ablation diverse standard}{{\caption@xref {fig: ablation diverse standard}{ on input line 241}}{32}{Ablation Results}{figure.caption.45}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {11}{\ignorespaces Diversity-quality trade-off under diverse and standard mode. Pass@1 accuracy.}}{32}{figure.caption.45}\protected@file@percent }
+\newlabel{fig: ablation pass@k GSM8K}{{\caption@xref {??}{ on input line 250}}{32}{Ablation Results}{figure.caption.46}{}}
+\newlabel{fig: ablation pass@k MMLU}{{\caption@xref {??}{ on input line 257}}{32}{Ablation Results}{figure.caption.46}{}}
+\newlabel{fig: ablation pass@k GPQA}{{\caption@xref {??}{ on input line 264}}{32}{Ablation Results}{figure.caption.46}{}}
+\newlabel{fig: ablation pass@k TruthfulQA}{{\caption@xref {??}{ on input line 271}}{32}{Ablation Results}{figure.caption.46}{}}
+\newlabel{fig: ablation pass@k BoolQ}{{\caption@xref {??}{ on input line 278}}{32}{Ablation Results}{figure.caption.46}{}}
+\newlabel{fig: ablation pass@k HellaSwag}{{\caption@xref {??}{ on input line 284}}{32}{Ablation Results}{figure.caption.46}{}}
+\newlabel{fig: ablation pass@k IF-Eval}{{\caption@xref {??}{ on input line 291}}{32}{Ablation Results}{figure.caption.46}{}}
+\newlabel{fig: ablation pass@k avg}{{\caption@xref {??}{ on input line 298}}{32}{Ablation Results}{figure.caption.46}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {12}{\ignorespaces \textbf  {General capability retention for ablated models}: pass@k accuracy by benchmarks, standard vs diverse decoding mode.}}{32}{figure.caption.46}\protected@file@percent }
 \newlabel{fig:general capability pass@k ablation by benchmark}{{12}{32}{\textbf {General capability retention for ablated models}: pass@k accuracy by benchmarks, standard vs diverse decoding mode}{figure.caption.46}{}}
 \citation{reimers2019sentencebertsentenceembeddingsusing}

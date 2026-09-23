@@ -23,7 +23,7 @@
 \contentsline {subsection}{\numberline {5.2}Ablation Studies.}{8}{subsection.5.2}%
 \contentsline {paragraph}{Ablation Setups.}{8}{section*.19}%
 \contentsline {section}{\numberline {6}Discussions}{9}{section.6}%
-\contentsline {section}{Appendices}{17}{section*.22}%
+\contentsline {section}{Appendices}{17}{section*.21}%
 \ttl@starttoc {sections@1}
 \contentsline {section}{\numberline {A}Limitations and Future Work}{18}{appendix.1.A}%
 \contentsline {section}{\numberline {B}Extended Related Work: Method Comparison}{19}{appendix.1.B}%
@@ -32,11 +32,11 @@
 \contentsline {subsection}{\numberline {C.2}Algorithm}{20}{subsection.1.C.2}%
 \contentsline {section}{\numberline {D}Implementation}{22}{appendix.1.D}%
 \contentsline {subsection}{\numberline {D.1}Overview}{22}{subsection.1.D.1}%
-\contentsline {paragraph}{Training Stage}{22}{section*.24}%
+\contentsline {paragraph}{Training Stage}{22}{section*.23}%
 \contentsline {subsection}{\numberline {D.2}Ablation Model Implementations}{22}{subsection.1.D.2}%
-\contentsline {paragraph}{Token-based roles}{22}{section*.26}%
-\contentsline {paragraph}{Crafted roles}{22}{section*.27}%
-\contentsline {paragraph}{Single role}{22}{section*.28}%
+\contentsline {paragraph}{Token-based roles}{22}{section*.25}%
+\contentsline {paragraph}{Crafted roles}{22}{section*.26}%
+\contentsline {paragraph}{Single role}{22}{section*.27}%
 \contentsline {subsection}{\numberline {D.3}Dataset}{22}{subsection.1.D.3}%
 \contentsline {subsection}{\numberline {D.4}Discriminator}{23}{subsection.1.D.4}%
 \contentsline {subsection}{\numberline {D.5}Training Curve}{24}{subsection.1.D.5}%

@@ -1,0 +1,57 @@
+This is BibTeX, Version 0.99e (TeX Live 2026)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: main.aux
+The style file: iclr2027_conference.bst
+Database file #1: reference.bib
+Warning--string name "sept" is undefined
+--line 267 of file reference.bib
+Warning--empty journal in Ajith2026
+Warning--empty booktitle in Chen2025PosttrainingLL
+Warning--empty journal in Kim2026
+Warning--empty journal in lambert2024tulu3
+Warning--empty journal in Misaki2026
+Warning--empty journal in Puri2026
+Warning--empty journal in Wu2025
+Warning--empty journal in Zhang2025
+You've used 73 entries,
+            2773 wiz_defined-function locations,
+            959 strings with 27548 characters,
+and the built_in function-call counts, 57521 in all, are:
+= -- 4308
+> -- 6614
+< -- 16
++ -- 2205
+- -- 2131
+* -- 5656
+:= -- 9460
+add.period$ -- 243
+call.type$ -- 73
+change.case$ -- 925
+chr.to.int$ -- 72
+cite$ -- 154
+duplicate$ -- 1431
+empty$ -- 2619
+format.name$ -- 2222
+if$ -- 11345
+int.to.chr$ -- 2
+int.to.str$ -- 1
+missing$ -- 37
+newline$ -- 395
+num.names$ -- 296
+pop$ -- 1960
+preamble$ -- 1
+purify$ -- 852
+quote$ -- 0
+skip$ -- 1730
+stack$ -- 0
+substring$ -- 606
+swap$ -- 157
+text.length$ -- 7
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 803
+warning$ -- 8
+while$ -- 253
+width$ -- 0
+write$ -- 939
+(There were 9 warnings)
