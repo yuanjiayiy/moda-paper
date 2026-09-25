@@ -2,12 +2,13 @@
 \label{appx:implementation}
 
 \subsection{Overview}
+\label{appx:implementation overview}
 
 \paragraph{Training Stage} For rollout generation, we use stochastic sampling with temperature $1.0$ and top-$p=1.0$, which encourages broad exploration of the model's response distribution during RL training. This is important for \method, since the diversity reward can only provide useful learning signal when the sampled response group contains meaningful variation. We sample $k=6$ mode-conditioned responses per prompt, forming the group over which diversity rewards and GRPO advantages are computed. We use a maximum prompt length of $1024$ tokens and a maximum response length of $2048$ tokens. For the Quality Gated Diversity Reward, we used quality weight of $\lambda_q=1$, diversity reward weight of $\lambda_d=100$, length penalty weight of $0.01$, and language-mismatch penalty of weight  $0.1$. For GLM-4-9B base, we observed a severe language-mismatch issue in its response, and therefore increased the weight of the language-mismatch penalty to $100$.
 
 For Qwen3-8B base, we trained \method{} and all baselines for 4 epochs. For Llama-3.1-8B, GLM-4-9B base and ablation models, we trained for 2 epochs due to compute resource constraints.
 
-Our training are done on NVIDIA A100, H100 or H200 GPUs, depending on availability. A single training for 2 epochs run takes approximately 24 hours on 4 H200 GPUs.
+Our training were performed on NVIDIA A100, H100 or H200 GPUs, depending on availability. A single training for 2 epochs run takes approximately 24 hours on 4 H200 GPUs.
 We provide the rest of the training parameters in Table \ref{tab:hyperparameter}.
 
 \begin{table}[t]
@@ -82,7 +83,7 @@ Language mixing penalty weight (GLM) & 10 \\
 \label{ablation: role injection}
 Prior work has shown that manually designed prompts can induce different model
 behaviors \citep{park2024generative, argyle2023out}. We therefore craft six personas and inject them into the system prompt instead of the abstract numbered roles, testing whether hand-designed personas provide a stronger diversity prior than the abstract numbered role used in the main setting. To isolate the effect of role multiplicity from role content, we train a single-role variant in which every response is generated under the same \textit{``You are Role 1.''} system prompt. To study the effect of the identity-based role, we train a token-based conditioning variant in which the system prompt instructs a token-based distinguishing signal (e.g. \textit{``Start your response with APPLE/BANANA/ORANGE.''}).
-As shown in Table~\ref{tab:ablation}, all variants exhibit a slight diversity improvement over the base model, but their gains are smaller than \method{}'s, indicating that multiple abstract numbered identity-based role provides a more effective exploration space than all the ablated variants, without sacrificing generalization.
+As shown in Table~\ref{tab:ablation}, all variants exhibit a slight diversity improvement over the base model, but their gains are smaller than \method{}'s, indicating that multiple abstract numbered identity-based roles provide a more effective exploration space than all the ablated variants, without sacrificing generalization.
 
 \paragraph{Token-based roles}
 As an ablation, we replace the abstract numbered role instructions with dummy roles. Specifically, for each prompt, we prepend one of the
@@ -122,7 +123,7 @@ As an ablation, we use only one role for mode condition. We prepend ``You are Ro
 
 \subsection{Dataset}
 \label{appx:dataset}
-Our training dataset comprises a mixture of general-purpose SFT prompts, which anchor baseline capability, and open-ended prompts, which encourage exploration and response diversity. Specifically, we sample 8k prompts from \texttt{allenai/tulu-3-sft-mixture} \citep{lambert2024tulu3} as general-purpose examples and 2k prompts from Infinite-Chat as open-ended queries. We held out a part of the Infinite-Chat to used in the evaluation.
+Our training dataset comprises a mixture of general-purpose SFT prompts, which anchor baseline capability, and open-ended prompts, which encourage exploration and response diversity. Specifically, we sample 8k prompts from \texttt{allenai/tulu-3-sft-mixture} \citep{lambert2024tulu3} as general-purpose examples and 2k prompts from Infinite-Chat as open-ended queries. We held out a portion of Infinite-Chat for evaluation.
 
 \subsection{Discriminator}
 \label{appx:discriminator}
